@@ -1,0 +1,21 @@
+.specialFeatures {
+    h3 {
+      margin: 2em 0 1em 0;
+    }
+    &__checkboxes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5em;
+      input {
+        height: 20px;
+        width: 20px;
+      }
+      span {
+        margin-left: 0.5em;
+      }
+    }
+  }
