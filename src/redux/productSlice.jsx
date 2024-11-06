@@ -45,8 +45,15 @@ const initialState = {
     storage: "<p>Przechowywać w suchym i ciemnym miejscu, w temperaturze 0-25ºC, w sposób niedostępny dla małych dzieci.</p>",
     additionalInformation: "<p>Produkt nie może być stosowany jako substytut (zamiennik) prawidłowo zróżnicowanej diety. Zrównoważony sposób żywienia i prawidłowy tryb życia jest ważny dla funkcjonowania organizmu człowieka. Nie należy przekraczać maksymalnej zalecanej porcji do spożycia w ciągu dnia.</p>",
     producer: "",
+    // producer: {
+    //   bl: "",
+    //   shop: "",
+    // },
     tableEnd: "<p><b>RWS</b> - Dzienna referencyjna wartość spożycia</p> <p><b>&lt;&gt;</b> Nie ustalono dziennej referencyjnej wartości spożycia</p>",
-    responsibleEntity: "",
+    responsibleEntity: {
+      bl: "",
+      shop: "",
+    },
     cosmeticsDescription1: "",
     cosmeticsDescription2: "",
     cosmeticsDescription3: "",

@@ -70,9 +70,6 @@ const ProductCodeGenerator = () => {
   const generateCode = () => {
     const ingredientsHTML = generateIngredientsHTML(); // generowanie HTML dla składników
 
-    const responsibleEntityHTML = productData.responsibleEntity
-      ? `<h2>Podmiot odpowiedzialny:</h2>${productData.responsibleEntity}`
-      : "";
 
     const descriptionHTML = productData.description
       ? `<section class="section">
@@ -121,6 +118,9 @@ ${productData.description}
 
     // Generowanie sekcji z cechami specjalnymi
     const specialFeaturesHTML = generateSpecialFeaturesList();
+
+
+    const responsibleEntityBl= productData.responsibleEntity.bl
 
     const newHtmlToBl = `
 <section class="section">
@@ -184,46 +184,76 @@ ${productData.ingredients}
 <h2>Informacja:</h2>
 ${productData.additionalInformation}
 <h2>Producent:</h2>
-${productData.producer}
-${responsibleEntityHTML}
+${productData.producer.bl}
+${
+  productData.responsibleEntity.shop !== ""
+    ? `<h2>Podmiot odpowiedzialny:</h2>${productData.responsibleEntity.bl}`
+    : ""
+}
 </section>
 </div>
 </section>
 `;
 
-    const ingredientsHTML2 = productData.ingredientsTable
-      .map((ingredient) => {
-        // Podstawowy składnik
-        let ingredientHTML = `
-      <tr>
-        <td><strong>${ingredient.ingredient}</strong></td>
-        <td>${ingredient.ingredientValue}</td>
-        <td>${ingredient.rws}</td>
-      </tr>`;
+    // const ingredientsHTML2 = productData.ingredientsTable
+    //   .map((ingredient) => {
+    //     // Podstawowy składnik
+    //     let ingredientHTML = `
+    //   <tr>
+    //     <td><strong>${ingredient.ingredient}</strong></td>
+    //     <td>${ingredient.ingredientValue}</td>
+    //     <td>${ingredient.rws}</td>
+    //   </tr>`;
 
-        // Dodatkowe linie składnika
-        if (
-          ingredient.additionalLines &&
-          ingredient.additionalLines.length > 0
-        ) {
-          ingredient.additionalLines.forEach((line) => {
-            ingredientHTML += `
-          <tr>
-            <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
-              ${line.ingredient}
-            </td>
-            <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
-              ${line.ingredientValue}
-            </td>
-            <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
-              ${line.rws}
-            </td>
-          </tr>`;
-          });
-        }
-        return ingredientHTML;
-      })
-      .join("");
+    //     // Dodatkowe linie składnika
+    //     if (
+    //       ingredient.additionalLines &&
+    //       ingredient.additionalLines.length > 0
+    //     ) {
+    //       ingredient.additionalLines.forEach((line) => {
+    //         ingredientHTML += `
+    //       <tr>
+    //         <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
+    //           ${line.ingredient}
+    //         </td>
+    //         <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
+    //           ${line.ingredientValue}
+    //         </td>
+    //         <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
+    //           ${line.rws}
+    //         </td>
+    //       </tr>`;
+    //       });
+    //     }
+    //     return ingredientHTML;
+    //   })
+    //   .join("");
+
+
+    const ingredientsHTML2 = productData.ingredientsTable
+  .map((ingredient) => {
+    // Podstawowy składnik
+    let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
+    let ingredientValue = `${ingredient.ingredientValue}`;
+    let ingredientRws = `${ingredient.rws || ''}`;
+
+    // Dodatkowe linie składnika
+    if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
+      ingredient.additionalLines.forEach((line) => {
+        ingredientName += `<br>${line.ingredient}`;
+        ingredientValue += `<br>${line.ingredientValue}`;
+        ingredientRws += `<br>${line.rws || '&lt;&gt;'}`;
+      });
+    }
+
+    return `
+      <tr>
+        <td>${ingredientName}</td>
+        <td>${ingredientValue}</td>
+        <td>${ingredientRws}</td>
+      </tr>`;
+  })
+  .join("");
 
     const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
@@ -260,18 +290,18 @@ ${responsibleEntityHTML}
   <div class="col-md-6">
     <div class="right-column">
       <h3>Sposób użycia:</h3>
-      <p>${productData.howToUse}</p>
+      ${productData.howToUse}
       <h3>Przeciwwskazania:</h3>
-      <p>${productData.contraindications}</p>
+      ${productData.contraindications}
       <h3>Przechowywanie:</h3>
-      <p>${productData.storage}</p>
+      ${productData.storage}
       <h3>Informacja:</h3>
-      <p>${productData.additionalInformation}</p>
+      ${productData.additionalInformation}
       <h4>Producent:</h4>
-      <p>${productData.producer}</p>
+      ${productData.producer.shop}
       ${
-        productData.responsibleEntity
-          ? `<p>${productData.responsibleEntity}</p>`
+        productData.responsibleEntity.shop
+          ? `<p>${productData.responsibleEntity.shop}</p>`
           : ""
       }
     </div>
@@ -281,8 +311,8 @@ ${responsibleEntityHTML}
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
     setHtmlToBl(newHtmlToBl);
 
-    console.log("Stan htmlToShop:", htmlToShop); // Może nie zaktualizować od razu przez asynchroniczność stanu
-    console.log("Stan htmlToBl:", htmlToBl);
+    // console.log("Stan htmlToShop:", htmlToShop); // Może nie zaktualizować od razu przez asynchroniczność stanu
+    // console.log("Stan htmlToBl:", htmlToBl);
   };
 
   const generateCodeCosmetics = () => {
@@ -490,6 +520,18 @@ setHtmlToBl(newHtmlToBl);
       console.log("Brak wygenerowanego kodu HTML dla sklepu.");
     }
   };
+  const copyShortDescToShop = async () => {
+    if (productData.shortDescription) {
+      try {
+        await navigator.clipboard.writeText(productData.shortDescription);
+        console.log("Kod krótkiego opisu  dla sklepu skopiowany do schowka.");
+      } catch (err) {
+        console.error("Nie udało się skopiować kodu krótkiego opisu  dla sklepu:", err);
+      }
+    } else {
+      console.log("Brak wygenerowanego kodu krótkiego opisu dla sklepu.");
+    }
+  };
 
   const copyHtmlToBl = async () => {
     if (htmlToBl) {
@@ -587,6 +629,9 @@ setHtmlToBl(newHtmlToBl);
               <div>
                 <Button onClick={copyHtmlToShop}>
                   Skopiuj kod HTML dla sklepu
+                </Button>
+                <Button onClick={copyShortDescToShop}>
+                  Skopiuj kod HTML krótkiego opisu dla sklepu
                 </Button>
                 <Button onClick={copyHtmlToBl}>
                   Skopiuj kod HTML dla baselinkera
