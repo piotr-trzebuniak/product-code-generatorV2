@@ -33,7 +33,7 @@ const ProductCodeGenerator = () => {
   const [htmlToBl, setHtmlToBl] = useState("");
 
   function replaceH2WithH3(htmlString) {
-    return htmlString.replace(/<h2>/g, '<h3>').replace(/<\/h2>/g, '</h3>');
+    return htmlString.replace(/<h2>/g, "<h3>").replace(/<\/h2>/g, "</h3>");
   }
 
   const [type, setType] = useState("");
@@ -69,7 +69,6 @@ const ProductCodeGenerator = () => {
 
   const generateCode = () => {
     const ingredientsHTML = generateIngredientsHTML(); // generowanie HTML dla składników
-
 
     const descriptionHTML = productData.description
       ? `<section class="section">
@@ -119,8 +118,7 @@ ${productData.description}
     // Generowanie sekcji z cechami specjalnymi
     const specialFeaturesHTML = generateSpecialFeaturesList();
 
-
-    const responsibleEntityBl= productData.responsibleEntity.bl
+    const responsibleEntityBl = productData.responsibleEntity.bl;
 
     const newHtmlToBl = `
 <section class="section">
@@ -229,31 +227,33 @@ ${
     //   })
     //   .join("");
 
-
     const ingredientsHTML2 = productData.ingredientsTable
-  .map((ingredient) => {
-    // Podstawowy składnik
-    let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
-    let ingredientValue = `${ingredient.ingredientValue}`;
-    let ingredientRws = `${ingredient.rws || ''}`;
+      .map((ingredient) => {
+        // Podstawowy składnik
+        let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
+        let ingredientValue = `${ingredient.ingredientValue}`;
+        let ingredientRws = `${ingredient.rws || ""}`;
 
-    // Dodatkowe linie składnika
-    if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
-      ingredient.additionalLines.forEach((line) => {
-        ingredientName += `<br>${line.ingredient}`;
-        ingredientValue += `<br>${line.ingredientValue}`;
-        ingredientRws += `<br>${line.rws || '&lt;&gt;'}`;
-      });
-    }
+        // Dodatkowe linie składnika
+        if (
+          ingredient.additionalLines &&
+          ingredient.additionalLines.length > 0
+        ) {
+          ingredient.additionalLines.forEach((line) => {
+            ingredientName += `<br>${line.ingredient}`;
+            ingredientValue += `<br>${line.ingredientValue}`;
+            ingredientRws += `<br>${line.rws || "&lt;&gt;"}`;
+          });
+        }
 
-    return `
+        return `
       <tr>
         <td>${ingredientName}</td>
         <td>${ingredientValue}</td>
         <td>${ingredientRws}</td>
       </tr>`;
-  })
-  .join("");
+      })
+      .join("");
 
     const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
@@ -317,7 +317,6 @@ ${
 
   const generateCodeCosmetics = () => {
     const ingredientsHTML = generateIngredientsHTML(); // generowanie HTML dla składników
-
 
     const generateSpecialFeaturesList = () => {
       const { specialFeatures } = productData;
@@ -392,7 +391,8 @@ ${productData.cosmeticsDescription2}
 </section>
 
 ${
-  productData.ingredientsTable[0].ingredient !== "" ? `
+  productData.ingredientsTable[0].ingredient !== ""
+    ? `
     <section class="section">
     <div class="item item-12">
     <section class="text-item">
@@ -410,7 +410,9 @@ ${
     </section>
     </div>
     </section>
-    ` : ""}
+    `
+    : ""
+}
 
 <section class="section">
 <div class="item item-12">
@@ -423,25 +425,25 @@ ${productData.cosmeticsDescription4}
 </section>
 `;
 
-// .............
+    // .............
 
-const ingredientsHTML2 = productData.ingredientsTable
-.map((ingredient) => {
-  // Podstawowy składnik
-  let ingredientHTML = `
+    const ingredientsHTML2 = productData.ingredientsTable
+      .map((ingredient) => {
+        // Podstawowy składnik
+        let ingredientHTML = `
 <tr>
   <td><strong>${ingredient.ingredient}</strong></td>
   <td>${ingredient.ingredientValue}</td>
   <td>${ingredient.rws}</td>
 </tr>`;
 
-  // Dodatkowe linie składnika
-  if (
-    ingredient.additionalLines &&
-    ingredient.additionalLines.length > 0
-  ) {
-    ingredient.additionalLines.forEach((line) => {
-      ingredientHTML += `
+        // Dodatkowe linie składnika
+        if (
+          ingredient.additionalLines &&
+          ingredient.additionalLines.length > 0
+        ) {
+          ingredient.additionalLines.forEach((line) => {
+            ingredientHTML += `
     <tr>
       <td style="border-top: none; padding-top: 2px; padding-bottom: 2px;">
         ${line.ingredient}
@@ -453,16 +455,15 @@ const ingredientsHTML2 = productData.ingredientsTable
         ${line.rws}
       </td>
     </tr>`;
-    });
-  }
-  return ingredientHTML;
-})
-.join("");
+          });
+        }
+        return ingredientHTML;
+      })
+      .join("");
 
-const specialFeaturesHTML2 = generateSpecialFeaturesList();
+    const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
-
-const newHtmlToShop = `
+    const newHtmlToShop = `
 <div class="row">
     <div class="col-md-6">
        <div class="left-column">
@@ -473,7 +474,9 @@ const newHtmlToShop = `
     </div>
     <div class="col-md-6">
        <div class="right-column">
-            ${productData.ingredientsTable[0].ingredient !== "" ? `
+            ${
+              productData.ingredientsTable[0].ingredient !== ""
+                ? `
                 <div class="table-responsive">
                     <table class="table table-hover">
                        <thead class="table-lighter">
@@ -489,20 +492,16 @@ const newHtmlToShop = `
                     </table>
                 </div>
                 ${productData.tableEnd}
-            ` : ""}
+            `
+                : ""
+            }
            ${productData.cosmeticsDescription4}
        </div>
     </div>
 </div>`;
 
-
-
-
-
-
-    
-setHtmlToShop(replaceH2WithH3(newHtmlToShop));
-setHtmlToBl(newHtmlToBl);
+    setHtmlToShop(replaceH2WithH3(newHtmlToShop));
+    setHtmlToBl(newHtmlToBl);
 
     // console.log("Stan htmlToShop:", htmlToShop); // Może nie zaktualizować od razu przez asynchroniczność stanu
     // console.log("Stan htmlToBl:", htmlToBl);
@@ -526,7 +525,10 @@ setHtmlToBl(newHtmlToBl);
         await navigator.clipboard.writeText(productData.shortDescription);
         console.log("Kod krótkiego opisu  dla sklepu skopiowany do schowka.");
       } catch (err) {
-        console.error("Nie udało się skopiować kodu krótkiego opisu  dla sklepu:", err);
+        console.error(
+          "Nie udało się skopiować kodu krótkiego opisu  dla sklepu:",
+          err
+        );
       }
     } else {
       console.log("Brak wygenerowanego kodu krótkiego opisu dla sklepu.");
@@ -573,35 +575,37 @@ setHtmlToBl(newHtmlToBl);
           <div>
             <BasicInfo />
             <SpecialFeatures />
-            <div className={style.generator__editor}>
-              <ShortDescription setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <Tiptap setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <Ingredients setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <HowToUse setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <Contraindications setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <AdditionalInformation
-                setDescription={setDescription}
-                key={key}
-              />
-            </div>
-            <div className={style.generator__editor}>
-              <Storage setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <Producer setDescription={setDescription} key={key} />
-            </div>
-            <div className={style.generator__editor}>
-              <ResponsibleEntity setDescription={setDescription} key={key} />
+            <div className={style.generator__grid}>
+              <div className={style.generator__editor}>
+                <ShortDescription setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <Tiptap setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <Ingredients setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <HowToUse setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <Contraindications setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <AdditionalInformation
+                  setDescription={setDescription}
+                  key={key}
+                />
+              </div>
+              <div className={style.generator__editor}>
+                <Storage setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <Producer setDescription={setDescription} key={key} />
+              </div>
+              <div className={style.generator__editor}>
+                <ResponsibleEntity setDescription={setDescription} key={key} />
+              </div>
             </div>
             <div>
               <Table />
@@ -706,5 +710,3 @@ setHtmlToBl(newHtmlToBl);
 };
 
 export default ProductCodeGenerator;
-
-

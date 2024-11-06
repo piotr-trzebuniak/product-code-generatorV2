@@ -7,7 +7,11 @@
   font-family: "Lexend Deca", sans-serif;
   padding-bottom: 60px;
 
-
+&__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
 
   &__cosmetics {
     &-columns {
