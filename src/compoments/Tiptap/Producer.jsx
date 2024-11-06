@@ -24,7 +24,7 @@ export const Producer = ({ setDescription }) => {
       .join('<br>');
   
     // Umieść złączoną treść wewnątrz jednego znacznika <p>...</p>
-    return `${mergedContent}`;
+    return `<p>${mergedContent}</p>`;
   }
 
 
