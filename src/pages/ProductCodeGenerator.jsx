@@ -298,7 +298,7 @@ ${
       <h3>Informacja:</h3>
       ${productData.additionalInformation}
       <h4>Producent:</h4>
-      ${productData.producer.shop}
+      <p>${productData.producer.shop}</p>
       ${
         productData.responsibleEntity.shop
           ? `<p>${productData.responsibleEntity.shop}</p>`
