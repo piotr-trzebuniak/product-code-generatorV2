@@ -228,32 +228,29 @@ ${
     //   .join("");
 
     const ingredientsHTML2 = productData.ingredientsTable
-      .map((ingredient) => {
-        // Podstawowy składnik
-        let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
-        let ingredientValue = `${ingredient.ingredientValue}`;
-        let ingredientRws = `${ingredient.rws || ""}`;
-
-        // Dodatkowe linie składnika
-        if (
-          ingredient.additionalLines &&
-          ingredient.additionalLines.length > 0
-        ) {
-          ingredient.additionalLines.forEach((line) => {
-            ingredientName += `<br>${line.ingredient}`;
-            ingredientValue += `<br>${line.ingredientValue}`;
-            ingredientRws += `<br>${line.rws || "&lt;&gt;"}`;
-          });
-        }
-
-        return `
-      <tr>
-        <td>${ingredientName}</td>
-        <td>${ingredientValue}</td>
-        <td>${ingredientRws}</td>
-      </tr>`;
-      })
-      .join("");
+    .map((ingredient) => {
+      // Podstawowy składnik
+      let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
+      let ingredientValue = `${ingredient.ingredientValue}`;
+      let ingredientRws = ingredient.rws ? `${ingredient.rws}` : '';
+  
+      // Dodatkowe linie składnika
+      if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
+        ingredient.additionalLines.forEach((line) => {
+          ingredientName += `<br>${line.ingredient}`;
+          ingredientValue += `<br>${line.ingredientValue}`;
+          ingredientRws += `<br>${line.rws || ''}`;
+        });
+      }
+  
+      return `
+        <tr>
+          <td>${ingredientName}</td>
+          <td>${ingredientValue}</td>
+          <td>${ingredientRws}</td>
+        </tr>`;
+    })
+    .join("");
 
     const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
