@@ -1,10 +1,11 @@
 .specialFeatures {
     h3 {
-      margin: 2em 0 1em 0;
+      margin: 0 0 1em 0;
     }
     &__checkboxes {
+      padding-top: 1em;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     &__checkbox {
       display: flex;

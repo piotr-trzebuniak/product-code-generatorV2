@@ -1,13 +1,15 @@
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
+import { useEffect } from "react";
 
 
-export const Producer = ({ setDescription }) => {
+export const Producer = ({ setDescription, initialContent }) => {
   const dispatch = useDispatch()
+  const productData = useSelector((state) => state.product.product);
 
 
   function mergeParagraphsToSingleWithBreaks(input) {
@@ -30,7 +32,7 @@ export const Producer = ({ setDescription }) => {
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: ``,
+    content: initialContent || productData.producer.bl || "",
     
 
     onUpdate: ({ editor }) => {
@@ -41,10 +43,15 @@ export const Producer = ({ setDescription }) => {
 
       // dispatch(updateProduct({ producer: cleanedHtml }));
       dispatch(updateProduct({ producer: { shop: shopHtml, bl: html } }));
-      console.log(html);
       setDescription(html);
     },
   });
+
+  useEffect(() => {
+    if (editor && productData.producer !== editor.getHTML()) {
+      editor.commands.setContent(productData.producer.bl || "");
+    }
+  }, [productData.producer.bl, editor]); 
 
   return (
     <>

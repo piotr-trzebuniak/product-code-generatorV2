@@ -3,14 +3,35 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1400px;
-  text-align: center;
   font-family: "Lexend Deca", sans-serif;
   padding-bottom: 60px;
+  text-align: center;
+
+  // h2 {
+  //   text-align: center;
+  // }
 
 &__grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+&__grid2 {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+}
+
+&__selects {
+  display: flex;
+  gap: 1em;
+}
+&__select {
+  width: 100%;
+
+  h4 {
+    margin: 1em 0;
+  }
 }
 
   &__cosmetics {
@@ -23,7 +44,6 @@
   
 
   &__editor {
-    margin: 2em 0;
     text-align: left;
     h4 {
       text-align: center;
@@ -54,6 +74,7 @@
     &-btns {
       margin-top: 2em;
       width: 100%;
+      text-align: center;
 
       button {
         min-width: 40%;
@@ -63,6 +84,7 @@
 
   &__content {
     margin-top: 2em;
+    padding: 1em;
   }
   &__table {
     margin-top: 2em;

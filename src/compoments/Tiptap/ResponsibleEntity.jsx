@@ -1,13 +1,15 @@
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
+import { useEffect } from "react";
 
 
-export const ResponsibleEntity = ({ setDescription }) => {
+export const ResponsibleEntity = ({ setDescription, initialContent }) => {
   const dispatch = useDispatch()
+  const productData = useSelector((state) => state.product.product);
 
   function mergeParagraphsToSingleWithBreaks(input) {
     // Znajdź wszystkie treści wewnątrz znaczników <p>...</p>
@@ -28,20 +30,24 @@ export const ResponsibleEntity = ({ setDescription }) => {
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: ``,
+    content: initialContent,
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
-      console.log(`${html}: 'first'`)
 
       const blHtml = html;
       const shopHtml = mergeParagraphsToSingleWithBreaks(html);
 
       dispatch(updateProduct({ responsibleEntity: { shop: shopHtml, bl: blHtml } }));
-      console.log(html);
       setDescription(html);
     },
   });
+
+  useEffect(() => {
+    if (editor && productData.responsibleEntity !== editor.getHTML()) {
+      editor.commands.setContent(productData.responsibleEntity.bl || "");
+    }
+  }, [productData.responsibleEntity.bl, editor]); 
 
   return (
     <>

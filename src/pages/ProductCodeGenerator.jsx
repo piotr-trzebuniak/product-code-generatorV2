@@ -27,6 +27,10 @@ import { CosmeticsDesc1 } from "../compoments/Tiptap/CosmeticsDesc1";
 import { CosmeticsDesc2 } from "../compoments/Tiptap/CosmeticsDesc2";
 import { CosmeticsDesc3 } from "../compoments/Tiptap/CosmeticsDesc3";
 import { CosmeticsDesc4 } from "../compoments/Tiptap/CosmeticsDesc4";
+import SelectProducers from "../compoments/SelectProducers/SelectProducers";
+import { Bulletpoints } from "../compoments/Tiptap/Bulletpoints";
+import SelectIngredient from "../compoments/SelectIngredient/SelectIngredient";
+import SelectResponsibleEntity from "../compoments/SelectResponsibleEntity/SelectResponsibleEntity";
 
 const ProductCodeGenerator = () => {
   const [htmlToShop, setHtmlToShop] = useState("");
@@ -177,6 +181,11 @@ ${productData.tableEnd}
 <div class="item item-12">
 <section class="text-item">
 ${specialFeaturesHTML}
+${
+  productData.bulletpoints !== ""
+    ? `<h2>Dlaczego warto stosować?:</h2>${productData.bulletpoints}`
+    : ""
+}
 <h2>Składniki:</h2>
 ${productData.ingredients}
 <h2>Informacja:</h2>
@@ -228,29 +237,32 @@ ${
     //   .join("");
 
     const ingredientsHTML2 = productData.ingredientsTable
-    .map((ingredient) => {
-      // Podstawowy składnik
-      let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
-      let ingredientValue = `${ingredient.ingredientValue}`;
-      let ingredientRws = ingredient.rws ? `${ingredient.rws}` : '';
-  
-      // Dodatkowe linie składnika
-      if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
-        ingredient.additionalLines.forEach((line) => {
-          ingredientName += `<br>${line.ingredient}`;
-          ingredientValue += `<br>${line.ingredientValue}`;
-          ingredientRws += `<br>${line.rws || ''}`;
-        });
-      }
-  
-      return `
+      .map((ingredient) => {
+        // Podstawowy składnik
+        let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
+        let ingredientValue = `${ingredient.ingredientValue}`;
+        let ingredientRws = ingredient.rws ? `${ingredient.rws}` : "";
+
+        // Dodatkowe linie składnika
+        if (
+          ingredient.additionalLines &&
+          ingredient.additionalLines.length > 0
+        ) {
+          ingredient.additionalLines.forEach((line) => {
+            ingredientName += `<br>${line.ingredient}`;
+            ingredientValue += `<br>${line.ingredientValue}`;
+            ingredientRws += `<br>${line.rws || ""}`;
+          });
+        }
+
+        return `
         <tr>
           <td>${ingredientName}</td>
           <td>${ingredientValue}</td>
           <td>${ingredientRws}</td>
         </tr>`;
-    })
-    .join("");
+      })
+      .join("");
 
     const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
@@ -286,6 +298,11 @@ ${
   </div>
   <div class="col-md-6">
     <div class="right-column">
+          ${
+        productData.bulletpoints
+          ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
+          : ""
+      }
       <h3>Sposób użycia:</h3>
       ${productData.howToUse}
       <h3>Przeciwwskazania:</h3>
@@ -298,7 +315,7 @@ ${
       <p>${productData.producer.shop}</p>
       ${
         productData.responsibleEntity.shop
-          ? `<p>${productData.responsibleEntity.shop}</p>`
+          ? `<h2>Podmiot odpowiedzialny:</h2><p>${productData.responsibleEntity.shop}</p>`
           : ""
       }
     </div>
@@ -474,6 +491,7 @@ ${productData.cosmeticsDescription4}
             ${
               productData.ingredientsTable[0].ingredient !== ""
                 ? `
+                <h3>Wartości odżywcze:</h3> 
                 <div class="table-responsive">
                     <table class="table table-hover">
                        <thead class="table-lighter">
@@ -570,12 +588,14 @@ ${productData.cosmeticsDescription4}
       <div className={style.generator__content}>
         {type === "supplements" && (
           <div>
-            <BasicInfo />
-            <SpecialFeatures />
             <div className={style.generator__grid}>
-              <div className={style.generator__editor}>
-                <ShortDescription setDescription={setDescription} key={key} />
-              </div>
+              <BasicInfo />
+              <SpecialFeatures />
+            </div>
+            <div className={style.generator__editor}>
+              <ShortDescription setDescription={setDescription} key={key} />
+            </div>
+            <div className={style.generator__grid2}>
               <div className={style.generator__editor}>
                 <Tiptap setDescription={setDescription} key={key} />
               </div>
@@ -597,13 +617,41 @@ ${productData.cosmeticsDescription4}
               <div className={style.generator__editor}>
                 <Storage setDescription={setDescription} key={key} />
               </div>
-              <div className={style.generator__editor}>
-                <Producer setDescription={setDescription} key={key} />
+              <div className={style.generator__select}>
+                <h4>Lista producentów</h4>
+                <SelectProducers />
+              </div>
+              <div className={style.generator__select}>
+                <h4>Lista podmiotów odpowiedzialnych</h4>
+                <SelectResponsibleEntity />
+              </div>
+              <div className={style.generator__select}>
+                <h4>Lista składników</h4>
+                <SelectIngredient />
               </div>
               <div className={style.generator__editor}>
-                <ResponsibleEntity setDescription={setDescription} key={key} />
+                <Producer
+                  setDescription={setDescription}
+                  key={key}
+                  initialContent={productData.producer.bl}
+                />
+              </div>
+              <div className={style.generator__editor}>
+                <ResponsibleEntity
+                  setDescription={setDescription}
+                  key={key}
+                  initialContent={productData.responsibleEntity.bl}
+                />
+              </div>
+              <div className={style.generator__editor}>
+                <Bulletpoints
+                  setDescription={setDescription}
+                  key={key}
+                  initialContent={productData.bulletpoints}
+                />
               </div>
             </div>
+
             <div>
               <Table />
               <Button onClick={handleAddIngredient}>Dodaj składnik</Button>
