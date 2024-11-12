@@ -299,10 +299,10 @@ ${
   <div class="col-md-6">
     <div class="right-column">
           ${
-        productData.bulletpoints
-          ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
-          : ""
-      }
+            productData.bulletpoints
+              ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
+              : ""
+          }
       <h3>Sposób użycia:</h3>
       ${productData.howToUse}
       <h3>Przeciwwskazania:</h3>
@@ -520,6 +520,31 @@ ${productData.cosmeticsDescription4}
 
     // console.log("Stan htmlToShop:", htmlToShop); // Może nie zaktualizować od razu przez asynchroniczność stanu
     // console.log("Stan htmlToBl:", htmlToBl);
+
+    const data = {
+      SKU: "test1",
+      Html: "test2",
+      PhotoUrl1: "test3",
+      PhotoUrl2: "test4",
+    };
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbylSNWhcUa8vma7ADpAj-DUPF_BCEbVVLw3iNFpjZOOCszYz0HGsaBSilmG8PBkC4x6/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Ustawiamy nagłówek, by wskazać na JSON
+        },
+        body: JSON.stringify(data), // Konwertujemy obiekt na JSON
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const copyHtmlToShop = async () => {
