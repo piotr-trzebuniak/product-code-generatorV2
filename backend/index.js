@@ -5,6 +5,9 @@ import fetch from 'node-fetch';
 
 const app = express();
 
+
+const port = process.env.PORT || 3000
+
 // Middleware
 app.use(cors()); // Rozwiązuje problem CORS
 app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądania
@@ -35,7 +38,7 @@ app.post('/submit', async (req, res) => {
 });
 
 // Uruchom serwer
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server listening on port 3000!');
 });
 
