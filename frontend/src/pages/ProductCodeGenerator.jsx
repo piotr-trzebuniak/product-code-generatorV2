@@ -82,7 +82,7 @@ const ProductCodeGenerator = () => {
 
     console.log(data);
 
-    fetch("https://product-code-generator-backend.onrender.com", {
+    fetch("http://localhost:3000/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
