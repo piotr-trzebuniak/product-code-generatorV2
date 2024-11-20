@@ -32,7 +32,7 @@ app.post('/submit', async (req, res) => {
     console.log('Received data:', data);
 
     // Wyślij dane do Google Apps Script
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbz2Cd3yG4DEumedadL7j_jl1MgR3E1tUx9Dz7l_Wa6DUSdpdv55ezD8abrZ14CuNTVr/exec';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwiPeD4za0BLqQ1v8MxgH7ubFkld6KOuYTAFre7d7dYr9lU2-l8RxFzGYhTvJpv19yw/exec';
 
     const response = await fetch(scriptUrl, {
       method: 'POST',

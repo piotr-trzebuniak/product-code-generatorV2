@@ -154,8 +154,7 @@ ${productData.description}
 
     const responsibleEntityBl = productData.responsibleEntity.bl;
 
-    const newHtmlToBl = `
-<section class="section">
+    const newHtmlToBl = `<section class="section">
 <div class="item item-12">
 <section class="text-item">
 <h1>${productData.productName}</h1>
@@ -229,8 +228,7 @@ ${
 }
 </section>
 </div>
-</section>
-`;
+</section>`;
 
 
     const ingredientsHTML2 = productData.ingredientsTable
@@ -263,8 +261,7 @@ ${
 
     const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
-    const newHtmlToShop = `
-<div class="row">
+    const newHtmlToShop = `<div class="row">
   <div class="col-md-6">
     <div class="left-column">
     ${descriptionHTML}
