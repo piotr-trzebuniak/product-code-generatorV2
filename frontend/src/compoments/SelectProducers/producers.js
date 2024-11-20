@@ -567,4 +567,12 @@ export const producers = [
     },
     label: "ZinZino",
   },
+  {
+    index: 72,
+    value: {
+      shop: "<p>Doctor's Best, Inc.<br>California, 92612<br>Stany Zjednoczone</p>",
+      bl: "<p>Doctor's Best, Inc.</p><p>California, 92612</p><p>Stany Zjednoczone</p>",
+    },
+    label: "Doctor's Best",
+  }
 ];
