@@ -4,9 +4,15 @@ const initialState = {
   product: {
     productSku: "",
     productName: "",
-    size: "",
-    portion: "",
-    portionQuantity: "",
+    size: {
+      sizeAmount: 0, 
+      unit: ""
+    },
+    portion: {
+      portionAmount: 0, 
+      unit: ""
+    },
+    portionQuantity: 0,
     url1: "",
     url2: "",
     specialFeatures: {

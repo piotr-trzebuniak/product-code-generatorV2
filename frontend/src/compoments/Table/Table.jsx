@@ -4,7 +4,8 @@ import Input from "../Input/Input";
 import { useDispatch, useSelector } from "react-redux";
 import { removeIngredient, updateProduct } from "../../redux/productSlice";
 import Button from "../Button/Button";
-import deleteIcon from '../../assets/delete-button.png'
+import deleteIcon from "../../assets/delete-button.png";
+import addIcon from "../../assets/add-button.png";
 
 const Table = () => {
   const dispatch = useDispatch();
@@ -88,7 +89,7 @@ const Table = () => {
         <Input value="Składniki" />
         <Input
           placeholder="Wielkość porcji"
-          value={portion}
+          value={`${portion.portionAmount} ${portion.unit}`}
           onChange={handlePortionChange}
         />
         <Input value="RWS" />
@@ -128,57 +129,69 @@ const Table = () => {
                 handleIngredientChange(ingredientIndex, "rws", e.target.value)
               }
             />
+            <img
+              className={style["table__ingredient-add"]}
+              src={addIcon}
+              alt=""
+              onClick={() => handleAddLine(ingredientIndex)}
+            />
           </div>
 
-          {ingredient.additionalLines && Array.isArray(ingredient.additionalLines) && ingredient.additionalLines.map((line, lineIndex) => (
-            <div
-              key={line.lineIndex}
-              className={style["table__ingredient-row"]}
-            >
-              <Input
-                placeholder={`Dodatkowa linia ${line.lineIndex}`}
-                value={line.ingredient}
-                onChange={(e) =>
-                  handleAdditionalLineChange(
-                    ingredientIndex,
-                    lineIndex,
-                    "ingredient",
-                    e.target.value
-                  )
-                }
-              />
-              <Input
-                value={line.ingredientValue}
-                onChange={(e) =>
-                  handleAdditionalLineChange(
-                    ingredientIndex,
-                    lineIndex,
-                    "ingredientValue",
-                    e.target.value
-                  )
-                }
-              />
-              <Input
-                value={line.rws}
-                onChange={(e) =>
-                  handleAdditionalLineChange(
-                    ingredientIndex,
-                    lineIndex,
-                    "rws",
-                    e.target.value
-                  )
-                }
-              />
-              <img className={style["table__ingredient-delete"]} src={deleteIcon} alt="" onClick={() => handleRemoveLine(ingredientIndex, lineIndex)} />
-            </div>
-          ))}
-
+          {ingredient.additionalLines &&
+            Array.isArray(ingredient.additionalLines) &&
+            ingredient.additionalLines.map((line, lineIndex) => (
+              <div
+                key={line.lineIndex}
+                className={style["table__ingredient-row"]}
+              >
+                <Input
+                  placeholder={`Dodatkowa linia ${line.lineIndex}`}
+                  value={line.ingredient}
+                  onChange={(e) =>
+                    handleAdditionalLineChange(
+                      ingredientIndex,
+                      lineIndex,
+                      "ingredient",
+                      e.target.value
+                    )
+                  }
+                />
+                <Input
+                  value={line.ingredientValue}
+                  onChange={(e) =>
+                    handleAdditionalLineChange(
+                      ingredientIndex,
+                      lineIndex,
+                      "ingredientValue",
+                      e.target.value
+                    )
+                  }
+                />
+                <Input
+                  value={line.rws}
+                  onChange={(e) =>
+                    handleAdditionalLineChange(
+                      ingredientIndex,
+                      lineIndex,
+                      "rws",
+                      e.target.value
+                    )
+                  }
+                />
+                <img
+                  className={style["table__ingredient-delete"]}
+                  src={deleteIcon}
+                  alt=""
+                  onClick={() => handleRemoveLine(ingredientIndex, lineIndex)}
+                />
+              </div>
+            ))}
+{/* 
           <Button onClick={() => handleAddLine(ingredientIndex)}>
             Dodaj linię
-          </Button>
+          </Button> */}
         </div>
       ))}
-
     </div>
   );
 };

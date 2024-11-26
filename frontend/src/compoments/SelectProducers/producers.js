@@ -574,5 +574,29 @@ export const producers = [
       bl: "<p>Doctor's Best, Inc.</p><p>California, 92612</p><p>Stany Zjednoczone</p>",
     },
     label: "Doctor's Best",
-  }
+  },
+  {
+    index: 73,
+    value: {
+      shop: "<p>Activlab Sp. z o.o.<br>ul. Łany 6<br>32-700 Bochnia<br>Polska</p>",
+      bl: "<p>Activlab Sp. z o.o.</p><p>ul. Łany 6</p><p>32-700 Bochnia</p><p>Polska</p>",
+    },
+    label: "Activlab",
+  },
+  {
+    index: 74,
+    value: {
+      shop: "<p>Doctor's Best, Inc.<br>California, 92612<br>Stany Zjednoczone</p>",
+      bl: "<p>Doctor's Best, Inc.</p><p>California, 92612</p><p>Stany Zjednoczone</p>",
+    },
+    label: "Doctor's Best",
+  },
+  {
+    index: 75,
+    value: {
+      shop: "<p>7FIT Spółka Akcyjna<br>Stanowice 82A<br>55-200 Oława<br>Polska</p>",
+      bl: "<p>7FIT Spółka Akcyjna</p><p>Stanowice 82A</p><p>55-200 Oława</p><p>Polska</p>",
+    },
+    label: "7Nutrition",
+  },
 ];

@@ -26,7 +26,7 @@ const BasicInfoCosmetics = () => {
         dispatch(updateProduct({ productName: e.target.value }));
       }}
     />
-        <Input
+        {/* <Input
       placeholder="url - zdjęcie 1"
       value={productData.url1}
       onChange={(e) =>
@@ -39,7 +39,7 @@ const BasicInfoCosmetics = () => {
       onChange={(e) =>
         dispatch(updateProduct({ url2: e.target.value }))
       }
-    />
+    /> */}
     
 
   </div>

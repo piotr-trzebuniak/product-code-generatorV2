@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./ProductCodeGenerator.module.scss";
 import Input from "../compoments/Input/Input";
 import Button from "../compoments/Button/Button";
+import RwsCalc from "../compoments/RwsCalc/RwsCalc"; 
 import BasicInfo from "../compoments/BasicInfo/BasicInfo";
 import SpecialFeatures from "../compoments/SpecialFeatures/SpecialFeatures";
 import { useDispatch, useSelector } from "react-redux";
@@ -62,7 +63,7 @@ const ProductCodeGenerator = () => {
   const generateIngredientsHTML = () => {
     let ingredientsHTML = "";
     productData.ingredientsTable.forEach((ingredient) => {
-      ingredientsHTML += `<p><b>${ingredient.ingredient}</b>&nbsp; &nbsp;${ingredient.ingredientValue}&nbsp; &nbsp;${ingredient.rws}</p>`;
+      ingredientsHTML += `<p><strong>${ingredient.ingredient}</strong>&nbsp; &nbsp;${ingredient.ingredientValue}&nbsp; &nbsp;${ingredient.rws}</p>`;
       if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
         ingredient.additionalLines.forEach((line) => {
           ingredientsHTML += `<p>${line.ingredient}&nbsp; &nbsp;${line.ingredientValue}&nbsp; &nbsp;${line.rws}</p>`;
@@ -76,8 +77,8 @@ const ProductCodeGenerator = () => {
     const data = {
       Sku: productData.productSku,
       Html: htmlToBl,
-      Photo1: productData.url1,
-      Photo2: productData.url2,
+      // Photo1: productData.url1,
+      // Photo2: productData.url2,
     };
 
     console.log(data);
@@ -98,7 +99,7 @@ const ProductCodeGenerator = () => {
         console.error("Error:", error);
       });
 
-      toast.success("Kod wysłany do arkusza google...");
+    toast.success("Kod wysłany do arkusza google...");
   };
 
   const generateCode = () => {
@@ -171,9 +172,9 @@ ${productData.shortDescription}
 <div class="item item-6">
 <section class="text-item">
 <h2>Skład</h2>
-<p>Wielkość opakowania:<b> ${productData.size}</b></p>
-<p>Porcja jednorazowa: <b> ${productData.portion}</b></p>
-<p>Ilość porcji w opakowaniu: <b> ${productData.portionQuantity}</b></p>
+<p>Wielkość opakowania:<strong> ${productData.size.sizeAmount} ${productData.size.unit}</strong></p>
+<p>Porcja jednorazowa: <strong> ${productData.portion.portionAmount} ${productData.portion.unit}</strong></p>
+<p>Ilość porcji w opakowaniu: <strong> ${(productData.size.sizeAmount / productData.portion.portionAmount).toFixed(0)}</strong></p>
 <h2>Sposób użycia:</h2>
 ${productData.howToUse}
 </section>
@@ -197,10 +198,10 @@ ${productData.storage}
 <section class="section">
 <div class="item item-12">
 <section class="text-item">
-<p><b>Składniki&nbsp; &nbsp;${productData.portion}&nbsp; &nbsp;RWS</b></p>
-<p><b>_________________________________________________</b></p>
+<p><strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${productData.portion.unit}&nbsp; &nbsp;RWS</strong></p>
+<p><strong>_________________________________________________</strong></p>
 ${ingredientsHTML} <!-- Wstawienie wygenerowanego HTML składników -->
-<p><b>_________________________________________________</b></p>
+<p><strong>_________________________________________________</strong></p>
 ${productData.tableEnd}
 </section>
 </div>
@@ -230,90 +231,123 @@ ${
 </div>
 </section>`;
 
+//     const ingredientsHTML2 = productData.ingredientsTable
+//       .map((ingredient) => {
+//         // Podstawowy składnik
+//         let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
+//         let ingredientValue = `${ingredient.ingredientValue}`;
+//         let ingredientRws = ingredient.rws ? `${ingredient.rws}` : "";
 
-    const ingredientsHTML2 = productData.ingredientsTable
-      .map((ingredient) => {
-        // Podstawowy składnik
-        let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
-        let ingredientValue = `${ingredient.ingredientValue}`;
-        let ingredientRws = ingredient.rws ? `${ingredient.rws}` : "";
+//         // Dodatkowe linie składnika
+//         if (
+//           ingredient.additionalLines &&
+//           ingredient.additionalLines.length > 0
+//         ) {
+//           ingredient.additionalLines.forEach((line) => {
+//             ingredientName += `<br>${line.ingredient}`;
+//             ingredientValue += `<br>${line.ingredientValue}`;
+//             ingredientRws += `<br>${line.rws || ""}`;
+//           });
+//         }
 
-        // Dodatkowe linie składnika
-        if (
-          ingredient.additionalLines &&
-          ingredient.additionalLines.length > 0
-        ) {
-          ingredient.additionalLines.forEach((line) => {
-            ingredientName += `<br>${line.ingredient}`;
-            ingredientValue += `<br>${line.ingredientValue}`;
-            ingredientRws += `<br>${line.rws || ""}`;
-          });
-        }
+//         return `
+// <tr>
+// <td>${ingredientName}</td>
+// <td>${ingredientValue}</td>
+// <td>${ingredientRws}</td>
+// </tr>`;
+//       })
+//       .join("");
 
-        return `
-        <tr>
-          <td>${ingredientName}</td>
-          <td>${ingredientValue}</td>
-          <td>${ingredientRws}</td>
-        </tr>`;
-      })
-      .join("");
+
+
+const ingredientsHTML2 = productData.ingredientsTable
+  .map((ingredient) => {
+    // Podstawowy składnik
+    let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
+    let ingredientValue = `${ingredient.ingredientValue}`;
+    let ingredientRws = ingredient.rws ? `${ingredient.rws}` : "";
+
+    // Dodatkowe linie składnika
+    if (
+      ingredient.additionalLines &&
+      ingredient.additionalLines.length > 0
+    ) {
+      ingredient.additionalLines.forEach((line) => {
+        ingredientName += `<br>${line.ingredient}`;
+        ingredientValue += `<br>${line.ingredientValue}`;
+        ingredientRws += line.rws ? `<br>${line.rws}` : "";
+      });
+    }
+
+    // Usuń zbędne <br> na końcu wartości, jeśli rws jest pusty
+    ingredientRws = ingredientRws.replace(/(<br>)+$/, "");
+
+    return `
+<tr>
+<td>${ingredientName}</td>
+<td>${ingredientValue}</td>
+<td>${ingredientRws}</td>
+</tr>`;
+  })
+  .join("");
 
     const specialFeaturesHTML2 = generateSpecialFeaturesList();
 
-    const newHtmlToShop = `<div class="row">
-  <div class="col-md-6">
-    <div class="left-column">
-    ${descriptionHTML}
-      <h3>Skład:</h3>
-      <p>Wielkość opakowania: <strong>${productData.size}</strong></p>
-      <p>Porcja jednorazowa: <strong>${productData.portion}</strong></p>
-      <p>Ilość porcji w opakowaniu: <strong>${
-        productData.portionQuantity
-      }</strong></p>
-      <div class="table-responsive">
-        <table class="table table-hover">
-          <thead class="table-lighter">
-            <tr>
-              <th>Składniki</th>
-              <th>${productData.portion}</th>
-              <th>RWS</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${ingredientsHTML2}
-          </tbody>
-        </table>
-      </div>
-      ${productData.tableEnd}
-      <h3>Składniki:</h3>
-      <p>${productData.ingredients}</p>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="right-column">
-          ${
-            productData.bulletpoints
-              ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
-              : ""
-          }
-      <h3>Sposób użycia:</h3>
-      ${productData.howToUse}
-      <h3>Przeciwwskazania:</h3>
-      ${productData.contraindications}
-      <h3>Przechowywanie:</h3>
-      ${productData.storage}
-      <h3>Informacja:</h3>
-      ${productData.additionalInformation}
-      <h4>Producent:</h4>
-      <p>${productData.producer.shop}</p>
-      ${
-        productData.responsibleEntity.shop
-          ? `<h2>Podmiot odpowiedzialny:</h2><p>${productData.responsibleEntity.shop}</p>`
-          : ""
-      }
-    </div>
-  </div>
+    const newHtmlToShop = `
+<div class="row">
+<div class="col-md-6">
+<div class="left-column">
+  ${descriptionHTML}
+<h3>Skład:</h3>
+<p>Wielkość opakowania: <strong>${productData.size.sizeAmount} ${productData.size.unit}</strong></p>
+<p>Porcja jednorazowa: <strong>${productData.portion.portionAmount} ${productData.portion.unit}</strong></p>
+<p>Ilość porcji w opakowaniu: <strong>${
+(productData.size.sizeAmount / productData.portion.portionAmount).toFixed(0)
+}</strong></p>
+<div class="table-responsive">
+<table class="table table-hover">
+<thead class="table-lighter">
+<tr>
+<th>Składniki</th>
+<th>${productData.portion.portionAmount} ${productData.portion.unit}</th>
+<th>RWS</th>
+</tr>
+</thead>
+<tbody>
+${ingredientsHTML2}
+</tbody>
+</table>
+</div>
+${productData.tableEnd}
+<h3>Składniki:</h3>
+<p>${productData.ingredients}</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="right-column">
+${
+  productData.bulletpoints
+    ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
+    : ""
+}
+<h3>Sposób użycia:</h3>
+${productData.howToUse}
+<h3>Przeciwwskazania:</h3>
+${productData.contraindications}
+<h3>Przechowywanie:</h3>
+${productData.storage}
+<h3>Informacja:</h3>
+${productData.additionalInformation}
+<h4>Producent:</h4>
+${productData.producer.shop}
+${
+  productData.responsibleEntity.shop
+    ? `<h2>Podmiot odpowiedzialny:</h2>${productData.responsibleEntity.shop}`
+    : ""
+}
+</div>
+</div>
 </div>`;
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
@@ -407,14 +441,14 @@ ${
     <div class="item item-12">
     <section class="text-item">
       <p>
-        <b>Składniki&nbsp; &nbsp;${productData.portion}&nbsp; &nbsp;RWS</b>
+        <strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${productData.portion.unit}&nbsp; &nbsp;RWS</strong>
       </p>
       <p>
-        <b>_________________________________________________</b>
+        <strong>_________________________________________________</strong>
       </p>
       ${ingredientsHTML}
       <p>
-        <b>_________________________________________________</b>
+        <strong>_________________________________________________</strong>
       </p>
       ${productData.tableEnd}
     </section>
@@ -475,40 +509,40 @@ ${productData.cosmeticsDescription4}
 
     const newHtmlToShop = `
 <div class="row">
-    <div class="col-md-6">
-       <div class="left-column">
+<div class="col-md-6">
+<div class="left-column">
           ${productData.cosmeticsDescription1}
           ${productData.cosmeticsDescription2}
           ${productData.cosmeticsDescription3}
-       </div>
-    </div>
-    <div class="col-md-6">
-       <div class="right-column">
-            ${
-              productData.ingredientsTable[0].ingredient !== ""
-                ? `
-                <h3>Wartości odżywcze:</h3> 
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                       <thead class="table-lighter">
-                          <tr>
-                             <th>Składniki</th>
-                             <th>${productData.portion}</th>
-                             <th>RWS</th>
-                          </tr>
-                       </thead>
-                       <tbody>
-                          ${ingredientsHTML2}
-                       </tbody>
-                    </table>
-                </div>
-                ${productData.tableEnd}
+</div>
+</div>
+<div class="col-md-6">
+<div class="right-column">
+${
+productData.ingredientsTable[0].ingredient !== ""
+? `
+<h3>Wartości odżywcze:</h3> 
+<div class="table-responsive">
+<table class="table table-hover">
+<thead class="table-lighter">
+<tr>
+<th>Składniki</th>
+<th>${productData.portion}</th>
+<th>RWS</th>
+</tr>
+</thead>
+<tbody>
+   ${ingredientsHTML2}
+</tbody>
+</table>
+</div>
+    ${productData.tableEnd}
             `
                 : ""
             }
            ${productData.cosmeticsDescription4}
-       </div>
-    </div>
+</div>
+</div>
 </div>`;
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
@@ -595,6 +629,22 @@ ${productData.cosmeticsDescription4}
             <div className={style.generator__editor}>
               <ShortDescription setDescription={setDescription} key={key} />
             </div>
+
+            <div>
+              <RwsCalc />
+              <Table />
+              <Button onClick={handleAddIngredient}>Dodaj składnik</Button>
+              <Button
+                className={style.generator__deleteBtn}
+                onClick={handleRemoveIngredient}
+              >
+                Usuń składnik
+              </Button>
+              <div className={style.generator__editor}>
+                <TableEnd setDescription={setDescription} key={key} />
+              </div>
+            </div>
+
             <div className={style.generator__grid2}>
               <div className={style.generator__editor}>
                 <Tiptap setDescription={setDescription} key={key} />
@@ -653,26 +703,13 @@ ${productData.cosmeticsDescription4}
             </div>
 
             <div>
-              <Table />
-              <Button onClick={handleAddIngredient}>Dodaj składnik</Button>
-              <Button
-                className={style.generator__deleteBtn}
-                onClick={handleRemoveIngredient}
-              >
-                Usuń składnik
-              </Button>
-              <div className={style.generator__editor}>
-                <TableEnd setDescription={setDescription} key={key} />
-              </div>
               <Button
                 onClick={generateCode}
                 className={style.generator__generateBtn}
               >
                 Generuj kod
               </Button>
-              <Button onClick={sendToGoogleSheets}>
-                  Dodaj kod do arkusza
-                </Button>
+              <Button onClick={sendToGoogleSheets}>Dodaj kod do arkusza</Button>
               <Button onClick={resetForm} className={style.generator__resetBtn}>
                 Resetuj formularz
               </Button>
@@ -736,9 +773,7 @@ ${productData.cosmeticsDescription4}
               >
                 Generuj kod
               </Button>
-              <Button onClick={sendToGoogleSheets}>
-                  Dodaj kod do arkusza
-                </Button>
+              <Button onClick={sendToGoogleSheets}>Dodaj kod do arkusza</Button>
               <Button onClick={resetForm} className={style.generator__resetBtn}>
                 Resetuj formularz
               </Button>
