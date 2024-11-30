@@ -58,7 +58,13 @@ const BasicInfo = () => {
           onChange={(e) =>
             dispatch(
               updateProduct({
-                portion: { ...productData.portion, portionAmount: e.target.value },
+                portion: {
+                  ...productData.portion,
+                  portionAmount: e.target.value,
+                },
+                portionQuantity: (
+                  productData.size.sizeAmount / e.target.value
+                ).toFixed(0),
               })
             )
           }
@@ -77,10 +83,10 @@ const BasicInfo = () => {
       </div>
       <Input
         placeholder="Ilość porcji w opakowaniu"
-        value={productData.portion.portionAmount ? (productData.size.sizeAmount / productData.portion.portionAmount).toFixed(0) : "Ilość porcji w opakowaniu"}
-        // onChange={(e) =>
-        //   dispatch(updateProduct({ portionQuantity: e.target.value }))
-        // }
+        value={productData.portionQuantity ? productData.portionQuantity : null}
+        onChange={(e) =>
+          dispatch(updateProduct({ portionQuantity: e.target.value }))
+        }
       />
       {/* <Input
         placeholder="url - zdjęcie 1"

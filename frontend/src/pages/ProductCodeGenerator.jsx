@@ -783,6 +783,9 @@ productData.ingredientsTable[0].ingredient !== ""
                 <Button onClick={copyHtmlToShop}>
                   Skopiuj kod HTML dla sklepu
                 </Button>
+                <Button onClick={copyShortDescToShop}>
+                  Skopiuj kod HTML krótkiego opisu dla sklepu
+                </Button>
                 <Button onClick={copyHtmlToBl}>
                   Skopiuj kod HTML dla baselinkera
                 </Button>
