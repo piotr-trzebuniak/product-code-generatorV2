@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,7 +8,7 @@ import MenuBar from "./MenuBar";
 import { useEffect } from "react";
 
 
-export const ResponsibleEntity = ({ setDescription, initialContent }) => {
+export const ResponsibleEntity = ({ initialContent }) => {
   const dispatch = useDispatch()
   const productData = useSelector((state) => state.product.product);
 
@@ -39,7 +40,6 @@ export const ResponsibleEntity = ({ setDescription, initialContent }) => {
       const shopHtml = mergeParagraphsToSingleWithBreaks(html);
 
       dispatch(updateProduct({ responsibleEntity: { shop: shopHtml, bl: blHtml } }));
-      setDescription(html);
     },
   });
 
@@ -50,12 +50,12 @@ export const ResponsibleEntity = ({ setDescription, initialContent }) => {
   }, [productData.responsibleEntity.bl, editor]); 
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Podmiot odpowiedzialny</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

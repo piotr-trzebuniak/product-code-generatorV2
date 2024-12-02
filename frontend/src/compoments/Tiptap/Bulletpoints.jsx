@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import style from './TextEditor.module.scss'
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
@@ -6,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
-export const Bulletpoints = ({ setDescription, initialContent }) => {
+export const Bulletpoints = ({ initialContent }) => {
   const dispatch = useDispatch();
 
   function removePTagsFromLists(html) {
@@ -16,7 +17,6 @@ export const Bulletpoints = ({ setDescription, initialContent }) => {
       (match, openTag, content, closeTag) => {
         // Usuwamy znaczniki <p> oraz </p> tylko wewnątrz list
         const cleanedContent = content.replace(/<\/?p>/g, "");
-        console.log("test");
         // Zwracamy całą strukturę z wyczyszczonymi <p>
         return `${openTag}${cleanedContent}${closeTag}`;
       }
@@ -35,8 +35,6 @@ export const Bulletpoints = ({ setDescription, initialContent }) => {
       const cleanedHtml = removePTagsFromLists(html);
 
       dispatch(updateProduct({ bulletpoints: cleanedHtml }));
-      console.log(html);
-      setDescription(html);
     },
   });
 
@@ -47,12 +45,12 @@ export const Bulletpoints = ({ setDescription, initialContent }) => {
   }, [productData.bulletpoints, editor]);
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Dlaczego warto stosować?</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

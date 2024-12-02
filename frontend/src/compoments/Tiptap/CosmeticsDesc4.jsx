@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
@@ -7,7 +8,7 @@ import MenuBar from "./MenuBar";
 
 
 
-export const CosmeticsDesc4 = ({ setDescription }) => {
+export const CosmeticsDesc4 = () => {
   const dispatch = useDispatch()
 
 
@@ -34,17 +35,16 @@ export const CosmeticsDesc4 = ({ setDescription }) => {
 
       dispatch(updateProduct({ cosmeticsDescription4: cleanedHtml }));
       // console.log(cleanedHtml);
-      setDescription(cleanedHtml);
     },
   });
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Akapit 4</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

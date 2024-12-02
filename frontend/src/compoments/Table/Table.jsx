@@ -186,10 +186,6 @@ const Table = () => {
                 />
               </div>
             ))}
-{/* 
-          <Button onClick={() => handleAddLine(ingredientIndex)}>
-            Dodaj linię
-          </Button> */}
         </div>
       ))}
     </div>

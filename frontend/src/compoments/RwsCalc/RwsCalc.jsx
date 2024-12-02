@@ -30,8 +30,6 @@ const RwsCalc = () => {
       setAmount(value); // Aktualizujemy wartość
       calculateRws(parseFloat(value), selectedIngredient?.value); // Obliczamy RWS, jeśli możliwe
     }
-
-    console.log(selectedIngredient.value)
   };
 
   const handleChange = (selectedOption) => {

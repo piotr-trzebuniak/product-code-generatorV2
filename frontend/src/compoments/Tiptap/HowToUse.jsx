@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
@@ -6,7 +7,7 @@ import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
 
-export const HowToUse = ({ setDescription }) => {
+export const HowToUse = () => {
   const dispatch = useDispatch()
 
   function removePTagsFromLists(html) {
@@ -14,7 +15,6 @@ export const HowToUse = ({ setDescription }) => {
     return html.replace(/(<ul[\s\S]*?>|<ol[\s\S]*?>)([\s\S]*?)(<\/ul>|<\/ol>)/g, (match, openTag, content, closeTag) => {
       // Usuwamy znaczniki <p> oraz </p> tylko wewnątrz list
       const cleanedContent = content.replace(/<\/?p>/g, "");
-      console.log('test')
       // Zwracamy całą strukturę z wyczyszczonymi <p>
       return `${openTag}${cleanedContent}${closeTag}`;
     });
@@ -29,18 +29,16 @@ export const HowToUse = ({ setDescription }) => {
       const cleanedHtml = removePTagsFromLists(html);
 
       dispatch(updateProduct({ howToUse: cleanedHtml }));
-      console.log(html);
-      setDescription(html);
     },
   });
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Sposób użycia:</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

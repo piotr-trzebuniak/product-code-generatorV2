@@ -26,22 +26,6 @@ const BasicInfoCosmetics = () => {
         dispatch(updateProduct({ productName: e.target.value }));
       }}
     />
-        {/* <Input
-      placeholder="url - zdjęcie 1"
-      value={productData.url1}
-      onChange={(e) =>
-        dispatch(updateProduct({ url1: e.target.value }))
-      }
-    />
-    <Input
-      placeholder="url - zdjęcie 2"
-      value={productData.url2}
-      onChange={(e) =>
-        dispatch(updateProduct({ url2: e.target.value }))
-      }
-    /> */}
-    
-
   </div>
   )
 }

@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
@@ -6,7 +7,7 @@ import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
 
-export const TableEnd = ({ setDescription }) => {
+export const TableEnd = () => {
   const dispatch = useDispatch()
 
   const editor = useEditor({
@@ -18,17 +19,15 @@ export const TableEnd = ({ setDescription }) => {
       const html = editor.getHTML();
 
       dispatch(updateProduct({ tableEnd: html }));
-      console.log(html);
-      setDescription(html);
     },
   });
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

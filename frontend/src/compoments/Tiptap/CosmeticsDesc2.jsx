@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
@@ -7,7 +8,7 @@ import MenuBar from "./MenuBar";
 
 
 
-export const CosmeticsDesc2 = ({ setDescription }) => {
+export const CosmeticsDesc2 = () => {
   const dispatch = useDispatch()
 
 
@@ -17,7 +18,6 @@ export const CosmeticsDesc2 = ({ setDescription }) => {
     return html.replace(/(<ul[\s\S]*?>|<ol[\s\S]*?>)([\s\S]*?)(<\/ul>|<\/ol>)/g, (match, openTag, content, closeTag) => {
       // Usuwamy znaczniki <p> oraz </p> tylko wewnątrz list
       const cleanedContent = content.replace(/<\/?p>/g, "");
-      console.log('test')
       // Zwracamy całą strukturę z wyczyszczonymi <p>
       return `${openTag}${cleanedContent}${closeTag}`;
     });
@@ -34,17 +34,16 @@ export const CosmeticsDesc2 = ({ setDescription }) => {
 
       dispatch(updateProduct({ cosmeticsDescription2: cleanedHtml }));
       // console.log(cleanedHtml);
-      setDescription(cleanedHtml);
     },
   });
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Akapit 2</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

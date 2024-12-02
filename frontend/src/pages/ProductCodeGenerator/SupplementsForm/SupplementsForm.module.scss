@@ -1,0 +1,27 @@
+.supplements {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+      }
+      &__grid2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+      }
+      &__editor {
+        text-align: left;
+        h4 {
+          text-align: center;
+          margin: 1em 0;
+        }
+      }
+
+      &__select {
+        width: 100%;
+      
+        h4 {
+          margin: 1em 0;
+        }
+      }
+}

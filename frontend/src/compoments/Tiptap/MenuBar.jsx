@@ -46,16 +46,6 @@ const MenuBar = ({ editor }) => {
           >
             <BsTypeH2 />
           </button>
-          {/* <button
-            onClick={() =>
-              editor.chain().focus().toggleHeading({ level: 3 }).run()
-            }
-            className={
-              editor.isActive("heading", { level: 3 }) ? "is_active" : ""
-            }
-          >
-            <BsTypeH3 className="heading3" />
-          </button> */}
           <button
             onClick={() => editor.chain().focus().toggleBulletList().run()}
             className={editor.isActive("bulletList") ? "is_active" : ""}

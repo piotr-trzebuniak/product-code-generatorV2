@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
@@ -7,7 +8,7 @@ import MenuBar from "./MenuBar";
 import React from "react";
 
 
-export const ShortDescription = ({ setDescription, resetDescription }) => {
+export const ShortDescription = () => {
   const dispatch = useDispatch()
 
   function removePTagsFromLists(html) {
@@ -31,26 +32,23 @@ export const ShortDescription = ({ setDescription, resetDescription }) => {
       const cleanedHtml = removePTagsFromLists(html);
 
       dispatch(updateProduct({ shortDescription: cleanedHtml }));
-      console.log(cleanedHtml);
-      setDescription(cleanedHtml);
     },
   });
 
     // Resetowanie zawartości edytora
     React.useEffect(() => {
-      if (resetDescription && editor) {
+      if (editor) {
         editor.commands.setContent('');
-        setDescription('');
       }
-    }, [resetDescription, editor]);
+    }, [editor]);
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Króki opis opis</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };

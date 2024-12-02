@@ -67,6 +67,8 @@ const initialState = {
     cosmeticsDescription2: "",
     cosmeticsDescription3: "",
     cosmeticsDescription4: "",
+    htmlToBl: "",
+    htmlToShop: "",
   },
 };
 

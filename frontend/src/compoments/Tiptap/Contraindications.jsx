@@ -1,4 +1,5 @@
 import { useEditor, EditorContent } from "@tiptap/react";
+import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
@@ -6,7 +7,7 @@ import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
 
-export const Contraindications = ({ setDescription }) => {
+export const Contraindications = () => {
   const dispatch = useDispatch()
 
   const editor = useEditor({
@@ -17,18 +18,16 @@ export const Contraindications = ({ setDescription }) => {
       const html = editor.getHTML();
 
       dispatch(updateProduct({ contraindications: html }));
-      console.log(html);
-      setDescription(html);
     },
   });
 
   return (
-    <>
+    <div className={style.textEditorContainer}>
       <h4>Przeciwwskazania</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />
       </div>
-    </>
+    </div>
   );
 };
