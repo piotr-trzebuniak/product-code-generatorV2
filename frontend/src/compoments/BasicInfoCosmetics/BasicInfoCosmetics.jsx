@@ -26,6 +26,37 @@ const BasicInfoCosmetics = () => {
         dispatch(updateProduct({ productName: e.target.value }));
       }}
     />
+          <div className={style.basicInfo__grid}>
+        <span>Porcja jednorazowa:</span>
+        <Input
+          placeholder="Porcja jednorazowa (ilość)"
+          value={productData.portion.portionAmount}
+          onChange={(e) =>
+            dispatch(
+              updateProduct({
+                portion: {
+                  ...productData.portion,
+                  portionAmount: e.target.value,
+                },
+                portionQuantity: (
+                  productData.size.sizeAmount / e.target.value
+                ).toFixed(0),
+              })
+            )
+          }
+        />
+        <Input
+          placeholder="Jednostka/typ"
+          value={productData.portion.unit}
+          onChange={(e) =>
+            dispatch(
+              updateProduct({
+                portion: { ...productData.portion, unit: e.target.value },
+              })
+            )
+          }
+        />
+      </div>
   </div>
   )
 }

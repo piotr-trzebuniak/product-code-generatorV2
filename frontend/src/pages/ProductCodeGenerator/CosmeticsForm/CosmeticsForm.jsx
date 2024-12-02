@@ -25,8 +25,11 @@ const CosmeticsForm = () => {
 
   return (
     <div className={style.cosmetics}>
-      <BasicInfoCosmetics />
-      <SpecialFeatures />
+      <div className={style.cosmetics__grid}>
+        <BasicInfoCosmetics />
+        <SpecialFeatures />
+      </div>
+
       <ShortDescription />
       <div className={style.cosmetics__columns}>
         <div>
