@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import style from "./SupplementsForm.module.scss";
 import BasicInfo from "../../../compoments/BasicInfo/BasicInfo";
 import SpecialFeatures from "../../../compoments/SpecialFeatures/SpecialFeatures";
-import { ShortDescription } from "../../../compoments/Tiptap/ShortDescription";
 import RwsCalc from "../../../compoments/RwsCalc/RwsCalc";
 import Table from "../../../compoments/Table/Table";
 import Button from "../../../compoments/Button/Button";
@@ -21,8 +20,9 @@ import { Bulletpoints } from "../../../compoments/Tiptap/Bulletpoints";
 import { useDispatch, useSelector } from "react-redux";
 import { addIngredient, removeIngredient } from "../../../redux/productSlice";
 import { Storage } from "../../../compoments/Tiptap/Storage";
+import { ShortDescription } from "../../../compoments/Tiptap/ShortDescription";
 
-const SupplementsForm = () => {
+const SupplementsForm = ({resetKey}) => {
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.product.product);
 
@@ -40,7 +40,7 @@ const SupplementsForm = () => {
         <BasicInfo />
         <SpecialFeatures />
       </div>
-      <ShortDescription />
+      <ShortDescription onReset={resetKey} />
       <div>
         <RwsCalc />
         <Table />
@@ -51,16 +51,16 @@ const SupplementsForm = () => {
         >
           Usuń składnik
         </Button>
-        <TableEnd />
+        <TableEnd onReset={resetKey} />
       </div>
 
       <div className={style.supplements__grid2}>
-        <LongDescription />
-        <Ingredients />
-        <HowToUse />
-        <Contraindications />
-        <AdditionalInformation />
-        <Storage />
+        <LongDescription onReset={resetKey} />
+        <Ingredients onReset={resetKey} />
+        <HowToUse onReset={resetKey} />
+        <Contraindications onReset={resetKey} />
+        <AdditionalInformation onReset={resetKey} />
+        <Storage onReset={resetKey} />
         <div className={style.supplements__select}>
           <h4>Lista producentów</h4>
           <SelectProducers />

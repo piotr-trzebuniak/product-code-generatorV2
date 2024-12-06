@@ -16,6 +16,7 @@ const ProductCodeGenerator = () => {
   const [type, setType] = useState("");
   const [key, setKey] = useState(0);
   const [description, setDescription] = useState("");
+  const [resetKey, setResetKey] = useState(false); // Klucz resetowania
 
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.product.product);
@@ -166,6 +167,7 @@ const ProductCodeGenerator = () => {
 
     setHtmlToShop("");
     setHtmlToBl("");
+    setResetKey((prevKey) => !prevKey);
     toast.success("Formularz został zresetowany");
   };
 
@@ -510,13 +512,13 @@ ${
       <div className={style.generator__content}>
         {type === "supplements" && (
           <div>
-            <SupplementsForm />
+            <SupplementsForm resetKey={resetKey} />
           </div>
         )}
 
         {type === "cosmetics" && (
           <div className={style.generator__cosmetics}>
-            <CosmeticsForm />
+            <CosmeticsForm resetKey={resetKey} />
           </div>
         )}
         {(type === "cosmetics" || type === "supplements") && (

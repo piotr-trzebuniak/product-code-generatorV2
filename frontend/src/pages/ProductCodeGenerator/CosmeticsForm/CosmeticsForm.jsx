@@ -13,7 +13,7 @@ import { TableEnd } from "../../../compoments/Tiptap/TableEnd";
 import { useDispatch } from "react-redux";
 import { addIngredient, removeIngredient } from "../../../redux/productSlice";
 
-const CosmeticsForm = () => {
+const CosmeticsForm = ({resetKey}) => {
   const dispatch = useDispatch();
   const handleAddIngredient = () => {
     dispatch(addIngredient());
@@ -30,15 +30,15 @@ const CosmeticsForm = () => {
         <SpecialFeatures />
       </div>
 
-      <ShortDescription />
+      <ShortDescription onReset={resetKey} />
       <div className={style.cosmetics__columns}>
         <div>
-          <CosmeticsDesc1 />
-          <CosmeticsDesc2 />
-          <CosmeticsDesc3 />
+          <CosmeticsDesc1 onReset={resetKey} />
+          <CosmeticsDesc2 onReset={resetKey} />
+          <CosmeticsDesc3 onReset={resetKey} />
         </div>
         <div>
-          <CosmeticsDesc4 />
+          <CosmeticsDesc4 onReset={resetKey} />
         </div>
       </div>
       <div>

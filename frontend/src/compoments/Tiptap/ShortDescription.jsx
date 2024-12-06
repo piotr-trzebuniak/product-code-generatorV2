@@ -1,3 +1,4 @@
+import React from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
@@ -5,10 +6,9 @@ import Underline from "@tiptap/extension-underline";
 import { useDispatch } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
-import React from "react";
 
 
-export const ShortDescription = () => {
+export const ShortDescription = ({ onReset }) => {
   const dispatch = useDispatch()
 
   function removePTagsFromLists(html) {
@@ -35,12 +35,12 @@ export const ShortDescription = () => {
     },
   });
 
-    // Resetowanie zawartości edytora
-    React.useEffect(() => {
-      if (editor) {
-        editor.commands.setContent('');
-      }
-    }, [editor]);
+  React.useEffect(() => {
+    if (onReset && editor) {
+      editor.commands.setContent(''); // Resetuj zawartość edytora
+      dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
+    }
+  }, [onReset, editor, dispatch]);
 
   return (
     <div className={style.textEditorContainer}>

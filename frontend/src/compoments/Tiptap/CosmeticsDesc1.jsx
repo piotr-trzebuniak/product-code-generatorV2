@@ -1,3 +1,4 @@
+import React from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
@@ -8,7 +9,7 @@ import MenuBar from "./MenuBar";
 
 
 
-export const CosmeticsDesc1 = () => {
+export const CosmeticsDesc1 = ({onReset}) => {
   const dispatch = useDispatch()
 
 
@@ -36,6 +37,13 @@ export const CosmeticsDesc1 = () => {
       // console.log(cleanedHtml);
     },
   });
+
+  React.useEffect(() => {
+    if (onReset && editor) {
+      editor.commands.setContent(''); // Resetuj zawartość edytora
+      dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
+    }
+  }, [onReset, editor, dispatch]);
 
   return (
     <div className={style.textEditorContainer}>
