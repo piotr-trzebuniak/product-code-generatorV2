@@ -10,10 +10,11 @@ import MenuBar from "./MenuBar";
 
 export const Storage = ({onReset}) => {
   const dispatch = useDispatch()
+  const contentText = `<p>Przechowywać w suchym i ciemnym miejscu, w temperaturze 0-25ºC, w sposób niedostępny dla małych dzieci.</p>`
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: `<p>Przechowywać w suchym i ciemnym miejscu, w temperaturze 0-25ºC, w sposób niedostępny dla małych dzieci.</p>`,
+    content: contentText,
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
@@ -24,7 +25,7 @@ export const Storage = ({onReset}) => {
 
   React.useEffect(() => {
     if (onReset && editor) {
-      editor.commands.setContent(''); // Resetuj zawartość edytora
+      editor.commands.setContent(contentText); // Resetuj zawartość edytora
       dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
     }
   }, [onReset, editor, dispatch]);

@@ -12,6 +12,7 @@ import Button from "../../../compoments/Button/Button";
 import { TableEnd } from "../../../compoments/Tiptap/TableEnd";
 import { useDispatch } from "react-redux";
 import { addIngredient, removeIngredient } from "../../../redux/productSlice";
+import { CosmeticsDescSplit } from "../../../compoments/Tiptap/CosmeticsDescSplit";
 
 const CosmeticsForm = ({resetKey}) => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const CosmeticsForm = ({resetKey}) => {
       </div>
 
       <ShortDescription onReset={resetKey} />
+      <CosmeticsDescSplit />
       <div className={style.cosmetics__columns}>
         <div>
           <CosmeticsDesc1 onReset={resetKey} />

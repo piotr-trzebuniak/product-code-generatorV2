@@ -592,5 +592,13 @@ export const producers = [
     },
     label: "Activlab",
   },
+  {
+    index: 75,
+    value: {
+      shop: "<p>Pro Sport Majdaniec Filarski sp. k.<br>ul. Południowa 33a<br>71-007 Szczecin<br>Polska</p>",
+      bl: "<p>Pro Sport Majdaniec Filarski sp. k.</p><p>ul. Południowa 33a</p><p>71-007 Szczecin</p><p>Polska</p>"
+    },
+    label: "Swanson PL"
+  }
 
 ];

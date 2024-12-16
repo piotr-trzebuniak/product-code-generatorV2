@@ -234,7 +234,7 @@ ${productData.shortDescription}
 <section class="section">
 <div class="item item-6">
 <section class="image-item">
-<img src="#" />
+<img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^1.jpg" />
 </section>
 </div>
 <div class="item item-6">
@@ -265,7 +265,7 @@ ${productData.storage}
 </div>
 <div class="item item-6">
 <section class="image-item">
-<img src="#" />
+<img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^2.jpg" />
 </section>
 </div>
 </section>
@@ -475,7 +475,7 @@ ${
 <thead class="table-lighter">
 <tr>
 <th>Składniki</th>
-<th>${productData.portion}</th>
+<th>${productData.portion.portionAmount} ${productData.portion.unit}</th>
 <th>RWS</th>
 </tr>
 </thead>

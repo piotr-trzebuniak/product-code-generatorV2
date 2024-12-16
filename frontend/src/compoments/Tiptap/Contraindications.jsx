@@ -11,9 +11,11 @@ import MenuBar from "./MenuBar";
 export const Contraindications = ({onReset}) => {
   const dispatch = useDispatch()
 
+  const contentText = `<p>Nadwrażliwość na którykolwiek ze składników preparatu. W okresie ciąży i karmienia piersią przed zastosowaniem należy skonsultować się z lekarzem lub farmaceutą.</p>`
+
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: `<p>Nadwrażliwość na którykolwiek ze składników preparatu. W okresie ciąży i karmienia piersią przed zastosowaniem należy skonsultować się z lekarzem lub farmaceutą.</p>`,
+    content: contentText,
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
@@ -24,7 +26,7 @@ export const Contraindications = ({onReset}) => {
 
   React.useEffect(() => {
     if (onReset && editor) {
-      editor.commands.setContent(''); // Resetuj zawartość edytora
+      editor.commands.setContent(contentText); // Resetuj zawartość edytora
       dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
     }
   }, [onReset, editor, dispatch]);

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
@@ -11,6 +11,7 @@ import MenuBar from "./MenuBar";
 
 export const CosmeticsDesc4 = ({onReset}) => {
   const dispatch = useDispatch()
+  const productData = useSelector((state) => state.product.product);
 
 
 
@@ -27,7 +28,7 @@ export const CosmeticsDesc4 = ({onReset}) => {
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: ``,
+    content: productData.cosmeticsDescription4 || "",
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
@@ -38,8 +39,14 @@ export const CosmeticsDesc4 = ({onReset}) => {
       // console.log(cleanedHtml);
     },
   });
+  useEffect(() => {
+    // Resetowanie zawartości edytora w przypadku zmiany produktu
+    if (productData.cosmeticsDescription4 !== editor.getHTML()) {
+      editor.commands.setContent(productData.cosmeticsDescription4 || "");
+    }
+  }, [productData.cosmeticsDescription4, editor]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (onReset && editor) {
       editor.commands.setContent(''); // Resetuj zawartość edytora
       dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux

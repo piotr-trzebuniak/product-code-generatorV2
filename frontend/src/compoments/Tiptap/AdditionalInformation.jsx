@@ -10,10 +10,11 @@ import MenuBar from "./MenuBar";
 
 export const AdditionalInformation = ({onReset}) => {
   const dispatch = useDispatch()
+  const contentText = `<p>Produkt nie może być stosowany jako substytut (zamiennik) prawidłowo zróżnicowanej diety. Zrównoważony sposób żywienia i prawidłowy tryb życia jest ważny dla funkcjonowania organizmu człowieka. Nie należy przekraczać maksymalnej zalecanej porcji do spożycia w ciągu dnia.</p>`
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: `<p>Produkt nie może być stosowany jako substytut (zamiennik) prawidłowo zróżnicowanej diety. Zrównoważony sposób żywienia i prawidłowy tryb życia jest ważny dla funkcjonowania organizmu człowieka. Nie należy przekraczać maksymalnej zalecanej porcji do spożycia w ciągu dnia.</p>`,
+    content: contentText,
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
@@ -24,7 +25,7 @@ export const AdditionalInformation = ({onReset}) => {
 
   React.useEffect(() => {
     if (onReset && editor) {
-      editor.commands.setContent(''); // Resetuj zawartość edytora
+      editor.commands.setContent(contentText); // Resetuj zawartość edytora
       dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
     }
   }, [onReset, editor, dispatch]);
