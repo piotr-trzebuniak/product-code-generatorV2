@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import style from "./ProductCodeGenerator.module.scss";
 import Button from "../../compoments/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  resetProduct,
-} from "../../redux/productSlice";
+import { resetProduct } from "../../redux/productSlice";
 import { toast } from "react-toastify";
 import SupplementsForm from "./SupplementsForm/SupplementsForm";
 import CosmeticsForm from "./CosmeticsForm/CosmeticsForm";
@@ -192,10 +190,9 @@ const ProductCodeGenerator = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("Response from backend:", data);
-        if(data.result === "Success") {
+        if (data.result === "Success") {
           toast.success("Kod został poprawnie wysłany do arkusza google!!!!");
         }
-        
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -234,7 +231,9 @@ ${productData.shortDescription}
 <section class="section">
 <div class="item item-6">
 <section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^1.jpg" />
+<img src="https://elektropak.pl/subiekt_kopia/foto/${
+      productData.productSku
+    }^1.jpg" />
 </section>
 </div>
 <div class="item item-6">
@@ -265,7 +264,9 @@ ${productData.storage}
 </div>
 <div class="item item-6">
 <section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^2.jpg" />
+<img src="https://elektropak.pl/subiekt_kopia/foto/${
+      productData.productSku
+    }^2.jpg" />
 </section>
 </div>
 </section>
@@ -314,6 +315,11 @@ ${
 <div class="col-md-6">
 <div class="left-column">
   ${descriptionHTML}
+  ${
+    productData.bulletpoints
+      ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
+      : ""
+  }
 <h3>Skład:</h3>
 <p>Wielkość opakowania: <strong>${productData.size.sizeAmount} ${
       productData.size.unit
@@ -345,11 +351,6 @@ ${productData.tableEnd}
 </div>
 <div class="col-md-6">
 <div class="right-column">
-${
-  productData.bulletpoints
-    ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
-    : ""
-}
 <h3>Sposób użycia:</h3>
 ${productData.howToUse}
 <h3>Przeciwwskazania:</h3>
@@ -362,7 +363,7 @@ ${productData.additionalInformation}
 ${productData.producer.shop}
 ${
   productData.responsibleEntity.shop
-    ? `<h2>Podmiot odpowiedzialny:</h2>${productData.responsibleEntity.shop}`
+    ? `<h4>Podmiot odpowiedzialny:</h4>${productData.responsibleEntity.shop}`
     : ""
 }
 </div>
@@ -396,7 +397,9 @@ ${productData.shortDescription}
 <section class="section">
 <div class="item item-6">
 <section class="image-item">
-<img src="#" />
+<img src="https://elektropak.pl/subiekt_kopia/foto/${
+      productData.productSku
+    }^1.jpg" />
 </section>
 </div>
 <div class="item item-6">
@@ -413,7 +416,9 @@ ${productData.cosmeticsDescription2}
 </div>
 <div class="item item-6">
 <section class="image-item">
-<img src="#" />
+<img src="https://elektropak.pl/subiekt_kopia/foto/${
+      productData.productSku
+    }^2.jpg" />
 </section>
 </div>
 </section>
