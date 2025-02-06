@@ -255,18 +255,18 @@ ${productData.howToUse}
 </section>
 <section class="section">
 <div class="item item-6">
+<section class="image-item">
+<img src="https://elektropak.pl/subiekt_kopia/foto/${
+      productData.productSku
+    }^2.jpg" />
+</section>
+</div>
+<div class="item item-6">
 <section class="text-item">
 <h2>Przeciwwskazania:</h2>
 ${productData.contraindications}
 <h2>Przechowywanie:</h2>
 ${productData.storage}
-</section>
-</div>
-<div class="item item-6">
-<section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${
-      productData.productSku
-    }^2.jpg" />
 </section>
 </div>
 </section>
@@ -410,15 +410,15 @@ ${productData.cosmeticsDescription1}
 </section>
 <section class="section">
 <div class="item item-6">
-<section class="text-item">
-${productData.cosmeticsDescription2}
-</section>
-</div>
-<div class="item item-6">
 <section class="image-item">
 <img src="https://elektropak.pl/subiekt_kopia/foto/${
       productData.productSku
     }^2.jpg" />
+</section>
+</div>
+<div class="item item-6">
+<section class="text-item">
+${productData.cosmeticsDescription2}
 </section>
 </div>
 </section>
