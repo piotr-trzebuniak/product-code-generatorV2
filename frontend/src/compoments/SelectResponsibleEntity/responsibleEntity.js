@@ -71,4 +71,20 @@ export const responsibleEntity = [
     },
     label: "Fitness Authority",
   },
+  {
+    index: 10,
+    value: {
+      shop: "<p>Swanson<br>Pro Sport S.C.<br>ul. Południowa 33a<br>71-376 Szczecin<br>Polska</p>",
+      bl: "<p>Swanson</p><p>Pro Sport S.C.</p><p>ul. Południowa 33a</p><p>71-376 Szczecin</p><p>Polska</p>",
+    },
+    label: "Swanson",
+  },
+  {
+    index: 11,
+    value: {
+      shop: "<p>BioTech USA Polska Sp. z o.o<br>ul. Zamkowa 21A lok. 4A<br>95-200 Pabianice<br>Polska</p>",
+      bl: "<p>BioTech USA Polska Sp. z o.o</p><p>ul. Zamkowa 21A lok. 4A</p><p>95-200 Pabianice</p><p>Polska</p>",
+    },
+    label: "BioTech USA Polska",
+  },
 ];

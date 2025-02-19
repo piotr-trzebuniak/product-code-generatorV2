@@ -575,7 +575,7 @@ export const producers = [
     },
     label: "Doctor's Best",
   },
-,
+  ,
   {
     index: 73,
     value: {
@@ -596,9 +596,40 @@ export const producers = [
     index: 75,
     value: {
       shop: "<p>Pro Sport Majdaniec Filarski sp. k.<br>ul. Południowa 33a<br>71-007 Szczecin<br>Polska</p>",
-      bl: "<p>Pro Sport Majdaniec Filarski sp. k.</p><p>ul. Południowa 33a</p><p>71-007 Szczecin</p><p>Polska</p>"
+      bl: "<p>Pro Sport Majdaniec Filarski sp. k.</p><p>ul. Południowa 33a</p><p>71-007 Szczecin</p><p>Polska</p>",
     },
-    label: "Swanson PL"
-  }
-
+    label: "Swanson PL",
+  },
+  {
+    index: 76,
+    value: {
+      shop: "<p>Levrone Global LLC.<br>PO, BOX 637<br>Hanover MD. 21076, U.S.A.<br>Stany Zjednoczone</p>",
+      bl: "<p>Levrone Global LLC.</p><p>PO, BOX 637</p><p>Hanover MD. 21076, U.S.A.</p><p>Stany Zjednoczone</p>",
+    },
+    label: "Levrone Global LLC",
+  },
+  {
+    index: 77,
+    value: {
+      shop: "<p>Kenay A. Grzegorek i Wspólnicy Sp. J.<br>ul. Częstochowska 25<br>62-800 Kalisz<br>Polska</p>",
+      bl: "<p>Kenay A. Grzegorek i Wspólnicy Sp. J.</p><p>ul. Częstochowska 25</p><p>62-800 Kalisz</p><p>Polska</p>",
+    },
+    label: "Kenay",
+  },
+  {
+    index: 78,
+    value: {
+      shop: "<p>BioTech USA Ltd.<br>Huszti út 60<br>1033 Budapest<br>Węgry</p>",
+      bl: "<p>BioTech USA Ltd.</p><p>Huszti út 60</p><p>1033 Budapest</p><p>Węgry</p>",
+    },
+    label: "BioTech USA Ltd.",
+  },
+  {
+    index: 79,
+    value: {
+      shop: "<p>Best Store Piotr Karpiński<br>Parkowa 4/3<br>30-538 Kraków<br>Polska</p>",
+      bl: "<p>Best Store Piotr Karpiński</p><p>Parkowa 4/3</p><p>30-538 Kraków</p><p>Polska</p>",
+    },
+    label: "Progress labs",
+  },
 ];
