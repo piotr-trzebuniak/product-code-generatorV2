@@ -7,7 +7,6 @@ import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 import { useEffect } from "react";
 
-
 export const ResponsibleEntity = ({ initialContent }) => {
   const dispatch = useDispatch()
   const productData = useSelector((state) => state.product.product);
@@ -26,28 +25,48 @@ export const ResponsibleEntity = ({ initialContent }) => {
       .join('<br>');
   
     // Umieść złączoną treść wewnątrz jednego znacznika <p>...</p>
-    return `${mergedContent}`;g
+    return `${mergedContent}`;
   }
+
+  // Sprawdź, czy productData.responsibleEntity jest obiektem, i jeśli tak, użyj pola bl
+  const getResponsibleEntityContent = () => {
+    if (typeof productData.responsibleEntity === 'object' && productData.responsibleEntity !== null) {
+      return productData.responsibleEntity.bl || "";
+    }
+    return productData.responsibleEntity || "";
+  };
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: initialContent,
+    content: initialContent || getResponsibleEntityContent(),
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
-
-      const blHtml = html;
       const shopHtml = mergeParagraphsToSingleWithBreaks(html);
-
-      dispatch(updateProduct({ responsibleEntity: { shop: shopHtml, bl: blHtml } }));
+      
+      // Zachowaj obecną strukturę danych
+      if (typeof productData.responsibleEntity === 'object' && productData.responsibleEntity !== null) {
+        dispatch(updateProduct({ 
+          responsibleEntity: { 
+            shop: shopHtml,
+            bl: html
+          } 
+        }));
+      } else {
+        // Jeśli responsibleEntity nie jest obiektem, zapisuj jako string
+        dispatch(updateProduct({ responsibleEntity: html }));
+      }
     },
   });
 
   useEffect(() => {
-    if (editor && productData.responsibleEntity !== editor.getHTML()) {
-      editor.commands.setContent(productData.responsibleEntity.bl || "");
+    if (editor) {
+      const currentContent = getResponsibleEntityContent();
+      if (currentContent !== editor.getHTML()) {
+        editor.commands.setContent(currentContent);
+      }
     }
-  }, [productData.responsibleEntity.bl, editor]); 
+  }, [productData.responsibleEntity, editor]); 
 
   return (
     <div className={style.textEditorContainer}>

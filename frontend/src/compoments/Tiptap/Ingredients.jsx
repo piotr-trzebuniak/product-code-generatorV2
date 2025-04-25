@@ -3,29 +3,48 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
 
 export const Ingredients = ({onReset}) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const productData = useSelector((state) => state.product.product);
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: ``,
+    content: productData.ingredients?.pl || ``,
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
 
-      dispatch(updateProduct({ ingredients: html }));
+      dispatch(updateProduct({ 
+        ingredients: {
+          ...productData.ingredients,
+          pl: html 
+        }
+      }));
     },
   });
 
   React.useEffect(() => {
+    // Aktualizuj edytor po zmianie danych
+    if (editor && (productData.ingredients?.pl || "") !== editor.getHTML()) {
+      editor.commands.setContent(productData.ingredients?.pl || "");
+    }
+  }, [productData.ingredients?.pl, editor]);
+
+  React.useEffect(() => {
     if (onReset && editor) {
       editor.commands.setContent(''); // Resetuj zawartość edytora
-      dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
+      dispatch(updateProduct({ 
+        ingredients: {
+          pl: "",
+          en: "",
+          de: "" 
+        }
+      })); // Resetuj stan Redux
     }
   }, [onReset, editor, dispatch]);
 

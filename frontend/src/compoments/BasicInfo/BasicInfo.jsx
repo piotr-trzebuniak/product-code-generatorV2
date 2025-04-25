@@ -13,23 +13,28 @@ const BasicInfo = () => {
       <h3>Podstawowe informacje</h3>
       <Input
         placeholder="SKU"
-        value={productData.productSku}
+        value={productData.productSku || ""}
         onChange={(e) => {
           dispatch(updateProduct({ productSku: e.target.value }));
         }}
       />
       <Input
         placeholder="Nazwa produktu"
-        value={productData.productName}
+        value={productData.productName?.pl || ""}
         onChange={(e) => {
-          dispatch(updateProduct({ productName: e.target.value }));
+          dispatch(updateProduct({ 
+            productName: {
+              ...productData.productName,
+              pl: e.target.value
+            }
+          }));
         }}
       />
       <div className={style.basicInfo__grid}>
         <span>Wielkość opakowania:</span>
         <Input
           placeholder="Wielkość opakowania (ilość)"
-          value={productData.size.sizeAmount}
+          value={productData.size?.sizeAmount || ""}
           onChange={(e) =>
             dispatch(
               updateProduct({
@@ -40,11 +45,11 @@ const BasicInfo = () => {
         />
         <Input
           placeholder="Jednostka/typ"
-          value={productData.size.unit}
+          value={productData.size?.unit.pl || ""}
           onChange={(e) =>
             dispatch(
               updateProduct({
-                size: { ...productData.size, unit: e.target.value },
+                size: { ...productData.size, unit: { pl: e.target.value, en: "", de: "" } },
               })
             )
           }
@@ -54,7 +59,7 @@ const BasicInfo = () => {
         <span>Porcja jednorazowa:</span>
         <Input
           placeholder="Porcja jednorazowa (ilość)"
-          value={productData.portion.portionAmount}
+          value={productData.portion?.portionAmount || ""}
           onChange={(e) =>
             dispatch(
               updateProduct({
@@ -62,20 +67,20 @@ const BasicInfo = () => {
                   ...productData.portion,
                   portionAmount: e.target.value,
                 },
-                portionQuantity: (
-                  productData.size.sizeAmount / e.target.value
-                ).toFixed(0),
+                portionQuantity: productData.size?.sizeAmount && e.target.value 
+                  ? (productData.size.sizeAmount / e.target.value).toFixed(0)
+                  : ""
               })
             )
           }
         />
         <Input
           placeholder="Jednostka/typ"
-          value={productData.portion.unit}
+          value={productData.portion?.unit.pl || ""}
           onChange={(e) =>
             dispatch(
               updateProduct({
-                portion: { ...productData.portion, unit: e.target.value },
+                portion: { ...productData.portion, unit: { pl: e.target.value, en: "", de: "" }},
               })
             )
           }
@@ -83,7 +88,7 @@ const BasicInfo = () => {
       </div>
       <Input
         placeholder="Ilość porcji w opakowaniu"
-        value={productData.portionQuantity ? productData.portionQuantity : null}
+        value={productData.portionQuantity ?? ""}
         onChange={(e) =>
           dispatch(updateProduct({ portionQuantity: e.target.value }))
         }
