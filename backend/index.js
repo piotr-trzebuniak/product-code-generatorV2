@@ -11,18 +11,41 @@ const __dirname = path.resolve();
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware
-app.use(cors()); // Rozwiązuje problem CORS
+// Skonfigurowany CORS, aby zezwalać na żądania z frontendu na Vercel
+app.use(cors({
+  origin: ['https://product-code-generator-v2-frontend.vercel.app', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Obsługa preflight requests
+app.options('*', cors());
+
 app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądania
 
+// Dodatkowe middleware dla nagłówków CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://product-code-generator-v2-frontend.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  
+  next();
+});
+
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
+
+// Specyficzna obsługa OPTIONS dla endpointu submit
+app.options('/submit', cors());
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 });
 
 // Endpoint do przesyłania danych do tłumaczenia DeepL
-
 app.post("/translate", async (req, res) => {
   try {
     const { text, targetLang } = req.body;
@@ -39,33 +62,6 @@ app.post("/translate", async (req, res) => {
     res.status(500).json({ status: "error", message: "Błąd tłumaczenia" });
   }
 });
-
-
-// Endpoint do przesyłania danych do Google Apps Script
-// app.post("/submit", async (req, res) => {
-//   try {
-//     const data = req.body; // Pobierz dane przesłane z frontendu
-//     console.log("Received data:", data);
-
-//     // Wyślij dane do Google Apps Script
-//     const scriptUrl =
-//       "https://script.google.com/macros/s/AKfycbx2SkHGFVaNGz9iBxgeeANTsAUkPbgy_4n-MXGvXm55ED2C05CMWgjGNE1eR44WyQaqhw/exec";
-
-//     const response = await fetch(scriptUrl, {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify(data),
-//     });
-
-//     const result = await response.json();
-//     console.log("Response from Google Apps Script:", result);
-
-//     res.json(result); // Zwróć odpowiedź do aplikacji React
-//   } catch (error) {
-//     console.error("Error:", error);
-//     res.status(500).json({ status: "error", message: "Something went wrong" });
-//   }
-// });
 
 app.post("/submit", async (req, res) => {
   try {
@@ -110,9 +106,7 @@ app.post("/submit", async (req, res) => {
   }
 });
 
-
-
-// Uruchomienie serwer
+// Uruchomienie serwera
 app.listen(port, () => {
-  console.log("Server listening on port 3000!");
+  console.log(`Server listening on port ${port}!`);
 });
