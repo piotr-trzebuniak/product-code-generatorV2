@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors()); // Rozwiązuje problem CORS
-app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądani
+app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądania
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 

@@ -373,7 +373,7 @@ const ProductCodeGenerator = () => {
   return (
     <div className={style.generator}>
       <header className={style.generator__header}>
-        <h2>Medpak Code Generator</h2>
+        <h2>Medpak Code Generator 2.0</h2>
         <div className={style["generator__header-btns"]}>
           <Button onClick={() => setType("supplements")}>
             Suplementy diety

@@ -54,7 +54,7 @@ export const ingredientTableHtmlToShop = (ingredientsTable) => {
 
 function extractIngredientsAndRemove(htmlString) {
   // Wzorzec do znalezienia nagłówka i akapitu ze składnikami (alternatywa dla "Inhaltsstoffe" i "Zutaten")
-  const pattern = /<h3><strong>(Ingrédients|Zutaten):<\/strong><\/h3><p>([^<]*)<\/p>/i;
+  const pattern = /<h3><strong>(Ingrédients|Ingrédients ):<\/strong><\/h3><p>([^<]*)<\/p>/i;
   
   // Szukaj dopasowania
   const match = htmlString.match(pattern);
