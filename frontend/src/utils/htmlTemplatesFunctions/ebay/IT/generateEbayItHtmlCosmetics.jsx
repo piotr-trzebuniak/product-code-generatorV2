@@ -362,7 +362,7 @@ export const generateEbayItHtmlCosmetics = (productData) => {
                 <tr>
                   <th>Ingredienti</th>
                   <th>${productData.portion.portionAmount} ${productData.portion.unit.it}</th>
-                  <th>RM</th>
+                  <th>VNR</th>
                 </tr>
               </thead>
               <tbody>
