@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon backend/index.js",
     "start": "node backend/index.js",
-    "build": "npm install && npm uninstall express gopd side-channel-map side-channel qs && npm install express@4.18.3 gopd@1.2.0 qs@6.11.2 && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "postinstall": "node gOPD-fix.js"
   },
   "keywords": [],
   "author": "",
