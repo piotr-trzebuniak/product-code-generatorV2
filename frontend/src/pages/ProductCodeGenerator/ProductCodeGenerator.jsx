@@ -2,112 +2,83 @@ import React, { useState } from "react";
 import style from "./ProductCodeGenerator.module.scss";
 import Button from "../../compoments/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { resetProduct } from "../../redux/productSlice";
+import { resetProduct, updateProduct } from "../../redux/productSlice";
 import { toast } from "react-toastify";
 import SupplementsForm from "./SupplementsForm/SupplementsForm";
 import CosmeticsForm from "./CosmeticsForm/CosmeticsForm";
 import GeneratorBtns from "./GeneratorBtns/GeneratorBtns";
+import { initialState } from "../../redux/productSlice";
+import { generateBlHtml } from "../../utils/htmlTemplatesFunctions/allegroBL/generateBlHtml";
+import {
+  generateShopHtml,
+  replaceH2WithH3,
+  replaceH3WithH2,
+} from "../../utils/htmlTemplatesFunctions/shopPL/generateShopHtml";
+import { generateCosmeticsShopHtml } from "../../utils/htmlTemplatesFunctions/shopPL/generateCosmeticsShopHtml";
+import { generateCosmeticsBlHtml } from "../../utils/htmlTemplatesFunctions/allegroBL/generateCosmeticsBlHtml";
+import { translateAllFields, translateText } from "../../utils/translations";
+import { generateEbayDeHtml } from "../../utils/htmlTemplatesFunctions/ebay/DE/generateEbayDeHtml";
+import { generateEbayDeHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/DE/generateEbayDeHtmlCosmetics";
+import { generateEbayEnHtml } from "../../utils/htmlTemplatesFunctions/ebay/EN/generateEbayEnHtml";
+import { generateEbayEnHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/EN/generateEbayEnHtmlCosmetics";
+import { generateEbayFrHtml } from "../../utils/htmlTemplatesFunctions/ebay/FR/generateEbayFrHtml";
+import { generateEbayFrHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/FR/generateEbayFrHtmlCosmetics";
+import { generateEbayItHtml } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtml";
+import { generateEbayItHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtmlCosmetics";
+
 
 const ProductCodeGenerator = () => {
   const [htmlToShop, setHtmlToShop] = useState("");
   const [htmlToBl, setHtmlToBl] = useState("");
+  const [htmlToEbayDe, setHtmlToEbayDe] = useState("");
+  const [htmlToEbayEn, setHtmlToEbayEn] = useState("");
+  const [htmlToEbayFr, setHtmlToEbayFr] = useState("");
+  const [htmlToEbayIt, setHtmlToEbayIt] = useState("");
   const [type, setType] = useState("");
   const [key, setKey] = useState(0);
   const [description, setDescription] = useState("");
-  const [resetKey, setResetKey] = useState(false); // Klucz resetowania
+  const [resetKey, setResetKey] = useState(false);
+  
+  // Stany do zarządzania przepływem interfejsu
+  const [isTranslating, setIsTranslating] = useState(false);
+  const [isTranslated, setIsTranslated] = useState(false);
+  const [isCodeGenerated, setIsCodeGenerated] = useState(false);
+  const [isSendingToSheets, setIsSendingToSheets] = useState(false);
+  const [isDataSentToSheets, setIsDataSentToSheets] = useState(false);
 
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.product.product);
 
-  // HELPERS FUNCTIONS
+  // TRANSLATIONS FUNCTIONS
 
-  function replaceH2WithH3(htmlString) {
-    return htmlString.replace(/<h2>/g, "<h3>").replace(/<\/h2>/g, "</h3>");
-  }
-
-  function replaceH3WithH2(htmlString) {
-    return htmlString.replace(/<h3>/g, "<h2>").replace(/<\/h3>/g, "</h2>");
-  }
-
-  const generateIngredientsHTML = () => {
-    let ingredientsHTML = "";
-    productData.ingredientsTable.forEach((ingredient) => {
-      ingredientsHTML += `<p><strong>${ingredient.ingredient}</strong>&nbsp; &nbsp;${ingredient.ingredientValue}&nbsp; &nbsp;${ingredient.rws}</p>`;
-      if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
-        ingredient.additionalLines.forEach((line) => {
-          ingredientsHTML += `<p>${line.ingredient}&nbsp; &nbsp;${line.ingredientValue}&nbsp; &nbsp;${line.rws}</p>`;
-        });
-      }
-    });
-    return ingredientsHTML;
+  const handleTranslate = async () => {
+    setIsTranslating(true);
+    setIsTranslated(false);
+    
+    try {
+      // Użyj istniejącej funkcji translateAllFields
+      const translatedData = await translateAllFields(
+        productData,
+        initialState,
+        translateText
+      );
+      
+      // Po zakończeniu całego procesu tłumaczenia
+      setIsTranslated(true);
+      setIsTranslating(false);
+      dispatch(updateProduct(translatedData));
+      toast.success("Dane zostały przetłumaczone 🎉");
+    } catch (error) {
+      setIsTranslating(false);
+      toast.error("Błąd podczas tłumaczenia", error);
+      console.error("Błąd tłumaczenia:", error);
+    }
   };
-
-  const generateSpecialFeaturesList = () => {
-    const { specialFeatures } = productData;
-
-    // Mapowanie cech, które mają wartość true
-    const featuresList = Object.keys(specialFeatures)
-      .filter((key) => specialFeatures[key]) // wybieramy tylko te, które są true
-      .map((feature) => {
-        // Konwertujemy klucz na czytelną nazwę
-        const featureNames = {
-          gmoFree: "Bez GMO",
-          soyaFree: "Bez soi",
-          sugarFree: "Bez cukru",
-          glutenFree: "Bez glutenu",
-          lactoseFree: "Bez laktozy",
-          fillersFree: "Bez wypełniaczy",
-          crueltyFree: "Cruelty-Free",
-          hipoalergic: "Hipoalergiczny",
-          ketoFriendly: "Keto-friendly",
-          lowCarb: "Niska zawartość węglowodanów",
-          slowRelease: "Wolne uwalnianie",
-          fastRelease: "Szybkie uwalnianie",
-          filmCoatedTablet: "Tabletka powlekana",
-          wegan: "Wegański",
-          wegetarian: "Wegetariański",
-          zeroWaste: "Zero waste",
-        };
-        return `<li>${featureNames[feature]}</li>`; // Tworzymy element listy
-      })
-      .join(""); // Łączymy elementy w całość
-
-    return featuresList
-      ? `<h2>Cechy specjalne:</h2><ul>${featuresList}</ul>`
-      : ""; // Zwracamy listę lub pusty string, jeśli nie ma cech
-  };
-
-  const ingredientTableHtmlToShop = () => {
-    return productData.ingredientsTable
-      .map((ingredient) => {
-        // Podstawowy składnik
-        let ingredientName = `<strong>${ingredient.ingredient}</strong>`;
-        let ingredientValue = `${ingredient.ingredientValue}`;
-        let ingredientRws = ingredient.rws ? `${ingredient.rws}` : "";
-
-        // Dodatkowe linie składnika
-        if (
-          ingredient.additionalLines &&
-          ingredient.additionalLines.length > 0
-        ) {
-          ingredient.additionalLines.forEach((line) => {
-            ingredientName += `<br>${line.ingredient}`;
-            ingredientValue += `<br>${line.ingredientValue}`;
-            ingredientRws += line.rws ? `<br>${line.rws}` : "";
-          });
-        }
-
-        // Usuń zbędne <br> na końcu wartości, jeśli rws jest pusty
-        ingredientRws = ingredientRws.replace(/(<br>)+$/, "");
-
-        return `
-<tr>
-<td>${ingredientName}</td>
-<td>${ingredientValue}</td>
-<td>${ingredientRws}</td>
-</tr>`;
-      })
-      .join("");
+  
+  const skipTranslation = () => {
+    // Pomijamy tłumaczenie i ustawiamy stan jako przetłumaczony
+    setIsTranslated(true);
+    toast.info("Tłumaczenie zostało pominięte");
   };
 
   // ACTIONS FUNCTIONS
@@ -125,20 +96,37 @@ const ProductCodeGenerator = () => {
       console.log("Brak wygenerowanego kodu HTML dla sklepu.");
     }
   };
+  
   const copyShortDescToShop = async () => {
-    if (productData.shortDescription) {
+    if (productData.shortDescription.pl) {
       try {
-        await navigator.clipboard.writeText(productData.shortDescription);
+        await navigator.clipboard.writeText(productData.shortDescription.pl);
         console.log("Kod krótkiego opisu dla sklepu skopiowany do schowka.");
         toast.success("Kod krótkiego opisu dla sklepu skopiowany do schowka.");
       } catch (err) {
         console.error(
-          "Nie udało się skopiować kodu krótkiego opisu  dla sklepu:",
+          "Nie udało się skopiować kodu krótkiego opisu dla sklepu:",
           err
         );
       }
     } else {
       toast.error("Brak wygenerowanego kodu krótkiego opisu dla sklepu.");
+    }
+  };
+
+  const copyHtmlToShopAndShortDesc = async () => {
+    if (htmlToShop && productData.shortDescription.pl) {
+
+      const htmlToShopAndShortDesc = productData.shortDescription.pl + htmlToShop 
+      try {
+        await navigator.clipboard.writeText(htmlToShopAndShortDesc);
+        console.log("Kod HTML krótkiego opisu dla sklepu + Kod HTML dla sklepu skopiowany do schowka.");
+        toast.success("Kod HTML krótkiego opisu dla sklepu + Kod HTML dla sklepu skopiowany do schowka.");
+      } catch (err) {
+        console.error("Nie udało się skopiować kodu HTML krótkiego opisu dla sklepu + kodu HTML dla sklepu:", err);
+      }
+    } else {
+      console.log("Brak wygenerowanego kodu HTML krótkiego opisu dla sklepu + kodu HTML dla sklepu.");
     }
   };
 
@@ -155,7 +143,71 @@ const ProductCodeGenerator = () => {
         );
       }
     } else {
-      toast.success("Kod HTML dla baselinkera skopiowany do schowka.");
+      toast.error("Brak kodu HTML do skopiowania.");
+    }
+  };
+  const copyHtmlToEbayDe = async () => {
+    if (htmlToEbayDe) {
+      try {
+        await navigator.clipboard.writeText(htmlToEbayDe);
+        console.log("Kod HTML dla Ebay DE skopiowany do schowka.");
+        toast.success("Kod HTML dla Ebay DE skopiowany do schowka.");
+      } catch (err) {
+        console.error(
+          "Nie udało się skopiować kodu HTML dla Ebay DE:",
+          err
+        );
+      }
+    } else {
+      toast.error("Brak kodu HTML do skopiowania.");
+    }
+  };
+  const copyHtmlToEbayEn = async () => {
+    if (htmlToEbayEn) {
+      try {
+        await navigator.clipboard.writeText(htmlToEbayEn);
+        console.log("Kod HTML dla Ebay EN skopiowany do schowka.");
+        toast.success("Kod HTML dla Ebay EN skopiowany do schowka.");
+      } catch (err) {
+        console.error(
+          "Nie udało się skopiować kodu HTML dla Ebay EN:",
+          err
+        );
+      }
+    } else {
+      toast.error("Brak kodu HTML do skopiowania.");
+    }
+  };
+  const copyHtmlToEbayFr = async () => {
+    if (htmlToEbayFr) {
+      try {
+        await navigator.clipboard.writeText(htmlToEbayFr);
+        console.log("Kod HTML dla Ebay FR skopiowany do schowka.");
+        toast.success("Kod HTML dla Ebay FR skopiowany do schowka.");
+      } catch (err) {
+        console.error(
+          "Nie udało się skopiować kodu HTML dla Ebay FR:",
+          err
+        );
+      }
+    } else {
+      toast.error("Brak kodu HTML do skopiowania.");
+    }
+  };
+  const copyHtmlToEbayIt = async () => {
+    if (htmlToEbayIt) {
+      try {
+        await navigator.clipboard.writeText(htmlToEbayIt);
+        console.log("Kod HTML dla Ebay IT skopiowany do schowka.");
+        toast.success("Kod HTML dla Ebay IT skopiowany do schowka.");
+      } catch (err) {
+        console.error(
+          "Nie udało się skopiować kodu HTML dla Ebay IT:",
+          err
+        );
+      }
+    } else {
+      toast.error("Brak kodu HTML do skopiowania.");
     }
   };
 
@@ -166,341 +218,156 @@ const ProductCodeGenerator = () => {
     setHtmlToShop("");
     setHtmlToBl("");
     setResetKey((prevKey) => !prevKey);
+    
+    // Reset stanów interfejsu
+    setIsTranslating(false);
+    setIsTranslated(false);
+    setIsCodeGenerated(false);
+    setIsSendingToSheets(false);
+    setIsDataSentToSheets(false);
+    
     toast.success("Formularz został zresetowany");
   };
 
-  // API CONNECTION
+  // API CONNECTIONS
 
-  const sendToGoogleSheets = () => {
-    const data = {
-      Sku: productData.productSku,
-      Html: htmlToBl,
-    };
+  // const sendToGoogleSheets = () => {
+  //   setIsSendingToSheets(true);
+  //   setIsDataSentToSheets(false);
+    
+  //   const data = {
+  //     Sku: productData.productSku,
+  //     Html: htmlToBl,
+  //   };
 
-    console.log(data);
+  //   console.log(data);
 
-    // fetch("http://localhost:3000/submit", {
-    fetch("https://product-code-generatorv10.onrender.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+  //   // fetch("https://product-code-generatorv10.onrender.com/submit", {
+  //   fetch("https://product-code-generatorv10.onrender.com/submit", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log("Response from backend:", data);
+  //       setIsSendingToSheets(false);
+  //       if (data.result === "Success") {
+  //         setIsDataSentToSheets(true);
+  //         toast.success("Dane zostały poprawnie wysłane do arkusza google!");
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //       setIsSendingToSheets(false);
+  //       toast.error("Nie udało się wysłać danych do arkusza google!");
+  //     });
+  // };
+
+  const sendToGoogleSheets = async () => {
+    setIsSendingToSheets(true);
+    setIsDataSentToSheets(false);
+  
+    const payloads = [
+      {
+        Sku: productData.productSku,
+        Html: htmlToBl,
+        target: "baselinker",
       },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Response from backend:", data);
-        if (data.result === "Success") {
-          toast.success("Kod został poprawnie wysłany do arkusza google!!!!");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        toast.error("Nie udało się wysłać kodu do arkusza google!!!!");
-      });
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayDe,
+        target: "ebay-de",
+      },
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayEn,
+        target: "ebay-en",
+      },
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayFr,
+        target: "ebay-fr",
+      },
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayFr,
+        target: "ebay-it",
+      }
+    ];
+  
+    try {
+      for (const payload of payloads) {
+        toast.info(`Wysyłanie payloadu: ${payload.target}`)
+        console.log("Wysyłanie payloadu:", payload); // <- dodaj to!
+        // const response = await fetch("https://product-code-generatorv10.onrender.com/submit", {
+        const response = await fetch("http://localhost:3000/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+  
+        const result = await response.json();
+        toast.success(`Wysłano do arkusza ${payload.target}:`, result)
+        console.log(`Wysłano do arkusza ${payload.target}:`, result);
+      }
+  
+      setIsSendingToSheets(false);
+      setIsDataSentToSheets(true);
+      toast.success("Wszystkie dane zostały poprawnie wysłane do arkuszy!");
+    } catch (error) {
+      console.error("Błąd wysyłania do arkuszy:", error);
+      setIsSendingToSheets(false);
+      toast.error("Wystąpił błąd podczas wysyłania danych do arkuszy!");
+    }
   };
+  
+
 
   // SUPPLEMENTS GENERATOR FUNCTION
 
   const generateCode = () => {
-    const ingredientsHTML = generateIngredientsHTML();
-    const specialFeaturesHTML = generateSpecialFeaturesList();
-    const tableHtmlToShop = ingredientTableHtmlToShop();
-
-    const descriptionHTML = productData.description
-      ? `
-<section class="section">
-<div class="item item-12">
-<section class="text-item">
-${productData.description}
-</section>
-</div>
-</section>`
-      : "";
-
-    // BASELINKER CODE
-
-    const newHtmlToBl = `<section class="section">
-<div class="item item-12">
-<section class="text-item">
-<h1>${productData.productName}</h1>
-${productData.shortDescription}
-</section>
-</div>
-</section>
-<section class="section">
-<div class="item item-6">
-<section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${
-      productData.productSku
-    }^1.jpg" />
-</section>
-</div>
-<div class="item item-6">
-<section class="text-item">
-<h2>Skład</h2>
-<p>Wielkość opakowania:<strong> ${productData.size.sizeAmount} ${
-      productData.size.unit
-    }</strong></p>
-<p>Porcja jednorazowa: <strong> ${productData.portion.portionAmount} ${
-      productData.portion.unit
-    }</strong></p>
-<p>Ilość porcji w opakowaniu: <strong> ${
-      productData.portionQuantity
-    }</strong></p>
-<h2>Sposób użycia:</h2>
-${productData.howToUse}
-</section>
-</div>
-</section>
-<section class="section">
-<div class="item item-6">
-<section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${
-      productData.productSku
-    }^2.jpg" />
-</section>
-</div>
-<div class="item item-6">
-<section class="text-item">
-<h2>Przeciwwskazania:</h2>
-${productData.contraindications}
-<h2>Przechowywanie:</h2>
-${productData.storage}
-</section>
-</div>
-</section>
-<section class="section">
-<div class="item item-12">
-<section class="text-item">
-<p><strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${
-      productData.portion.unit
-    }&nbsp; &nbsp;RWS</strong></p>
-<p><strong>_________________________________________________</strong></p>
-${ingredientsHTML} <!-- Wstawienie wygenerowanego HTML składników -->
-<p><strong>_________________________________________________</strong></p>
-${productData.tableEnd}
-</section>
-</div>
-</section>
-  ${descriptionHTML}
-<section class="section">
-<div class="item item-12">
-<section class="text-item">
-${specialFeaturesHTML}
-${
-  productData.bulletpoints !== ""
-    ? `<h2>Dlaczego warto stosować?:</h2>${productData.bulletpoints}`
-    : ""
-}
-<h2>Składniki:</h2>
-${productData.ingredients}
-<h2>Informacja:</h2>
-${productData.additionalInformation}
-<h2>Producent:</h2>
-${productData.producer.bl}
-${
-  productData.responsibleEntity.shop !== ""
-    ? `<h2>Podmiot odpowiedzialny:</h2>${productData.responsibleEntity.bl}`
-    : ""
-}
-</section>
-</div>
-</section>`;
-
-    // SHOP CODE
-
-    const newHtmlToShop = `
-<div class="row">
-<div class="col-md-6">
-<div class="left-column">
-  ${descriptionHTML}
-  ${
-    productData.bulletpoints
-      ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints}</p>`
-      : ""
-  }
-<h3>Skład:</h3>
-<p>Wielkość opakowania: <strong>${productData.size.sizeAmount} ${
-      productData.size.unit
-    }</strong></p>
-<p>Porcja jednorazowa: <strong>${productData.portion.portionAmount} ${
-      productData.portion.unit
-    }</strong></p>
-<p>Ilość porcji w opakowaniu: <strong>${
-      productData.portionQuantity
-    }</strong></p>
-<div class="table-responsive">
-<table class="table table-hover">
-<thead class="table-lighter">
-<tr>
-<th>Składniki</th>
-<th>${productData.portion.portionAmount} ${productData.portion.unit}</th>
-<th>RWS</th>
-</tr>
-</thead>
-<tbody>
-${tableHtmlToShop}
-</tbody>
-</table>
-</div>
-${productData.tableEnd}
-<h3>Składniki:</h3>
-<p>${productData.ingredients}</p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="right-column">
-<h3>Sposób użycia:</h3>
-${productData.howToUse}
-<h3>Przeciwwskazania:</h3>
-${productData.contraindications}
-<h3>Przechowywanie:</h3>
-${productData.storage}
-<h3>Informacja:</h3>
-${productData.additionalInformation}
-<h4>Producent:</h4>
-${productData.producer.shop}
-${
-  productData.responsibleEntity.shop
-    ? `<h4>Podmiot odpowiedzialny:</h4>${productData.responsibleEntity.shop}`
-    : ""
-}
-</div>
-</div>
-</div>`;
+    const newHtmlToShop = generateShopHtml(productData);
+    const newHtmlToBl = generateBlHtml(productData);
+    const newHtmlToEbayDe = generateEbayDeHtml(productData);
+    const newHtmlToEbayEn = generateEbayEnHtml(productData);
+    const newHtmlToEbayFr = generateEbayFrHtml(productData);
+    const newHtmlToEbayIt = generateEbayItHtml(productData);
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
-    setHtmlToBl(newHtmlToBl);
-
-    toast.success("Kod został wygenerowany...");
+    setHtmlToBl(replaceH3WithH2(newHtmlToBl));
+    setHtmlToEbayDe(newHtmlToEbayDe);
+    setHtmlToEbayEn(newHtmlToEbayEn);
+    setHtmlToEbayFr(newHtmlToEbayFr);
+    setHtmlToEbayIt(newHtmlToEbayIt);
+    
+    setIsCodeGenerated(true);
+    toast.success("Kod został poprawnie wygenerowany");
   };
 
   // COSMETICS GENERATOR FUNCTION
 
   const generateCodeCosmetics = () => {
-    const ingredientsHTML = generateIngredientsHTML(); // generowanie HTML dla składników
-    const specialFeaturesHTML = generateSpecialFeaturesList();
-    const tableHtmlToShop = ingredientTableHtmlToShop();
-
-    // BASELINKER CODE
-
-    const newHtmlToBl = `
-<section class="section">
-<div class="item item-12">
-<section class="text-item">
-<h1>${productData.productName}</h1>
-${productData.shortDescription}
-</section>
-</div>
-</section>
-<section class="section">
-<div class="item item-6">
-<section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${
-      productData.productSku
-    }^1.jpg" />
-</section>
-</div>
-<div class="item item-6">
-<section class="text-item">
-${productData.cosmeticsDescription1}
-</section>
-</div>
-</section>
-<section class="section">
-<div class="item item-6">
-<section class="image-item">
-<img src="https://elektropak.pl/subiekt_kopia/foto/${
-      productData.productSku
-    }^2.jpg" />
-</section>
-</div>
-<div class="item item-6">
-<section class="text-item">
-${productData.cosmeticsDescription2}
-</section>
-</div>
-</section>
-
-${
-  productData.ingredientsTable[0].ingredient !== ""
-    ? `
-    <section class="section">
-    <div class="item item-12">
-    <section class="text-item">
-      <p>
-        <strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${productData.portion.unit}&nbsp; &nbsp;RWS</strong>
-      </p>
-      <p>
-        <strong>_________________________________________________</strong>
-      </p>
-      ${ingredientsHTML}
-      <p>
-        <strong>_________________________________________________</strong>
-      </p>
-      ${productData.tableEnd}
-    </section>
-    </div>
-    </section>
-    `
-    : ""
-}
-
-<section class="section">
-<div class="item item-12">
-<section class="text-item">
-${specialFeaturesHTML}
-${productData.cosmeticsDescription3}
-${productData.cosmeticsDescription4}
-</section>
-</div>
-</section>
-`;
-
-    // SHOP CODE
-
-    const newHtmlToShop = `
-<div class="row">
-<div class="col-md-6">
-<div class="left-column">
-          ${productData.cosmeticsDescription1}
-          ${productData.cosmeticsDescription2}
-          ${productData.cosmeticsDescription3}
-</div>
-</div>
-<div class="col-md-6">
-<div class="right-column">
-${
-  productData.ingredientsTable[0].ingredient !== ""
-    ? `
-<h3>Wartości odżywcze:</h3> 
-<div class="table-responsive">
-<table class="table table-hover">
-<thead class="table-lighter">
-<tr>
-<th>Składniki</th>
-<th>${productData.portion.portionAmount} ${productData.portion.unit}</th>
-<th>RWS</th>
-</tr>
-</thead>
-<tbody>
-   ${tableHtmlToShop}
-</tbody>
-</table>
-</div>
-    ${productData.tableEnd}
-            `
-    : ""
-}
-           ${productData.cosmeticsDescription4}
-</div>
-</div>
-</div>`;
+    const newHtmlToShop = generateCosmeticsShopHtml(productData);
+    const newHtmlToBl = generateCosmeticsBlHtml(productData);
+    const newHtmlToEbayDe = generateEbayDeHtmlCosmetics(productData);
+    const newHtmlToEbayEn = generateEbayEnHtmlCosmetics(productData);
+    const newHtmlToEbayFr = generateEbayFrHtmlCosmetics(productData);
+    const newHtmlToEbayIt = generateEbayItHtmlCosmetics(productData);
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
     setHtmlToBl(replaceH3WithH2(newHtmlToBl));
-    toast.success("Kod został wygenerowany...");
+    setHtmlToEbayDe(newHtmlToEbayDe);
+    setHtmlToEbayEn(newHtmlToEbayEn);
+    setHtmlToEbayFr(newHtmlToEbayFr);
+    setHtmlToEbayIt(newHtmlToEbayIt);
+    
+    setIsCodeGenerated(true);
+    toast.success("Kod został poprawnie wygenerowany");
   };
 
   return (
@@ -527,19 +394,33 @@ ${
           </div>
         )}
         {(type === "cosmetics" || type === "supplements") && (
-          <GeneratorBtns
-            productType={type}
-            generateCode={generateCode}
-            generateCodeCosmetics={generateCodeCosmetics}
-            sendToGoogleSheets={sendToGoogleSheets}
-            resetForm={resetForm}
-            copyHtmlToShop={copyHtmlToShop}
-            copyShortDescToShop={copyShortDescToShop}
-            copyHtmlToBl={copyHtmlToBl}
-            htmlToShop={htmlToShop}
-            htmlToBl={htmlToBl}
-            style={style}
-          />
+          <>
+            <GeneratorBtns
+              productType={type}
+              generateCode={generateCode}
+              generateCodeCosmetics={generateCodeCosmetics}
+              sendToGoogleSheets={sendToGoogleSheets}
+              resetForm={resetForm}
+              copyHtmlToShop={copyHtmlToShop}
+              copyShortDescToShop={copyShortDescToShop}
+              handleTranslate={handleTranslate}
+              copyHtmlToBl={copyHtmlToBl}
+              copyHtmlToEbayDe={copyHtmlToEbayDe}
+              copyHtmlToEbayEn={copyHtmlToEbayEn}
+              copyHtmlToEbayFr={copyHtmlToEbayFr}
+              copyHtmlToEbayIt={copyHtmlToEbayIt}
+              copyHtmlToShopAndShortDesc={copyHtmlToShopAndShortDesc}
+              htmlToShop={htmlToShop}
+              htmlToBl={htmlToBl}
+              style={style}
+              isTranslating={isTranslating}
+              isTranslated={isTranslated}
+              skipTranslation={skipTranslation}
+              isCodeGenerated={isCodeGenerated}
+              isSendingToSheets={isSendingToSheets}
+              isDataSentToSheets={isDataSentToSheets}
+            />
+          </>
         )}
       </div>
     </div>

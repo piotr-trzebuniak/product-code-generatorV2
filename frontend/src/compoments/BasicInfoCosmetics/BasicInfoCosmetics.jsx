@@ -19,13 +19,18 @@ const BasicInfoCosmetics = () => {
         dispatch(updateProduct({ productSku: e.target.value }));
       }}
     />
-    <Input
-      placeholder="Nazwa produktu"
-      value={productData.productName}
-      onChange={(e) => {
-        dispatch(updateProduct({ productName: e.target.value }));
-      }}
-    />
+      <Input
+        placeholder="Nazwa produktu"
+        value={productData.productName?.pl || ""}
+        onChange={(e) => {
+          dispatch(updateProduct({ 
+            productName: {
+              ...productData.productName,
+              pl: e.target.value
+            }
+          }));
+        }}
+      />
           <div className={style.basicInfo__grid}>
         <span>Porcja jednorazowa:</span>
         <Input
@@ -47,11 +52,11 @@ const BasicInfoCosmetics = () => {
         />
         <Input
           placeholder="Jednostka/typ"
-          value={productData.portion.unit}
+          value={productData.portion.unit.pl}
           onChange={(e) =>
             dispatch(
               updateProduct({
-                portion: { ...productData.portion, unit: e.target.value },
+                portion: { ...productData.portion, unit: { pl: e.target.value, en: "", de: "" } },
               })
             )
           }

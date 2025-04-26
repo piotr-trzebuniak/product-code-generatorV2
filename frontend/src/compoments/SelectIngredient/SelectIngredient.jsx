@@ -3,6 +3,8 @@ import Select from "react-select";
 import { ingredients } from "./ingredients";
 import { useDispatch } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
+import { research } from "./research";
+import { toast } from "react-toastify";
 
 
 const SelectIngredient = () => {
@@ -19,8 +21,27 @@ const SelectIngredient = () => {
 
   const handleChange = (selectedOption) => {
 
+
+
+    
     const bulletList = arrayToUnorderedList(selectedOption.value.bulletpoints)
-    dispatch(updateProduct({ bulletpoints: bulletList }));
+    dispatch(updateProduct({ bulletpoints: { pl: bulletList, en: "", de: "" } }));
+
+    const selectedIndex = selectedOption.index;
+
+    // Szukamy składnika, którego index pasuje
+    const matchingResearch = Object.values(research).find(
+      (item) => item.index === selectedIndex
+    );
+  
+    if (matchingResearch) {
+      dispatch(updateProduct({ research: matchingResearch }));
+      console.log(matchingResearch)
+    } else {
+      toast.warn(`Nie znaleziono danych research dla indexu: ${selectedIndex}`);
+      dispatch(updateProduct({ research: {} }));
+    }
+
   };
 
   return (

@@ -12,13 +12,10 @@ export const CosmeticsDesc2 = ({ onReset }) => {
   const productData = useSelector((state) => state.product.product);
 
   function removePTagsFromLists(html) {
-    // Usuwamy wszystkie znaczniki <p> oraz </p> pomiędzy <ul> i </ul> oraz <ol> i </ol>
     return html.replace(
       /(<ul[\s\S]*?>|<ol[\s\S]*?>)([\s\S]*?)(<\/ul>|<\/ol>)/g,
       (match, openTag, content, closeTag) => {
-        // Usuwamy znaczniki <p> oraz </p> tylko wewnątrz list
         const cleanedContent = content.replace(/<\/?p>/g, "");
-        // Zwracamy całą strukturę z wyczyszczonymi <p>
         return `${openTag}${cleanedContent}${closeTag}`;
       }
     );
@@ -26,28 +23,37 @@ export const CosmeticsDesc2 = ({ onReset }) => {
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: productData.cosmeticsDescription2 || "",
+    content: productData.cosmeticsDescription2?.pl || "",
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
-
       const cleanedHtml = removePTagsFromLists(html);
 
-      dispatch(updateProduct({ cosmeticsDescription2: cleanedHtml }));
-      // console.log(cleanedHtml);
+      dispatch(updateProduct({
+        cosmeticsDescription2: {
+          ...productData.cosmeticsDescription2,
+          pl: cleanedHtml
+        }
+      }));
     },
   });
+
   useEffect(() => {
-    // Resetowanie zawartości edytora w przypadku zmiany produktu
-    if (productData.cosmeticsDescription2 !== editor.getHTML()) {
-      editor.commands.setContent(productData.cosmeticsDescription2 || "");
+    if (editor && (productData.cosmeticsDescription2?.pl || "") !== editor.getHTML()) {
+      editor.commands.setContent(productData.cosmeticsDescription2?.pl || "");
     }
-  }, [productData.cosmeticsDescription2, editor]);
+  }, [productData.cosmeticsDescription2?.pl, editor]);
 
   useEffect(() => {
     if (onReset && editor) {
-      editor.commands.setContent(""); // Resetuj zawartość edytora
-      dispatch(updateProduct({ shortDescription: "" })); // Resetuj stan Redux
+      editor.commands.setContent(""); // Resetuj edytor
+      dispatch(updateProduct({
+        cosmeticsDescription2: {
+          pl: "",
+          en: "",
+          de: ""
+        }
+      }));
     }
   }, [onReset, editor, dispatch]);
 
