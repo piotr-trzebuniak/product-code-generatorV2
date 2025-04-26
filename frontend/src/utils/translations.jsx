@@ -29,9 +29,7 @@ export const translateWithExceptions = async (text, lang) => {
 
   if (!translated || translated.trim() === updatedText.trim()) {
     console.warn("Tłumaczenie nie powiodło się lub zwróciło pusty tekst.");
-    toast.warn(
-      `Tłumaczenie na ${lang} mogło się nie powieść — sprawdź wynik.`
-    );
+    toast.warn(`Tłumaczenie na ${lang} mogło się nie powieść — sprawdź wynik.`);
     translated = updatedText;
   }
 
@@ -39,7 +37,11 @@ export const translateWithExceptions = async (text, lang) => {
 };
 
 // Funkcja do tłumaczenia wszystkich pól
-export const translateAllFields = async (productData, initialState, translateWithExceptions) => {
+export const translateAllFields = async (
+  productData,
+  initialState,
+  translateWithExceptions
+) => {
   const fieldsToTranslate = [
     "productName",
     "description",
@@ -132,22 +134,13 @@ export const translateAllFields = async (productData, initialState, translateWit
               )
             : "",
           de: ingredient.ingredientValue.pl
-            ? await translateWithExceptions(
-                ingredient.ingredientValue.pl,
-                "de"
-              )
+            ? await translateWithExceptions(ingredient.ingredientValue.pl, "de")
             : "",
           fr: ingredient.ingredientValue.pl
-            ? await translateWithExceptions(
-                ingredient.ingredientValue.pl,
-                "fr"
-              )
+            ? await translateWithExceptions(ingredient.ingredientValue.pl, "fr")
             : "",
           it: ingredient.ingredientValue.pl
-            ? await translateWithExceptions(
-                ingredient.ingredientValue.pl,
-                "it"
-              )
+            ? await translateWithExceptions(ingredient.ingredientValue.pl, "it")
             : "",
         },
         additionalLines: await Promise.all(
@@ -227,10 +220,10 @@ export const translateAllFields = async (productData, initialState, translateWit
           : "",
     },
   };
-  
+
   const portionUnitPl = productData.portion.unit.pl;
   const initialPortionUnitPl = initialState.product.portion.unit.pl;
-  
+
   translatedData.portion = {
     ...productData.portion,
     unit: {
@@ -268,11 +261,15 @@ export const translateAllFields = async (productData, initialState, translateWit
 // Funkcja tłumacząca tekst na zadany język
 export const translateText = async (text, targetLang) => {
   try {
-    const response = await fetch("http://localhost:3000/translate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, targetLang }),
-    });
+    // const response = await fetch("http://localhost:3000/translate", {
+    const response = await fetch(
+      "https://product-code-generatorv2-4.onrender.com/translate",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, targetLang }),
+      }
+    );
 
     const data = await response.json();
 
