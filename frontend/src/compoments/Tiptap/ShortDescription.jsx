@@ -3,13 +3,14 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import style from './TextEditor.module.scss'
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
 
 export const ShortDescription = ({ onReset }) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const productData = useSelector((state) => state.product.product);
 
   function removePTagsFromLists(html) {
     // Usuwamy wszystkie znaczniki <p> oraz </p> pomiędzy <ul> i </ul> oraz <ol> i </ol>
@@ -21,30 +22,46 @@ export const ShortDescription = ({ onReset }) => {
     });
   }
 
-
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: ``,
+    content: productData.shortDescription?.pl || ``,
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
-
       const cleanedHtml = removePTagsFromLists(html);
 
-      dispatch(updateProduct({ shortDescription: cleanedHtml }));
+      dispatch(updateProduct({ 
+        shortDescription: {
+          ...productData.shortDescription,
+          pl: cleanedHtml 
+        }
+      }));
     },
   });
 
   React.useEffect(() => {
+    // Aktualizuj edytor po zmianie danych
+    if (editor && (productData.shortDescription?.pl || "") !== editor.getHTML()) {
+      editor.commands.setContent(productData.shortDescription?.pl || "");
+    }
+  }, [productData.shortDescription?.pl, editor]);
+
+  React.useEffect(() => {
     if (onReset && editor) {
       editor.commands.setContent(''); // Resetuj zawartość edytora
-      dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
+      dispatch(updateProduct({ 
+        shortDescription: {
+          pl: "",
+          en: "",
+          de: "" 
+        }
+      })); // Resetuj stan Redux
     }
   }, [onReset, editor, dispatch]);
 
   return (
     <div className={style.textEditorContainer}>
-      <h4>Króki opis opis</h4>
+      <h4>Króki opis</h4>
       <div className="textEditor">
         <MenuBar editor={editor} />
         <EditorContent editor={editor} />

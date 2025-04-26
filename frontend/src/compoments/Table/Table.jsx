@@ -3,7 +3,6 @@ import style from "./Table.module.scss";
 import Input from "../Input/Input";
 import { useDispatch, useSelector } from "react-redux";
 import { removeIngredient, updateProduct } from "../../redux/productSlice";
-import Button from "../Button/Button";
 import deleteIcon from "../../assets/delete-button.png";
 import addIcon from "../../assets/add-button.png";
 
@@ -13,14 +12,34 @@ const Table = () => {
     (state) => state.product.product.ingredientsTable
   );
   const portion = useSelector((state) => state.product.product.portion);
-  // console.log(ingredientsTable);
 
+  // Pomocnicza funkcja do sprawdzania i obsługi wartości
+  const getInputValue = (value) => {
+    if (value === null || value === undefined) return "";
+    if (typeof value === "object") return value.pl || "";
+    return value;
+  };
+  
   const handleIngredientChange = (index, field, value) => {
-    const updatedIngredients = ingredientsTable.map((ingredient, i) =>
-      i === index ? { ...ingredient, [field]: value } : ingredient
-    );
+    const updatedIngredients = ingredientsTable.map((ingredient, i) => {
+      if (i === index) {
+        if (["ingredient", "ingredientValue"].includes(field)) {
+          return {
+            ...ingredient,
+            [field]: {
+              ...ingredient[field],
+              pl: value,
+            },
+          };
+        }
+  
+        return { ...ingredient, [field]: value };
+      }
+      return ingredient;
+    });
     dispatch(updateProduct({ ingredientsTable: updatedIngredients }));
   };
+  
 
   const handlePortionChange = (e) => {
     dispatch(updateProduct({ portion: e.target.value }));
@@ -38,9 +57,24 @@ const Table = () => {
   ) => {
     const updatedIngredients = ingredientsTable.map((ingredient, i) => {
       if (i === ingredientIndex) {
-        const updatedLines = ingredient.additionalLines.map((line, li) =>
-          li === lineIndex ? { ...line, [field]: value } : line
-        );
+        const updatedLines = ingredient.additionalLines.map((line, li) => {
+          if (li === lineIndex) {
+            if (["ingredient", "ingredientValue"].includes(field)) {
+              return {
+                ...line,
+                [field]: {
+                  ...line[field],
+                  pl: value,
+                },
+              };
+            }
+            return {
+              ...line,
+              [field]: value,
+            };
+          }
+          return line;
+        });
         return { ...ingredient, additionalLines: updatedLines };
       }
       return ingredient;
@@ -57,8 +91,8 @@ const Table = () => {
               ...ingredient.additionalLines,
               {
                 lineIndex: ingredient.additionalLines.length + 1,
-                ingredient: "",
-                ingredientValue: "",
+                ingredient: { pl: "", en: "", de: "" },
+                ingredientValue: { pl: "", en: "", de: "" }, // ✅ poprawione
                 rws: "",
               },
             ],
@@ -86,13 +120,13 @@ const Table = () => {
     <div className={style.table}>
       <h4>Tabela wartości odżywczych</h4>
       <div className={style.table__tableHeadings}>
-        <Input value="Składniki" />
+        <Input value="Składniki" readOnly />
         <Input
           placeholder="Wielkość porcji"
-          value={`${portion.portionAmount} ${portion.unit}`}
+          value={`${portion?.portionAmount || ""} ${portion?.unit.pl || ""}`}
           onChange={handlePortionChange}
         />
-        <Input value="RWS" />
+        <Input value="RWS" readOnly />
       </div>
 
       {ingredientsTable.map((ingredient, ingredientIndex) => (
@@ -103,7 +137,7 @@ const Table = () => {
           <div className={style["table__ingredient-row"]}>
             <Input
               placeholder={`Składnik ${ingredient.ingredientIndex}`}
-              value={ingredient.ingredient}
+              value={ingredient.ingredient?.pl || ""}
               onChange={(e) =>
                 handleIngredientChange(
                   ingredientIndex,
@@ -114,7 +148,7 @@ const Table = () => {
               className={style["table__ingredient-bold"]}
             />
             <Input
-              value={ingredient.ingredientValue}
+              value={getInputValue(ingredient.ingredientValue)}
               onChange={(e) =>
                 handleIngredientChange(
                   ingredientIndex,
@@ -124,7 +158,7 @@ const Table = () => {
               }
             />
             <Input
-              value={ingredient.rws}
+              value={ingredient.rws || ""}
               onChange={(e) =>
                 handleIngredientChange(ingredientIndex, "rws", e.target.value)
               }
@@ -146,7 +180,7 @@ const Table = () => {
               >
                 <Input
                   placeholder={`Dodatkowa linia ${line.lineIndex}`}
-                  value={line.ingredient}
+                  value={line.ingredient?.pl || ""}
                   onChange={(e) =>
                     handleAdditionalLineChange(
                       ingredientIndex,
@@ -157,7 +191,7 @@ const Table = () => {
                   }
                 />
                 <Input
-                  value={line.ingredientValue}
+                  value={line.ingredientValue?.pl || ""}
                   onChange={(e) =>
                     handleAdditionalLineChange(
                       ingredientIndex,
@@ -167,8 +201,9 @@ const Table = () => {
                     )
                   }
                 />
+
                 <Input
-                  value={line.rws}
+                  value={line.rws || ""}
                   onChange={(e) =>
                     handleAdditionalLineChange(
                       ingredientIndex,

@@ -7,13 +7,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 
-
-
 export const CosmeticsDesc4 = ({onReset}) => {
   const dispatch = useDispatch()
   const productData = useSelector((state) => state.product.product);
-
-
 
   function removePTagsFromLists(html) {
     // Usuwamy wszystkie znaczniki <p> oraz </p> pomiędzy <ul> i </ul> oraz <ol> i </ol>
@@ -28,28 +24,38 @@ export const CosmeticsDesc4 = ({onReset}) => {
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: productData.cosmeticsDescription4 || "",
+    content: productData.cosmeticsDescription4?.pl || "",
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
-
       const cleanedHtml = removePTagsFromLists(html);
 
-      dispatch(updateProduct({ cosmeticsDescription4: cleanedHtml }));
-      // console.log(cleanedHtml);
+      dispatch(updateProduct({ 
+        cosmeticsDescription4: {
+          ...productData.cosmeticsDescription4,
+          pl: cleanedHtml 
+        }
+      }));
     },
   });
+
   useEffect(() => {
     // Resetowanie zawartości edytora w przypadku zmiany produktu
-    if (productData.cosmeticsDescription4 !== editor.getHTML()) {
-      editor.commands.setContent(productData.cosmeticsDescription4 || "");
+    if (editor && (productData.cosmeticsDescription4?.pl || "") !== editor.getHTML()) {
+      editor.commands.setContent(productData.cosmeticsDescription4?.pl || "");
     }
-  }, [productData.cosmeticsDescription4, editor]);
+  }, [productData.cosmeticsDescription4?.pl, editor]);
 
   useEffect(() => {
     if (onReset && editor) {
       editor.commands.setContent(''); // Resetuj zawartość edytora
-      dispatch(updateProduct({ shortDescription: '' })); // Resetuj stan Redux
+      dispatch(updateProduct({ 
+        cosmeticsDescription4: {
+          pl: "",
+          en: "",
+          de: "" 
+        }
+      })); // Resetuj stan Redux
     }
   }, [onReset, editor, dispatch]);
 

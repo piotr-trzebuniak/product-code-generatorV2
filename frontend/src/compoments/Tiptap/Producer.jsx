@@ -7,11 +7,9 @@ import { updateProduct } from "../../redux/productSlice";
 import MenuBar from "./MenuBar";
 import { useEffect } from "react";
 
-
 export const Producer = ({ initialContent }) => {
   const dispatch = useDispatch()
   const productData = useSelector((state) => state.product.product);
-
 
   function mergeParagraphsToSingleWithBreaks(input) {
     // Znajdź wszystkie treści wewnątrz znaczników <p>...</p>
@@ -30,28 +28,45 @@ export const Producer = ({ initialContent }) => {
     return `<p>${mergedContent}</p>`;
   }
 
+  // Sprawdź, czy productData.producer jest obiektem, i jeśli tak, użyj pola bl
+  const getProducerContent = () => {
+    if (typeof productData.producer === 'object' && productData.producer !== null) {
+      return productData.producer.bl || "";
+    }
+    return productData.producer || "";
+  };
 
   const editor = useEditor({
     extensions: [StarterKit, Underline],
-    content: initialContent || productData.producer.bl || "",
+    content: initialContent || getProducerContent(),
     
-
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
-
-
       const shopHtml = mergeParagraphsToSingleWithBreaks(html);
 
-      // dispatch(updateProduct({ producer: cleanedHtml }));
-      dispatch(updateProduct({ producer: { shop: shopHtml, bl: html } }));
+      // Zachowaj obecną strukturę danych producenta
+      if (typeof productData.producer === 'object' && productData.producer !== null) {
+        dispatch(updateProduct({ 
+          producer: { 
+            shop: shopHtml,
+            bl: html
+          } 
+        }));
+      } else {
+        // Jeśli producer nie jest obiektem, zapisuj jako string
+        dispatch(updateProduct({ producer: html }));
+      }
     },
   });
 
   useEffect(() => {
-    if (editor && productData.producer !== editor.getHTML()) {
-      editor.commands.setContent(productData.producer.bl || "");
+    if (editor) {
+      const currentContent = getProducerContent();
+      if (currentContent !== editor.getHTML()) {
+        editor.commands.setContent(currentContent);
+      }
     }
-  }, [productData.producer.bl, editor]); 
+  }, [productData.producer, editor]); 
 
   return (
     <div className={style.textEditorContainer}>

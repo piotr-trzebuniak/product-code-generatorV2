@@ -135,20 +135,34 @@ export const CosmeticsDescSplit = ({ onReset }) => {
 
     const result = processHtml(opis1, opis2);
 
-
-    // Zapisz do Redux
+    // Zapisz do Redux z uwzględnieniem wielojęzycznej struktury
     dispatch(
       updateProduct({
-        cosmeticsDescription1: result.result1,
-        cosmeticsDescription2: result.result2,
-        cosmeticsDescription3: opis3,
-        cosmeticsDescription4: opis4,
+        cosmeticsDescription1: {
+          pl: result.result1,
+          en: "",
+          de: ""
+        },
+        cosmeticsDescription2: {
+          pl: result.result2,
+          en: "",
+          de: ""
+        },
+        cosmeticsDescription3: {
+          pl: opis3,
+          en: "",
+          de: ""
+        },
+        cosmeticsDescription4: {
+          pl: opis4,
+          en: "",
+          de: ""
+        },
       })
     );
 
     toast.success("Kod HTML został podzielony");
   }
-
 
   const handleReset = () => {
     if (editor) {
@@ -156,10 +170,26 @@ export const CosmeticsDescSplit = ({ onReset }) => {
       setCleanedHtml("");
       dispatch(
         updateProduct({
-          cosmeticsDescription1: "",
-          cosmeticsDescription2: "",
-          cosmeticsDescription3: "",
-          cosmeticsDescription4: "",
+          cosmeticsDescription1: {
+            pl: "",
+            en: "",
+            de: ""
+          },
+          cosmeticsDescription2: {
+            pl: "",
+            en: "",
+            de: ""
+          },
+          cosmeticsDescription3: {
+            pl: "",
+            en: "",
+            de: ""
+          },
+          cosmeticsDescription4: {
+            pl: "",
+            en: "",
+            de: ""
+          },
         })
       );
     }
@@ -169,13 +199,30 @@ export const CosmeticsDescSplit = ({ onReset }) => {
   useEffect(() => {
     if (onReset && editor) {
       editor.commands.setContent("");
-      dispatch(updateProduct({ shortDescription: "" }));
+      dispatch(updateProduct({ 
+        cosmeticsDescription1: {
+          pl: "",
+          en: "",
+          de: ""
+        },
+        cosmeticsDescription2: {
+          pl: "",
+          en: "",
+          de: ""
+        },
+        cosmeticsDescription3: {
+          pl: "",
+          en: "",
+          de: ""
+        },
+        cosmeticsDescription4: {
+          pl: "",
+          en: "",
+          de: ""
+        }
+      }));
     }
   }, [onReset, editor, dispatch]);
-
-
-
-
 
   return (
     <div className={style.textEditorContainer}>

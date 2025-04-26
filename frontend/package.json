@@ -15,6 +15,7 @@
     "@tiptap/pm": "^2.8.0",
     "@tiptap/react": "^2.8.0",
     "@tiptap/starter-kit": "^2.8.0",
+    "axios": "^1.8.4",
     "html-react-parser": "^5.1.18",
     "product_app": "file:..",
     "react": "^18.2.0",
