@@ -268,7 +268,7 @@ export const translateAllFields = async (productData, initialState, translateWit
 // Funkcja tłumacząca tekst na zadany język
 export const translateText = async (text, targetLang) => {
   try {
-    const response = await fetch("http://localhost:3000/translate", {
+    const response = await fetch("http://localhost:3000/api/translate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text, targetLang }),

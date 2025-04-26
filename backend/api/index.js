@@ -15,15 +15,10 @@ const port = process.env.PORT || 3000;
 app.use(cors()); // Rozwiązuje problem CORS
 app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądania
 
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-});
 
 // Endpoint do przesyłania danych do tłumaczenia DeepL
 
-app.post("/translate", async (req, res) => {
+app.post("/api/translate", async (req, res) => {
   try {
     const { text, targetLang } = req.body;
 
@@ -67,7 +62,7 @@ app.post("/translate", async (req, res) => {
 //   }
 // });
 
-app.post("/submit", async (req, res) => {
+app.post("/api/submit", async (req, res) => {
   try {
     const data = req.body;
     const { target } = data;
@@ -112,7 +107,5 @@ app.post("/submit", async (req, res) => {
 
 
 
-// Uruchomienie serwer
-app.listen(port, () => {
-  console.log("Server listening on port 3000!");
-});
+
+export default app;

@@ -303,7 +303,7 @@ const ProductCodeGenerator = () => {
         toast.info(`Wysyłanie payloadu: ${payload.target}`)
         console.log("Wysyłanie payloadu:", payload); // <- dodaj to!
         // const response = await fetch("https://product-code-generatorv10.onrender.com/submit", {
-        const response = await fetch("http://localhost:3000/submit", {
+        const response = await fetch("http://localhost:3000/api/submit", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
