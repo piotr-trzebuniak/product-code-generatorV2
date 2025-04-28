@@ -41,9 +41,6 @@ app.use(express.static(path.join(__dirname, "/frontend/dist")));
 // Specyficzna obsługa OPTIONS dla endpointu submit
 app.options('/submit', cors());
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-});
 
 // Endpoint do przesyłania danych do tłumaczenia DeepL
 app.post("/translate", async (req, res) => {
@@ -104,6 +101,10 @@ app.post("/submit", async (req, res) => {
     console.error("Error:", error);
     res.status(500).json({ status: "error", message: "Coś poszło nie tak" });
   }
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 });
 
 // Uruchomienie serwera

@@ -293,7 +293,7 @@ const ProductCodeGenerator = () => {
       },
       {
         Sku: productData.productSku,
-        Html: htmlToEbayFr,
+        Html: htmlToEbayIt,
         target: "ebay-it",
       }
     ];
