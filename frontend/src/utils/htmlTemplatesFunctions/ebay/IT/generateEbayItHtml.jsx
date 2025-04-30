@@ -624,35 +624,35 @@ export const generateEbayItHtml = (productData) => {
                 <h4 class="section-heading">Le nostre gamme di prodotti</h4>
               </div>
               <div class="product-series__content">
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=36534927016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=36534927016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria8.png"
                     alt=""
                   />
                   <span>Aromaterapia</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257246016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257246016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria2.png"
                     alt=""
                   />
                   <span>Integratori a base di erbe</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257247016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257247016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria3.png"
                     alt=""
                   />
                   <span>La salute dei bambini</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257248016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257248016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria4.png"
                     alt=""
                   />
                   <span>Vitamine</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=36534927016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=36534927016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria5.png"
                     alt=""
@@ -661,42 +661,42 @@ export const generateEbayItHtml = (productData) => {
 
                   <span></span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257249016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257249016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria6.png"
                     alt=""
                   />
                   <span>Sesso e contraccezione</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257250016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257250016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria7.png"
                     alt=""
                   />
                   <span>Integratori di proteine</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257297016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257297016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria8.png"
                     alt=""
                   />
                   <span>Sistema immunitario</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257298016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257298016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria9.png"
                     alt=""
                   />
                   <span>Cosmetici</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257299016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257299016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria10.png"
                     alt=""
                   />
                   <span>Alimentazione sana</span>
                 </a>
-                <a href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257300016" class="product-series__box">
+                <a href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257300016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria11.png"
                     alt=""
@@ -704,7 +704,7 @@ export const generateEbayItHtml = (productData) => {
                   <span>Erbe e miscele</span>
                 </a>
                 <a
-                  href="https://www.ebay.de/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257301016"
+                  href="https://www.ebay.it/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=44257301016"
                   class="product-series__box"
                 >
                   <img
