@@ -351,7 +351,7 @@ export const generateEbayFrHtml = (productData) => {
           ${productData.tableEnd.fr}
                       <h3>Ingrédients:</h3>
                       <p>
-                      ${removeTrailingBracketAndDots(productData.ingredients.fr)}
+                      ${productData.ingredients.fr}
                       </p>
                     </div>
                   </div>
