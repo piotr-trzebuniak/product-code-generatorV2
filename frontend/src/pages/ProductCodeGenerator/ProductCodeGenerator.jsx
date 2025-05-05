@@ -266,9 +266,75 @@ const ProductCodeGenerator = () => {
   //     });
   // };
 
+  // const sendToGoogleSheets = async () => {
+  //   setIsSendingToSheets(true);
+  //   setIsDataSentToSheets(false);
+  
+  //   const payloads = [
+  //     {
+  //       Sku: productData.productSku,
+  //       Html: htmlToBl,
+  //       target: "baselinker",
+  //     },
+  //     {
+  //       Sku: productData.productSku,
+  //       Html: htmlToEbayDe,
+  //       target: "ebay-de",
+  //     },
+  //     {
+  //       Sku: productData.productSku,
+  //       Html: htmlToEbayEn,
+  //       target: "ebay-en",
+  //     },
+  //     {
+  //       Sku: productData.productSku,
+  //       Html: htmlToEbayFr,
+  //       target: "ebay-fr",
+  //     },
+  //     {
+  //       Sku: productData.productSku,
+  //       Html: htmlToEbayIt,
+  //       target: "ebay-it",
+  //     }
+  //   ];
+  
+  //   try {
+  //     for (const payload of payloads) {
+  //       toast.info(`Wysyłanie payloadu: ${payload.target}`)
+  //       console.log("Wysyłanie payloadu:", payload); // <- dodaj to!
+  //       const response = await fetch("https://product-code-generatorv2-4.onrender.com/submit", {
+  //       // const response = await fetch("http://localhost:3000/submit", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(payload),
+  //       });
+  
+  //       const result = await response.json();
+  //       toast.success(`Wysłano do arkusza ${payload.target}:`, result)
+  //       console.log(`Wysłano do arkusza ${payload.target}:`, result);
+  //     }
+  
+  //     setIsSendingToSheets(false);
+  //     setIsDataSentToSheets(true);
+  //     toast.success("Wszystkie dane zostały poprawnie wysłane do arkuszy!");
+  //   } catch (error) {
+  //     console.error("Błąd wysyłania do arkuszy:", error);
+  //     setIsSendingToSheets(false);
+  //     toast.error("Wystąpił błąd podczas wysyłania danych do arkuszy!");
+  //   }
+  // };
+
   const sendToGoogleSheets = async () => {
     setIsSendingToSheets(true);
     setIsDataSentToSheets(false);
+  
+    // Użyj zmiennej środowiskowej lub defaultowego URL na podstawie środowiska
+    const API_URL = import.meta.env.VITE_API_URL || 
+                    (window.location.hostname === 'localhost' 
+                      ? 'http://localhost:3000' 
+                      : 'https://product-code-generatorv2-4.onrender.com');
   
     const payloads = [
       {
@@ -300,10 +366,10 @@ const ProductCodeGenerator = () => {
   
     try {
       for (const payload of payloads) {
-        toast.info(`Wysyłanie payloadu: ${payload.target}`)
-        console.log("Wysyłanie payloadu:", payload); // <- dodaj to!
-        const response = await fetch("https://product-code-generatorv2-4.onrender.com/submit", {
-        // const response = await fetch("http://localhost:3000/submit", {
+        toast.info(`Wysyłanie payloadu: ${payload.target}`);
+        console.log("Wysyłanie payloadu:", payload);
+        
+        const response = await fetch(`${API_URL}/submit`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -312,7 +378,7 @@ const ProductCodeGenerator = () => {
         });
   
         const result = await response.json();
-        toast.success(`Wysłano do arkusza ${payload.target}:`, result)
+        toast.success(`Wysłano do arkusza ${payload.target}:`, result);
         console.log(`Wysłano do arkusza ${payload.target}:`, result);
       }
   

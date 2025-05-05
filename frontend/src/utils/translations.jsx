@@ -259,17 +259,50 @@ export const translateAllFields = async (
 };
 
 // Funkcja tłumacząca tekst na zadany język
+// export const translateText = async (text, targetLang) => {
+//   try {
+//     // const response = await fetch("http://localhost:3000/translate", {
+//     const response = await fetch(
+//       "https://product-code-generatorv2-4.onrender.com/translate",
+//       {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ text, targetLang }),
+//       }
+//     );
+
+//     const data = await response.json();
+
+//     if (!response.ok || !data.translatedText) {
+//       console.warn("Błąd tłumaczenia lub brak tekstu. Zwracanie oryginału.");
+//       toast.error(
+//         `Nie udało się przetłumaczyć tekstu na ${targetLang}. Użyto oryginału.`
+//       );
+//       return text;
+//     }
+
+//     return data.translatedText;
+//   } catch (error) {
+//     console.error("Błąd połączenia z API tłumaczenia:", error);
+//     toast.error(
+//       `Błąd połączenia z API tłumaczeń (${targetLang}). Użyto oryginału.`
+//     );
+//     return text;
+//   }
+// };
 export const translateText = async (text, targetLang) => {
   try {
-    // const response = await fetch("http://localhost:3000/translate", {
-    const response = await fetch(
-      "https://product-code-generatorv2-4.onrender.com/translate",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, targetLang }),
-      }
-    );
+    // Użyj zmiennej środowiskowej lub defaultowego URL na podstawie środowiska
+    const API_URL = import.meta.env.VITE_API_URL || 
+                    (window.location.hostname === 'localhost' 
+                      ? 'http://localhost:3000' 
+                      : 'https://product-code-generatorv2-4.onrender.com');
+    
+    const response = await fetch(`${API_URL}/translate`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, targetLang }),
+    });
 
     const data = await response.json();
 

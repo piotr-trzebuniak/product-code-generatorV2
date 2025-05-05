@@ -11,9 +11,24 @@ const __dirname = path.resolve();
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Skonfigurowany CORS, aby zezwalać na żądania z frontendu na Vercel
+// Definiujemy dozwolone pochodzenia (origins)
+const allowedOrigins = [
+  'https://product-code-generator-v2-frontend.vercel.app', 
+  'http://localhost:5173'
+];
+
+// Konfiguracja CORS
 app.use(cors({
-  origin: ['https://product-code-generator-v2-frontend.vercel.app', 'http://localhost:5173'],
+  origin: function(origin, callback) {
+    // Zezwalaj na żądania bez origin (np. z Postman lub bezpośrednich żądań fetch)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -23,18 +38,7 @@ app.options('*', cors());
 
 app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądania
 
-// Dodatkowe middleware dla nagłówków CORS
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://product-code-generator-v2-frontend.vercel.app');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  
-  if (req.method === 'OPTIONS') {
-    return res.sendStatus(200);
-  }
-  
-  next();
-});
+// USUNIĘTO dodatkowe middleware dla nagłówków CORS, które powodowało konflikt
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
