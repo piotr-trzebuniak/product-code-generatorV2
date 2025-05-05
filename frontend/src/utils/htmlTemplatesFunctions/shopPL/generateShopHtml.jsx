@@ -2,12 +2,16 @@ export const replaceH2WithH3 = (htmlString) => {
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlString, 'text/html');
 
-  // Zamiana <h2> na <h3>
-  doc.querySelectorAll('h2').forEach(h2 => {
+  // Pobierz wszystkie elementy h2
+  const h2Elements = doc.querySelectorAll('h2');
+  
+  // Pomiń pierwszy element h2, zacznij od indeksu 1
+  for (let i = 1; i < h2Elements.length; i++) {
+    const h2 = h2Elements[i];
     const h3 = document.createElement('h3');
     h3.innerHTML = h2.innerHTML;
     h2.replaceWith(h3);
-  });
+  }
 
   // Usuwanie <strong> otaczających treść w <h3>
   doc.querySelectorAll('h3').forEach(h3 => {
