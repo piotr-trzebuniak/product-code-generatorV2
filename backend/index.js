@@ -5,7 +5,7 @@
 // import path from "path";
 // import * as deepl from 'deepl-node';
 
-// const authKey = "b886f845-d582-4aca-b09e-dd6c37b62744:fx";
+// const authKey = "f3724d07-aab7-4790-98a7-269014e62b02:fx";
 // const translator = new deepl.Translator(authKey);
 // const __dirname = path.resolve();
 // const app = express();
