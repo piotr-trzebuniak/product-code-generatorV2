@@ -122,7 +122,7 @@ export const generateShopHtml = (productData) => {
           </div>
           ${productData.tableEnd.pl}
           <h3>Składniki:</h3>
-          <p>${productData.ingredients.pl}</p>
+          ${productData.ingredients.pl}
         </div>
       </div>
       <div class="col-md-6">
