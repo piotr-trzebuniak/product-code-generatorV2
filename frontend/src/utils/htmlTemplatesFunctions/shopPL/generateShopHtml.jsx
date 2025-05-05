@@ -94,11 +94,6 @@ export const generateShopHtml = (productData) => {
       <div class="col-md-6">
         <div class="left-column">
           ${descriptionHTML}
-          ${
-            productData.bulletpoints.pl
-              ? `<h2>Dlaczego warto stosować?</h2><p>${productData.bulletpoints.pl}</p>`
-              : ""
-          }
           <h3>Skład:</h3>
           <p>Wielkość opakowania: <strong>${productData.size.sizeAmount} ${
     productData.size.unit.pl
