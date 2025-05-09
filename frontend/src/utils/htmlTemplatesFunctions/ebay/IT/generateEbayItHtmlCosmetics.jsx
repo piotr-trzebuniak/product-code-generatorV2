@@ -1,4 +1,5 @@
 import { featuresMapIT } from "../../../featureMaps/featuresMapIT";
+import { removeTrailingBracketAndDots } from "../EN/generateEbayEnHtmlCosmetics";
 
 
 export const ingredientTableHtmlToShop = (ingredientsTable) => {
@@ -51,19 +52,6 @@ export const ingredientTableHtmlToShop = (ingredientsTable) => {
     .join(""); // Łączy wszystkie wiersze w jeden ciąg
 };
 
-function removeTrailingBracket(htmlString) {
-  // Sprawdź, czy HTML kończy się znakiem >
-  if (htmlString.endsWith('>')) {
-    // Sprawdź, czy przedostatni znak też jest >, co wskazywałoby na podwójny > na końcu
-    if (htmlString.length >= 2 && htmlString.charAt(htmlString.length - 2) === '>') {
-      // Usuń tylko ostatni znak >
-      return htmlString.slice(0, -1);
-    }
-  }
-  
-  // Jeśli nie ma problemu podwójnego > na końcu, zwróć oryginalny ciąg
-  return htmlString;
-}
 function extractIngredientsAndRemove(htmlString) {
   // Wzorzec do znalezienia nagłówka i akapitu ze składnikami (alternatywa dla "Inhaltsstoffe" i "Zutaten")
   const pattern = /<h3><strong>(Ingredienti|Zutaten):<\/strong><\/h3><p>([^<]*)<\/p>/i;
@@ -310,7 +298,7 @@ export const generateEbayItHtmlCosmetics = (productData) => {
             <div class="right-side">
               <div class="short-description">
                 <h2>${productData.productName.it}</h2>
-                ${removeTrailingBracket(productData.shortDescription.it)}
+                ${removeTrailingBracketAndDots(productData.shortDescription.it)}
               </div>
               <!-- <div class="variants">
                 <h3>Grösse:</h3>
@@ -352,9 +340,9 @@ export const generateEbayItHtmlCosmetics = (productData) => {
                 <div class="row">
                   <div class="col-md-6">
                     <div class="left-column">
-                    ${removeTrailingBracket(productData.cosmeticsDescription1.it)}
+                    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.it)}
                     <br>
-                    ${removeTrailingBracket(productData.cosmeticsDescription2.it)}
+                    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.it)}
                      ${productData.ingredientsTable[0].ingredient.it !== "" ? `
             <div class="table-responsive">
               <table class="table table-hover">
@@ -378,7 +366,7 @@ export const generateEbayItHtmlCosmetics = (productData) => {
                   </div>
                   <div class="col-md-6">
                     <div class="right-column">
-                      ${removeTrailingBracket(editedCosmeticsDescription4.modifiedHtml)}
+                      ${removeTrailingBracketAndDots(editedCosmeticsDescription4.modifiedHtml)}
                     </div>
                   </div>
                 </div>

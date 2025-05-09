@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./ProductCodeGenerator.module.scss";
 import Button from "../../compoments/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,6 +25,7 @@ import { generateEbayFrHtml } from "../../utils/htmlTemplatesFunctions/ebay/FR/g
 import { generateEbayFrHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/FR/generateEbayFrHtmlCosmetics";
 import { generateEbayItHtml } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtml";
 import { generateEbayItHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtmlCosmetics";
+import { validateMandatoryFields } from "../../utils/validateMandatoryFields";
 
 
 const ProductCodeGenerator = () => {
@@ -42,43 +43,79 @@ const ProductCodeGenerator = () => {
   // Stany do zarządzania przepływem interfejsu
   const [isTranslating, setIsTranslating] = useState(false);
   const [isTranslated, setIsTranslated] = useState(false);
+  const [translateSkipped, setTranslateSkipped] = useState(false);
   const [isCodeGenerated, setIsCodeGenerated] = useState(false);
   const [isSendingToSheets, setIsSendingToSheets] = useState(false);
   const [isDataSentToSheets, setIsDataSentToSheets] = useState(false);
+  const [translationError, setTranslationError] = useState(null);
+
+  const [areMandatoryFieldsFilled, setAreMandatoryFieldsFilled] = useState(false);
+  const [missingMandatoryFields, setMissingMandatoryFields] = useState([]);
 
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.product.product);
 
+  const checkMandatoryFields = () => {
+    if (!type) return false;
+    
+    const validation = validateMandatoryFields(productData, type);
+    setMissingMandatoryFields(validation.missingFields);
+    setAreMandatoryFieldsFilled(validation.isValid);
+    
+    return validation.isValid;
+  };
+  
+  useEffect(() => {
+    if (type) {
+      checkMandatoryFields();
+    }
+  }, [productData, type]);
+
   // TRANSLATIONS FUNCTIONS
 
   const handleTranslate = async () => {
+    if (!checkMandatoryFields()) {
+      toast.error(`Uzupełnij obowiązkowe pola: ${missingMandatoryFields.join(', ')}`);
+      return;
+    }
+
     setIsTranslating(true);
     setIsTranslated(false);
+    setTranslationError(null);
     
     try {
-      // Użyj istniejącej funkcji translateAllFields
+      // Użyj zmodyfikowanej funkcji translateAllFields
       const translatedData = await translateAllFields(
         productData,
         initialState,
-        translateText
+        setIsTranslating // Przekazujemy funkcję set do zarządzania stanem ładowania
       );
       
       // Po zakończeniu całego procesu tłumaczenia
-      setIsTranslated(true);
-      setIsTranslating(false);
+      setTranslationError(null);
       dispatch(updateProduct(translatedData));
       toast.success("Dane zostały przetłumaczone 🎉");
+      setIsTranslating(false)
+      setIsTranslated(true);
+      {console.log("Debug:", {isTranslated, translateSkipped, isTranslating})}
     } catch (error) {
       setIsTranslating(false);
-      toast.error("Błąd podczas tłumaczenia", error);
+      setTranslationError(error.message || "Nieznany błąd tłumaczenia");
+      toast.error(`Błąd tłumaczenia: ${error.message || "Nieznany błąd"}`);
       console.error("Błąd tłumaczenia:", error);
     }
   };
+  useEffect(() => {
+    if (isTranslated) {
+      console.log("Translation is complete, now isTranslated is true");
+    }
+  }, [isTranslated]);
+  {console.log("Debug:", {isTranslated, translateSkipped, isTranslating})}
   
   const skipTranslation = () => {
-    // Pomijamy tłumaczenie i ustawiamy stan jako przetłumaczony
-    setIsTranslated(true);
     toast.info("Tłumaczenie zostało pominięte");
+    setTranslateSkipped(true);
+    setTranslationError(null);
   };
 
   // ACTIONS FUNCTIONS
@@ -217,11 +254,17 @@ const ProductCodeGenerator = () => {
 
     setHtmlToShop("");
     setHtmlToBl("");
+    setHtmlToEbayDe("");
+    setHtmlToEbayEn("");
+    setHtmlToEbayFr("");
+    setHtmlToEbayIt("");
     setResetKey((prevKey) => !prevKey);
     
     // Reset stanów interfejsu
     setIsTranslating(false);
     setIsTranslated(false);
+    setTranslateSkipped(false);
+    setTranslationError(null);
     setIsCodeGenerated(false);
     setIsSendingToSheets(false);
     setIsDataSentToSheets(false);
@@ -230,101 +273,6 @@ const ProductCodeGenerator = () => {
   };
 
   // API CONNECTIONS
-
-  // const sendToGoogleSheets = () => {
-  //   setIsSendingToSheets(true);
-  //   setIsDataSentToSheets(false);
-    
-  //   const data = {
-  //     Sku: productData.productSku,
-  //     Html: htmlToBl,
-  //   };
-
-  //   console.log(data);
-
-  //   // fetch("https://product-code-generatorv10.onrender.com/submit", {
-  //   fetch("https://product-code-generatorv10.onrender.com/submit", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(data),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log("Response from backend:", data);
-  //       setIsSendingToSheets(false);
-  //       if (data.result === "Success") {
-  //         setIsDataSentToSheets(true);
-  //         toast.success("Dane zostały poprawnie wysłane do arkusza google!");
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error:", error);
-  //       setIsSendingToSheets(false);
-  //       toast.error("Nie udało się wysłać danych do arkusza google!");
-  //     });
-  // };
-
-  // const sendToGoogleSheets = async () => {
-  //   setIsSendingToSheets(true);
-  //   setIsDataSentToSheets(false);
-  
-  //   const payloads = [
-  //     {
-  //       Sku: productData.productSku,
-  //       Html: htmlToBl,
-  //       target: "baselinker",
-  //     },
-  //     {
-  //       Sku: productData.productSku,
-  //       Html: htmlToEbayDe,
-  //       target: "ebay-de",
-  //     },
-  //     {
-  //       Sku: productData.productSku,
-  //       Html: htmlToEbayEn,
-  //       target: "ebay-en",
-  //     },
-  //     {
-  //       Sku: productData.productSku,
-  //       Html: htmlToEbayFr,
-  //       target: "ebay-fr",
-  //     },
-  //     {
-  //       Sku: productData.productSku,
-  //       Html: htmlToEbayIt,
-  //       target: "ebay-it",
-  //     }
-  //   ];
-  
-  //   try {
-  //     for (const payload of payloads) {
-  //       toast.info(`Wysyłanie payloadu: ${payload.target}`)
-  //       console.log("Wysyłanie payloadu:", payload); // <- dodaj to!
-  //       const response = await fetch("https://product-code-generatorv2-4.onrender.com/submit", {
-  //       // const response = await fetch("http://localhost:3000/submit", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(payload),
-  //       });
-  
-  //       const result = await response.json();
-  //       toast.success(`Wysłano do arkusza ${payload.target}:`, result)
-  //       console.log(`Wysłano do arkusza ${payload.target}:`, result);
-  //     }
-  
-  //     setIsSendingToSheets(false);
-  //     setIsDataSentToSheets(true);
-  //     toast.success("Wszystkie dane zostały poprawnie wysłane do arkuszy!");
-  //   } catch (error) {
-  //     console.error("Błąd wysyłania do arkuszy:", error);
-  //     setIsSendingToSheets(false);
-  //     toast.error("Wystąpił błąd podczas wysyłania danych do arkuszy!");
-  //   }
-  // };
 
   const sendToGoogleSheets = async () => {
     setIsSendingToSheets(true);
@@ -392,25 +340,34 @@ const ProductCodeGenerator = () => {
     }
   };
   
-
-
   // SUPPLEMENTS GENERATOR FUNCTION
 
   const generateCode = () => {
+    if (!checkMandatoryFields()) {
+      toast.error(`Uzupełnij obowiązkowe pola: ${missingMandatoryFields.join(', ')}`);
+      return;
+    }
+
     const newHtmlToShop = generateShopHtml(productData);
     const newHtmlToBl = generateBlHtml(productData);
-    const newHtmlToEbayDe = generateEbayDeHtml(productData);
-    const newHtmlToEbayEn = generateEbayEnHtml(productData);
-    const newHtmlToEbayFr = generateEbayFrHtml(productData);
-    const newHtmlToEbayIt = generateEbayItHtml(productData);
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
     setHtmlToBl(replaceH3WithH2(newHtmlToBl));
-    setHtmlToEbayDe(newHtmlToEbayDe);
-    setHtmlToEbayEn(newHtmlToEbayEn);
-    setHtmlToEbayFr(newHtmlToEbayFr);
-    setHtmlToEbayIt(newHtmlToEbayIt);
-    
+
+    if (isTranslated) {
+      const newHtmlToEbayDe = generateEbayDeHtml(productData);
+      const newHtmlToEbayEn = generateEbayEnHtml(productData);
+      const newHtmlToEbayFr = generateEbayFrHtml(productData);
+      const newHtmlToEbayIt = generateEbayItHtml(productData);
+      
+      setHtmlToEbayDe(newHtmlToEbayDe);
+      setHtmlToEbayEn(newHtmlToEbayEn);
+      setHtmlToEbayFr(newHtmlToEbayFr);
+      setHtmlToEbayIt(newHtmlToEbayIt);
+    } else {
+      toast.warn("Kody dla eBay nie zostały wygenerowane - najpierw przetłumacz produkt lub pomiń tłumaczenie.");
+    }
+
     setIsCodeGenerated(true);
     toast.success("Kod został poprawnie wygenerowany");
   };
@@ -418,19 +375,30 @@ const ProductCodeGenerator = () => {
   // COSMETICS GENERATOR FUNCTION
 
   const generateCodeCosmetics = () => {
+    if (!checkMandatoryFields()) {
+      toast.error(`Uzupełnij obowiązkowe pola: ${missingMandatoryFields.join(', ')}`);
+      return;
+    }
+
     const newHtmlToShop = generateCosmeticsShopHtml(productData);
     const newHtmlToBl = generateCosmeticsBlHtml(productData);
-    const newHtmlToEbayDe = generateEbayDeHtmlCosmetics(productData);
-    const newHtmlToEbayEn = generateEbayEnHtmlCosmetics(productData);
-    const newHtmlToEbayFr = generateEbayFrHtmlCosmetics(productData);
-    const newHtmlToEbayIt = generateEbayItHtmlCosmetics(productData);
-
+    
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
     setHtmlToBl(replaceH3WithH2(newHtmlToBl));
-    setHtmlToEbayDe(newHtmlToEbayDe);
-    setHtmlToEbayEn(newHtmlToEbayEn);
-    setHtmlToEbayFr(newHtmlToEbayFr);
-    setHtmlToEbayIt(newHtmlToEbayIt);
+
+    if (isTranslated) {
+      const newHtmlToEbayDe = generateEbayDeHtmlCosmetics(productData);
+      const newHtmlToEbayEn = generateEbayEnHtmlCosmetics(productData);
+      const newHtmlToEbayFr = generateEbayFrHtmlCosmetics(productData);
+      const newHtmlToEbayIt = generateEbayItHtmlCosmetics(productData);
+      
+      setHtmlToEbayDe(newHtmlToEbayDe);
+      setHtmlToEbayEn(newHtmlToEbayEn);
+      setHtmlToEbayFr(newHtmlToEbayFr);
+      setHtmlToEbayIt(newHtmlToEbayIt);
+    } else {
+      toast.warn("Kody dla eBay nie zostały wygenerowane - najpierw przetłumacz produkt lub pomiń tłumaczenie.");
+    }
     
     setIsCodeGenerated(true);
     toast.success("Kod został poprawnie wygenerowany");
@@ -478,13 +446,19 @@ const ProductCodeGenerator = () => {
               copyHtmlToShopAndShortDesc={copyHtmlToShopAndShortDesc}
               htmlToShop={htmlToShop}
               htmlToBl={htmlToBl}
+              htmlToEbayDe={htmlToEbayDe}
+              htmlToEbayEn={htmlToEbayEn}
+              htmlToEbayFr={htmlToEbayFr}
+              htmlToEbayIt={htmlToEbayIt}
               style={style}
               isTranslating={isTranslating}
               isTranslated={isTranslated}
               skipTranslation={skipTranslation}
+              translateSkipped={translateSkipped}
               isCodeGenerated={isCodeGenerated}
               isSendingToSheets={isSendingToSheets}
               isDataSentToSheets={isDataSentToSheets}
+              translationError={translationError}
             />
           </>
         )}
@@ -494,3 +468,5 @@ const ProductCodeGenerator = () => {
 };
 
 export default ProductCodeGenerator;
+
+

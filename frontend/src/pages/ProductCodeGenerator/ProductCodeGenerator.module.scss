@@ -265,3 +265,163 @@
     }
   }
 }
+/* Dodatkowe style do dodania w pliku ProductCodeGenerator.module.scss */
+
+.translationError {
+  background-color: #ffe6e6;
+  border: 1px solid #ff9999;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  p {
+    color: #cc0000;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  button {
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+}
+
+.retryButton {
+  background-color: #ff8c00;
+  color: white;
+  
+  &:hover {
+    background-color: #e67e00;
+  }
+}
+
+.successButton {
+  background-color: #4CAF50;
+  color: white;
+  
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 5px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Style dla przycisków wyłączonych */
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  
+  &:hover {
+    background-color: #cccccc;
+  }
+}
+
+/* Style dla kontenerów przycisków */
+.generatorBtns__btns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Style dla sekcji przycisków */
+.generatorBtns__btns-section {
+  margin-bottom: 20px;
+  
+  h4 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+}
+
+/* Style dla layoutu przycisków */
+.generatorBtns__container {
+  display: flex;
+  gap: 30px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.generatorBtns__container-left,
+.generatorBtns__container-right {
+  flex: 1;
+}
+
+/* Dodatkowe style do dodania do istniejącego pliku CSS/SCSS */
+
+/* Styl dla komunikatu błędu tłumaczenia */
+.generator__translationError {
+  background-color: #ffecec;
+  border: 1px solid #f5aca6;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  span {
+    color: #cc0000;
+    font-weight: 500;
+    flex: 1;
+  }
+  
+  button {
+    margin-left: 15px;
+    background-color: #ff8c00;
+    
+    &:hover {
+      background-color: #e67e00;
+    }
+  }
+}
+
+/* Style dla podświetlonego przycisku resetowania po zakończeniu procesu */
+.generator__resetBtnHighlighted {
+  margin-top: 20px;
+  border-top: 2px dashed #4CAF50;
+  padding-top: 20px;
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}
+
+/* Styl dla przycisku ponownej próby tłumaczenia */
+.generator__retryBtn {
+  background-color: #ff8c00;
+  
+  &:hover {
+    background-color: #e67e00;
+  }
+}
+
+/* Animacja na ikony ładowania */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.generator__spinner {
+  animation: spin 1s linear infinite;
+}

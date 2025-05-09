@@ -34,7 +34,7 @@ const BasicInfo = () => {
         <span>Wielkość opakowania:</span>
         <Input
           placeholder="Wielkość opakowania (ilość)"
-          value={productData.size?.sizeAmount || ""}
+          value={productData.size?.sizeAmount || 0}
           onChange={(e) =>
             dispatch(
               updateProduct({
@@ -59,7 +59,7 @@ const BasicInfo = () => {
         <span>Porcja jednorazowa:</span>
         <Input
           placeholder="Porcja jednorazowa (ilość)"
-          value={productData.portion?.portionAmount || ""}
+          value={productData.portion?.portionAmount || 0}
           onChange={(e) =>
             dispatch(
               updateProduct({

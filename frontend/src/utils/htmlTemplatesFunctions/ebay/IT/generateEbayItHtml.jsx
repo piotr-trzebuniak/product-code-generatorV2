@@ -1,5 +1,7 @@
 import { ingredients } from "../../../../compoments/SelectIngredient/ingredients";
 import { featuresMapIT } from "../../../featureMaps/featuresMapIT";
+import { removeTrailingBracketAndDots } from "../EN/generateEbayEnHtmlCosmetics";
+
 
 export const ingredientTableHtmlToShop = (ingredientsTable) => {
   return ingredientsTable
@@ -94,19 +96,6 @@ export const generateFeatureHtml = (specialFeatures, featuresMapIT) => {
     )
     .join("");
 };
-function removeTrailingBracket(htmlString) {
-  // Sprawdź, czy HTML kończy się znakiem >
-  if (htmlString.endsWith('>')) {
-    // Sprawdź, czy przedostatni znak też jest >, co wskazywałoby na podwójny > na końcu
-    if (htmlString.length >= 2 && htmlString.charAt(htmlString.length - 2) === '>') {
-      // Usuń tylko ostatni znak >
-      return htmlString.slice(0, -1);
-    }
-  }
-  
-  // Jeśli nie ma problemu podwójnego > na końcu, zwróć oryginalny ciąg
-  return htmlString;
-}
 
 
 function generateResearchHTML(data) {
@@ -287,7 +276,7 @@ export const generateEbayItHtml = (productData) => {
             <div class="right-side">
               <div class="short-description">
                 <h2>${productData.productName.it}</h2>
-                ${removeTrailingBracket(productData.shortDescription.it)}
+                ${removeTrailingBracketAndDots(productData.shortDescription.it)}
               </div>
               <!-- <div class="variants">
                 <h3>Grösse:</h3>
@@ -363,7 +352,7 @@ export const generateEbayItHtml = (productData) => {
           ${productData.tableEnd.it}
                       <h3>Ingredienti:</h3>
                       <p>
-                      ${removeTrailingBracket(productData.ingredients.it)}
+                      ${removeTrailingBracketAndDots(productData.ingredients.it)}
                       </p>
                     </div>
                   </div>
@@ -371,14 +360,14 @@ export const generateEbayItHtml = (productData) => {
                     <div class="right-column">
                       <h3>Controindicazioni</h3>
                       <p>
-                      ${removeTrailingBracket(productData.contraindications.it)}
+                      ${removeTrailingBracketAndDots(productData.contraindications.it)}
                       </p>
                       <h3>Ingestione</h3>
-                      <p>${removeTrailingBracket(productData.howToUse.it)}</p>
+                      <p>${removeTrailingBracketAndDots(productData.howToUse.it)}</p>
                       <h3>Immagazzinamento</h3>
-                      <p>${removeTrailingBracket(productData.storage.it)}</p>
+                      <p>${removeTrailingBracketAndDots(productData.storage.it)}</p>
                       <h3>Importante</h3>
-                      <p>${removeTrailingBracket(productData.additionalInformation.it)}</p>
+                      <p>${removeTrailingBracketAndDots(productData.additionalInformation.it)}</p>
                       <h4>Produttore</h4>
                       ${productData.producer.bl}
                       ${
