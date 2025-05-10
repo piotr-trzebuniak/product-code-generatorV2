@@ -369,6 +369,7 @@ const ProductCodeGenerator = () => {
     }
 
     setIsCodeGenerated(true);
+    console.log(productData.ingredients.fr)
     toast.success("Kod został poprawnie wygenerowany");
   };
 

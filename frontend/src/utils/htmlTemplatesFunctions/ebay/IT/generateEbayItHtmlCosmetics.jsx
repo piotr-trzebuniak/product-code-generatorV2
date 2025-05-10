@@ -504,6 +504,8 @@ export const generateEbayItHtmlCosmetics = (productData) => {
                 </table>
               </div>
             </div> -->
+          ${editedCosmeticsDescription4.extractedText ?
+            `
             <a name="researches"></a>
             <div id="researches" class="researches section">
               <div class="researches__heading">
@@ -514,7 +516,8 @@ export const generateEbayItHtmlCosmetics = (productData) => {
                 <h4 class="section-heading">Ingredienti</h4>
               </div>
               <p>${editedCosmeticsDescription4.extractedText}</p>
-            </div>
+            </div>`
+            : ''}
             <!-- <div class="propositions section">
               <div class="propositions__heading">
                 <img

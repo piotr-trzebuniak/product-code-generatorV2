@@ -1,6 +1,7 @@
 export const exceptions = [
     "Cztery Szpaki",
     "Zielarnia Suwalska",
-    "Vitaler's"
+    "Vitaler's",
+    "Life Extension",
   ];
   

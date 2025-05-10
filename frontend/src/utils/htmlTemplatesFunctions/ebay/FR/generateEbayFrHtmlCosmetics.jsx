@@ -298,7 +298,7 @@ export const generateEbayFrHtmlCosmetics = (productData) => {
             <div class="right-side">
               <div class="short-description">
                 <h2>${productData.productName.fr}</h2>
-                ${removeTrailingBracketAndDots(productData.shortDescription.fr)}
+                <p>${removeTrailingBracketAndDots(productData.shortDescription.fr)}</p>
               </div>
               <!-- <div class="variants">
                 <h3>Grösse:</h3>
@@ -504,6 +504,8 @@ export const generateEbayFrHtmlCosmetics = (productData) => {
                 </table>
               </div>
             </div> -->
+            ${editedCosmeticsDescription4.extractedText ?
+            `
             <a name="researches"></a>
             <div id="researches" class="researches section">
               <div class="researches__heading">
@@ -511,10 +513,11 @@ export const generateEbayFrHtmlCosmetics = (productData) => {
                   src="https://elektropak.pl/ebay/heading-icons/researches-heading-icon.png"
                   alt=""
                 />
-                <h4 class="section-heading">Inhaltsstoffe</h4>
+                <h4 class="section-heading">Ingrédients</h4>
               </div>
               <p>${editedCosmeticsDescription4.extractedText}</p>
-            </div>
+            </div>`
+            : ''}
             <!-- <div class="propositions section">
               <div class="propositions__heading">
                 <img
@@ -893,7 +896,7 @@ export const generateEbayFrHtmlCosmetics = (productData) => {
 
   /* SHORT DESCRIPTIONS */
 
-  .short-description p {
+  .short-description {
     font-size: 14px;
   }
 
