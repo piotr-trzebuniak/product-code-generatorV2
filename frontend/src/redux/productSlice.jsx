@@ -76,8 +76,8 @@ const initialState = {
       fr: "Le produit ne doit pas être utilisé comme substitut (remplacement) d'un régime alimentaire équilibré. Une alimentation équilibrée et un mode de vie sain sont importants pour le fonctionnement du corps humain. Ne pas dépasser la dose journalière maximale recommandée.",
       it: "Il prodotto non deve essere utilizzato come sostituto (sostituzione) di una dieta ben bilanciata. Una dieta equilibrata e uno stile di vita sano sono importanti per il funzionamento del corpo umano. Non superare la dose massima giornaliera raccomandata.",
     },
-    producer: "",
-    responsibleEntity: "",
+    producer: { shop: "", bl: "" },
+    responsibleEntity: { shop: "", bl: "" },
     tableEnd: {
       pl: "<p><b>RWS</b> - Dzienna referencyjna wartość spożycia</p> <p><b>&lt;&gt;</b> Nie ustalono dziennej referencyjnej wartości spożycia</p>",
       en: "<p><strong>RI</strong> - Daily reference intake value</p><p><strong>&lt;&gt;</strong> No daily reference intake value has been established</p>",

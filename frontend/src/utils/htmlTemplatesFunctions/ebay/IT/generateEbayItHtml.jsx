@@ -371,7 +371,7 @@ export const generateEbayItHtml = (productData) => {
                       <h4>Produttore</h4>
                       ${productData.producer.bl}
                       ${
-                        productData.responsibleEntity
+                        productData.responsibleEntity.shop
                           ? `<h4>Organismo responsabile</h4>${productData.responsibleEntity.bl}`
                           : ""
                       }

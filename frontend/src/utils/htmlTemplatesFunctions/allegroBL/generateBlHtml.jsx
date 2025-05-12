@@ -137,7 +137,7 @@ export const generateIngredientsHTML = (ingredientsTable) => {
         <h2>Producent:</h2>
         ${productData.producer.bl}
         ${
-          productData.responsibleEntity
+          productData.responsibleEntity.shop
             ? `<h2>Podmiot odpowiedzialny:</h2>${productData.responsibleEntity.bl}`
             : ""
         }

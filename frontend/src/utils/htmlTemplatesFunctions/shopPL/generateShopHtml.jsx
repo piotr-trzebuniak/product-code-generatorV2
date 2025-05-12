@@ -142,7 +142,7 @@ export const generateShopHtml = (productData) => {
           <h4>Producent:</h4>
           ${productData.producer.shop}
           ${
-            productData.responsibleEntity
+            productData.responsibleEntity.shop
               ? `<h4>Podmiot odpowiedzialny:</h4>${productData.responsibleEntity.shop}`
               : ""
           }
