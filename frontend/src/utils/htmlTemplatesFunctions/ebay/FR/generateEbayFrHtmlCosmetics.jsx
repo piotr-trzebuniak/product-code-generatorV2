@@ -340,9 +340,9 @@ export const generateEbayFrHtmlCosmetics = (productData) => {
                 <div class="row">
                   <div class="col-md-6">
                     <div class="left-column">
-                    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.fr)}
+                    ${productData.cosmeticsDescription1.fr}
                     <br>
-                    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.fr)}
+                    ${productData.cosmeticsDescription2.fr}
                      ${productData.ingredientsTable[0].ingredient.fr !== "" ? `
             <div class="table-responsive">
               <table class="table table-hover">
