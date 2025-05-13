@@ -1,7 +1,6 @@
 import { featuresMapDE } from "../../../featureMaps/featuresMapDE";
 import { removeTrailingBracketAndDots } from "../EN/generateEbayEnHtmlCosmetics";
 
-
 export const ingredientTableHtmlToShop = (ingredientsTable) => {
   return ingredientsTable
     .map((ingredient) => {
@@ -52,37 +51,33 @@ export const ingredientTableHtmlToShop = (ingredientsTable) => {
     .join(""); // Łączy wszystkie wiersze w jeden ciąg
 };
 
-
 function extractIngredientsAndRemove(htmlString) {
   // Wzorzec do znalezienia nagłówka i akapitu ze składnikami (alternatywa dla "Inhaltsstoffe" i "Zutaten")
-  const pattern = /<h3><strong>(Inhaltsstoffe|Zutaten):<\/strong><\/h3><p>([^<]*)<\/p>/i;
-  
+  const pattern =
+    /<h3><strong>(Inhaltsstoffe|Zutaten):<\/strong><\/h3><p>([^<]*)<\/p>/i;
+
   // Szukaj dopasowania
   const match = htmlString.match(pattern);
-  
+
   if (!match) {
     console.log('Nie znaleziono nagłówka "Inhaltsstoffe:" lub składników');
     return {
-      extractedText: '',
-      modifiedHtml: htmlString
+      extractedText: "",
+      modifiedHtml: htmlString,
     };
   }
-  
+
   // Wyekstrahowany tekst składników (grupa 2 z wyrażenia regularnego)
   const extractedText = match[2].trim();
-  
+
   // Usuń cały znaleziony fragment z HTML
-  const modifiedHtml = htmlString.replace(match[0], '');
-  
+  const modifiedHtml = htmlString.replace(match[0], "");
+
   return {
     extractedText: extractedText,
-    modifiedHtml: modifiedHtml
+    modifiedHtml: modifiedHtml,
   };
 }
-
-
-
-
 
 export const generateRoleHtml = (htmlString) => {
   const ICON_URL = "https://elektropak.pl/ebay/role-icon.png";
@@ -95,30 +90,31 @@ export const generateRoleHtml = (htmlString) => {
     return htmlString;
   }
 
-  // Zidentyfikuj punkty na liście
-  const bulletpoints = [...htmlString.matchAll(/<li><strong>(.*?)<\/strong> - (.*?)<\/li>/g)].map(
-    (match) => ({
-      title: match[1].trim(),
-      description: match[2].trim()
-    })
-  );
+  // Zidentyfikuj wszystkie elementy listy - użyj 's' flag dla obsługi wielu linii
+  const liElements = [
+    ...htmlString.matchAll(/<li><strong>(.*?)<\/strong>(.*?)<\/li>/gs),
+  ];
 
   // Generowanie HTML
-  const headerHtml = headerText ? `<h3><strong>${headerText}</strong></h3>` : '';
-  
-  const listHtml = bulletpoints
+  const headerHtml = headerText
+    ? `<h3><strong>${headerText}</strong></h3>`
+    : "";
+
+  const listHtml = liElements
     .map(
-      ({ title, description }) => `
+      (match) => `
         <div class="role">
           <img src="${ICON_URL}" alt="" />
-          <span><strong>${title}</strong> - ${description}</span>
+          <span><strong>${match[1].trim()}</strong>${match[2].trim()}</span>
         </div>`
     )
     .join("");
 
-  return headerHtml + listHtml;
+  return `<div class="roles">
+                ${headerHtml}
+                ${listHtml}
+              </div>`;
 };
-
 
 export const generateFeatureHtml = (specialFeatures, featuresMapDE) => {
   const ICON_BASE_URL = "https://elektropak.pl/ebay/icons/";
@@ -146,7 +142,6 @@ export const generateFeatureHtml = (specialFeatures, featuresMapDE) => {
     .join("");
 };
 
-
 export const generateEbayDeHtmlCosmetics = (productData) => {
   if (
     !productData ||
@@ -157,8 +152,9 @@ export const generateEbayDeHtmlCosmetics = (productData) => {
     return ""; // Zwracamy pusty string, jeśli ingredientsTable jest niewłaściwe
   }
 
-  const editedCosmeticsDescription4 = extractIngredientsAndRemove(productData.cosmeticsDescription4.de)
-
+  const editedCosmeticsDescription4 = extractIngredientsAndRemove(
+    productData.cosmeticsDescription4.de
+  );
 
   const ingredientsHTML = ingredientTableHtmlToShop(
     productData.ingredientsTable
@@ -341,10 +337,16 @@ export const generateEbayDeHtmlCosmetics = (productData) => {
                 <div class="row">
                   <div class="col-md-6">
                     <div class="left-column">
-                    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.de)}
+                    ${removeTrailingBracketAndDots(
+                      productData.cosmeticsDescription1.de
+                    )}
                     <br>
-                    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.de)}
-                     ${productData.ingredientsTable[0].ingredient.de !== "" ? `
+                    ${removeTrailingBracketAndDots(
+                      productData.cosmeticsDescription2.de
+                    )}
+                     ${
+                       productData.ingredientsTable[0].ingredient.de !== ""
+                         ? `
             <div class="table-responsive">
               <table class="table table-hover">
               <thead class="table-lighter">
@@ -360,14 +362,18 @@ export const generateEbayDeHtmlCosmetics = (productData) => {
               </table>
             </div>
             ${productData.tableEnd.de}
-                      ` : ""}
+                      `
+                         : ""
+                     }
 
                      
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="right-column">
-                      ${removeTrailingBracketAndDots(editedCosmeticsDescription4.modifiedHtml)}
+                      ${removeTrailingBracketAndDots(
+                        editedCosmeticsDescription4.modifiedHtml
+                      )}
                     </div>
                   </div>
                 </div>
@@ -505,8 +511,9 @@ export const generateEbayDeHtmlCosmetics = (productData) => {
                 </table>
               </div>
             </div> -->
-            ${editedCosmeticsDescription4.extractedText ?
-            `
+            ${
+              editedCosmeticsDescription4.extractedText
+                ? `
             <a name="researches"></a>
             <div id="researches" class="researches section">
               <div class="researches__heading">
@@ -518,7 +525,8 @@ export const generateEbayDeHtmlCosmetics = (productData) => {
               </div>
               <p>${editedCosmeticsDescription4.extractedText}</p>
             </div>`
-            : ''}
+                : ""
+            }
             <!-- <div class="propositions section">
               <div class="propositions__heading">
                 <img
