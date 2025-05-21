@@ -612,7 +612,7 @@ export const generateEbayEnHtml = (productData) => {
                 <h4 class="section-heading">Our product series</h4>
               </div>
               <div class="product-series__content">
-                <a href="https://www.ebay.co.uk/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=36534927016" class="product-series__box">
+                <a href="https://www.ebay.co.uk/str/medpaksupplements/Dietary-Supplements/_i.html?store_cat=36534928016" class="product-series__box">
                   <img
                     src="https://elektropak.pl/ebay/series/seria8.png"
                     alt=""
