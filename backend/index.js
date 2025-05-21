@@ -80,7 +80,7 @@
 
 //     switch (target) {
 //       case "baselinker":
-//         scriptUrl = "https://script.google.com/macros/s/AKfycbxg-AU0-_QF3YLVcFvFDMbqD0-vR2drViv_gUig4wWF-HToMRHyNiliSe9qvdClYm6r/exec";
+//         scriptUrl = "https://script.google.com/macros/s/AKfycbwjUP2ECcn5Jjo5yjIwWUEvz0Ivj9alyy8QUr4RjDko1sRKIOroYS4WSxwP9Z7MOlIqyg/exec";
 //         break;
 //       case "ebay-de":
 //         scriptUrl = "https://script.google.com/macros/s/AKfycbxzPxtRUEkjKQRWBz5WoP2OKUnI9RvlfIiATwvdUfY-ysZ6MuZJkc2ffULNjXwORgIJ/exec";
@@ -198,7 +198,7 @@ app.post("/submit", async (req, res) => {
 
     switch (target) {
       case "baselinker":
-        scriptUrl = "https://script.google.com/macros/s/AKfycbxg-AU0-_QF3YLVcFvFDMbqD0-vR2drViv_gUig4wWF-HToMRHyNiliSe9qvdClYm6r/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbwjUP2ECcn5Jjo5yjIwWUEvz0Ivj9alyy8QUr4RjDko1sRKIOroYS4WSxwP9Z7MOlIqyg/exec";
         break;
       case "ebay-de":
         scriptUrl = "https://script.google.com/macros/s/AKfycbxzPxtRUEkjKQRWBz5WoP2OKUnI9RvlfIiATwvdUfY-ysZ6MuZJkc2ffULNjXwORgIJ/exec";
