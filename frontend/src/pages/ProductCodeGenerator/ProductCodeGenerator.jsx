@@ -297,6 +297,8 @@ const ProductCodeGenerator = () => {
         Sku: productData.productSku,
         Html: htmlToBl,
         target: "baselinker",
+        Type: type,
+        ProductName: productData.productName.pl,
       },
       {
         Sku: productData.productSku,
