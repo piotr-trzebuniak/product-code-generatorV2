@@ -9,6 +9,7 @@
 // import path from "path";
 // import * as deepl from 'deepl-node';
 
+
 // const authKey = process.env.DEEPL_AUTH_KEY;
 // const translator = new deepl.Translator(authKey);
 // const __dirname = path.resolve();
@@ -17,7 +18,7 @@
 
 // // Definiujemy dozwolone pochodzenia (origins)
 // const allowedOrigins = [
-//   'https://product-code-generator-v2-frontend.vercel.app',
+//   'https://product-code-generator-v2-frontend.vercel.app', 
 //   'http://localhost:5173'
 // ];
 
@@ -26,7 +27,7 @@
 //   origin: function(origin, callback) {
 //     // Zezwalaj na żądania bez origin (np. z Postman lub bezpośrednich żądań fetch)
 //     if (!origin) return callback(null, true);
-
+    
 //     if (allowedOrigins.indexOf(origin) !== -1) {
 //       callback(null, true);
 //     } else {
@@ -48,6 +49,7 @@
 
 // // Specyficzna obsługa OPTIONS dla endpointu submit
 // app.options('/submit', cors());
+
 
 // // Endpoint do przesyłania danych do tłumaczenia DeepL
 // app.post("/translate", async (req, res) => {
@@ -121,14 +123,14 @@
 
 // BACKEND RENDER.COM
 
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
 dotenv.config();
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import fetch from "node-fetch";
 import path from "path";
-import * as deepl from "deepl-node";
+import * as deepl from 'deepl-node';
 
 const authKey = process.env.DEEPL_AUTH_KEY;
 const translator = new deepl.Translator(authKey);
@@ -137,45 +139,35 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Skonfigurowany CORS, aby zezwalać na żądania z frontendu na Vercel
-app.use(
-  cors({
-    origin: [
-      "https://product-code-generator-v2-frontend.vercel.app",
-      "http://localhost:5173",
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+app.use(cors({
+  origin: ['https://product-code-generator-v2-frontend.vercel.app', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Obsługa preflight requests
-app.options("*", cors());
+app.options('*', cors());
 
 app.use(bodyParser.json()); // Pozwala na odbieranie JSON w ciele żądania
 
 // Dodatkowe middleware dla nagłówków CORS
 app.use((req, res, next) => {
-  res.header(
-    "Access-Control-Allow-Origin",
-    "https://product-code-generator-v2-frontend.vercel.app"
-  );
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-  );
-
-  if (req.method === "OPTIONS") {
+  res.header('Access-Control-Allow-Origin', 'https://product-code-generator-v2-frontend.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  
+  if (req.method === 'OPTIONS') {
     return res.sendStatus(200);
   }
-
+  
   next();
 });
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 // Specyficzna obsługa OPTIONS dla endpointu submit
-app.options("/submit", cors());
+app.options('/submit', cors());
+
 
 // Endpoint do przesyłania danych do tłumaczenia DeepL
 app.post("/translate", async (req, res) => {
@@ -183,12 +175,7 @@ app.post("/translate", async (req, res) => {
     const { text, targetLang } = req.body;
 
     if (!text || !targetLang) {
-      return res
-        .status(400)
-        .json({
-          status: "error",
-          message: "Brak tekstu lub języka docelowego",
-        });
+      return res.status(400).json({ status: "error", message: "Brak tekstu lub języka docelowego" });
     }
 
     const result = await translator.translateText(text, null, targetLang);
@@ -211,29 +198,22 @@ app.post("/submit", async (req, res) => {
 
     switch (target) {
       case "baselinker":
-        scriptUrl =
-          "https://script.google.com/macros/s/AKfycbwjUP2ECcn5Jjo5yjIwWUEvz0Ivj9alyy8QUr4RjDko1sRKIOroYS4WSxwP9Z7MOlIqyg/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbwjUP2ECcn5Jjo5yjIwWUEvz0Ivj9alyy8QUr4RjDko1sRKIOroYS4WSxwP9Z7MOlIqyg/exec";
         break;
       case "ebay-de":
-        scriptUrl =
-          "https://script.google.com/macros/s/AKfycbyZr-kaidm18V8X5BkZBCfaNl37aZrFmxGWsjCuxsBb5bPpsk_0eVRZmhecGzHf-2l-/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbyZr-kaidm18V8X5BkZBCfaNl37aZrFmxGWsjCuxsBb5bPpsk_0eVRZmhecGzHf-2l-/exec";
         break;
       case "ebay-en":
-        scriptUrl =
-          "https://script.google.com/macros/s/AKfycbwyEO4F7S4aTifLvuIiQIXCpKvgxqjfpDcwx-5xGcdjcNzxK0Q5YJgTVmzz0JXaX5sJ/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbwyEO4F7S4aTifLvuIiQIXCpKvgxqjfpDcwx-5xGcdjcNzxK0Q5YJgTVmzz0JXaX5sJ/exec";
         break;
       case "ebay-fr":
-        scriptUrl =
-          "https://script.google.com/macros/s/AKfycbyKR-A2f731UR-6ZF0xsLPiOTEUl73MAlzDWKVuCchXicEmnjfRn55jLy00jVHyfetE/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbyKR-A2f731UR-6ZF0xsLPiOTEUl73MAlzDWKVuCchXicEmnjfRn55jLy00jVHyfetE/exec";
         break;
       case "ebay-it":
-        scriptUrl =
-          "https://script.google.com/macros/s/AKfycbz7DL9Kp5g5PyuPrnUrMleVmmWlNwHZU7ZYKZDOi6vxqjeRgnLpkUr1u9Ky3z7nLSmHGg/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbz7DL9Kp5g5PyuPrnUrMleVmmWlNwHZU7ZYKZDOi6vxqjeRgnLpkUr1u9Ky3z7nLSmHGg/exec";
         break;
       default:
-        return res
-          .status(400)
-          .json({ status: "error", message: "Nieznany typ celu (target)" });
+        return res.status(400).json({ status: "error", message: "Nieznany typ celu (target)" });
     }
 
     const response = await fetch(scriptUrl, {
