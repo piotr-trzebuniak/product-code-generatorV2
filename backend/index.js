@@ -8,6 +8,7 @@
 // import fetch from "node-fetch";
 // import path from "path";
 // import * as deepl from 'deepl-node';
+// import { splitHtml } from './splitHtml.js';
 
 
 // const authKey = process.env.DEEPL_AUTH_KEY;
@@ -112,6 +113,26 @@
 //   }
 // });
 
+// // SPLIT HTML START
+
+// app.post("/split-html", (req, res) => {
+//   try {
+//     const { html } = req.body;
+
+//     if (!html) {
+//       return res.status(400).json({ error: "Brak danych HTML" });
+//     }
+
+//     const result = splitHtml(html);
+//     res.json(result);
+//   } catch (error) {
+//     console.error("Błąd splitHtml:", error);
+//     res.status(500).json({ error: "Wewnętrzny błąd serwera" });
+//   }
+// });
+
+// // SPLIT HTML FINISH
+
 // app.get("*", (req, res) => {
 //   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 // });
@@ -131,6 +152,7 @@ import bodyParser from "body-parser";
 import fetch from "node-fetch";
 import path from "path";
 import * as deepl from 'deepl-node';
+import { splitHtml } from './splitHtml.js';
 
 const authKey = process.env.DEEPL_AUTH_KEY;
 const translator = new deepl.Translator(authKey);
@@ -229,6 +251,26 @@ app.post("/submit", async (req, res) => {
     res.status(500).json({ status: "error", message: "Coś poszło nie tak" });
   }
 });
+
+// SPLIT HTML START
+
+app.post("/split-html", (req, res) => {
+  try {
+    const { html } = req.body;
+
+    if (!html) {
+      return res.status(400).json({ error: "Brak danych HTML" });
+    }
+
+    const result = splitHtml(html);
+    res.json(result);
+  } catch (error) {
+    console.error("Błąd splitHtml:", error);
+    res.status(500).json({ error: "Wewnętrzny błąd serwera" });
+  }
+});
+
+// SPLIT HTML FINISH
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));

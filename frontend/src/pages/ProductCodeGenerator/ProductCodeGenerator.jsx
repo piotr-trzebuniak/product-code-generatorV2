@@ -282,6 +282,31 @@ const ProductCodeGenerator = () => {
 
   // API CONNECTIONS
 
+  const callSplitHtmlFromBackend = async (html) => {
+    const API_URL =
+      import.meta.env.VITE_API_URL ||
+      (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : "https://product-code-generatorv2-4.onrender.com");
+
+    try {
+      const response = await fetch(`${API_URL}/split-html`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ html }),
+      });
+
+      if (!response.ok) throw new Error("Błąd podczas parsowania HTML");
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Błąd pobierania danych z /split-html:", error);
+      toast.error("Nie udało się sparsować HTML na backendzie.");
+      return null;
+    }
+  };
+
   const sendToGoogleSheets = async () => {
     setIsSendingToSheets(true);
     setIsDataSentToSheets(false);
@@ -306,14 +331,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayDe,
         ProductName: productData.productName.de,
         Type: type,
-        // LogoAndMenu: productData.ebayDE.logoAndMenu,
-        // Gallery: productData.ebayDE.gallery,
-        // ShortDescription: productData.ebayDE.shortDescription,
-        // Bulletpoints: productData.ebayDE.bulletpoints,
-        // Icons: productData.ebayDE.icons,
-        // LongDescription: productData.ebayDE.longDescription,
-        // Research: productData.ebayDE.research,
-        // ProductSeries: productData.ebayDE.productSeries,
+        LogoAndMenu: productData.ebayDE.logoAndMenu,
+        Gallery: productData.ebayDE.gallery,
+        ShortDescription: productData.ebayDE.shortDescription,
+        Bulletpoints: productData.ebayDE.bulletpoints,
+        Icons: productData.ebayDE.icons,
+        LongDescription: productData.ebayDE.longDescription,
+        Research: productData.ebayDE.research,
+        ProductSeries: productData.ebayDE.productSeries,
         target: "ebay-de",
       },
       {
@@ -321,14 +346,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayEn,
         ProductName: productData.productName.en,
         Type: type,
-        // LogoAndMenu: productData.ebayEN.logoAndMenu,
-        // Gallery: productData.ebayEN.gallery,
-        // ShortDescription: productData.ebayEN.shortDescription,
-        // Bulletpoints: productData.ebayEN.bulletpoints,
-        // Icons: productData.ebayEN.icons,
-        // LongDescription: productData.ebayEN.longDescription,
-        // Research: productData.ebayEN.research,
-        // ProductSeries: productData.ebayEN.productSeries,
+        LogoAndMenu: productData.ebayEN.logoAndMenu,
+        Gallery: productData.ebayEN.gallery,
+        ShortDescription: productData.ebayEN.shortDescription,
+        Bulletpoints: productData.ebayEN.bulletpoints,
+        Icons: productData.ebayEN.icons,
+        LongDescription: productData.ebayEN.longDescription,
+        Research: productData.ebayEN.research,
+        ProductSeries: productData.ebayEN.productSeries,
         target: "ebay-en",
       },
       {
@@ -336,14 +361,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayFr,
         ProductName: productData.productName.fr,
         Type: type,
-        // LogoAndMenu: productData.ebayFR.logoAndMenu,
-        // Gallery: productData.ebayFR.gallery,
-        // ShortDescription: productData.ebayFR.shortDescription,
-        // Bulletpoints: productData.ebayFR.bulletpoints,
-        // Icons: productData.ebayFR.icons,
-        // LongDescription: productData.ebayFR.longDescription,
-        // Research: productData.ebayFR.research,
-        // ProductSeries: productData.ebayFR.productSeries,
+        LogoAndMenu: productData.ebayFR.logoAndMenu,
+        Gallery: productData.ebayFR.gallery,
+        ShortDescription: productData.ebayFR.shortDescription,
+        Bulletpoints: productData.ebayFR.bulletpoints,
+        Icons: productData.ebayFR.icons,
+        LongDescription: productData.ebayFR.longDescription,
+        Research: productData.ebayFR.research,
+        ProductSeries: productData.ebayFR.productSeries,
         target: "ebay-fr",
       },
       {
@@ -351,14 +376,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayIt,
         ProductName: productData.productName.it,
         Type: type,
-        // LogoAndMenu: productData.ebayIT.logoAndMenu,
-        // Gallery: productData.ebayIT.gallery,
-        // ShortDescription: productData.ebayIT.shortDescription,
-        // Bulletpoints: productData.ebayIT.bulletpoints,
-        // Icons: productData.ebayIT.icons,
-        // LongDescription: productData.ebayIT.longDescription,
-        // Research: productData.ebayIT.research,
-        // ProductSeries: productData.ebayIT.productSeries,
+        LogoAndMenu: productData.ebayIT.logoAndMenu,
+        Gallery: productData.ebayIT.gallery,
+        ShortDescription: productData.ebayIT.shortDescription,
+        Bulletpoints: productData.ebayIT.bulletpoints,
+        Icons: productData.ebayIT.icons,
+        LongDescription: productData.ebayIT.longDescription,
+        Research: productData.ebayIT.research,
+        ProductSeries: productData.ebayIT.productSeries,
         target: "ebay-it",
       },
     ];
@@ -393,7 +418,7 @@ const ProductCodeGenerator = () => {
 
   // SUPPLEMENTS GENERATOR FUNCTION
 
-  const generateCode = () => {
+  const generateCode = async () => {
     if (!checkMandatoryFields()) {
       toast.error(
         `Uzupełnij obowiązkowe pola: ${missingMandatoryFields.join(", ")}`
@@ -418,10 +443,17 @@ const ProductCodeGenerator = () => {
       setHtmlToEbayFr(newHtmlToEbayFr);
       setHtmlToEbayIt(newHtmlToEbayIt);
 
-      // dispatch(updateProduct({ ebayDE: splitHtml(newHtmlToEbayDe) }));
-      // dispatch(updateProduct({ ebayEN: splitHtml(newHtmlToEbayEn) }));
-      // dispatch(updateProduct({ ebayFR: splitHtml(newHtmlToEbayFr) }));
-      // dispatch(updateProduct({ ebayIT: splitHtml(newHtmlToEbayIt) }));
+      const splitDE = await callSplitHtmlFromBackend(newHtmlToEbayDe);
+      if (splitDE) dispatch(updateProduct({ ebayDE: splitDE }));
+
+      const splitEN = await callSplitHtmlFromBackend(newHtmlToEbayEn);
+      if (splitEN) dispatch(updateProduct({ ebayEN: splitEN }));
+
+      const splitFR = await callSplitHtmlFromBackend(newHtmlToEbayFr);
+      if (splitFR) dispatch(updateProduct({ ebayFR: splitFR }));
+
+      const splitIT = await callSplitHtmlFromBackend(newHtmlToEbayIt);
+      if (splitIT) dispatch(updateProduct({ ebayIT: splitIT }));
     } else {
       toast.warn(
         "Kody dla eBay nie zostały wygenerowane - najpierw przetłumacz produkt lub pomiń tłumaczenie."
@@ -435,7 +467,7 @@ const ProductCodeGenerator = () => {
 
   // COSMETICS GENERATOR FUNCTION
 
-  const generateCodeCosmetics = () => {
+  const generateCodeCosmetics = async () => {
     if (!checkMandatoryFields()) {
       toast.error(
         `Uzupełnij obowiązkowe pola: ${missingMandatoryFields.join(", ")}`
@@ -460,10 +492,17 @@ const ProductCodeGenerator = () => {
       setHtmlToEbayFr(newHtmlToEbayFr);
       setHtmlToEbayIt(newHtmlToEbayIt);
 
-      // dispatch(updateProduct({ ebayDE: splitHtml(newHtmlToEbayDe) }));
-      // dispatch(updateProduct({ ebayEN: splitHtml(newHtmlToEbayEn) }));
-      // dispatch(updateProduct({ ebayFR: splitHtml(newHtmlToEbayFr) }));
-      // dispatch(updateProduct({ ebayIT: splitHtml(newHtmlToEbayIt) }));
+      const splitDE = await callSplitHtmlFromBackend(newHtmlToEbayDe);
+      if (splitDE) dispatch(updateProduct({ ebayDE: splitDE }));
+
+      const splitEN = await callSplitHtmlFromBackend(newHtmlToEbayEn);
+      if (splitEN) dispatch(updateProduct({ ebayEN: splitEN }));
+
+      const splitFR = await callSplitHtmlFromBackend(newHtmlToEbayFr);
+      if (splitFR) dispatch(updateProduct({ ebayFR: splitFR }));
+
+      const splitIT = await callSplitHtmlFromBackend(newHtmlToEbayIt);
+      if (splitIT) dispatch(updateProduct({ ebayIT: splitIT }));
     } else {
       toast.warn(
         "Kody dla eBay nie zostały wygenerowane - najpierw przetłumacz produkt lub pomiń tłumaczenie."

@@ -142,22 +142,30 @@ export const CosmeticsDescSplit = ({ onReset }) => {
         cosmeticsDescription1: {
           pl: result.result1,
           en: "",
-          de: ""
+          de: "",
+          fr: "",
+          it: ""
         },
         cosmeticsDescription2: {
           pl: result.result2,
           en: "",
-          de: ""
+          de: "",
+          fr: "",
+          it: ""
         },
         cosmeticsDescription3: {
           pl: opis3,
           en: "",
-          de: ""
+          de: "",
+          fr: "",
+          it: ""
         },
         cosmeticsDescription4: {
           pl: opis4,
           en: "",
-          de: ""
+          de: "",
+          fr: "",
+          it: ""
         },
       })
     );
