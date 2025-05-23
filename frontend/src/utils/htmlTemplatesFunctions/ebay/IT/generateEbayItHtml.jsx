@@ -292,7 +292,7 @@ export const generateEbayItHtml = (productData) => {
                 </div>
               </div> -->
               ${productData.bulletpoints.it ?
-                `<div>
+                `<div class="bulletpoints">
                  <div class="roles">
                 <h3>Ruolo nell'organismo:</h3>
                 ${generateRoleHtml(productData.bulletpoints.it)}

@@ -173,8 +173,6 @@ export const generateEbayEnHtml = (productData) => {
           srcset=""
         />
       </a>
-
-      <!-- <img class="nav-mobile-icon" src="burger-bar.png" alt="" srcset="" /> -->
       <nav class="header__nav">
         <a
           for="tab1-btn"
@@ -198,15 +196,6 @@ export const generateEbayEnHtml = (productData) => {
       </nav>
     </div>
   </header>
-  <!-- 
-  <nav class="nav-mobile">
-    <a href="#">Beschreibung</a>
-    <a href="#">Bezahlung</a>
-    <a href="#">Versand</a>
-    <a href="#">Über Uns</a>
-    <a href="#">Kontakt</a>
-  </nav> -->
-
   <main>
     <div class="tabBar">
       <input type="radio" checked name="tab" id="tab1-btn" />
@@ -291,7 +280,7 @@ export const generateEbayEnHtml = (productData) => {
                 </div>
               </div> -->
               ${productData.bulletpoints.en ?
-                `<div>
+                `<div class="bulletpoints">
                  <div class="roles">
                 <h3>Role in the body:</h3>
                 ${generateRoleHtml(productData.bulletpoints.en)}
