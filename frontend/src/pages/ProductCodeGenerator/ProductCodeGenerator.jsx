@@ -26,7 +26,7 @@ import { generateEbayFrHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/
 import { generateEbayItHtml } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtml";
 import { generateEbayItHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtmlCosmetics";
 import { validateMandatoryFields } from "../../utils/validateMandatoryFields";
-import { splitHtml } from "../../utils/splitHtml";
+// import { splitHtml } from "../../utils/splitHtml";
 
 const ProductCodeGenerator = () => {
   const [htmlToShop, setHtmlToShop] = useState("");
@@ -306,14 +306,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayDe,
         ProductName: productData.productName.de,
         Type: type,
-        LogoAndMenu: productData.ebayDE.logoAndMenu,
-        Gallery: productData.ebayDE.gallery,
-        ShortDescription: productData.ebayDE.shortDescription,
-        Bulletpoints: productData.ebayDE.bulletpoints,
-        Icons: productData.ebayDE.icons,
-        LongDescription: productData.ebayDE.longDescription,
-        Research: productData.ebayDE.research,
-        ProductSeries: productData.ebayDE.productSeries,
+        // LogoAndMenu: productData.ebayDE.logoAndMenu,
+        // Gallery: productData.ebayDE.gallery,
+        // ShortDescription: productData.ebayDE.shortDescription,
+        // Bulletpoints: productData.ebayDE.bulletpoints,
+        // Icons: productData.ebayDE.icons,
+        // LongDescription: productData.ebayDE.longDescription,
+        // Research: productData.ebayDE.research,
+        // ProductSeries: productData.ebayDE.productSeries,
         target: "ebay-de",
       },
       {
@@ -321,14 +321,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayEn,
         ProductName: productData.productName.en,
         Type: type,
-        LogoAndMenu: productData.ebayEN.logoAndMenu,
-        Gallery: productData.ebayEN.gallery,
-        ShortDescription: productData.ebayEN.shortDescription,
-        Bulletpoints: productData.ebayEN.bulletpoints,
-        Icons: productData.ebayEN.icons,
-        LongDescription: productData.ebayEN.longDescription,
-        Research: productData.ebayEN.research,
-        ProductSeries: productData.ebayEN.productSeries,
+        // LogoAndMenu: productData.ebayEN.logoAndMenu,
+        // Gallery: productData.ebayEN.gallery,
+        // ShortDescription: productData.ebayEN.shortDescription,
+        // Bulletpoints: productData.ebayEN.bulletpoints,
+        // Icons: productData.ebayEN.icons,
+        // LongDescription: productData.ebayEN.longDescription,
+        // Research: productData.ebayEN.research,
+        // ProductSeries: productData.ebayEN.productSeries,
         target: "ebay-en",
       },
       {
@@ -336,14 +336,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayFr,
         ProductName: productData.productName.fr,
         Type: type,
-        LogoAndMenu: productData.ebayFR.logoAndMenu,
-        Gallery: productData.ebayFR.gallery,
-        ShortDescription: productData.ebayFR.shortDescription,
-        Bulletpoints: productData.ebayFR.bulletpoints,
-        Icons: productData.ebayFR.icons,
-        LongDescription: productData.ebayFR.longDescription,
-        Research: productData.ebayFR.research,
-        ProductSeries: productData.ebayFR.productSeries,
+        // LogoAndMenu: productData.ebayFR.logoAndMenu,
+        // Gallery: productData.ebayFR.gallery,
+        // ShortDescription: productData.ebayFR.shortDescription,
+        // Bulletpoints: productData.ebayFR.bulletpoints,
+        // Icons: productData.ebayFR.icons,
+        // LongDescription: productData.ebayFR.longDescription,
+        // Research: productData.ebayFR.research,
+        // ProductSeries: productData.ebayFR.productSeries,
         target: "ebay-fr",
       },
       {
@@ -351,14 +351,14 @@ const ProductCodeGenerator = () => {
         Html: htmlToEbayIt,
         ProductName: productData.productName.it,
         Type: type,
-        LogoAndMenu: productData.ebayIT.logoAndMenu,
-        Gallery: productData.ebayIT.gallery,
-        ShortDescription: productData.ebayIT.shortDescription,
-        Bulletpoints: productData.ebayIT.bulletpoints,
-        Icons: productData.ebayIT.icons,
-        LongDescription: productData.ebayIT.longDescription,
-        Research: productData.ebayIT.research,
-        ProductSeries: productData.ebayIT.productSeries,
+        // LogoAndMenu: productData.ebayIT.logoAndMenu,
+        // Gallery: productData.ebayIT.gallery,
+        // ShortDescription: productData.ebayIT.shortDescription,
+        // Bulletpoints: productData.ebayIT.bulletpoints,
+        // Icons: productData.ebayIT.icons,
+        // LongDescription: productData.ebayIT.longDescription,
+        // Research: productData.ebayIT.research,
+        // ProductSeries: productData.ebayIT.productSeries,
         target: "ebay-it",
       },
     ];
@@ -418,10 +418,10 @@ const ProductCodeGenerator = () => {
       setHtmlToEbayFr(newHtmlToEbayFr);
       setHtmlToEbayIt(newHtmlToEbayIt);
 
-      dispatch(updateProduct({ ebayDE: splitHtml(newHtmlToEbayDe) }));
-      dispatch(updateProduct({ ebayEN: splitHtml(newHtmlToEbayEn) }));
-      dispatch(updateProduct({ ebayFR: splitHtml(newHtmlToEbayFr) }));
-      dispatch(updateProduct({ ebayIT: splitHtml(newHtmlToEbayIt) }));
+      // dispatch(updateProduct({ ebayDE: splitHtml(newHtmlToEbayDe) }));
+      // dispatch(updateProduct({ ebayEN: splitHtml(newHtmlToEbayEn) }));
+      // dispatch(updateProduct({ ebayFR: splitHtml(newHtmlToEbayFr) }));
+      // dispatch(updateProduct({ ebayIT: splitHtml(newHtmlToEbayIt) }));
     } else {
       toast.warn(
         "Kody dla eBay nie zostały wygenerowane - najpierw przetłumacz produkt lub pomiń tłumaczenie."
@@ -460,10 +460,10 @@ const ProductCodeGenerator = () => {
       setHtmlToEbayFr(newHtmlToEbayFr);
       setHtmlToEbayIt(newHtmlToEbayIt);
 
-      dispatch(updateProduct({ ebayDE: splitHtml(newHtmlToEbayDe) }));
-      dispatch(updateProduct({ ebayEN: splitHtml(newHtmlToEbayEn) }));
-      dispatch(updateProduct({ ebayFR: splitHtml(newHtmlToEbayFr) }));
-      dispatch(updateProduct({ ebayIT: splitHtml(newHtmlToEbayIt) }));
+      // dispatch(updateProduct({ ebayDE: splitHtml(newHtmlToEbayDe) }));
+      // dispatch(updateProduct({ ebayEN: splitHtml(newHtmlToEbayEn) }));
+      // dispatch(updateProduct({ ebayFR: splitHtml(newHtmlToEbayFr) }));
+      // dispatch(updateProduct({ ebayIT: splitHtml(newHtmlToEbayIt) }));
     } else {
       toast.warn(
         "Kody dla eBay nie zostały wygenerowane - najpierw przetłumacz produkt lub pomiń tłumaczenie."
