@@ -39,14 +39,7 @@ const initialState = {
         ingredient: { pl: "", en: "", de: "", fr: "", it: "" },
         ingredientValue: "",
         rws: "",
-        additionalLines: [
-          {
-            lineIndex: 1,
-            ingredient: { pl: "", en: "", de: "", fr: "", it: "" },
-            ingredientValue: "",
-            rws: "",
-          },
-        ],
+        additionalLines: [],
       },
     ],
     description: { pl: "", en: "", de: "", fr: "", it: "" },
