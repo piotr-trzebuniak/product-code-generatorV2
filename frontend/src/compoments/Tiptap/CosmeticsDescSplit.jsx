@@ -39,7 +39,11 @@ export const CosmeticsDescSplit = ({ onReset }) => {
       "<h3><strong>Składniki, które pokochasz:</strong></h3>",
       "<h3><strong>Kluczowe składniki:</strong></h3>",
       "<h3><strong>Kluczowe zalety:</strong></h3>",
-      "<h3><strong>Zalety produktu:</strong></h3>"
+      "<h3><strong>Zalety produktu:</strong></h3>",
+      "<h3>Składniki, które pokochasz:</h3>",
+      "<h3>Kluczowe składniki:</h3>",
+      "<h3>Kluczowe zalety:</h3>",
+      "<h3>Zalety produktu:</h3>"
     ];
 
     const header1 = headers.find(header => html.includes(header));
