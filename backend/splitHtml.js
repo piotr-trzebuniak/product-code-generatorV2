@@ -34,6 +34,9 @@ export const splitHtml = (html) => {
 
   const bulletpoints = $('div.bulletpoints').first();
   htmlSections.bulletpoints = bulletpoints.length ? $.html(bulletpoints) : "";
+  
+  const roles = $('div.roles').first();
+  htmlSections.roles = roles.length ? $.html(roles) : "";
 
   const properties = $('div.properties').first();
   htmlSections.icons = properties.length ? $.html(properties) : "";

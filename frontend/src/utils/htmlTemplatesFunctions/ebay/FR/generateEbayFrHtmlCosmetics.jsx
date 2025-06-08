@@ -313,8 +313,10 @@ export const generateEbayFrHtmlCosmetics = (productData) => {
                   </a>
                 </div>
               </div> -->
+              <div class="bulletpoints">
               <div class="roles">
                 ${generateRoleHtml(productData.cosmeticsDescription3.fr)}
+              </div>
               </div>
               <div class="properties">
                 ${generateFeatureHtml(

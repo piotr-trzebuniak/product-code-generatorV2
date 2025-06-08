@@ -19647,7 +19647,8 @@ export const research = {
     EN: {
       studies: [
         {
-          title: "Effect of quercetin supplementation on lipid profile, blood pressure and plasma glucose levels: a systematic review and meta-analysis",
+          title:
+            "Effect of quercetin supplementation on lipid profile, blood pressure and plasma glucose levels: a systematic review and meta-analysis",
           description:
             "Regular consumption of quercetin leads to a significant reduction in blood pressure and an improvement in HDL cholesterol and triglyceride levels after taking it for at least eight weeks.",
           link: "https://academic.oup.com/nutritionreviews/article/78/8/615/5697189",
@@ -19775,7 +19776,8 @@ export const research = {
     EN: {
       studies: [
         {
-          title: "Effect of Probiotics on Depression: A Systematic Review and Meta-Analysis of Randomized Controlled Trial",
+          title:
+            "Effect of Probiotics on Depression: A Systematic Review and Meta-Analysis of Randomized Controlled Trial",
           description:
             "A meta-analysis showed that probiotics can significantly reduce the risk of depression.",
           link: "https://www.mdpi.com/2072-6643/8/8/483",
@@ -19933,7 +19935,8 @@ export const research = {
     EN: {
       studies: [
         {
-          title: "Kudzu root: Traditional uses and potential medicinal benefits in diabetes and cardiovascular disease",
+          title:
+            "Kudzu root: Traditional uses and potential medicinal benefits in diabetes and cardiovascular disease",
           description:
             "The evidence presented in this review shows that kudzu root has great potential to be incorporated into conventional medical practice for the treatment and management of metabolic syndromes, cardiovascular disease, diabetes and its complications.",
           link: "https://www.sciencedirect.com/science/article/abs/pii/S0378874111000729#preview-section-snippets",
@@ -19986,1413 +19989,1486 @@ export const research = {
     },
   },
   "Jabłczan magnezu": {
-  id: "jablczan-magnezu",
-  index: 74,
-  EN: {
-    studies: [
-      {
-        title: "Magnesium Malate for Fatigue",
-        description:
-          "Magnesium, through its participation in the production of cellular energy, can increase the body's vitality and physical performance.",
-        link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
-      },
-      {
-        title: "What is magnesium malate? Benefits, uses, dosage and more",
-        description: "Supports muscle and nerve function.",
-        link: "https://draxe.com/nutrition/magnesium-malate/",
-      },
-    ],
+    id: "jablczan-magnezu",
+    index: 74,
+    EN: {
+      studies: [
+        {
+          title: "Magnesium Malate for Fatigue",
+          description:
+            "Magnesium, through its participation in the production of cellular energy, can increase the body's vitality and physical performance.",
+          link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
+        },
+        {
+          title: "What is magnesium malate? Benefits, uses, dosage and more",
+          description: "Supports muscle and nerve function.",
+          link: "https://draxe.com/nutrition/magnesium-malate/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title: "Magnesiummalat gegen Müdigkeit",
+          description:
+            "Magnesium kann durch seine Beteiligung an der Produktion von Zellenergie die Vitalität und die körperliche Leistungsfähigkeit des Körpers steigern.",
+          link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
+        },
+        {
+          title:
+            "Was ist Magnesiummalat? Vorteile, Verwendung, Dosierung und mehr",
+          description: "Unterstützt die Muskel- und Nervenfunktion.",
+          link: "https://draxe.com/nutrition/magnesium-malate/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title: "Malate de magnésium pour la fatigue",
+          description:
+            "Le magnésium, par sa participation à la production d'énergie cellulaire, peut augmenter la vitalité et les performances physiques de l'organisme.",
+          link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
+        },
+        {
+          title:
+            "Qu'est-ce que le malate de magnésium ? Avantages, utilisations, dosage et autres",
+          description: "Favorise la fonction musculaire et nerveuse.",
+          link: "https://draxe.com/nutrition/magnesium-malate/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title: "Malato di magnesio per la stanchezza",
+          description:
+            "Il magnesio, partecipando alla produzione di energia cellulare, può aumentare la vitalità e le prestazioni fisiche dell'organismo.",
+          link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
+        },
+        {
+          title:
+            "Che cos'è il malato di magnesio? Benefici, usi, dosaggio e altro ancora",
+          description: "Supporta la funzione muscolare e nervosa.",
+          link: "https://draxe.com/nutrition/magnesium-malate/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title: "Malato de magnesio para la fatiga",
+          description:
+            "El magnesio, a través de su participación en la producción de energía celular, puede aumentar la vitalidad y el rendimiento físico del organismo.",
+          link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
+        },
+        {
+          title: "Qué es el malato de magnesio? Beneficios, usos, dosis y más",
+          description: "Favorece la función muscular y nerviosa.",
+          link: "https://draxe.com/nutrition/magnesium-malate/",
+        },
+      ],
+    },
+  },
+  "Dziki pochrzyn": {
+    id: "dziki-pochrzyn",
+    index: 82,
+    EN: {
+      studies: [
+        {
+          title: "Potential health benefits of water yam ( Dioscorea alata )",
+          description:
+            "A study of different varieties of yam (Dioscorea alata) showed their high nutritional value, especially in terms of fiber and mineral content, suggesting their potential use as functional foods, especially for diabetics and people with chronic diseases.",
+          link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Potenzieller gesundheitlicher Nutzen der Wasserjam (Dioscorea alata)",
+          description:
+            "Eine Studie über verschiedene Yamswurzelsorten (Dioscorea alata) hat gezeigt, dass sie einen hohen Nährwert haben, vor allem in Bezug auf Ballaststoffe und Mineralien, was auf ihre potenzielle Verwendung als funktionelle Lebensmittel hinweist, insbesondere für Diabetiker und Menschen mit chronischen Krankheiten.",
+          link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Avantages potentiels pour la santé de l'igname ( Dioscorea alata )",
+          description:
+            "Une étude portant sur différentes variétés d'igname (Dioscorea alata) a montré leur haute valeur nutritionnelle, notamment en termes de teneur en fibres et en minéraux, ce qui suggère leur utilisation potentielle en tant qu'aliments fonctionnels, en particulier pour les diabétiques et les personnes souffrant de maladies chroniques.",
+          link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Potenziali benefici per la salute dell'igname d'acqua ( Dioscorea alata )",
+          description:
+            "Uno studio su diverse varietà di igname (Dioscorea alata) ha mostrato il loro elevato valore nutrizionale, soprattutto in termini di contenuto di fibre e minerali, suggerendo il loro potenziale utilizzo come alimenti funzionali, in particolare per i diabetici e le persone con malattie croniche.",
+          link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Posibles beneficios para la salud del ñame de agua ( Dioscorea alata )",
+          description:
+            "Un estudio de distintas variedades de ñame (Dioscorea alata) demostró su alto valor nutricional, especialmente en cuanto a contenido en fibra y minerales, lo que sugiere su uso potencial como alimentos funcionales, especialmente para diabéticos y personas con enfermedades crónicas.",
+          link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
+        },
+      ],
+    },
+  },
+  "Tarczyca bajkalska": {
+    id: "tarczyca-bajkalska",
+    index: 88,
+    EN: {
+      studies: [
+        {
+          title:
+            "BAIKAL SKULLCAP: Benefits, dosage, side effects, drug interactions and other important information",
+          description:
+            "Baikal Skullcap contains flavonoids such as baicalin and baicalein that have strong anti-inflammatory effects. These compounds inhibit pathways like NF-kB and MAPK, reducing inflammation and the production of pro-inflammatory cytokines, which are beneficial for managing conditions like arthritis and other inflammatory diseases",
+          link: "https://nootropicsplanet.com/baikal-skullcap/",
+        },
+        {
+          title:
+            "Promising role of hydroxyflavone-baikalein from Scutellaria baicalensis root in prevention and treatment of human diseases",
+          description:
+            "Baicalein, a potent antioxidant with anti-inflammatory and anticancer properties, shows therapeutic potential in the treatment of metabolic, cardiovascular, neurological and infectious diseases.",
+          link: "https://www.mdpi.com/1422-0067/24/5/4732",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "BAIKAL SKULLCAP: Vorteile, Dosierung, Nebenwirkungen, Wechselwirkungen mit anderen Medikamenten und andere wichtige Informationen",
+          description:
+            "Die Baikal-Schädeldecke enthält Flavonoide wie Baicalin und Baicalein, die eine starke entzündungshemmende Wirkung haben. Diese Verbindungen hemmen Signalwege wie NF-kB und MAPK, wodurch Entzündungen und die Produktion von entzündungsfördernden Zytokinen reduziert werden, was für die Behandlung von Zuständen wie Arthritis und anderen entzündlichen Krankheiten von Vorteil ist",
+          link: "https://nootropicsplanet.com/baikal-skullcap/",
+        },
+        {
+          title:
+            "Vielversprechende Rolle des Hydroxyflavon-Baikaleins aus der Wurzel von Scutellaria baicalensis bei der Vorbeugung und Behandlung von menschlichen Krankheiten",
+          description:
+            "Baicalein, ein starkes Antioxidans mit entzündungshemmenden und krebsbekämpfenden Eigenschaften, zeigt therapeutisches Potenzial bei der Behandlung von Stoffwechsel-, Herz-Kreislauf-, neurologischen und Infektionskrankheiten.",
+          link: "https://www.mdpi.com/1422-0067/24/5/4732",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "BAIKAL SKULLCAP : Avantages, posologie, effets secondaires, interactions médicamenteuses et autres informations importantes",
+          description:
+            "La scutellaire de Baikal contient des flavonoïdes tels que la baicaline et la baicaline qui ont de puissants effets anti-inflammatoires. Ces composés inhibent des voies telles que NF-kB et MAPK, réduisant ainsi l'inflammation et la production de cytokines pro-inflammatoires, ce qui est bénéfique pour la prise en charge d'affections telles que l'arthrite et d'autres maladies inflammatoires.",
+          link: "https://nootropicsplanet.com/baikal-skullcap/",
+        },
+        {
+          title:
+            "Rôle prometteur de l'hydroxyflavone-baïkaléine de la racine de Scutellaria baicalensis dans la prévention et le traitement des maladies humaines",
+          description:
+            "La baïcaléine, un puissant antioxydant aux propriétés anti-inflammatoires et anticancéreuses, présente un potentiel thérapeutique dans le traitement des maladies métaboliques, cardiovasculaires, neurologiques et infectieuses.",
+          link: "https://www.mdpi.com/1422-0067/24/5/4732",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "BAIKAL SKULLCAP: benefici, dosaggio, effetti collaterali, interazioni farmacologiche e altre informazioni importanti",
+          description:
+            "Il capelvenere di Baikal contiene flavonoidi come la baicalina e la baicaleina, che hanno potenti effetti antinfiammatori. Questi composti inibiscono vie come NF-kB e MAPK, riducendo così l'infiammazione e la produzione di citochine pro-infiammatorie, a vantaggio della gestione di condizioni come l'artrite e altre malattie infiammatorie.",
+          link: "https://nootropicsplanet.com/baikal-skullcap/",
+        },
+        {
+          title:
+            "Ruolo promettente dell'idrossiflavone-baikaleina dalla radice di Scutellaria baicalensis nella prevenzione e nel trattamento delle malattie umane",
+          description:
+            "La bayaleina, un potente antiossidante con proprietà antinfiammatorie e antitumorali, ha un potenziale terapeutico nel trattamento di malattie metaboliche, cardiovascolari, neurologiche e infettive.",
+          link: "https://www.mdpi.com/1422-0067/24/5/4732",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "BAIKAL SKULLCAP: Beneficios, dosis, efectos secundarios, interacciones con otros medicamentos y otra información importante.",
+          description:
+            "La Escutelaria Baikal contiene flavonoides como la baicalina y la baicaleína que tienen fuertes efectos antiinflamatorios. Estos compuestos inhiben vías como NF-kB y MAPK, reduciendo la inflamación y la producción de citoquinas proinflamatorias, lo que es beneficioso para tratar afecciones como la artritis y otras enfermedades inflamatorias.",
+          link: "https://nootropicsplanet.com/baikal-skullcap/",
+        },
+        {
+          title:
+            "Papel prometedor de la hidroxiflavona-baikaleína de la raíz de Scutellaria baicalensis en la prevención y el tratamiento de enfermedades humanas",
+          description:
+            "La baicaleína, un potente antioxidante con propiedades antiinflamatorias y anticancerígenas, muestra potencial terapéutico en el tratamiento de enfermedades metabólicas, cardiovasculares, neurológicas e infecciosas.",
+          link: "https://www.mdpi.com/1422-0067/24/5/4732",
+        },
+      ],
+    },
+  },
+  Drożdże: {
+    id: "drozdze",
+    index: 89,
+    EN: {
+      studies: [
+        {
+          title: "Health benefits of nutritional yeast",
+          description:
+            "The fiber content in nutritional yeast promotes gut health by aiding digestion and preventing constipation.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Benefits of nutritional yeast and how to use it",
+          description: "Rich in B Vitamins: ",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title: "Gesundheitliche Vorteile von Nährhefe",
+          description:
+            "Die in der Nährhefe enthaltenen Ballaststoffe fördern die Darmgesundheit, indem sie die Verdauung unterstützen und Verstopfung vorbeugen.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Vorteile von Nährhefe und ihre Verwendung",
+          description: "Reich an B-Vitaminen: ",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title: "Les bienfaits de la levure nutritionnelle pour la santé",
+          description:
+            "La teneur en fibres de la levure nutritionnelle favorise la santé intestinale en facilitant la digestion et en prévenant la constipation.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Avantages de la levure nutritionnelle et comment l'utiliser",
+          description: "Riche et vitamines B :",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title: "I benefici del lievito alimentare per la salute",
+          description:
+            "Il contenuto di fibre del lievito alimentare favorisce la salute dell'intestino aiutando la digestione e prevenendo la stitichezza.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Benefici del lievito nutrizionale e come utilizzarlo",
+          description: "Ricco di vitamine del gruppo B: ",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title: "Beneficios de la levadura nutricional para la salud",
+          description:
+            "El contenido en fibra de la levadura nutricional favorece la salud intestinal al facilitar la digestión y prevenir el estreñimiento.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Beneficios de la levadura nutricional y cómo utilizarla",
+          description: "Rico en vitaminas del grupo B:",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+  },
+  Mangan: {
+    id: "mangan",
+    index: 91,
+    EN: {
+      studies: [
+        {
+          title: "Manganese: its role in disease and health",
+          description:
+            "Manganese is an essential trace element that plays a key role in metabolism, neurotransmitter synthesis and protection against oxidative stress",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title: "Mangan: seine Rolle bei Krankheit und Gesundheit",
+          description:
+            "Mangan ist ein essentielles Spurenelement, das eine Schlüsselrolle im Stoffwechsel, bei der Synthese von Neurotransmittern und beim Schutz vor oxidativem Stress spielt",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title: "Manganèse : son rôle dans les maladies et la santé",
+          description:
+            "Le manganèse est un oligo-élément essentiel qui joue un rôle clé dans le métabolisme, la synthèse des neurotransmetteurs et la protection contre le stress oxydatif.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title: "Il manganese: il suo ruolo nelle malattie e nella salute",
+          description:
+            "Il manganese è un oligoelemento essenziale che svolge un ruolo chiave nel metabolismo, nella sintesi dei neurotrasmettitori e nella protezione dallo stress ossidativo.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title: "Manganeso: su papel en la enfermedad y la salud",
+          description:
+            "El manganeso es un oligoelemento esencial que desempeña un papel clave en el metabolismo, la síntesis de neurotransmisores y la protección contra el estrés oxidativo.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
+        },
+      ],
+    },
+  },
+  "MSM (metylosulfonylometan)": {
+    id: "msm",
+    index: 92,
+    EN: {
+      studies: [
+        {
+          title:
+            "Methylsulfonylmethane: Applications and safety of a new dietary supplement.",
+          description:
+            "Methylsulfonylmethane (MSM) is a well-tolerated dietary supplement with anti-inflammatory properties that supports joint health, reduces oxidative stress.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
+        },
+        {
+          title:
+            "Methylsulfonylmethane Improves Knee Quality of Life in Participants with Mild Knee Pain: A Randomized, Double-Blind, Placebo-Controlled Trial",
+          description:
+            "The study found that MSM supplementation significantly improves knee health and overall body condition in people with mild knee pain, confirming its effectiveness as a joint health booster.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
+        },
+        {
+          title:
+            "Beauty from within: oral intake of a sulfur-containing supplement, methylsulfonylmethane, improves signs of skin aging",
+          description:
+            "The study confirmed that MSM supplementation in doses of 1-3 g per day effectively reduces signs of aging such as wrinkles, improving skin firmness, elasticity and hydration.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
+        },
+        {
+          title:
+            "Effects of daily methylsulfonylmethane (MSM) intake on high-density lipoprotein cholesterol in healthy overweight and obese adults: a randomized controlled trial",
+          description:
+            "The study found that MSM supplementation at a dose of 3 grams per day for 16 weeks improves the cardiometabolic profile, including HDL cholesterol levels, in overweight or obese individuals, suggesting its potential benefits in preventing obesity-related diseases.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Methylsulfonylmethan: Anwendungen und Sicherheit eines neuen Nahrungsergänzungsmittels.",
+          description:
+            "Methylsulfonylmethan (MSM) ist ein gut verträgliches Nahrungsergänzungsmittel mit entzündungshemmenden Eigenschaften, das die Gesundheit der Gelenke unterstützt und oxidativen Stress reduziert.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
+        },
+        {
+          title:
+            "Methylsulfonylmethan verbessert die Lebensqualität von Teilnehmern mit leichten Knieschmerzen: Eine randomisierte, doppelblinde, placebokontrollierte Studie",
+          description:
+            "Die Studie ergab, dass die Einnahme von MSM die Gesundheit der Knie und den allgemeinen Zustand des Körpers bei Menschen mit leichten Knieschmerzen deutlich verbessert, was die Wirksamkeit von MSM als Mittel zur Verbesserung der Gelenkgesundheit bestätigt.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
+        },
+        {
+          title:
+            "Schönheit von innen: Die orale Einnahme eines schwefelhaltigen Nahrungsergänzungsmittels, Methylsulfonylmethan, verbessert die Zeichen der Hautalterung",
+          description:
+            "Die Studie bestätigte, dass die Einnahme von MSM in einer Dosis von 1-3 g pro Tag die Zeichen der Hautalterung wie Falten wirksam reduziert und die Festigkeit, Elastizität und Feuchtigkeit der Haut verbessert.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
+        },
+        {
+          title:
+            "Auswirkungen der täglichen Einnahme von Methylsulfonylmethan (MSM) auf das High-Density-Lipoprotein-Cholesterin bei gesunden übergewichtigen und fettleibigen Erwachsenen: eine randomisierte kontrollierte Studie",
+          description:
+            "Die Studie ergab, dass eine Supplementierung mit MSM in einer Dosis von 3 Gramm pro Tag über einen Zeitraum von 16 Wochen das kardiometabolische Profil, einschließlich des HDL-Cholesterinspiegels, bei übergewichtigen oder fettleibigen Personen verbessert.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Méthylsulfonylméthane : applications et sécurité d'un nouveau complément alimentaire.",
+          description:
+            "Le méthylsulfonylméthane (MSM) est un complément alimentaire bien toléré aux propriétés anti-inflammatoires qui favorise la santé des articulations et réduit le stress oxydatif.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
+        },
+        {
+          title:
+            "Le méthylsulfonylméthane améliore la qualité de vie des participants souffrant de douleurs légères au genou",
+          description:
+            "L'étude a montré que la supplémentation en MSM améliore de manière significative la santé du genou et l'état général du corps, confirmant ainsi son efficacité en tant que stimulant de la santé des articulations.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
+        },
+        {
+          title:
+            "La beauté de l'intérieur : la prise orale de méthylsulfonylméthane améliore les signes de vieillissement de la peau",
+          description:
+            "L'étude a confirmé qu'une supplémentation en MSM à raison de 1 à 3 g par jour réduit efficacement les rides, en améliorant la fermeté, l'élasticité et l'hydratation de la peau.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
+        },
+        {
+          title:
+            "Effets de la prise quotidienne de méthylsulfonylméthane sur le cholestérol HDL chez des adultes en surpoids",
+          description:
+            "L'étude a montré que la prise de MSM améliore le profil cardiométabolique, y compris le taux de cholestérol HDL, ce qui suggère ses avantages dans la prévention des maladies liées à l'obésité.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Metilsulfonilmetano: applicazioni e sicurezza di un nuovo integratore alimentare.",
+          description:
+            "Il metilsulfonilmetano (MSM) è un integratore alimentare ben tollerato con proprietà antinfiammatorie che favorisce la salute delle articolazioni e riduce lo stress ossidativo.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
+        },
+        {
+          title:
+            "Il metilsulfonilmetano migliora la qualità di vita del ginocchio nei partecipanti con dolore lieve al ginocchio",
+          description:
+            "L'integrazione di MSM migliora significativamente la salute del ginocchio e le condizioni generali del corpo, confermando la sua efficacia.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
+        },
+        {
+          title:
+            "Bellezza dall'interno: l'assunzione di MSM migliora i segni dell'invecchiamento cutaneo",
+          description:
+            "MSM riduce efficacemente rughe e migliora la compattezza, l'elasticità e l'idratazione della pelle.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
+        },
+        {
+          title:
+            "Effetti dell'assunzione di MSM sul colesterolo HDL in soggetti sovrappeso",
+          description:
+            "L'assunzione di MSM migliora il profilo cardiometabolico, inclusi i livelli di HDL, suggerendo benefici preventivi contro malattie da obesità.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Metilsulfonilmetano: Aplicaciones y seguridad de un nuevo suplemento dietético.",
+          description:
+            "El MSM es un suplemento bien tolerado con propiedades antiinflamatorias que favorece la salud articular y reduce el estrés oxidativo.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
+        },
+        {
+          title:
+            "El MSM mejora la calidad de vida en personas con dolor leve de rodilla",
+          description:
+            "La suplementación con MSM mejora la salud de las rodillas y el estado general del cuerpo, confirmando su eficacia.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
+        },
+        {
+          title:
+            "Belleza desde dentro: el MSM mejora los signos del envejecimiento cutáneo",
+          description:
+            "La suplementación con MSM reduce eficazmente las arrugas y mejora la firmeza, elasticidad e hidratación de la piel.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
+        },
+        {
+          title:
+            "Efectos del MSM sobre el colesterol HDL en adultos con sobrepeso",
+          description:
+            "El MSM mejora el perfil cardiometabólico, incluidos los niveles de colesterol HDL, y podría prevenir enfermedades relacionadas con la obesidad.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
+        },
+      ],
+    },
+  },
+  Drożdze: {
+    id: "drozdze",
+    index: 89,
+    EN: {
+      studies: [
+        {
+          title: "Health benefits of nutritional yeast",
+          description:
+            "The fiber content in nutritional yeast promotes gut health by aiding digestion and preventing constipation.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Benefits of nutritional yeast and how to use it",
+          description: "Rich in B Vitamins: ",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title: "Gesundheitliche Vorteile von Nährhefe",
+          description:
+            "Die in der Nährhefe enthaltenen Ballaststoffe fördern die Darmgesundheit, indem sie die Verdauung unterstützen und Verstopfung vorbeugen.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Vorteile von Nährhefe und ihre Verwendung",
+          description: "Reich an B-Vitaminen: ",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title: "Les bienfaits de la levure nutritionnelle pour la santé",
+          description:
+            "La teneur en fibres de la levure nutritionnelle favorise la santé intestinale en facilitant la digestion et en prévenant la constipation.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Avantages de la levure nutritionnelle et comment l'utiliser",
+          description: "Riche et vitamines B :",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title: "I benefici del lievito alimentare per la salute",
+          description:
+            "Il contenuto di fibre del lievito alimentare favorisce la salute dell'intestino aiutando la digestione e prevenendo la stitichezza.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Benefici del lievito nutrizionale e come utilizzarlo",
+          description: "Ricco di vitamine del gruppo B: ",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title: "Beneficios de la levadura nutricional para la salud",
+          description:
+            "El contenido en fibra de la levadura nutricional favorece la salud intestinal al facilitar la digestión y prevenir el estreñimiento.",
+          link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+        },
+        {
+          title: "Beneficios de la levadura nutricional y cómo utilizarla",
+          description: "Rico en vitaminas del grupo B:",
+          link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+        },
+      ],
+    },
+  },
+  "Pau d’Arco": {
+    id: "pau-d-arco",
+    index: 116,
+    EN: {
+      studies: [
+        {
+          title:
+            "Safety and tolerability of Pau d'Arco ( Tabebuia avellanedae) in the treatment of primary painful menstruation: a single-arm, open-label study with adults aged 18-45 years",
+          description:
+            "Tabebuia avellanedae at a dose of 1050 mg/day for eight weeks in healthy women with primary painful menstruation proved safe, well tolerated and effective in reducing pain intensity, warranting further study.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
+        },
+        {
+          title:
+            "Tabebuia impetiginosa : a comprehensive review of traditional uses, phytochemistry and immunopharmacological properties",
+          description:
+            "Tabebuia impetiginosa, traditionally used to treat fever, malaria and skin diseases, has shown anti-inflammatory, anti-allergic and anti-tumor activity, warranting further research into its pharmacological potential and safety.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Sicherheit und Verträglichkeit von Pau d'Arco (Tabebuia avellanedae) bei der Behandlung der primären schmerzhaften Menstruation: eine einarmige, offene Studie mit Erwachsenen im Alter von 18-45 Jahren",
+          description:
+            "Tabebuia avellanedae in einer Dosis von 1050 mg/Tag über acht Wochen bei gesunden Frauen mit primär schmerzhafter Menstruation erwies sich als sicher, gut verträglich und wirksam bei der Verringerung der Schmerzintensität, was weitere Studien rechtfertigt.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
+        },
+        {
+          title:
+            "Tabebuia impetiginosa: ein umfassender Überblick über traditionelle Anwendungen, Phytochemie und immunopharmakologische Eigenschaften",
+          description:
+            "Tabebuia impetiginosa, die traditionell zur Behandlung von Fieber, Malaria und Hautkrankheiten eingesetzt wird, hat eine entzündungshemmende, antiallergische und antitumorale Wirkung gezeigt, die weitere Untersuchungen zu ihrem pharmakologischen Potenzial und ihrer Sicherheit rechtfertigt.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Sécurité et tolérance du Pau d'Arco (Tabebuia avellanedae) dans le traitement des menstruations douloureuses primaires : étude ouverte à un seul bras chez des adultes âgés de 18 à 45 ans.",
+          description:
+            "Tabebuia avellanedae à la dose de 1050 mg/jour pendant huit semaines chez des femmes en bonne santé souffrant de menstruations douloureuses primaires s'est avéré sûr, bien toléré et efficace dans la réduction de l'intensité de la douleur, ce qui justifie des études supplémentaires.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
+        },
+        {
+          title:
+            "Tabebuia impetiginosa : une revue complète des utilisations traditionnelles, de la phytochimie et des propriétés immunopharmacologiques",
+          description:
+            "Tabebuia impetiginosa, utilisée traditionnellement pour traiter la fièvre, le paludisme et les maladies de la peau, a montré une activité anti-inflammatoire, antiallergique et antitumorale, justifiant de nouvelles recherches sur son potentiel pharmacologique et sa sécurité.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Sicurezza e tollerabilità del Pau d'Arco ( Tabebuia avellanedae) nel trattamento delle mestruazioni dolorose primarie: uno studio in aperto, a braccio singolo, su adulti di età compresa tra 18 e 45 anni",
+          description:
+            "La Tabebuia avellanedae alla dose di 1050 mg/die per otto settimane in donne sane con mestruazioni dolorose primarie si è dimostrata sicura, ben tollerata ed efficace nel ridurre l'intensità del dolore, il che giustifica ulteriori studi.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
+        },
+        {
+          title:
+            "Tabebuia impetiginosa: una revisione completa degli usi tradizionali, della fitochimica e delle proprietà immunofarmacologiche",
+          description:
+            "La Tabebuia impetiginosa, tradizionalmente usata per trattare febbre, malaria e malattie della pelle, ha mostrato un'attività antinfiammatoria, antiallergica e antitumorale, che giustifica ulteriori ricerche sul suo potenziale farmacologico e sulla sua sicurezza.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Seguridad y tolerabilidad de Pau d'Arco ( Tabebuia avellanedae) en el tratamiento de la menstruación dolorosa primaria: un estudio abierto de un solo brazo con adultos de 18 a 45 años de edad.",
+          description:
+            "Tabebuia avellanedae a una dosis de 1050 mg/día durante ocho semanas en mujeres sanas con menstruación dolorosa primaria demostró ser segura, bien tolerada y eficaz para reducir la intensidad del dolor, lo que justifica la realización de nuevos estudios.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
+        },
+        {
+          title:
+            "Tabebuia impetiginosa : revisión exhaustiva de los usos tradicionales, fitoquímica y propiedades inmunofarmacológicas",
+          description:
+            "La Tabebuia impetiginosa, utilizada tradicionalmente para tratar la fiebre, la malaria y las enfermedades cutáneas, ha mostrado actividad antiinflamatoria, antialérgica y antitumoral, lo que justifica nuevas investigaciones sobre su potencial farmacológico y su seguridad.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
+        },
+      ],
+    },
+  },
+  "Echinacea (Jeżówka purpurowa)": {
+    id: "echinacea",
+    index: 117,
+    EN: {
+      studies: [
+        {
+          title: "Echinacea Purpurea and Mucosal Immunity",
+          description:
+            "Echinacea purpurea may reduce mucosal immunosuppression during intense exercise and shorten the duration of upper respiratory tract infections, as demonstrated by a smaller decrease in salivary immunoglobulin A (s-IgA) levels in those taking this supplement.",
+          link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
+        },
+        {
+          title:
+            "Placebo-controlled, double-blind study of Echinaceae pallidae radix in upper respiratory tract infections",
+          description:
+            "A double-blind, randomized controlled trial showed that Echinacea pallidae radix significantly reduced the duration of illness and relieved upper respiratory tract flu-like symptoms compared to placebo.",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title: "Echinacea Purpurea und die Immunität der Schleimhäute",
+          description:
+            "Echinacea purpurea kann die Immunsuppression der Schleimhäute bei intensiver körperlicher Betätigung verringern und die Dauer von Infektionen der oberen Atemwege verkürzen, was durch einen geringeren Rückgang der Speichel-Immunglobulin-A-Werte (s-IgA) bei denjenigen, die diese Nahrungsergänzung einnehmen, belegt wird.",
+          link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
+        },
+        {
+          title:
+            "Placebokontrollierte Doppelblindstudie mit Echinaceae pallidae radix bei Infektionen der oberen Atemwege",
+          description:
+            "Eine randomisierte, kontrollierte Doppelblindstudie hat gezeigt, dass Echinacea pallidae radix im Vergleich zu Placebo die Krankheitsdauer deutlich verkürzt und grippeähnliche Symptome der oberen Atemwege gelindert hat.",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title: "Echinacea Purpurea et immunité des muqueuses",
+          description:
+            "L'Echinacea purpurea peut réduire l'immunosuppression des muqueuses pendant un exercice intense et raccourcir la durée des infections des voies respiratoires supérieures, comme le montre une diminution plus faible des niveaux d'immunoglobuline A salivaire (s-IgA) chez les personnes qui prennent ce supplément.",
+          link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
+        },
+        {
+          title:
+            "Étude en double aveugle contrôlée par placebo de l'Echinaceae pallidae radix dans les infections des voies respiratoires supérieures",
+          description:
+            "Un essai contrôlé randomisé en double aveugle a montré que l'Echinacea pallidae radix réduisait significativement la durée de la maladie et soulageait les symptômes grippaux des voies respiratoires supérieures par rapport à un placebo.",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title: "Echinacea Purpurea e immunità delle mucose",
+          description:
+            "L'echinacea purpurea può ridurre l'immunosoppressione della mucosa durante l'esercizio fisico intenso e abbreviare la durata delle infezioni del tratto respiratorio superiore, come dimostrato da una minore diminuzione dei livelli di immunoglobulina A salivare (s-IgA) nei soggetti che assumono questo integratore.",
+          link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
+        },
+        {
+          title:
+            "Studio in doppio cieco, controllato con placebo, sull'Echinaceae pallidae radix nelle infezioni del tratto respiratorio superiore",
+          description:
+            "Uno studio controllato in doppio cieco e randomizzato ha dimostrato che l'Echinacea pallidae radix ha ridotto significativamente la durata della malattia e alleviato i sintomi influenzali del tratto respiratorio superiore rispetto al placebo.",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title: "Echinacea purpurea e inmunidad de las mucosas",
+          description:
+            "La equinácea purpúrea puede reducir la inmunosupresión de las mucosas durante el ejercicio intenso y acortar la duración de las infecciones de las vías respiratorias superiores, como demuestra una menor disminución de los niveles de inmunoglobulina A salival (s-IgA) en quienes toman este suplemento.",
+          link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
+        },
+        {
+          title:
+            "Estudio doble ciego controlado con placebo de Echinaceae pallidae radix en infecciones del tracto respiratorio superior",
+          description:
+            "Un ensayo doble ciego, aleatorizado y controlado demostró que la Echinacea pallidae radix reducía significativamente la duración de la enfermedad y aliviaba los síntomas gripales del tracto respiratorio superior en comparación con el placebo.",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
+        },
+      ],
+    },
+  },
+  "L-metionina": {
+    id: "l-metionina",
+    index: 119,
+    EN: {
+      studies: [
+        {
+          title:
+            "L-methionine as an immune system support supplement: a clinical evaluation",
+          description:
+            "The study confirmed the supportive role of L-methionine in immunocompromised or immunodeficient patients.",
+          link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "L-Methionin als Ergänzung zur Unterstützung des Immunsystems: eine klinische Bewertung",
+          description:
+            "Die Studie bestätigt die unterstützende Rolle von L-Methionin bei immungeschwächten oder immunschwachen Patienten.",
+          link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "La L-méthionine en tant que supplément de soutien du système immunitaire : une évaluation clinique",
+          description:
+            "L'étude a confirmé le rôle de soutien de la L-méthionine chez les patients immunodéprimés ou immunodéficients.",
+          link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "L-metionina come integratore di supporto al sistema immunitario: una valutazione clinica",
+          description:
+            "Lo studio ha confermato il ruolo di supporto della L-metionina nei pazienti immunocompromessi o immunodeficienti.",
+          link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "L-metionina como suplemento de apoyo al sistema inmunitario: una evaluación clínica",
+          description:
+            "El estudio confirmó el papel de apoyo de la L-metionina en pacientes inmunocomprometidos o inmunodeficientes.",
+          link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
+        },
+      ],
+    },
+  },
+  Kofeina: {
+    id: "kofeina",
+    index: 121,
+    EN: {
+      studies: [
+        {
+          title:
+            "Effects of caffeine on systemic metabolism, oxidative-inflammatory pathways and exercise performance",
+          description:
+            "Caffeine, a common alkaloid, exhibits multidirectional effects on the human body, from stimulant effects through antioxidant and anti-inflammatory properties to effects on physical performance, affecting both the nervous system and peripheral tissues.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Auswirkungen von Koffein auf den systemischen Stoffwechsel, die oxidativ-entzündlichen Stoffwechselwege und die körperliche Leistungsfähigkeit",
+          description:
+            "Koffein, ein häufig vorkommendes Alkaloid, hat vielfältige Wirkungen auf den menschlichen Körper, von stimulierenden Effekten über antioxidative und entzündungshemmende Eigenschaften bis hin zu Wirkungen auf die körperliche Leistungsfähigkeit, die sowohl das Nervensystem als auch das periphere Gewebe betreffen.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Effets de la caféine sur le métabolisme systémique, les voies oxydatives-inflammatoires et la performance à l'effort",
+          description:
+            "La caféine, un alcaloïde commun, a des effets multidirectionnels sur le corps humain, allant des effets stimulants aux effets sur les performances physiques, en passant par les propriétés antioxydantes et anti-inflammatoires, affectant à la fois le système nerveux et les tissus périphériques.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Effetti della caffeina sul metabolismo sistemico, sulle vie ossidativo-infiammatorie e sulla prestazione fisica",
+          description:
+            "La caffeina, un comune alcaloide, ha effetti multidirezionali sull'organismo umano, dagli effetti stimolanti alle proprietà antiossidanti e antinfiammatorie, fino agli effetti sulle prestazioni fisiche, con effetti sia sul sistema nervoso che sui tessuti periferici.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Efectos de la cafeína sobre el metabolismo sistémico, las vías oxidativo-inflamatorias y el rendimiento en el ejercicio.",
+          description:
+            "La cafeína, un alcaloide común, exhibe efectos multidireccionales en el cuerpo humano, desde efectos estimulantes, pasando por propiedades antioxidantes y antiinflamatorias, hasta efectos sobre el rendimiento físico, afectando tanto al sistema nervioso como a los tejidos periféricos.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
+        },
+      ],
+    },
+  },
+  "Węgiel aktywny": {
+    id: "wegiel-aktywny",
+    index: 128,
+    EN: {
+      studies: [
+        {
+          title:
+            "Protective effect of activated charcoal against progression of chronic kidney disease: a randomized clinical trial",
+          description:
+            "Activated charcoal supplementation for eight weeks in patients with end-stage chronic kidney disease undergoing hemodialysis significantly lowered blood urea and phosphorus levels, promoting control of uremic toxins.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Schützende Wirkung von Aktivkohle gegen das Fortschreiten einer chronischen Nierenerkrankung: eine randomisierte klinische Studie",
+          description:
+            "Die achtwöchige Einnahme von Aktivkohle bei Patienten mit chronischer Nierenerkrankung im Endstadium, die sich einer Hämodialyse unterziehen, führte zu einer deutlichen Senkung der Harnstoff- und Phosphorwerte im Blut und förderte die Kontrolle der urämischen Toxine.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Effet protecteur du charbon actif contre la progression de la maladie rénale chronique : un essai clinique randomisé",
+          description:
+            "La supplémentation en charbon actif pendant huit semaines chez des patients atteints d'insuffisance rénale chronique terminale et soumis à l'hémodialyse a permis de réduire de manière significative les taux d'urée et de phosphore dans le sang, favorisant ainsi le contrôle des toxines urémiques.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Effetto protettivo del carbone attivo contro la progressione della malattia renale cronica: uno studio clinico randomizzato",
+          description:
+            "L'integrazione di carbone attivo per otto settimane in pazienti con malattia renale cronica in fase terminale sottoposti a emodialisi ha abbassato significativamente i livelli di urea e fosforo nel sangue, favorendo il controllo delle tossine uremiche.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Efecto protector del carbón activado contra la progresión de la enfermedad renal crónica: un ensayo clínico aleatorizado",
+          description:
+            "La suplementación con carbón activado durante ocho semanas en pacientes con enfermedad renal crónica terminal sometidos a hemodiálisis redujo significativamente los niveles de urea y fósforo en sangre, favoreciendo el control de las toxinas urémicas.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
+        },
+      ],
+    },
+  },
+  "Kora wierzby białej": {
+    id: "kora-wierzby-bialej",
+    index: 156,
+    EN: {
+      studies: [
+        {
+          title:
+            "Efficacy and safety of white willow ( Salix alba ) bark extracts",
+          description:
+            "Willow bark extract, known for its anti-inflammatory, antipyretic and analgesic effects, shows potential in treating chronic pain, osteoarthritis and improving athletic performance.",
+          link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Wirksamkeit und Sicherheit von Extrakten aus der Rinde der Weißweide (Salix alba)",
+          description:
+            "Der Weidenrindenextrakt, der für seine entzündungshemmende, fiebersenkende und schmerzstillende Wirkung bekannt ist, hat das Potenzial, chronische Schmerzen und Arthrose zu behandeln und die sportliche Leistungsfähigkeit zu verbessern.",
+          link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Efficacité et sécurité des extraits d'écorce de saule blanc ( Salix alba )",
+          description:
+            "L'extrait d'écorce de saule, connu pour ses effets anti-inflammatoires, antipyrétiques et analgésiques, présente un potentiel dans le traitement des douleurs chroniques, de l'arthrose et dans l'amélioration des performances sportives.",
+          link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Efficacia e sicurezza degli estratti di corteccia di salice bianco ( Salix alba )",
+          description:
+            "L'estratto di corteccia di salice, noto per i suoi effetti antinfiammatori, antipiretici e analgesici, mostra un potenziale nel trattamento del dolore cronico, dell'osteoartrite e nel miglioramento delle prestazioni atletiche.",
+          link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Eficacia y seguridad de los extractos de corteza de sauce blanco ( Salix alba )",
+          description:
+            "El extracto de corteza de sauce, conocido por sus efectos antiinflamatorios, antipiréticos y analgésicos, muestra potencial en el tratamiento del dolor crónico, la artrosis y la mejora del rendimiento deportivo.",
+          link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
+        },
+      ],
+    },
+  },
+  "Askorbinian sodu": {
+    id: "askorbinian-sodu",
+    index: 159,
+    EN: {
+      studies: [
+        {
+          title:
+            "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
+          description:
+            "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
+          description:
+            "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
+          description:
+            "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
+          description:
+            "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
+          description:
+            "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
+        },
+      ],
+    },
+  },
+  "Biała Piwonia": {
+    id: "biala-piwonia",
+    index: 174,
+    EN: {
+      studies: [
+        {
+          title:
+            "White peony (fermented Camellia sinensis ) Polyphenols help prevent alcohol-induced liver damage through antioxidant activity",
+          description:
+            "White peony polyphenols (WPP) show strong antioxidant and anti-inflammatory properties, effectively protecting the liver from alcohol damage, making them a promising natural hepatoprotective agent comparable to silymarin.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/31683564/",
+        },
+        {
+          title:
+            "Effect and superiority of the application of total glucosides of white peony,combined with methotrexate and sulfasalazine in the treatment of ankylosing spondylitis",
+          description:
+            "The combination of paeonia glucoside, methotrexate and sulfasalazine has shown increased efficacy and improved safety in the treatment of ankylosing spondylitis.",
+          link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Weiße Pfingstrose (fermentierte Camellia sinensis ) Polyphenole helfen, alkoholbedingte Leberschäden durch antioxidative Aktivität zu verhindern",
+          description:
+            "Die Polyphenole der Weißen Pfingstrose (WPP) weisen starke antioxidative und entzündungshemmende Eigenschaften auf und schützen die Leber wirksam vor Alkoholschäden, was sie zu einem vielversprechenden natürlichen Hepatoprotektivum macht, das mit Silymarin vergleichbar ist.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/31683564/",
+        },
+        {
+          title:
+            "Wirkung und Überlegenheit der Anwendung von Gesamtglucosiden der weißen Pfingstrose in Kombination mit Methotrexat und Sulfasalazin bei der Behandlung der ankylosierenden Spondylitis",
+          description:
+            "Die Kombination von Paeonia glucoside, Methotrexat und Sulfasalazin hat bei der Behandlung der ankylosierenden Spondylitis eine erhöhte Wirksamkeit und verbesserte Sicherheit gezeigt.",
+          link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Pivoine blanche (Camellia sinensis fermenté) Les polyphénols aident à prévenir les lésions hépatiques induites par l'alcool grâce à leur activité antioxydante.",
+          description:
+            "Les polyphénols de pivoine blanche (WPP) présentent de fortes propriétés antioxydantes et anti-inflammatoires, protégeant efficacement le foie des dommages causés par l'alcool, ce qui en fait un agent hépatoprotecteur naturel prometteur comparable à la silymarine.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/31683564/",
+        },
+        {
+          title:
+            "Effet et supériorité de l'application des glucosides totaux de pivoine blanche, combinés au méthotrexate et à la sulfasalazine dans le traitement de la spondylarthrite ankylosante",
+          description:
+            "L'association du glucoside de paeonia, du méthotrexate et de la sulfasalazine s'est révélée plus efficace et plus sûre dans le traitement de la spondylarthrite ankylosante.",
+          link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "I polifenoli della peonia bianca (Camellia sinensis fermentata) aiutano a prevenire i danni epatici indotti dall'alcol grazie all'attività antiossidante.",
+          description:
+            "I polifenoli della peonia bianca (WPP) mostrano forti proprietà antiossidanti e antinfiammatorie, proteggendo efficacemente il fegato dai danni dell'alcol, rendendoli un promettente agente epatoprotettivo naturale paragonabile alla silimarina.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/31683564/",
+        },
+        {
+          title:
+            "Effetto e superiorità dell'applicazione dei glucosidi totali della peonia bianca, in combinazione con metotrexato e sulfasalazina nel trattamento della spondilite anchilosante",
+          description:
+            "La combinazione di glucoside di paeonia, metotrexato e sulfasalazina ha dimostrato una maggiore efficacia e sicurezza nel trattamento della spondilite anchilosante.",
+          link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Peonía blanca (Camellia sinensis fermentada ) Los polifenoles ayudan a prevenir los daños hepáticos inducidos por el alcohol gracias a su actividad antioxidante",
+          description:
+            "Los polifenoles de peonía blanca (WPP) muestran fuertes propiedades antioxidantes y antiinflamatorias, protegiendo eficazmente el hígado de los daños causados por el alcohol, lo que los convierte en un prometedor agente hepatoprotector natural comparable a la silimarina.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/31683564/",
+        },
+        {
+          title:
+            "Efecto y superioridad de la aplicación de glucósidos totales de peonía blanca,combinados con metotrexato y sulfasalazina en el tratamiento de la espondilitis anquilosante.",
+          description:
+            "La combinación de glucósido de paeonia, metotrexato y sulfasalazina ha demostrado una mayor eficacia y una mayor seguridad en el tratamiento de la espondilitis anquilosante.",
+          link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217",
+        },
+      ],
+    },
+  },
+  "Butcher's broom": {
+    id: "butcher-s-broom",
+    index: 176,
+    EN: {
+      studies: [
+        {
+          title:
+            "Combination of Ruscus aculeatus extract, hesperidin methyl chalcone and ascorbic acid: a comprehensive review of their pharmacological and clinical effects and the pathophysiology of chronic venous disease",
+          description:
+            "Ruscus aculeatus extract combined with hesperidin methylchalcone and ascorbic acid is effective and safe in the treatment of venous disease, improving microcirculation, lymphatic function and relieving symptoms of venous hypertension.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+        },
+        {
+          title: "Ruscus genus: a rich source of bioactive steroidal saponins",
+          description:
+            "Ruscus aculeatus, known as butcher's broom and prized for its ruskogenin and neoruskogenin content, is used to treat chronic venous insufficiency, varicose veins, hemorrhoids and orthostatic hypotension due to its phlebotherapeutic and vasoconstrictor properties.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+        },
+        {
+          title:
+            "Design of a herbal preparation consisting of a combination of Ruscus aculeatus L. and Vitis vinifera L. extracts, magnolol, and diosmetin for the treatment of chronic venous disease through anti-inflammatory effects and AP-1 modulation",
+          description:
+            "The herbal preparation DMRV-2, based on extracts of Ruscus aculeatus root, Vitis vinifera seeds, diosmetin and magnolol, has shown potent anti-inflammatory effects in chronic venous disease by reducing the secretion of inflammatory cytokines and inhibiting the activation of AP-1 and NF-kB factors in endothelial cells.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Kombination von Ruscus aculeatus-Extrakt, Hesperidin-Methylchalkon und Ascorbinsäure: eine umfassende Übersicht über ihre pharmakologischen und klinischen Wirkungen und die Pathophysiologie chronischer Venenerkrankungen",
+          description:
+            "Der Extrakt aus Ruscus aculeatus in Kombination mit Hesperidin-Methylchalcon und Ascorbinsäure ist wirksam und sicher bei der Behandlung von Venenerkrankungen, verbessert die Mikrozirkulation und die Lymphfunktion und lindert die Symptome der venösen Hypertonie.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+        },
+        {
+          title:
+            "Die Gattung Ruscus: eine reiche Quelle bioaktiver steroidaler Saponine",
+          description:
+            "Ruscus aculeatus, bekannt als Mäusedorn und geschätzt für seinen Gehalt an Ruskogenin und Neoruskogenin, wird aufgrund seiner phlebotherapeutischen und gefäßverengenden Eigenschaften zur Behandlung von chronischer Veneninsuffizienz, Krampfadern, Hämorrhoiden und orthostatischer Hypotonie eingesetzt.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+        },
+        {
+          title:
+            "Entwicklung einer pflanzlichen Zubereitung aus einer Kombination von Extrakten aus Ruscus aculeatus L. und Vitis vinifera L., Magnolol und Diosmetin zur Behandlung chronischer Venenerkrankungen durch entzündungshemmende Wirkungen und AP-1-Modulation",
+          description:
+            "Das pflanzliche Präparat DMRV-2, das auf Extrakten aus Ruscus aculeatus-Wurzel, Vitis vinifera-Samen, Diosmetin und Magnolol basiert, hat bei chronischen Venenerkrankungen starke entzündungshemmende Wirkungen gezeigt, indem es die Sekretion von Entzündungszytokinen reduziert und die Aktivierung der AP-1- und NF-kB-Faktoren in Endothelzellen hemmt.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Combinaison de l'extrait de Ruscus aculeatus, de l'hespéridine méthyl chalcone et de l'acide ascorbique : une revue complète de leurs effets pharmacologiques et cliniques et de la pathophysiologie de la maladie veineuse chronique",
+          description:
+            "L'extrait de Ruscus aculeatus associé à la méthylchalcone d'hespéridine et à l'acide ascorbique est efficace et sûr dans le traitement de la maladie veineuse, améliorant la microcirculation, la fonction lymphatique et soulageant les symptômes de l'hypertension veineuse.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+        },
+        {
+          title:
+            "Le genre Ruscus : une riche source de saponines stéroïdiennes bioactives",
+          description:
+            "Ruscus aculeatus, connu sous le nom de balai de boucher et apprécié pour sa teneur en ruskogénine et en néoruskogénine, est utilisé pour traiter l'insuffisance veineuse chronique, les varices, les hémorroïdes et l'hypotension orthostatique grâce à ses propriétés phlébothérapeutiques et vasoconstrictrices.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+        },
+        {
+          title:
+            "Conception d'une préparation à base de plantes consistant en une combinaison d'extraits de Ruscus aculeatus L. et de Vitis vinifera L., de magnolol et de diosmétine pour le traitement de la maladie veineuse chronique par le biais d'effets anti-inflammatoires et de la modulation de l'AP-1",
+          description:
+            "La préparation végétale DMRV-2, à base d'extraits de racine de Ruscus aculeatus, de graines de Vitis vinifera, de diosmétine et de magnolol, a montré de puissants effets anti-inflammatoires dans la maladie veineuse chronique en réduisant la sécrétion de cytokines inflammatoires et en inhibant l'activation des facteurs AP-1 et NF-kB dans les cellules endothéliales.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Combinazione di estratto di Ruscus aculeatus, esperidina metil-calcone e acido ascorbico: una revisione completa dei loro effetti farmacologici e clinici e della fisiopatologia della malattia venosa cronica",
+          description:
+            "L'estratto di Ruscus aculeatus combinato con esperidina metilcalcone e acido ascorbico è efficace e sicuro nel trattamento della malattia venosa, migliorando la microcircolazione, la funzione linfatica e alleviando i sintomi dell'ipertensione venosa.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+        },
+        {
+          title:
+            "Il genere Ruscus: una ricca fonte di saponine steroidee bioattive",
+          description:
+            "Il Ruscus aculeatus, noto come ginestra del macellaio e apprezzato per il suo contenuto di ruskogenina e neoruskogenina, è usato per trattare l'insufficienza venosa cronica, le vene varicose, le emorroidi e l'ipotensione ortostatica grazie alle sue proprietà fleboterapiche e vasocostrittrici.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+        },
+        {
+          title:
+            "Progettazione di un preparato erboristico costituito da una combinazione di estratti di Ruscus aculeatus L. e Vitis vinifera L., magnololo e diosmetina per il trattamento della malattia venosa cronica attraverso effetti antinfiammatori e la modulazione di AP-1",
+          description:
+            "Il preparato erboristico DMRV-2, a base di estratti di radice di Ruscus aculeatus, semi di Vitis vinifera, diosmetina e magnololo, ha dimostrato potenti effetti antinfiammatori nella malattia venosa cronica, riducendo la secrezione di citochine infiammatorie e inibendo l'attivazione dei fattori AP-1 e NF-kB nelle cellule endoteliali.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Combinación de extracto de Ruscus aculeatus, hesperidina metil chalcona y ácido ascórbico: revisión exhaustiva de sus efectos farmacológicos y clínicos y de la fisiopatología de la enfermedad venosa crónica",
+          description:
+            "El extracto de Ruscus aculeatus combinado con hesperidina metilchalcona y ácido ascórbico es eficaz y seguro en el tratamiento de la enfermedad venosa, mejorando la microcirculación, la función linfática y aliviando los síntomas de la hipertensión venosa.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+        },
+        {
+          title:
+            "El género Ruscus: una rica fuente de saponinas esteroideas bioactivas",
+          description:
+            "El Ruscus aculeatus, conocido como rusco y apreciado por su contenido en ruskogenina y neoruskogenina, se utiliza para tratar la insuficiencia venosa crónica, las varices, las hemorroides y la hipotensión ortostática debido a sus propiedades fleboterapéuticas y vasoconstrictoras.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+        },
+        {
+          title:
+            "Diseño de un preparado herbal consistente en una combinación de extractos de Ruscus aculeatus L. y Vitis vinifera L., magnolol y diosmetina para el tratamiento de la enfermedad venosa crónica mediante efectos antiinflamatorios y modulación AP-1",
+          description:
+            "El preparado a base de plantas DMRV-2, a base de extractos de raíz de Ruscus aculeatus, semillas de Vitis vinifera, diosmetina y magnolol, ha demostrado potentes efectos antiinflamatorios en la enfermedad venosa crónica al reducir la secreción de citoquinas inflamatorias e inhibir la activación de los factores AP-1 y NF-kB en las células endoteliales.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+        },
+      ],
+    },
+  },
+  "Hydrastis canadensis": {
+    id: "hydrastis-canadensis",
+    index: 195,
+    EN: {
+      studies: [
+        {
+          title:
+            "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
+          description:
+            "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37629702/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
+          description:
+            "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37629702/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
+          description:
+            "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37629702/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
+          description:
+            "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37629702/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Análisis in silico del efecto de Hydrastis canadensis en el control del cáncer de mama",
+          description:
+            "Hydrastis Canadensis, mediante análisis in-silico, ha demostrado potencial en el control del cáncer de mama hormono-independiente al dirigirse eficazmente a proteínas específicas con interacciones estables y propiedades farmacocinéticas y farmacodinámicas prometedoras.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/37629702/",
+        },
+      ],
+    },
+  },
+  "Garcinia cambogia": {
+    id: "garcinia-cambogia",
+    index: 197,
+    EN: {
+      studies: [
+        {
+          title: "Comprehensive scientific review of Garcinia cambogia",
+          description:
+            "Garcinia cambogia is a fruit traditionally used as a spice, whose main active ingredient (hydroxycitric acid) has been shown to promote weight loss by inhibiting lipogenesis and increasing satiety, as well as having anti-inflammatory and anti-diabetic properties.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/25732350/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Umfassender wissenschaftlicher Bericht über Garcinia cambogia",
+          description:
+            "Garcinia cambogia ist eine Frucht, die traditionell als Gewürz verwendet wird und deren Hauptwirkstoff (Hydroxyzitronensäure) nachweislich die Gewichtsabnahme fördert, indem er die Lipogenese hemmt und das Sättigungsgefühl erhöht, sowie entzündungshemmende und antidiabetische Eigenschaften hat.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/25732350/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title: "Analyse scientifique complète du Garcinia cambogia",
+          description:
+            "Le garcinia cambogia est un fruit traditionnellement utilisé comme épice, dont le principal ingrédient actif (l'acide hydroxycitrique) favorise la perte de poids en inhibant la lipogenèse et en augmentant la satiété, tout en ayant des propriétés anti-inflammatoires et antidiabétiques.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/25732350/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title: "Revisione scientifica completa della Garcinia cambogia",
+          description:
+            "La Garcinia cambogia è un frutto tradizionalmente usato come spezia, il cui principale principio attivo (acido idrossicitrico) ha dimostrato di favorire la perdita di peso inibendo la lipogenesi e aumentando il senso di sazietà, oltre ad avere proprietà antinfiammatorie e antidiabetiche.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/25732350/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title: "Revisión científica exhaustiva de la Garcinia cambogia",
+          description:
+            "La Garcinia cambogia es una fruta utilizada tradicionalmente como especia, cuyo principal principio activo (el ácido hidroxicítrico) ha demostrado favorecer la pérdida de peso al inhibir la lipogénesis y aumentar la saciedad, además de tener propiedades antiinflamatorias y antidiabéticas.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/25732350/",
+        },
+      ],
+    },
+  },
+  "Mącznica lekarska": {
+    id: "m-cznica-lekarska",
+    index: 198,
+    EN: {
+      studies: [
+        {
+          title:
+            "Medicaid in the treatment of acute uncomplicated cystitis (BRUMI): protocol of a multicenter , randomized, double-blind clinical trial",
+          description:
+            "This randomized clinical trial compares the efficacy of fosfomycin with bearberry leaf extract (Uvae ursi folium) in the treatment of acute cystitis symptoms in premenopausal women, with the primary endpoint assessing symptom improvement after 7 days of treatment.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/35750460/",
+        },
+      ],
+    },
+    DE: {
+      studies: [
+        {
+          title:
+            "Medicaid zur Behandlung der akuten unkomplizierten Blasenentzündung (BRUMI): Protokoll einer multizentrischen, randomisierten, doppelblinden klinischen Studie",
+          description:
+            "Diese randomisierte klinische Studie vergleicht die Wirksamkeit von Fosfomycin mit Bärentraubenblattextrakt (Uvae ursi folium) bei der Behandlung von akuten Blasenentzündungssymptomen bei prämenopausalen Frauen, wobei der primäre Endpunkt die Verbesserung der Symptome nach 7 Tagen Behandlung ist.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/35750460/",
+        },
+      ],
+    },
+    FR: {
+      studies: [
+        {
+          title:
+            "Medicaid dans le traitement de la cystite aiguë non compliquée (BRUMI) : protocole d'un essai clinique multicentrique, randomisé, en double aveugle",
+          description:
+            "Cet essai clinique randomisé compare l'efficacité de la fosfomycine à l'extrait de feuilles de busserole (Uvae ursi folium) dans le traitement des symptômes de la cystite aiguë chez les femmes préménopausées, le critère d'évaluation principal étant l'amélioration des symptômes après 7 jours de traitement.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/35750460/",
+        },
+      ],
+    },
+    IT: {
+      studies: [
+        {
+          title:
+            "Medicaid nel trattamento della cistite acuta non complicata (BRUMI): protocollo di uno studio clinico multicentrico, randomizzato, in doppio cieco",
+          description:
+            "Questo studio clinico randomizzato confronta l'efficacia della fosfomicina con l'estratto di foglie di uva ursina (Uvae ursi folium) nel trattamento dei sintomi della cistite acuta in donne in premenopausa, con l'endpoint primario di valutare il miglioramento dei sintomi dopo 7 giorni di trattamento.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/35750460/",
+        },
+      ],
+    },
+    ES: {
+      studies: [
+        {
+          title:
+            "Medicaid en el tratamiento de la cistitis aguda no complicada (BRUMI): protocolo de un ensayo clínico multicéntrico , aleatorizado y doble ciego.",
+          description:
+            "Este ensayo clínico aleatorizado compara la eficacia de la fosfomicina con el extracto de hoja de gayuba (Uvae ursi folium) en el tratamiento de los síntomas de la cistitis aguda en mujeres premenopáusicas, con el criterio principal de valoración de la mejoría de los síntomas tras 7 días de tratamiento.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/35750460/",
+        },
+      ],
+    },
   },
-  DE: {
-    studies: [
-      {
-        title: "Magnesiummalat gegen Müdigkeit",
-        description:
-          "Magnesium kann durch seine Beteiligung an der Produktion von Zellenergie die Vitalität und die körperliche Leistungsfähigkeit des Körpers steigern.",
-        link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
-      },
-      {
-        title: "Was ist Magnesiummalat? Vorteile, Verwendung, Dosierung und mehr",
-        description: "Unterstützt die Muskel- und Nervenfunktion.",
-        link: "https://draxe.com/nutrition/magnesium-malate/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Malate de magnésium pour la fatigue",
-        description:
-          "Le magnésium, par sa participation à la production d'énergie cellulaire, peut augmenter la vitalité et les performances physiques de l'organisme.",
-        link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
-      },
-      {
-        title:
-          "Qu'est-ce que le malate de magnésium ? Avantages, utilisations, dosage et autres",
-        description: "Favorise la fonction musculaire et nerveuse.",
-        link: "https://draxe.com/nutrition/magnesium-malate/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title: "Malato di magnesio per la stanchezza",
-        description:
-          "Il magnesio, partecipando alla produzione di energia cellulare, può aumentare la vitalità e le prestazioni fisiche dell'organismo.",
-        link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
-      },
-      {
-        title:
-          "Che cos'è il malato di magnesio? Benefici, usi, dosaggio e altro ancora",
-        description: "Supporta la funzione muscolare e nervosa.",
-        link: "https://draxe.com/nutrition/magnesium-malate/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title: "Malato de magnesio para la fatiga",
-        description:
-          "El magnesio, a través de su participación en la producción de energía celular, puede aumentar la vitalidad y el rendimiento físico del organismo.",
-        link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
-      },
-      {
-        title:
-          "Qué es el malato de magnesio? Beneficios, usos, dosis y más",
-        description: "Favorece la función muscular y nerviosa.",
-        link: "https://draxe.com/nutrition/magnesium-malate/",
-      },
-    ],
-  },
-},
-"Dziki pochrzyn": {
-  id: "dziki-pochrzyn",
-  index: 82,
-  EN: {
-    studies: [
-      {
-        title: "Potential health benefits of water yam ( Dioscorea alata )",
-        description:
-          "A study of different varieties of yam (Dioscorea alata) showed their high nutritional value, especially in terms of fiber and mineral content, suggesting their potential use as functional foods, especially for diabetics and people with chronic diseases.",
-        link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "Potenzieller gesundheitlicher Nutzen der Wasserjam (Dioscorea alata)",
-        description:
-          "Eine Studie über verschiedene Yamswurzelsorten (Dioscorea alata) hat gezeigt, dass sie einen hohen Nährwert haben, vor allem in Bezug auf Ballaststoffe und Mineralien, was auf ihre potenzielle Verwendung als funktionelle Lebensmittel hinweist, insbesondere für Diabetiker und Menschen mit chronischen Krankheiten.",
-        link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Avantages potentiels pour la santé de l'igname ( Dioscorea alata )",
-        description:
-          "Une étude portant sur différentes variétés d'igname (Dioscorea alata) a montré leur haute valeur nutritionnelle, notamment en termes de teneur en fibres et en minéraux, ce qui suggère leur utilisation potentielle en tant qu'aliments fonctionnels, en particulier pour les diabétiques et les personnes souffrant de maladies chroniques.",
-        link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "Potenziali benefici per la salute dell'igname d'acqua ( Dioscorea alata )",
-        description:
-          "Uno studio su diverse varietà di igname (Dioscorea alata) ha mostrato il loro elevato valore nutrizionale, soprattutto in termini di contenuto di fibre e minerali, suggerendo il loro potenziale utilizzo come alimenti funzionali, in particolare per i diabetici e le persone con malattie croniche.",
-        link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "Posibles beneficios para la salud del ñame de agua ( Dioscorea alata )",
-        description:
-          "Un estudio de distintas variedades de ñame (Dioscorea alata) demostró su alto valor nutricional, especialmente en cuanto a contenido en fibra y minerales, lo que sugiere su uso potencial como alimentos funcionales, especialmente para diabéticos y personas con enfermedades crónicas.",
-        link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
-      },
-    ],
-  },
-},
-"Tarczyca bajkalska": {
-  id: "tarczyca-bajkalska",
-  index: 88,
-  EN: {
-    studies: [
-      {
-        title: "BAIKAL SKULLCAP: Benefits, dosage, side effects, drug interactions and other important information",
-        description:
-          "Baikal Skullcap contains flavonoids such as baicalin and baicalein that have strong anti-inflammatory effects. These compounds inhibit pathways like NF-kB and MAPK, reducing inflammation and the production of pro-inflammatory cytokines, which are beneficial for managing conditions like arthritis and other inflammatory diseases",
-        link: "https://nootropicsplanet.com/baikal-skullcap/",
-      },
-      {
-        title:
-          "Promising role of hydroxyflavone-baikalein from Scutellaria baicalensis root in prevention and treatment of human diseases",
-        description:
-          "Baicalein, a potent antioxidant with anti-inflammatory and anticancer properties, shows therapeutic potential in the treatment of metabolic, cardiovascular, neurological and infectious diseases.",
-        link: "https://www.mdpi.com/1422-0067/24/5/4732",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title:
-          "BAIKAL SKULLCAP: Vorteile, Dosierung, Nebenwirkungen, Wechselwirkungen mit anderen Medikamenten und andere wichtige Informationen",
-        description:
-          "Die Baikal-Schädeldecke enthält Flavonoide wie Baicalin und Baicalein, die eine starke entzündungshemmende Wirkung haben. Diese Verbindungen hemmen Signalwege wie NF-kB und MAPK, wodurch Entzündungen und die Produktion von entzündungsfördernden Zytokinen reduziert werden, was für die Behandlung von Zuständen wie Arthritis und anderen entzündlichen Krankheiten von Vorteil ist",
-        link: "https://nootropicsplanet.com/baikal-skullcap/",
-      },
-      {
-        title:
-          "Vielversprechende Rolle des Hydroxyflavon-Baikaleins aus der Wurzel von Scutellaria baicalensis bei der Vorbeugung und Behandlung von menschlichen Krankheiten",
-        description:
-          "Baicalein, ein starkes Antioxidans mit entzündungshemmenden und krebsbekämpfenden Eigenschaften, zeigt therapeutisches Potenzial bei der Behandlung von Stoffwechsel-, Herz-Kreislauf-, neurologischen und Infektionskrankheiten.",
-        link: "https://www.mdpi.com/1422-0067/24/5/4732",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "BAIKAL SKULLCAP : Avantages, posologie, effets secondaires, interactions médicamenteuses et autres informations importantes",
-        description:
-          "La scutellaire de Baikal contient des flavonoïdes tels que la baicaline et la baicaline qui ont de puissants effets anti-inflammatoires. Ces composés inhibent des voies telles que NF-kB et MAPK, réduisant ainsi l'inflammation et la production de cytokines pro-inflammatoires, ce qui est bénéfique pour la prise en charge d'affections telles que l'arthrite et d'autres maladies inflammatoires.",
-        link: "https://nootropicsplanet.com/baikal-skullcap/",
-      },
-      {
-        title:
-          "Rôle prometteur de l'hydroxyflavone-baïkaléine de la racine de Scutellaria baicalensis dans la prévention et le traitement des maladies humaines",
-        description:
-          "La baïcaléine, un puissant antioxydant aux propriétés anti-inflammatoires et anticancéreuses, présente un potentiel thérapeutique dans le traitement des maladies métaboliques, cardiovasculaires, neurologiques et infectieuses.",
-        link: "https://www.mdpi.com/1422-0067/24/5/4732",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "BAIKAL SKULLCAP: benefici, dosaggio, effetti collaterali, interazioni farmacologiche e altre informazioni importanti",
-        description:
-          "Il capelvenere di Baikal contiene flavonoidi come la baicalina e la baicaleina, che hanno potenti effetti antinfiammatori. Questi composti inibiscono vie come NF-kB e MAPK, riducendo così l'infiammazione e la produzione di citochine pro-infiammatorie, a vantaggio della gestione di condizioni come l'artrite e altre malattie infiammatorie.",
-        link: "https://nootropicsplanet.com/baikal-skullcap/",
-      },
-      {
-        title:
-          "Ruolo promettente dell'idrossiflavone-baikaleina dalla radice di Scutellaria baicalensis nella prevenzione e nel trattamento delle malattie umane",
-        description:
-          "La bayaleina, un potente antiossidante con proprietà antinfiammatorie e antitumorali, ha un potenziale terapeutico nel trattamento di malattie metaboliche, cardiovascolari, neurologiche e infettive.",
-        link: "https://www.mdpi.com/1422-0067/24/5/4732",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "BAIKAL SKULLCAP: Beneficios, dosis, efectos secundarios, interacciones con otros medicamentos y otra información importante.",
-        description:
-          "La Escutelaria Baikal contiene flavonoides como la baicalina y la baicaleína que tienen fuertes efectos antiinflamatorios. Estos compuestos inhiben vías como NF-kB y MAPK, reduciendo la inflamación y la producción de citoquinas proinflamatorias, lo que es beneficioso para tratar afecciones como la artritis y otras enfermedades inflamatorias.",
-        link: "https://nootropicsplanet.com/baikal-skullcap/",
-      },
-      {
-        title:
-          "Papel prometedor de la hidroxiflavona-baikaleína de la raíz de Scutellaria baicalensis en la prevención y el tratamiento de enfermedades humanas",
-        description:
-          "La baicaleína, un potente antioxidante con propiedades antiinflamatorias y anticancerígenas, muestra potencial terapéutico en el tratamiento de enfermedades metabólicas, cardiovasculares, neurológicas e infecciosas.",
-        link: "https://www.mdpi.com/1422-0067/24/5/4732",
-      },
-    ],
-  },
-},
-"Drożdże": {
-  id: "drozdze",
-  index: 89,
-  EN: {
-    studies: [
-      {
-        title: "Health benefits of nutritional yeast",
-        description:
-          "The fiber content in nutritional yeast promotes gut health by aiding digestion and preventing constipation.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Benefits of nutritional yeast and how to use it",
-        description: "Rich in B Vitamins: ",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "Gesundheitliche Vorteile von Nährhefe",
-        description:
-          "Die in der Nährhefe enthaltenen Ballaststoffe fördern die Darmgesundheit, indem sie die Verdauung unterstützen und Verstopfung vorbeugen.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Vorteile von Nährhefe und ihre Verwendung",
-        description: "Reich an B-Vitaminen: ",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Les bienfaits de la levure nutritionnelle pour la santé",
-        description:
-          "La teneur en fibres de la levure nutritionnelle favorise la santé intestinale en facilitant la digestion et en prévenant la constipation.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Avantages de la levure nutritionnelle et comment l'utiliser",
-        description: "Riche et vitamines B :",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title: "I benefici del lievito alimentare per la salute",
-        description:
-          "Il contenuto di fibre del lievito alimentare favorisce la salute dell'intestino aiutando la digestione e prevenendo la stitichezza.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Benefici del lievito nutrizionale e come utilizzarlo",
-        description: "Ricco di vitamine del gruppo B: ",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title: "Beneficios de la levadura nutricional para la salud",
-        description:
-          "El contenido en fibra de la levadura nutricional favorece la salud intestinal al facilitar la digestión y prevenir el estreñimiento.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Beneficios de la levadura nutricional y cómo utilizarla",
-        description: "Rico en vitaminas del grupo B:",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-},
-"Mangan": {
-  id: "mangan",
-  index: 91,
-  EN: {
-    studies: [
-      {
-        title: "Manganese: its role in disease and health",
-        description:
-          "Manganese is an essential trace element that plays a key role in metabolism, neurotransmitter synthesis and protection against oxidative stress",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "Mangan: seine Rolle bei Krankheit und Gesundheit",
-        description:
-          "Mangan ist ein essentielles Spurenelement, das eine Schlüsselrolle im Stoffwechsel, bei der Synthese von Neurotransmittern und beim Schutz vor oxidativem Stress spielt",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Manganèse : son rôle dans les maladies et la santé",
-        description:
-          "Le manganèse est un oligo-élément essentiel qui joue un rôle clé dans le métabolisme, la synthèse des neurotransmetteurs et la protection contre le stress oxydatif.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title: "Il manganese: il suo ruolo nelle malattie e nella salute",
-        description:
-          "Il manganese è un oligoelemento essenziale che svolge un ruolo chiave nel metabolismo, nella sintesi dei neurotrasmettitori e nella protezione dallo stress ossidativo.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title: "Manganeso: su papel en la enfermedad y la salud",
-        description:
-          "El manganeso es un oligoelemento esencial que desempeña un papel clave en el metabolismo, la síntesis de neurotransmisores y la protección contra el estrés oxidativo.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
-      },
-    ],
-  },
-},
-"MSM (metylosulfonylometan)": {
-  id: "msm",
-  index: 92,
-  EN: {
-    studies: [
-      {
-        title: "Methylsulfonylmethane: Applications and safety of a new dietary supplement.",
-        description:
-          "Methylsulfonylmethane (MSM) is a well-tolerated dietary supplement with anti-inflammatory properties that supports joint health, reduces oxidative stress.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
-      },
-      {
-        title:
-          "Methylsulfonylmethane Improves Knee Quality of Life in Participants with Mild Knee Pain: A Randomized, Double-Blind, Placebo-Controlled Trial",
-        description:
-          "The study found that MSM supplementation significantly improves knee health and overall body condition in people with mild knee pain, confirming its effectiveness as a joint health booster.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
-      },
-      {
-        title:
-          "Beauty from within: oral intake of a sulfur-containing supplement, methylsulfonylmethane, improves signs of skin aging",
-        description:
-          "The study confirmed that MSM supplementation in doses of 1-3 g per day effectively reduces signs of aging such as wrinkles, improving skin firmness, elasticity and hydration.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
-      },
-      {
-        title:
-          "Effects of daily methylsulfonylmethane (MSM) intake on high-density lipoprotein cholesterol in healthy overweight and obese adults: a randomized controlled trial",
-        description:
-          "The study found that MSM supplementation at a dose of 3 grams per day for 16 weeks improves the cardiometabolic profile, including HDL cholesterol levels, in overweight or obese individuals, suggesting its potential benefits in preventing obesity-related diseases.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title:
-          "Methylsulfonylmethan: Anwendungen und Sicherheit eines neuen Nahrungsergänzungsmittels.",
-        description:
-          "Methylsulfonylmethan (MSM) ist ein gut verträgliches Nahrungsergänzungsmittel mit entzündungshemmenden Eigenschaften, das die Gesundheit der Gelenke unterstützt und oxidativen Stress reduziert.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
-      },
-      {
-        title:
-          "Methylsulfonylmethan verbessert die Lebensqualität von Teilnehmern mit leichten Knieschmerzen: Eine randomisierte, doppelblinde, placebokontrollierte Studie",
-        description:
-          "Die Studie ergab, dass die Einnahme von MSM die Gesundheit der Knie und den allgemeinen Zustand des Körpers bei Menschen mit leichten Knieschmerzen deutlich verbessert, was die Wirksamkeit von MSM als Mittel zur Verbesserung der Gelenkgesundheit bestätigt.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
-      },
-      {
-        title:
-          "Schönheit von innen: Die orale Einnahme eines schwefelhaltigen Nahrungsergänzungsmittels, Methylsulfonylmethan, verbessert die Zeichen der Hautalterung",
-        description:
-          "Die Studie bestätigte, dass die Einnahme von MSM in einer Dosis von 1-3 g pro Tag die Zeichen der Hautalterung wie Falten wirksam reduziert und die Festigkeit, Elastizität und Feuchtigkeit der Haut verbessert.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
-      },
-      {
-        title:
-          "Auswirkungen der täglichen Einnahme von Methylsulfonylmethan (MSM) auf das High-Density-Lipoprotein-Cholesterin bei gesunden übergewichtigen und fettleibigen Erwachsenen: eine randomisierte kontrollierte Studie",
-        description:
-          "Die Studie ergab, dass eine Supplementierung mit MSM in einer Dosis von 3 Gramm pro Tag über einen Zeitraum von 16 Wochen das kardiometabolische Profil, einschließlich des HDL-Cholesterinspiegels, bei übergewichtigen oder fettleibigen Personen verbessert.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "Méthylsulfonylméthane : applications et sécurité d'un nouveau complément alimentaire.",
-        description:
-          "Le méthylsulfonylméthane (MSM) est un complément alimentaire bien toléré aux propriétés anti-inflammatoires qui favorise la santé des articulations et réduit le stress oxydatif.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
-      },
-      {
-        title:
-          "Le méthylsulfonylméthane améliore la qualité de vie des participants souffrant de douleurs légères au genou",
-        description:
-          "L'étude a montré que la supplémentation en MSM améliore de manière significative la santé du genou et l'état général du corps, confirmant ainsi son efficacité en tant que stimulant de la santé des articulations.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
-      },
-      {
-        title:
-          "La beauté de l'intérieur : la prise orale de méthylsulfonylméthane améliore les signes de vieillissement de la peau",
-        description:
-          "L'étude a confirmé qu'une supplémentation en MSM à raison de 1 à 3 g par jour réduit efficacement les rides, en améliorant la fermeté, l'élasticité et l'hydratation de la peau.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
-      },
-      {
-        title:
-          "Effets de la prise quotidienne de méthylsulfonylméthane sur le cholestérol HDL chez des adultes en surpoids",
-        description:
-          "L'étude a montré que la prise de MSM améliore le profil cardiométabolique, y compris le taux de cholestérol HDL, ce qui suggère ses avantages dans la prévention des maladies liées à l'obésité.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "Metilsulfonilmetano: applicazioni e sicurezza di un nuovo integratore alimentare.",
-        description:
-          "Il metilsulfonilmetano (MSM) è un integratore alimentare ben tollerato con proprietà antinfiammatorie che favorisce la salute delle articolazioni e riduce lo stress ossidativo.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
-      },
-      {
-        title:
-          "Il metilsulfonilmetano migliora la qualità di vita del ginocchio nei partecipanti con dolore lieve al ginocchio",
-        description:
-          "L'integrazione di MSM migliora significativamente la salute del ginocchio e le condizioni generali del corpo, confermando la sua efficacia.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
-      },
-      {
-        title:
-          "Bellezza dall'interno: l'assunzione di MSM migliora i segni dell'invecchiamento cutaneo",
-        description:
-          "MSM riduce efficacemente rughe e migliora la compattezza, l'elasticità e l'idratazione della pelle.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
-      },
-      {
-        title:
-          "Effetti dell'assunzione di MSM sul colesterolo HDL in soggetti sovrappeso",
-        description:
-          "L'assunzione di MSM migliora il profilo cardiometabolico, inclusi i livelli di HDL, suggerendo benefici preventivi contro malattie da obesità.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "Metilsulfonilmetano: Aplicaciones y seguridad de un nuevo suplemento dietético.",
-        description:
-          "El MSM es un suplemento bien tolerado con propiedades antiinflamatorias que favorece la salud articular y reduce el estrés oxidativo.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
-      },
-      {
-        title:
-          "El MSM mejora la calidad de vida en personas con dolor leve de rodilla",
-        description:
-          "La suplementación con MSM mejora la salud de las rodillas y el estado general del cuerpo, confirmando su eficacia.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
-      },
-      {
-        title:
-          "Belleza desde dentro: el MSM mejora los signos del envejecimiento cutáneo",
-        description:
-          "La suplementación con MSM reduce eficazmente las arrugas y mejora la firmeza, elasticidad e hidratación de la piel.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
-      },
-      {
-        title:
-          "Efectos del MSM sobre el colesterol HDL en adultos con sobrepeso",
-        description:
-          "El MSM mejora el perfil cardiometabólico, incluidos los niveles de colesterol HDL, y podría prevenir enfermedades relacionadas con la obesidad.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
-      },
-    ],
-  },
-},
-"Drożdze": {
-  id: "drozdze",
-  index: 89,
-  EN: {
-    studies: [
-      {
-        title: "Health benefits of nutritional yeast",
-        description:
-          "The fiber content in nutritional yeast promotes gut health by aiding digestion and preventing constipation.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Benefits of nutritional yeast and how to use it",
-        description: "Rich in B Vitamins: ",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "Gesundheitliche Vorteile von Nährhefe",
-        description:
-          "Die in der Nährhefe enthaltenen Ballaststoffe fördern die Darmgesundheit, indem sie die Verdauung unterstützen und Verstopfung vorbeugen.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Vorteile von Nährhefe und ihre Verwendung",
-        description: "Reich an B-Vitaminen: ",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Les bienfaits de la levure nutritionnelle pour la santé",
-        description:
-          "La teneur en fibres de la levure nutritionnelle favorise la santé intestinale en facilitant la digestion et en prévenant la constipation.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Avantages de la levure nutritionnelle et comment l'utiliser",
-        description: "Riche et vitamines B :",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title: "I benefici del lievito alimentare per la salute",
-        description:
-          "Il contenuto di fibre del lievito alimentare favorisce la salute dell'intestino aiutando la digestione e prevenendo la stitichezza.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Benefici del lievito nutrizionale e come utilizzarlo",
-        description: "Ricco di vitamine del gruppo B: ",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title: "Beneficios de la levadura nutricional para la salud",
-        description:
-          "El contenido en fibra de la levadura nutricional favorece la salud intestinal al facilitar la digestión y prevenir el estreñimiento.",
-        link: "https://www.health.com/food/nutritional-yeast-health-benefits",
-      },
-      {
-        title: "Beneficios de la levadura nutricional y cómo utilizarla",
-        description: "Rico en vitaminas del grupo B:",
-        link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
-      },
-    ],
-  },
-},
-"Pau d’Arco": {
-  id: "pau-d-arco",
-  index: 116,
-  EN: {
-    studies: [
-      {
-        title: "Safety and tolerability of Pau d'Arco ( Tabebuia avellanedae) in the treatment of primary painful menstruation: a single-arm, open-label study with adults aged 18-45 years",
-        description:
-          "Tabebuia avellanedae at a dose of 1050 mg/day for eight weeks in healthy women with primary painful menstruation proved safe, well tolerated and effective in reducing pain intensity, warranting further study.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
-      },
-      {
-        title: "Tabebuia impetiginosa : a comprehensive review of traditional uses, phytochemistry and immunopharmacological properties",
-        description:
-          "Tabebuia impetiginosa, traditionally used to treat fever, malaria and skin diseases, has shown anti-inflammatory, anti-allergic and anti-tumor activity, warranting further research into its pharmacological potential and safety.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title:
-          "Sicherheit und Verträglichkeit von Pau d'Arco (Tabebuia avellanedae) bei der Behandlung der primären schmerzhaften Menstruation: eine einarmige, offene Studie mit Erwachsenen im Alter von 18-45 Jahren",
-        description:
-          "Tabebuia avellanedae in einer Dosis von 1050 mg/Tag über acht Wochen bei gesunden Frauen mit primär schmerzhafter Menstruation erwies sich als sicher, gut verträglich und wirksam bei der Verringerung der Schmerzintensität, was weitere Studien rechtfertigt.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
-      },
-      {
-        title:
-          "Tabebuia impetiginosa: ein umfassender Überblick über traditionelle Anwendungen, Phytochemie und immunopharmakologische Eigenschaften",
-        description:
-          "Tabebuia impetiginosa, die traditionell zur Behandlung von Fieber, Malaria und Hautkrankheiten eingesetzt wird, hat eine entzündungshemmende, antiallergische und antitumorale Wirkung gezeigt, die weitere Untersuchungen zu ihrem pharmakologischen Potenzial und ihrer Sicherheit rechtfertigt.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "Sécurité et tolérance du Pau d'Arco (Tabebuia avellanedae) dans le traitement des menstruations douloureuses primaires : étude ouverte à un seul bras chez des adultes âgés de 18 à 45 ans.",
-        description:
-          "Tabebuia avellanedae à la dose de 1050 mg/jour pendant huit semaines chez des femmes en bonne santé souffrant de menstruations douloureuses primaires s'est avéré sûr, bien toléré et efficace dans la réduction de l'intensité de la douleur, ce qui justifie des études supplémentaires.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
-      },
-      {
-        title:
-          "Tabebuia impetiginosa : une revue complète des utilisations traditionnelles, de la phytochimie et des propriétés immunopharmacologiques",
-        description:
-          "Tabebuia impetiginosa, utilisée traditionnellement pour traiter la fièvre, le paludisme et les maladies de la peau, a montré une activité anti-inflammatoire, antiallergique et antitumorale, justifiant de nouvelles recherches sur son potentiel pharmacologique et sa sécurité.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "Sicurezza e tollerabilità del Pau d'Arco ( Tabebuia avellanedae) nel trattamento delle mestruazioni dolorose primarie: uno studio in aperto, a braccio singolo, su adulti di età compresa tra 18 e 45 anni",
-        description:
-          "La Tabebuia avellanedae alla dose di 1050 mg/die per otto settimane in donne sane con mestruazioni dolorose primarie si è dimostrata sicura, ben tollerata ed efficace nel ridurre l'intensità del dolore, il che giustifica ulteriori studi.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
-      },
-      {
-        title:
-          "Tabebuia impetiginosa: una revisione completa degli usi tradizionali, della fitochimica e delle proprietà immunofarmacologiche",
-        description:
-          "La Tabebuia impetiginosa, tradizionalmente usata per trattare febbre, malaria e malattie della pelle, ha mostrato un'attività antinfiammatoria, antiallergica e antitumorale, che giustifica ulteriori ricerche sul suo potenziale farmacologico e sulla sua sicurezza.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "Seguridad y tolerabilidad de Pau d'Arco ( Tabebuia avellanedae) en el tratamiento de la menstruación dolorosa primaria: un estudio abierto de un solo brazo con adultos de 18 a 45 años de edad.",
-        description:
-          "Tabebuia avellanedae a una dosis de 1050 mg/día durante ocho semanas en mujeres sanas con menstruación dolorosa primaria demostró ser segura, bien tolerada y eficaz para reducir la intensidad del dolor, lo que justifica la realización de nuevos estudios.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
-      },
-      {
-        title:
-          "Tabebuia impetiginosa : revisión exhaustiva de los usos tradicionales, fitoquímica y propiedades inmunofarmacológicas",
-        description:
-          "La Tabebuia impetiginosa, utilizada tradicionalmente para tratar la fiebre, la malaria y las enfermedades cutáneas, ha mostrado actividad antiinflamatoria, antialérgica y antitumoral, lo que justifica nuevas investigaciones sobre su potencial farmacológico y su seguridad.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
-      },
-    ],
-  },
-},
-"Echinacea (Jeżówka purpurowa)": {
-  id: "echinacea",
-  index: 117,
-  EN: {
-    studies: [
-      {
-        title: "Echinacea Purpurea and Mucosal Immunity",
-        description:
-          "Echinacea purpurea may reduce mucosal immunosuppression during intense exercise and shorten the duration of upper respiratory tract infections, as demonstrated by a smaller decrease in salivary immunoglobulin A (s-IgA) levels in those taking this supplement.",
-        link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
-      },
-      {
-        title:
-          "Placebo-controlled, double-blind study of Echinaceae pallidae radix in upper respiratory tract infections",
-        description:
-          "A double-blind, randomized controlled trial showed that Echinacea pallidae radix significantly reduced the duration of illness and relieved upper respiratory tract flu-like symptoms compared to placebo.",
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "Echinacea Purpurea und die Immunität der Schleimhäute",
-        description:
-          "Echinacea purpurea kann die Immunsuppression der Schleimhäute bei intensiver körperlicher Betätigung verringern und die Dauer von Infektionen der oberen Atemwege verkürzen, was durch einen geringeren Rückgang der Speichel-Immunglobulin-A-Werte (s-IgA) bei denjenigen, die diese Nahrungsergänzung einnehmen, belegt wird.",
-        link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
-      },
-      {
-        title:
-          "Placebokontrollierte Doppelblindstudie mit Echinaceae pallidae radix bei Infektionen der oberen Atemwege",
-        description:
-          "Eine randomisierte, kontrollierte Doppelblindstudie hat gezeigt, dass Echinacea pallidae radix im Vergleich zu Placebo die Krankheitsdauer deutlich verkürzt und grippeähnliche Symptome der oberen Atemwege gelindert hat.",
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Echinacea Purpurea et immunité des muqueuses",
-        description:
-          "L'Echinacea purpurea peut réduire l'immunosuppression des muqueuses pendant un exercice intense et raccourcir la durée des infections des voies respiratoires supérieures, comme le montre une diminution plus faible des niveaux d'immunoglobuline A salivaire (s-IgA) chez les personnes qui prennent ce supplément.",
-        link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
-      },
-      {
-        title:
-          "Étude en double aveugle contrôlée par placebo de l'Echinaceae pallidae radix dans les infections des voies respiratoires supérieures",
-        description:
-          "Un essai contrôlé randomisé en double aveugle a montré que l'Echinacea pallidae radix réduisait significativement la durée de la maladie et soulageait les symptômes grippaux des voies respiratoires supérieures par rapport à un placebo.",
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title: "Echinacea Purpurea e immunità delle mucose",
-        description:
-          "L'echinacea purpurea può ridurre l'immunosoppressione della mucosa durante l'esercizio fisico intenso e abbreviare la durata delle infezioni del tratto respiratorio superiore, come dimostrato da una minore diminuzione dei livelli di immunoglobulina A salivare (s-IgA) nei soggetti che assumono questo integratore.",
-        link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
-      },
-      {
-        title:
-          "Studio in doppio cieco, controllato con placebo, sull'Echinaceae pallidae radix nelle infezioni del tratto respiratorio superiore",
-        description:
-          "Uno studio controllato in doppio cieco e randomizzato ha dimostrato che l'Echinacea pallidae radix ha ridotto significativamente la durata della malattia e alleviato i sintomi influenzali del tratto respiratorio superiore rispetto al placebo.",
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title: "Echinacea purpurea e inmunidad de las mucosas",
-        description:
-          "La equinácea purpúrea puede reducir la inmunosupresión de las mucosas durante el ejercicio intenso y acortar la duración de las infecciones de las vías respiratorias superiores, como demuestra una menor disminución de los niveles de inmunoglobulina A salival (s-IgA) en quienes toman este suplemento.",
-        link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
-      },
-      {
-        title:
-          "Estudio doble ciego controlado con placebo de Echinaceae pallidae radix en infecciones del tracto respiratorio superior",
-        description:
-          "Un ensayo doble ciego, aleatorizado y controlado demostró que la Echinacea pallidae radix reducía significativamente la duración de la enfermedad y aliviaba los síntomas gripales del tracto respiratorio superior en comparación con el placebo.",
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
-      },
-    ],
-  },
-},
-"L-metionina": {
-  id: "l-metionina",
-  index: 119,
-  EN: {
-    studies: [
-      {
-        title: "L-methionine as an immune system support supplement: a clinical evaluation",
-        description:
-          "The study confirmed the supportive role of L-methionine in immunocompromised or immunodeficient patients.",
-        link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "L-Methionin als Ergänzung zur Unterstützung des Immunsystems: eine klinische Bewertung",
-        description:
-          "Die Studie bestätigt die unterstützende Rolle von L-Methionin bei immungeschwächten oder immunschwachen Patienten.",
-        link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "La L-méthionine en tant que supplément de soutien du système immunitaire : une évaluation clinique",
-        description:
-          "L'étude a confirmé le rôle de soutien de la L-méthionine chez les patients immunodéprimés ou immunodéficients.",
-        link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "L-metionina come integratore di supporto al sistema immunitario: una valutazione clinica",
-        description:
-          "Lo studio ha confermato il ruolo di supporto della L-metionina nei pazienti immunocompromessi o immunodeficienti.",
-        link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "L-metionina como suplemento de apoyo al sistema inmunitario: una evaluación clínica",
-        description:
-          "El estudio confirmó el papel de apoyo de la L-metionina en pacientes inmunocomprometidos o inmunodeficientes.",
-        link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
-      },
-    ],
-  },
-},
-"Kofeina": {
-  id: "kofeina",
-  index: 121,
-  EN: {
-    studies: [
-      {
-        title:
-          "Effects of caffeine on systemic metabolism, oxidative-inflammatory pathways and exercise performance",
-        description:
-          "Caffeine, a common alkaloid, exhibits multidirectional effects on the human body, from stimulant effects through antioxidant and anti-inflammatory properties to effects on physical performance, affecting both the nervous system and peripheral tissues.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title:
-          "Auswirkungen von Koffein auf den systemischen Stoffwechsel, die oxidativ-entzündlichen Stoffwechselwege und die körperliche Leistungsfähigkeit",
-        description:
-          "Koffein, ein häufig vorkommendes Alkaloid, hat vielfältige Wirkungen auf den menschlichen Körper, von stimulierenden Effekten über antioxidative und entzündungshemmende Eigenschaften bis hin zu Wirkungen auf die körperliche Leistungsfähigkeit, die sowohl das Nervensystem als auch das periphere Gewebe betreffen.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "Effets de la caféine sur le métabolisme systémique, les voies oxydatives-inflammatoires et la performance à l'effort",
-        description:
-          "La caféine, un alcaloïde commun, a des effets multidirectionnels sur le corps humain, allant des effets stimulants aux effets sur les performances physiques, en passant par les propriétés antioxydantes et anti-inflammatoires, affectant à la fois le système nerveux et les tissus périphériques.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "Effetti della caffeina sul metabolismo sistemico, sulle vie ossidativo-infiammatorie e sulla prestazione fisica",
-        description:
-          "La caffeina, un comune alcaloide, ha effetti multidirezionali sull'organismo umano, dagli effetti stimolanti alle proprietà antiossidanti e antinfiammatorie, fino agli effetti sulle prestazioni fisiche, con effetti sia sul sistema nervoso che sui tessuti periferici.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "Efectos de la cafeína sobre el metabolismo sistémico, las vías oxidativo-inflamatorias y el rendimiento en el ejercicio.",
-        description:
-          "La cafeína, un alcaloide común, exhibe efectos multidireccionales en el cuerpo humano, desde efectos estimulantes, pasando por propiedades antioxidantes y antiinflamatorias, hasta efectos sobre el rendimiento físico, afectando tanto al sistema nervioso como a los tejidos periféricos.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
-      },
-    ],
-  },
-},
-"Węgiel aktywny": {
-  id: "wegiel-aktywny",
-  index: 128,
-  EN: {
-    studies: [
-      {
-        title:
-          "Protective effect of activated charcoal against progression of chronic kidney disease: a randomized clinical trial",
-        description:
-          "Activated charcoal supplementation for eight weeks in patients with end-stage chronic kidney disease undergoing hemodialysis significantly lowered blood urea and phosphorus levels, promoting control of uremic toxins.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title:
-          "Schützende Wirkung von Aktivkohle gegen das Fortschreiten einer chronischen Nierenerkrankung: eine randomisierte klinische Studie",
-        description:
-          "Die achtwöchige Einnahme von Aktivkohle bei Patienten mit chronischer Nierenerkrankung im Endstadium, die sich einer Hämodialyse unterziehen, führte zu einer deutlichen Senkung der Harnstoff- und Phosphorwerte im Blut und förderte die Kontrolle der urämischen Toxine.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "Effet protecteur du charbon actif contre la progression de la maladie rénale chronique : un essai clinique randomisé",
-        description:
-          "La supplémentation en charbon actif pendant huit semaines chez des patients atteints d'insuffisance rénale chronique terminale et soumis à l'hémodialyse a permis de réduire de manière significative les taux d'urée et de phosphore dans le sang, favorisant ainsi le contrôle des toxines urémiques.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "Effetto protettivo del carbone attivo contro la progressione della malattia renale cronica: uno studio clinico randomizzato",
-        description:
-          "L'integrazione di carbone attivo per otto settimane in pazienti con malattia renale cronica in fase terminale sottoposti a emodialisi ha abbassato significativamente i livelli di urea e fosforo nel sangue, favorendo il controllo delle tossine uremiche.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "Efecto protector del carbón activado contra la progresión de la enfermedad renal crónica: un ensayo clínico aleatorizado",
-        description:
-          "La suplementación con carbón activado durante ocho semanas en pacientes con enfermedad renal crónica terminal sometidos a hemodiálisis redujo significativamente los niveles de urea y fósforo en sangre, favoreciendo el control de las toxinas urémicas.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
-      },
-    ],
-  },
-},
-"Kora wierzby białej": {
-  id: "kora-wierzby-bialej",
-  index: 156,
-  EN: {
-    studies: [
-      {
-        title:
-          "Efficacy and safety of white willow ( Salix alba ) bark extracts",
-        description:
-          "Willow bark extract, known for its anti-inflammatory, antipyretic and analgesic effects, shows potential in treating chronic pain, osteoarthritis and improving athletic performance.",
-        link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title:
-          "Wirksamkeit und Sicherheit von Extrakten aus der Rinde der Weißweide (Salix alba)",
-        description:
-          "Der Weidenrindenextrakt, der für seine entzündungshemmende, fiebersenkende und schmerzstillende Wirkung bekannt ist, hat das Potenzial, chronische Schmerzen und Arthrose zu behandeln und die sportliche Leistungsfähigkeit zu verbessern.",
-        link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title:
-          "Efficacité et sécurité des extraits d'écorce de saule blanc ( Salix alba )",
-        description:
-          "L'extrait d'écorce de saule, connu pour ses effets anti-inflammatoires, antipyrétiques et analgésiques, présente un potentiel dans le traitement des douleurs chroniques, de l'arthrose et dans l'amélioration des performances sportives.",
-        link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title:
-          "Efficacia e sicurezza degli estratti di corteccia di salice bianco ( Salix alba )",
-        description:
-          "L'estratto di corteccia di salice, noto per i suoi effetti antinfiammatori, antipiretici e analgesici, mostra un potenziale nel trattamento del dolore cronico, dell'osteoartrite e nel miglioramento delle prestazioni atletiche.",
-        link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title:
-          "Eficacia y seguridad de los extractos de corteza de sauce blanco ( Salix alba )",
-        description:
-          "El extracto de corteza de sauce, conocido por sus efectos antiinflamatorios, antipiréticos y analgésicos, muestra potencial en el tratamiento del dolor crónico, la artrosis y la mejora del rendimiento deportivo.",
-        link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
-      },
-    ],
-  },
-},
-"Askorbinian sodu": {
-  id: "askorbinian-sodu",
-  index: 159,
-  EN: {
-    studies: [
-      {
-        title: "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
-        description:
-          "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
-      },
-    ],
-  },
-  DE: {
-    studies: [
-      {
-        title: "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
-        description:
-          "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
-      },
-    ],
-  },
-  FR: {
-    studies: [
-      {
-        title: "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
-        description:
-          "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
-      },
-    ],
-  },
-  IT: {
-    studies: [
-      {
-        title: "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
-        description:
-          "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
-      },
-    ],
-  },
-  ES: {
-    studies: [
-      {
-        title: "Sodium ascorbate (SA) and l-ascorbic acid (AA) as modifiers of burn affected skin - A comparative analysis",
-        description:
-          "The study showed that SA and AA antioxidants promote tissue regeneration after burns, helping to rebuild damaged proteins and improving skin structure, which can speed up the wound healing process.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
-      },
-    ],
-  },
-},
-"Biała Piwonia": {
-  id: "biala-piwonia",
-  index: 174,
-  EN: {
-    studies: [
-      {
-        title: "White peony (fermented Camellia sinensis ) Polyphenols help prevent alcohol-induced liver damage through antioxidant activity",
-        description: "White peony polyphenols (WPP) show strong antioxidant and anti-inflammatory properties, effectively protecting the liver from alcohol damage, making them a promising natural hepatoprotective agent comparable to silymarin.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/31683564/"
-      },
-      {
-        title: "Effect and superiority of the application of total glucosides of white peony,combined with methotrexate and sulfasalazine in the treatment of ankylosing spondylitis",
-        description: "The combination of paeonia glucoside, methotrexate and sulfasalazine has shown increased efficacy and improved safety in the treatment of ankylosing spondylitis.",
-        link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217"
-      }
-    ]
-  },
-  DE: {
-    studies: [
-      {
-        title: "Weiße Pfingstrose (fermentierte Camellia sinensis ) Polyphenole helfen, alkoholbedingte Leberschäden durch antioxidative Aktivität zu verhindern",
-        description: "Die Polyphenole der Weißen Pfingstrose (WPP) weisen starke antioxidative und entzündungshemmende Eigenschaften auf und schützen die Leber wirksam vor Alkoholschäden, was sie zu einem vielversprechenden natürlichen Hepatoprotektivum macht, das mit Silymarin vergleichbar ist.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/31683564/"
-      },
-      {
-        title: "Wirkung und Überlegenheit der Anwendung von Gesamtglucosiden der weißen Pfingstrose in Kombination mit Methotrexat und Sulfasalazin bei der Behandlung der ankylosierenden Spondylitis",
-        description: "Die Kombination von Paeonia glucoside, Methotrexat und Sulfasalazin hat bei der Behandlung der ankylosierenden Spondylitis eine erhöhte Wirksamkeit und verbesserte Sicherheit gezeigt.",
-        link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217"
-      }
-    ]
-  },
-  FR: {
-    studies: [
-      {
-        title: "Pivoine blanche (Camellia sinensis fermenté) Les polyphénols aident à prévenir les lésions hépatiques induites par l'alcool grâce à leur activité antioxydante.",
-        description: "Les polyphénols de pivoine blanche (WPP) présentent de fortes propriétés antioxydantes et anti-inflammatoires, protégeant efficacement le foie des dommages causés par l'alcool, ce qui en fait un agent hépatoprotecteur naturel prometteur comparable à la silymarine.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/31683564/"
-      },
-      {
-        title: "Effet et supériorité de l'application des glucosides totaux de pivoine blanche, combinés au méthotrexate et à la sulfasalazine dans le traitement de la spondylarthrite ankylosante",
-        description: "L'association du glucoside de paeonia, du méthotrexate et de la sulfasalazine s'est révélée plus efficace et plus sûre dans le traitement de la spondylarthrite ankylosante.",
-        link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217"
-      }
-    ]
-  },
-  IT: {
-    studies: [
-      {
-        title: "I polifenoli della peonia bianca (Camellia sinensis fermentata) aiutano a prevenire i danni epatici indotti dall'alcol grazie all'attività antiossidante.",
-        description: "I polifenoli della peonia bianca (WPP) mostrano forti proprietà antiossidanti e antinfiammatorie, proteggendo efficacemente il fegato dai danni dell'alcol, rendendoli un promettente agente epatoprotettivo naturale paragonabile alla silimarina.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/31683564/"
-      },
-      {
-        title: "Effetto e superiorità dell'applicazione dei glucosidi totali della peonia bianca, in combinazione con metotrexato e sulfasalazina nel trattamento della spondilite anchilosante",
-        description: "La combinazione di glucoside di paeonia, metotrexato e sulfasalazina ha dimostrato una maggiore efficacia e sicurezza nel trattamento della spondilite anchilosante.",
-        link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217"
-      }
-    ]
-  },
-  ES: {
-    studies: [
-      {
-        title: "Peonía blanca (Camellia sinensis fermentada ) Los polifenoles ayudan a prevenir los daños hepáticos inducidos por el alcohol gracias a su actividad antioxidante",
-        description: "Los polifenoles de peonía blanca (WPP) muestran fuertes propiedades antioxidantes y antiinflamatorias, protegiendo eficazmente el hígado de los daños causados por el alcohol, lo que los convierte en un prometedor agente hepatoprotector natural comparable a la silimarina.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/31683564/"
-      },
-      {
-        title: "Efecto y superioridad de la aplicación de glucósidos totales de peonía blanca,combinados con metotrexato y sulfasalazina en el tratamiento de la espondilitis anquilosante.",
-        description: "La combinación de glucósido de paeonia, metotrexato y sulfasalazina ha demostrado una mayor eficacia y una mayor seguridad en el tratamiento de la espondilitis anquilosante.",
-        link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217"
-      }
-    ]
-  }
-},
-"Butcher's broom": {
-  id: "butcher-s-broom",
-  index: 176,
-  EN: {
-    studies: [
-      {
-        title: "Combination of Ruscus aculeatus extract, hesperidin methyl chalcone and ascorbic acid: a comprehensive review of their pharmacological and clinical effects and the pathophysiology of chronic venous disease",
-        description: "Ruscus aculeatus extract combined with hesperidin methylchalcone and ascorbic acid is effective and safe in the treatment of venous disease, improving microcirculation, lymphatic function and relieving symptoms of venous hypertension.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/26928296/"
-      },
-      {
-        title: "Ruscus genus: a rich source of bioactive steroidal saponins",
-        description: "Ruscus aculeatus, known as butcher's broom and prized for its ruskogenin and neoruskogenin content, is used to treat chronic venous insufficiency, varicose veins, hemorrhoids and orthostatic hypotension due to its phlebotherapeutic and vasoconstrictor properties.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/27825178/"
-      },
-      {
-        title: "Design of a herbal preparation consisting of a combination of Ruscus aculeatus L. and Vitis vinifera L. extracts, magnolol, and diosmetin for the treatment of chronic venous disease through anti-inflammatory effects and AP-1 modulation",
-        description: "The herbal preparation DMRV-2, based on extracts of Ruscus aculeatus root, Vitis vinifera seeds, diosmetin and magnolol, has shown potent anti-inflammatory effects in chronic venous disease by reducing the secretion of inflammatory cytokines and inhibiting the activation of AP-1 and NF-kB factors in endothelial cells.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36903912/"
-      }
-    ]
-  },
-  DE: {
-    studies: [
-      {
-        title: "Kombination von Ruscus aculeatus-Extrakt, Hesperidin-Methylchalkon und Ascorbinsäure: eine umfassende Übersicht über ihre pharmakologischen und klinischen Wirkungen und die Pathophysiologie chronischer Venenerkrankungen",
-        description: "Der Extrakt aus Ruscus aculeatus in Kombination mit Hesperidin-Methylchalcon und Ascorbinsäure ist wirksam und sicher bei der Behandlung von Venenerkrankungen, verbessert die Mikrozirkulation und die Lymphfunktion und lindert die Symptome der venösen Hypertonie.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/26928296/"
-      },
-      {
-        title: "Die Gattung Ruscus: eine reiche Quelle bioaktiver steroidaler Saponine",
-        description: "Ruscus aculeatus, bekannt als Mäusedorn und geschätzt für seinen Gehalt an Ruskogenin und Neoruskogenin, wird aufgrund seiner phlebotherapeutischen und gefäßverengenden Eigenschaften zur Behandlung von chronischer Veneninsuffizienz, Krampfadern, Hämorrhoiden und orthostatischer Hypotonie eingesetzt.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/27825178/"
-      },
-      {
-        title: "Entwicklung einer pflanzlichen Zubereitung aus einer Kombination von Extrakten aus Ruscus aculeatus L. und Vitis vinifera L., Magnolol und Diosmetin zur Behandlung chronischer Venenerkrankungen durch entzündungshemmende Wirkungen und AP-1-Modulation",
-        description: "Das pflanzliche Präparat DMRV-2, das auf Extrakten aus Ruscus aculeatus-Wurzel, Vitis vinifera-Samen, Diosmetin und Magnolol basiert, hat bei chronischen Venenerkrankungen starke entzündungshemmende Wirkungen gezeigt, indem es die Sekretion von Entzündungszytokinen reduziert und die Aktivierung der AP-1- und NF-kB-Faktoren in Endothelzellen hemmt.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36903912/"
-      }
-    ]
-  },
-  FR: {
-    studies: [
-      {
-        title: "Combinaison de l'extrait de Ruscus aculeatus, de l'hespéridine méthyl chalcone et de l'acide ascorbique : une revue complète de leurs effets pharmacologiques et cliniques et de la pathophysiologie de la maladie veineuse chronique",
-        description: "L'extrait de Ruscus aculeatus associé à la méthylchalcone d'hespéridine et à l'acide ascorbique est efficace et sûr dans le traitement de la maladie veineuse, améliorant la microcirculation, la fonction lymphatique et soulageant les symptômes de l'hypertension veineuse.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/26928296/"
-      },
-      {
-        title: "Le genre Ruscus : une riche source de saponines stéroïdiennes bioactives",
-        description: "Ruscus aculeatus, connu sous le nom de balai de boucher et apprécié pour sa teneur en ruskogénine et en néoruskogénine, est utilisé pour traiter l'insuffisance veineuse chronique, les varices, les hémorroïdes et l'hypotension orthostatique grâce à ses propriétés phlébothérapeutiques et vasoconstrictrices.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/27825178/"
-      },
-      {
-        title: "Conception d'une préparation à base de plantes consistant en une combinaison d'extraits de Ruscus aculeatus L. et de Vitis vinifera L., de magnolol et de diosmétine pour le traitement de la maladie veineuse chronique par le biais d'effets anti-inflammatoires et de la modulation de l'AP-1",
-        description: "La préparation végétale DMRV-2, à base d'extraits de racine de Ruscus aculeatus, de graines de Vitis vinifera, de diosmétine et de magnolol, a montré de puissants effets anti-inflammatoires dans la maladie veineuse chronique en réduisant la sécrétion de cytokines inflammatoires et en inhibant l'activation des facteurs AP-1 et NF-kB dans les cellules endothéliales.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36903912/"
-      }
-    ]
-  },
-  IT: {
-    studies: [
-      {
-        title: "Combinazione di estratto di Ruscus aculeatus, esperidina metil-calcone e acido ascorbico: una revisione completa dei loro effetti farmacologici e clinici e della fisiopatologia della malattia venosa cronica",
-        description: "L'estratto di Ruscus aculeatus combinato con esperidina metilcalcone e acido ascorbico è efficace e sicuro nel trattamento della malattia venosa, migliorando la microcircolazione, la funzione linfatica e alleviando i sintomi dell'ipertensione venosa.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/26928296/"
-      },
-      {
-        title: "Il genere Ruscus: una ricca fonte di saponine steroidee bioattive",
-        description: "Il Ruscus aculeatus, noto come ginestra del macellaio e apprezzato per il suo contenuto di ruskogenina e neoruskogenina, è usato per trattare l'insufficienza venosa cronica, le vene varicose, le emorroidi e l'ipotensione ortostatica grazie alle sue proprietà fleboterapiche e vasocostrittrici.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/27825178/"
-      },
-      {
-        title: "Progettazione di un preparato erboristico costituito da una combinazione di estratti di Ruscus aculeatus L. e Vitis vinifera L., magnololo e diosmetina per il trattamento della malattia venosa cronica attraverso effetti antinfiammatori e la modulazione di AP-1",
-        description: "Il preparato erboristico DMRV-2, a base di estratti di radice di Ruscus aculeatus, semi di Vitis vinifera, diosmetina e magnololo, ha dimostrato potenti effetti antinfiammatori nella malattia venosa cronica, riducendo la secrezione di citochine infiammatorie e inibendo l'attivazione dei fattori AP-1 e NF-kB nelle cellule endoteliali.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36903912/"
-      }
-    ]
-  },
-  ES: {
-    studies: [
-      {
-        title: "Combinación de extracto de Ruscus aculeatus, hesperidina metil chalcona y ácido ascórbico: revisión exhaustiva de sus efectos farmacológicos y clínicos y de la fisiopatología de la enfermedad venosa crónica",
-        description: "El extracto de Ruscus aculeatus combinado con hesperidina metilchalcona y ácido ascórbico es eficaz y seguro en el tratamiento de la enfermedad venosa, mejorando la microcirculación, la función linfática y aliviando los síntomas de la hipertensión venosa.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/26928296/"
-      },
-      {
-        title: "El género Ruscus: una rica fuente de saponinas esteroideas bioactivas",
-        description: "El Ruscus aculeatus, conocido como rusco y apreciado por su contenido en ruskogenina y neoruskogenina, se utiliza para tratar la insuficiencia venosa crónica, las varices, las hemorroides y la hipotensión ortostática debido a sus propiedades fleboterapéuticas y vasoconstrictoras.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/27825178/"
-      },
-      {
-        title: "Diseño de un preparado herbal consistente en una combinación de extractos de Ruscus aculeatus L. y Vitis vinifera L., magnolol y diosmetina para el tratamiento de la enfermedad venosa crónica mediante efectos antiinflamatorios y modulación AP-1",
-        description: "El preparado a base de plantas DMRV-2, a base de extractos de raíz de Ruscus aculeatus, semillas de Vitis vinifera, diosmetina y magnolol, ha demostrado potentes efectos antiinflamatorios en la enfermedad venosa crónica al reducir la secreción de citoquinas inflamatorias e inhibir la activación de los factores AP-1 y NF-kB en las células endoteliales.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/36903912/"
-      }
-    ]
-  }
-},
-"Hydrastis canadensis": {
-  id: "hydrastis-canadensis",
-  index: 195,
-  EN: {
-    studies: [
-      {
-        title: "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
-        description: "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37629702/"
-      }
-    ]
-  },
-  DE: {
-    studies: [
-      {
-        title: "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
-        description: "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37629702/"
-      }
-    ]
-  },
-  FR: {
-    studies: [
-      {
-        title: "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
-        description: "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37629702/"
-      }
-    ]
-  },
-  IT: {
-    studies: [
-      {
-        title: "In Silico Analysis of the Effect of Hydrastis canadensis on Controlling Breast Cancer",
-        description: "Hydrastis Canadensis, through in-silico analysis, has demonstrated potential in controlling hormone-independent breast cancer by effectively targeting specific proteins with stable interactions and promising pharmacokinetic and pharmacodynamic properties.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37629702/"
-      }
-    ]
-  },
-  ES: {
-    studies: [
-      {
-        title: "Análisis in silico del efecto de Hydrastis canadensis en el control del cáncer de mama",
-        description: "Hydrastis Canadensis, mediante análisis in-silico, ha demostrado potencial en el control del cáncer de mama hormono-independiente al dirigirse eficazmente a proteínas específicas con interacciones estables y propiedades farmacocinéticas y farmacodinámicas prometedoras.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/37629702/"
-      }
-    ]
-  }
-},
-"Garcinia cambogia": {
-  id: "garcinia-cambogia",
-  index: 197,
-  EN: {
-    studies: [
-      {
-        title: "Comprehensive scientific review of Garcinia cambogia",
-        description: "Garcinia cambogia is a fruit traditionally used as a spice, whose main active ingredient (hydroxycitric acid) has been shown to promote weight loss by inhibiting lipogenesis and increasing satiety, as well as having anti-inflammatory and anti-diabetic properties.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/25732350/"
-      }
-    ]
-  },
-  DE: {
-    studies: [
-      {
-        title: "Umfassender wissenschaftlicher Bericht über Garcinia cambogia",
-        description: "Garcinia cambogia ist eine Frucht, die traditionell als Gewürz verwendet wird und deren Hauptwirkstoff (Hydroxyzitronensäure) nachweislich die Gewichtsabnahme fördert, indem er die Lipogenese hemmt und das Sättigungsgefühl erhöht, sowie entzündungshemmende und antidiabetische Eigenschaften hat.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/25732350/"
-      }
-    ]
-  },
-  FR: {
-    studies: [
-      {
-        title: "Analyse scientifique complète du Garcinia cambogia",
-        description: "Le garcinia cambogia est un fruit traditionnellement utilisé comme épice, dont le principal ingrédient actif (l'acide hydroxycitrique) favorise la perte de poids en inhibant la lipogenèse et en augmentant la satiété, tout en ayant des propriétés anti-inflammatoires et antidiabétiques.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/25732350/"
-      }
-    ]
-  },
-  IT: {
-    studies: [
-      {
-        title: "Revisione scientifica completa della Garcinia cambogia",
-        description: "La Garcinia cambogia è un frutto tradizionalmente usato come spezia, il cui principale principio attivo (acido idrossicitrico) ha dimostrato di favorire la perdita di peso inibendo la lipogenesi e aumentando il senso di sazietà, oltre ad avere proprietà antinfiammatorie e antidiabetiche.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/25732350/"
-      }
-    ]
-  },
-  ES: {
-    studies: [
-      {
-        title: "Revisión científica exhaustiva de la Garcinia cambogia",
-        description: "La Garcinia cambogia es una fruta utilizada tradicionalmente como especia, cuyo principal principio activo (el ácido hidroxicítrico) ha demostrado favorecer la pérdida de peso al inhibir la lipogénesis y aumentar la saciedad, además de tener propiedades antiinflamatorias y antidiabéticas.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/25732350/"
-      }
-    ]
-  }
-},
-"Mącznica lekarska": {
-  id: "m-cznica-lekarska",
-  index: 198,
-  EN: {
-    studies: [
-      {
-        title: "Medicaid in the treatment of acute uncomplicated cystitis (BRUMI): protocol of a multicenter , randomized, double-blind clinical trial",
-        description: "This randomized clinical trial compares the efficacy of fosfomycin with bearberry leaf extract (Uvae ursi folium) in the treatment of acute cystitis symptoms in premenopausal women, with the primary endpoint assessing symptom improvement after 7 days of treatment.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/35750460/"
-      }
-    ]
-  },
-  DE: {
-    studies: [
-      {
-        title: "Medicaid zur Behandlung der akuten unkomplizierten Blasenentzündung (BRUMI): Protokoll einer multizentrischen, randomisierten, doppelblinden klinischen Studie",
-        description: "Diese randomisierte klinische Studie vergleicht die Wirksamkeit von Fosfomycin mit Bärentraubenblattextrakt (Uvae ursi folium) bei der Behandlung von akuten Blasenentzündungssymptomen bei prämenopausalen Frauen, wobei der primäre Endpunkt die Verbesserung der Symptome nach 7 Tagen Behandlung ist.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/35750460/"
-      }
-    ]
-  },
-  FR: {
-    studies: [
-      {
-        title: "Medicaid dans le traitement de la cystite aiguë non compliquée (BRUMI) : protocole d'un essai clinique multicentrique, randomisé, en double aveugle",
-        description: "Cet essai clinique randomisé compare l'efficacité de la fosfomycine à l'extrait de feuilles de busserole (Uvae ursi folium) dans le traitement des symptômes de la cystite aiguë chez les femmes préménopausées, le critère d'évaluation principal étant l'amélioration des symptômes après 7 jours de traitement.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/35750460/"
-      }
-    ]
-  },
-  IT: {
-    studies: [
-      {
-        title: "Medicaid nel trattamento della cistite acuta non complicata (BRUMI): protocollo di uno studio clinico multicentrico, randomizzato, in doppio cieco",
-        description: "Questo studio clinico randomizzato confronta l'efficacia della fosfomicina con l'estratto di foglie di uva ursina (Uvae ursi folium) nel trattamento dei sintomi della cistite acuta in donne in premenopausa, con l'endpoint primario di valutare il miglioramento dei sintomi dopo 7 giorni di trattamento.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/35750460/"
-      }
-    ]
-  },
-  ES: {
-    studies: [
-      {
-        title: "Medicaid en el tratamiento de la cistitis aguda no complicada (BRUMI): protocolo de un ensayo clínico multicéntrico , aleatorizado y doble ciego.",
-        description: "Este ensayo clínico aleatorizado compara la eficacia de la fosfomicina con el extracto de hoja de gayuba (Uvae ursi folium) en el tratamiento de los síntomas de la cistitis aguda en mujeres premenopáusicas, con el criterio principal de valoración de la mejoría de los síntomas tras 7 días de tratamiento.",
-        link: "https://pubmed.ncbi.nlm.nih.gov/35750460/"
-      }
-    ]
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
 };
