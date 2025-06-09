@@ -1,6 +1,6 @@
 export const manualTranslationOverrides = {
   "en-GB": {
-    "kalorie": "calories",
+    "kalorie": "Calories",
     "tabletki": "tablets",
     "tabletek": "tablets",
     "tabletka": "tablet",
@@ -18,7 +18,7 @@ export const manualTranslationOverrides = {
     "Witamina": "Vitamin"
   },
   "fr": {
-    "kalorie": "calories",
+    "kalorie": "Calories",
     "tabletki": "comprimés",
     "tabletek": "comprimés",
     "tabletka": "comprimé",
@@ -27,7 +27,7 @@ export const manualTranslationOverrides = {
     "Witamina": "Vitamine"
   },
   "it": {
-    "kalorie": "calorie",
+    "kalorie": "Calorie",
     "tabletki": "compresse",
     "tabletek": "compresse",
     "tabletka": "compressa",
