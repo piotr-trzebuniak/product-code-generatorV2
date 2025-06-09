@@ -1,77 +1,82 @@
 import { toast } from "react-toastify";
 import { exceptions } from "./translationExceptions";
+import { manualTranslationOverrides } from "./manualTranslationOverrides";
 
 // Funkcja do ekstrakcji tagów HTML i tekstu
 export const extractHtmlTagsAndContent = (htmlText) => {
   const elements = [];
-  
-  // Podziel tekst na znaczniki HTML i czysty tekst
+
+  // Zmieniony regex: dopasowuje również białe znaki wokół znaczników
   const regex = /(<[^>]+>)|([^<>]+)/g;
   let match;
-  
+
   while ((match = regex.exec(htmlText)) !== null) {
-    if (match[1]) { // Znacznik HTML
-      elements.push({ type: 'tag', content: match[1] });
-    } else if (match[2]) { // Tekst
-      elements.push({ type: 'text', content: match[2] });
+    if (match[1]) {
+      elements.push({ type: "tag", content: match[1] });
+    } else if (match[2]) {
+      // Nie usuwaj spacji — zostaw tak jak są
+      elements.push({ type: "text", content: match[2] });
     }
   }
-  
+
   return elements;
 };
 
 // Funkcja tłumacząca tekst z obsługą wyjątków
 export const translateWithExceptions = async (text, lang) => {
-  if (!text || text.trim() === '') {
-    return '';
+  if (!text || text.trim() === "") {
+    return "";
   }
-  
+
   // Lista wyjątków znalezionych w tekście (z zachowaniem oryginalnej wielkości liter)
   const foundExceptions = [];
-  exceptions.forEach(exception => {
+  exceptions.forEach((exception) => {
     const regex = new RegExp(exception, "gi");
     let match;
     while ((match = regex.exec(text)) !== null) {
       foundExceptions.push({
         original: match[0],
         index: match.index,
-        length: match[0].length
+        length: match[0].length,
       });
     }
   });
-  
+
   if (foundExceptions.length === 0) {
     // Jeśli nie ma wyjątków, po prostu przetłumacz tekst
     return await translateText(text, lang);
   }
-  
+
   // Zastąp wyjątki unikalnymi tokenami, które z dużym prawdopodobieństwem nie zostaną przetłumaczone
   let modifiedText = text;
   const tokens = [];
-  
+
   foundExceptions.forEach((exception, i) => {
     // Tworzymy unikalny token, który nie będzie tłumaczony
-    const token = `@@NOTR4NSL4T3_${i}_${Math.random().toString(36).substring(2, 8)}@@`;
+    const token = `@@NOTR4NSL4T3_${i}_${Math.random()
+      .toString(36)
+      .substring(2, 8)}@@`;
     tokens.push({
       token,
-      original: exception.original
+      original: exception.original,
     });
-    
+
     // Zastępujemy znaleziony wyjątek tokenem
-    modifiedText = modifiedText.substring(0, exception.index) + 
-                  token + 
-                  modifiedText.substring(exception.index + exception.length);
+    modifiedText =
+      modifiedText.substring(0, exception.index) +
+      token +
+      modifiedText.substring(exception.index + exception.length);
   });
-  
+
   try {
     // Tłumaczymy tekst z tokenami
     let translatedText = await translateText(modifiedText, lang);
-    
+
     // Przywracamy oryginalne wartości wyjątków
     tokens.forEach(({ token, original }) => {
       translatedText = translatedText.replace(token, original);
     });
-    
+
     return translatedText;
   } catch (error) {
     toast.error(`${error.message} Proszę spróbować ponownie.`);
@@ -82,29 +87,48 @@ export const translateWithExceptions = async (text, lang) => {
 // Funkcja do tłumaczenia tekstu z zachowaniem HTML
 export const translateTextWithHtml = async (htmlText, lang) => {
   // Jeśli tekst jest pusty, zwróć pusty string
-  if (!htmlText || htmlText.trim() === '') {
-    return '';
+  if (!htmlText || htmlText.trim() === "") {
+    return "";
   }
-  
+
   // Sprawdź, czy tekst zawiera znaczniki HTML
-  if (!htmlText.includes('<') || !htmlText.includes('>')) {
+  if (!htmlText.includes("<") || !htmlText.includes(">")) {
     // Jeśli nie zawiera znaczników HTML, użyj zwykłego tłumaczenia
     return await translateWithExceptions(htmlText, lang);
   }
-  
+
   // Wyodrębnij elementy HTML i tekst
   const elements = extractHtmlTagsAndContent(htmlText);
-  
+
   // Przetwórz każdy fragment tekstu
   for (let i = 0; i < elements.length; i++) {
-    if (elements[i].type === 'text' && elements[i].content.trim() !== '') {
+    if (elements[i].type === "text" && elements[i].content.trim() !== "") {
       // Przetłumacz zawartość tekstową z obsługą wyjątków
-      elements[i].content = await translateWithExceptions(elements[i].content, lang);
+      elements[i].content = await translateWithExceptions(
+        elements[i].content,
+        lang
+      );
     }
   }
-  
+
   // Złóż tekst z powrotem
-  return elements.map(el => el.content).join('');
+  let output = "";
+  for (let i = 0; i < elements.length; i++) {
+    const current = elements[i];
+    const prev = elements[i - 1];
+
+    if (
+      current.type === "tag" &&
+      prev?.type === "text" &&
+      !prev.content.match(/\s$/)
+    ) {
+      output += " ";
+    }
+
+    output += current.content;
+  }
+
+  return output;
 };
 
 // Funkcja do tłumaczenia wszystkich pól
@@ -167,28 +191,30 @@ export const translateAllFields = async (
         } else {
           // Sprawdź, czy pole może zawierać HTML
           const isHtmlField = htmlFields.includes(field);
-          const translateFunc = isHtmlField ? translateTextWithHtml : translateWithExceptions;
-          
+          const translateFunc = isHtmlField
+            ? translateTextWithHtml
+            : translateWithExceptions;
+
           // Użyj Promise.all, ale obsłuż błędy dla każdego tłumaczenia
           const translations = await Promise.all([
-            translateFunc(original, "en-GB").catch(error => {
+            translateFunc(original, "en-GB").catch((error) => {
               toast.error(`Błąd tłumaczenia na angielski: ${error.message}`);
               throw error;
             }),
-            translateFunc(original, "de").catch(error => {
+            translateFunc(original, "de").catch((error) => {
               toast.error(`Błąd tłumaczenia na niemiecki: ${error.message}`);
               throw error;
             }),
-            translateFunc(original, "fr").catch(error => {
+            translateFunc(original, "fr").catch((error) => {
               toast.error(`Błąd tłumaczenia na francuski: ${error.message}`);
               throw error;
             }),
-            translateFunc(original, "it").catch(error => {
+            translateFunc(original, "it").catch((error) => {
               toast.error(`Błąd tłumaczenia na włoski: ${error.message}`);
               throw error;
-            })
+            }),
           ]);
-          
+
           const [en, de, fr, it] = translations;
 
           translatedData[field] = {
@@ -214,7 +240,10 @@ export const translateAllFields = async (
             ingredient: {
               ...ingredient.ingredient,
               en: ingredient.ingredient.pl
-                ? await translateWithExceptions(ingredient.ingredient.pl, "en-GB")
+                ? await translateWithExceptions(
+                    ingredient.ingredient.pl,
+                    "en-GB"
+                  )
                 : "",
               de: ingredient.ingredient.pl
                 ? await translateWithExceptions(ingredient.ingredient.pl, "de")
@@ -235,13 +264,22 @@ export const translateAllFields = async (
                   )
                 : "",
               de: ingredient.ingredientValue.pl
-                ? await translateWithExceptions(ingredient.ingredientValue.pl, "de")
+                ? await translateWithExceptions(
+                    ingredient.ingredientValue.pl,
+                    "de"
+                  )
                 : "",
               fr: ingredient.ingredientValue.pl
-                ? await translateWithExceptions(ingredient.ingredientValue.pl, "fr")
+                ? await translateWithExceptions(
+                    ingredient.ingredientValue.pl,
+                    "fr"
+                  )
                 : "",
               it: ingredient.ingredientValue.pl
-                ? await translateWithExceptions(ingredient.ingredientValue.pl, "it")
+                ? await translateWithExceptions(
+                    ingredient.ingredientValue.pl,
+                    "it"
+                  )
                 : "",
             },
             additionalLines: await Promise.all(
@@ -271,13 +309,22 @@ export const translateAllFields = async (
                       )
                     : "",
                   de: line.ingredientValue.pl
-                    ? await translateWithExceptions(line.ingredientValue.pl, "de")
+                    ? await translateWithExceptions(
+                        line.ingredientValue.pl,
+                        "de"
+                      )
                     : "",
                   fr: line.ingredientValue.pl
-                    ? await translateWithExceptions(line.ingredientValue.pl, "fr")
+                    ? await translateWithExceptions(
+                        line.ingredientValue.pl,
+                        "fr"
+                      )
                     : "",
                   it: line.ingredientValue.pl
-                    ? await translateWithExceptions(line.ingredientValue.pl, "it")
+                    ? await translateWithExceptions(
+                        line.ingredientValue.pl,
+                        "it"
+                      )
                     : "",
                 },
               }))
@@ -354,7 +401,7 @@ export const translateAllFields = async (
             : "",
         it:
           portionUnitPl === initialPortionUnitPl
-            ? initialState.product.portion.unit.it || "" 
+            ? initialState.product.portion.unit.it || ""
             : portionUnitPl
             ? await translateWithExceptions(portionUnitPl, "it")
             : "",
@@ -365,25 +412,25 @@ export const translateAllFields = async (
   } catch (error) {
     // W przypadku jakiegokolwiek błędu podczas tłumaczenia
     toast.error(`Proces tłumaczenia został przerwany: ${error.message}`);
-    
+
     // Zmień stan ładowania na false, jeśli został przekazany
     if (setIsTranslating) {
       setIsTranslating(false);
     }
-    
+
     // Rzuć błąd dalej, aby komponent mógł go obsłużyć
     throw error;
   }
 };
 
+
 export const translateText = async (text, targetLang) => {
   try {
-    // Użyj zmiennej środowiskowej lub defaultowego URL na podstawie środowiska
-    const API_URL = import.meta.env.VITE_API_URL || 
-                    (window.location.hostname === 'localhost' 
-                      ? 'http://localhost:3000' 
-                      : 'https://product-code-generatorv2-4.onrender.com');
-    
+    const API_URL = import.meta.env.VITE_API_URL ||
+      (window.location.hostname === 'localhost'
+        ? 'http://localhost:3000'
+        : 'https://product-code-generatorv2-4.onrender.com');
+
     const response = await fetch(`${API_URL}/translate`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -393,14 +440,20 @@ export const translateText = async (text, targetLang) => {
     const data = await response.json();
 
     if (!response.ok || !data.translatedText) {
-      console.warn("Błąd tłumaczenia lub brak tekstu.");
       throw new Error(`Tłumaczenie na język ${targetLang} nie powiodło się.`);
     }
 
-    return data.translatedText;
+    let translated = data.translatedText;
+
+    // Zastosowanie ręcznych poprawek
+    const overrides = manualTranslationOverrides[targetLang] || {};
+    for (const [plWord, correctTranslation] of Object.entries(overrides)) {
+      const regex = new RegExp(`\\b${plWord}\\b`, 'gi'); // tylko całe słowa
+      translated = translated.replace(regex, correctTranslation);
+    }
+
+    return translated;
   } catch (error) {
-    console.error("Błąd połączenia z API tłumaczenia:", error);
-    // Zamiast zwracać oryginalny tekst, rzucamy błąd, który musi być obsłużony przez funkcję wywołującą
     throw new Error(`Błąd tłumaczenia na język ${targetLang}: ${error.message}`);
   }
 };
