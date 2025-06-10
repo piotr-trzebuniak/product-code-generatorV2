@@ -10,6 +10,7 @@ export const manualTranslationOverrides = {
     "kapsułek": "capsules",
     "Kwas fulwowy": "Fulvic acid",
     "Sód": "Sodium",
+    "Sól": "Salt",
   },
   "de": {
     "kalorie": "Kalorien",
@@ -22,6 +23,7 @@ export const manualTranslationOverrides = {
     "kapsułek": "Kapseln",
     "Kwas fulwowy": "Fulvosäure",
     "Sód": "Natrium",
+    "Sól": "Salz",
   },
   "fr": {
     "kalorie": "Calories",
@@ -34,6 +36,7 @@ export const manualTranslationOverrides = {
     "kapsułek": "capsules",
     "Kwas fulwowy": "Acide fulvique",
     "Sód": "Sodium",
+    "Sól": "Sel",
   },
   "it": {
     "kalorie": "Calorie",
@@ -46,5 +49,6 @@ export const manualTranslationOverrides = {
     "kapsułek": "capsule",
     "Kwas fulwowy": "Acido fulvico",
     "Sód": "Sodio",
+    "Sól": "Sale",
   }
 };
