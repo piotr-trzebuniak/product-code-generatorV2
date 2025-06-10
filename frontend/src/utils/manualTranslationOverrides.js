@@ -6,7 +6,10 @@ export const manualTranslationOverrides = {
     "tabletka": "tablet",
     "Jod": "Iodine",
     "kwas foliowy": "Folic acid",
-    "Witamina": "Vitamin"
+    "Witamina": "Vitamin",
+    "kapsułek": "capsules",
+    "Kwas fulwowy": "Fulvic acid",
+    "Sód": "Sodium",
   },
   "de": {
     "kalorie": "Kalorien",
@@ -15,7 +18,10 @@ export const manualTranslationOverrides = {
     "tabletka": "Tablette",
     "Jod": "Jod",
     "kwas foliowy": "Folsäure",
-    "Witamina": "Vitamin"
+    "Witamina": "Vitamin",
+    "kapsułek": "Kapseln",
+    "Kwas fulwowy": "Fulvosäure",
+    "Sód": "Natrium",
   },
   "fr": {
     "kalorie": "Calories",
@@ -24,7 +30,10 @@ export const manualTranslationOverrides = {
     "tabletka": "comprimé",
     "Jod": "Iode",
     "kwas foliowy": "Acide folique",
-    "Witamina": "Vitamine"
+    "Witamina": "Vitamine",
+    "kapsułek": "capsules",
+    "Kwas fulwowy": "Acide fulvique",
+    "Sód": "Sodium",
   },
   "it": {
     "kalorie": "Calorie",
@@ -33,6 +42,9 @@ export const manualTranslationOverrides = {
     "tabletka": "compressa",
     "Jod": "Iodio",
     "kwas foliowy": "Acido folico",
-    "Witamina": "Vitamina"
+    "Witamina": "Vitamina",
+    "kapsułek": "capsule",
+    "Kwas fulwowy": "Acido fulvico",
+    "Sód": "Sodio",
   }
 };
