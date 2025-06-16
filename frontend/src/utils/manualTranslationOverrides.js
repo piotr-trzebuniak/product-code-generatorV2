@@ -11,6 +11,11 @@ export const manualTranslationOverrides = {
     "Kwas fulwowy": "Fulvic acid",
     "Sód": "Sodium",
     "Sól": "Salt",
+    "Bor": "Bor",
+    "to suplement diety w kapsułkach": "is a dietary supplement in capsule form",
+    "to suplement diety w proszku": "is a dietary supplement in powder form",
+    "to suplement diety w tabletkach": "is a dietary supplement in tablet form",
+    "Wiek": "Age",
   },
   "de": {
     "kalorie": "Kalorien",
@@ -24,6 +29,11 @@ export const manualTranslationOverrides = {
     "Kwas fulwowy": "Fulvosäure",
     "Sód": "Natrium",
     "Sól": "Salz",
+    "Bor": "Bor",
+    "to suplement diety w kapsułkach": "ist ein Nahrungsergänzungsmittel in Kapseln",
+    "to suplement diety w proszku": "ist ein Nahrungsergänzungsmittel in Pulverform",
+    "to suplement diety w tabletkach": "ist ein Nahrungsergänzungsmittel in Tablettenform",
+    "Wiek": "Alter",
   },
   "fr": {
     "kalorie": "Calories",
@@ -37,6 +47,11 @@ export const manualTranslationOverrides = {
     "Kwas fulwowy": "Acide fulvique",
     "Sód": "Sodium",
     "Sól": "Sel",
+    "Bor": "Bore",
+    "to suplement diety w kapsułkach": "est un complément alimentaire en gélules",
+    "to suplement diety w proszku": "est un complément alimentaire en poudre",
+    "to suplement diety w tabletkach": "est un complément alimentaire sous forme de comprimés",
+    "Wiek": "Âge",
   },
   "it": {
     "kalorie": "Calorie",
@@ -50,5 +65,11 @@ export const manualTranslationOverrides = {
     "Kwas fulwowy": "Acido fulvico",
     "Sód": "Sodio",
     "Sól": "Sale",
+    "Bor": "Boro",
+    "to suplement diety w kapsułkach": "è un integratore alimentare in capsule",
+    "to suplement diety w proszku": "è un integratore alimentare in polvere",
+    "to suplement diety w tabletkach": "è un integratore alimentare in compresse",
+    "Wiek": "Età",
   }
 };
+
