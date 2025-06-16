@@ -16,6 +16,7 @@ export const manualTranslationOverrides = {
     "to suplement diety w proszku": "is a dietary supplement in powder form",
     "to suplement diety w tabletkach": "is a dietary supplement in tablet form",
     "Wiek": "Age",
+    "Potas": "Potassium",
   },
   "de": {
     "kalorie": "Kalorien",
@@ -34,6 +35,7 @@ export const manualTranslationOverrides = {
     "to suplement diety w proszku": "ist ein Nahrungsergänzungsmittel in Pulverform",
     "to suplement diety w tabletkach": "ist ein Nahrungsergänzungsmittel in Tablettenform",
     "Wiek": "Alter",
+    "Potas": "Kalium",
   },
   "fr": {
     "kalorie": "Calories",
@@ -52,6 +54,7 @@ export const manualTranslationOverrides = {
     "to suplement diety w proszku": "est un complément alimentaire en poudre",
     "to suplement diety w tabletkach": "est un complément alimentaire sous forme de comprimés",
     "Wiek": "Âge",
+    "Potas": "Potassium",
   },
   "it": {
     "kalorie": "Calorie",
@@ -70,6 +73,7 @@ export const manualTranslationOverrides = {
     "to suplement diety w proszku": "è un integratore alimentare in polvere",
     "to suplement diety w tabletkach": "è un integratore alimentare in compresse",
     "Wiek": "Età",
+    "Potas": "Potassio",
   }
 };
 
