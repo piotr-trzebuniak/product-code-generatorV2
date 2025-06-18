@@ -13,8 +13,9 @@ import { TableEnd } from "../../../compoments/Tiptap/TableEnd";
 import { useDispatch } from "react-redux";
 import { addIngredient, removeIngredient } from "../../../redux/productSlice";
 import { CosmeticsDescSplit } from "../../../compoments/Tiptap/CosmeticsDescSplit";
+import SelectCategory from "../../../compoments/SelectCategory/SelectCategory";
 
-const CosmeticsForm = ({resetKey}) => {
+const CosmeticsForm = ({ resetKey }) => {
   const dispatch = useDispatch();
   const handleAddIngredient = () => {
     dispatch(addIngredient());
@@ -53,6 +54,9 @@ const CosmeticsForm = ({resetKey}) => {
           Usuń składnik
         </Button>
         <TableEnd />
+      </div>
+      <div className={style.cosmetics__category}>
+        <SelectCategory />
       </div>
     </div>
   );

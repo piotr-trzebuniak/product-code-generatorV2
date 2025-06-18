@@ -21,8 +21,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { addIngredient, removeIngredient } from "../../../redux/productSlice";
 import { Storage } from "../../../compoments/Tiptap/Storage";
 import { ShortDescription } from "../../../compoments/Tiptap/ShortDescription";
+import SelectCategory from "../../../compoments/SelectCategory/SelectCategory";
 
-const SupplementsForm = ({resetKey}) => {
+const SupplementsForm = ({ resetKey }) => {
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.product.product);
 
@@ -76,6 +77,9 @@ const SupplementsForm = ({resetKey}) => {
         <Producer initialContent={productData.producer.bl} />
         <ResponsibleEntity initialContent={productData.responsibleEntity.bl} />
         <Bulletpoints initialContent={productData.bulletpoints} />
+      </div>
+      <div className={style.supplements__category}>
+        <SelectCategory />
       </div>
     </div>
   );

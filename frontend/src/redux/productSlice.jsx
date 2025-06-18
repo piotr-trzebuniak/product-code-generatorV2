@@ -82,6 +82,7 @@ const initialState = {
     cosmeticsDescription2: { pl: "", en: "", de: "", fr: "", it: "" },
     cosmeticsDescription3: { pl: "", en: "", de: "", fr: "", it: "" },
     cosmeticsDescription4: { pl: "", en: "", de: "", fr: "", it: "" },
+    categoryID: null,
     htmlToBl: "",
     htmlToShop: "",
     ebayDE: {

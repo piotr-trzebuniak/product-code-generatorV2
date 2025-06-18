@@ -339,6 +339,7 @@ const ProductCodeGenerator = () => {
         LongDescription: productData.ebayDE.longDescription,
         Research: productData.ebayDE.research,
         ProductSeries: productData.ebayDE.productSeries,
+        CategoryID: productData.categoryID,
         target: "ebay-de",
       },
       {
@@ -354,6 +355,7 @@ const ProductCodeGenerator = () => {
         LongDescription: productData.ebayEN.longDescription,
         Research: productData.ebayEN.research,
         ProductSeries: productData.ebayEN.productSeries,
+        CategoryID: productData.categoryID,
         target: "ebay-en",
       },
       {
@@ -369,6 +371,7 @@ const ProductCodeGenerator = () => {
         LongDescription: productData.ebayFR.longDescription,
         Research: productData.ebayFR.research,
         ProductSeries: productData.ebayFR.productSeries,
+        CategoryID: productData.categoryID,
         target: "ebay-fr",
       },
       {
@@ -384,6 +387,7 @@ const ProductCodeGenerator = () => {
         LongDescription: productData.ebayIT.longDescription,
         Research: productData.ebayIT.research,
         ProductSeries: productData.ebayIT.productSeries,
+        CategoryID: productData.categoryID,
         target: "ebay-it",
       },
     ];
