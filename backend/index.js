@@ -84,16 +84,16 @@
 //         scriptUrl = "https://script.google.com/macros/s/AKfycbwjUP2ECcn5Jjo5yjIwWUEvz0Ivj9alyy8QUr4RjDko1sRKIOroYS4WSxwP9Z7MOlIqyg/exec";
 //         break;
 //       case "ebay-de":
-//         scriptUrl = "https://script.google.com/macros/s/AKfycbz5j-Z9732r3ZseaG8eN9MprsbE4E59f8tRIVnJzerlD2qkdiUCf1WAVjMBMy1gwONn/exec";
+//         scriptUrl = "https://script.google.com/macros/s/AKfycbwqtPGlg_JS5aJMtCNU5GwTIfbJb1iGRpOKug9a_dornWF7UYq_p9PGbRFUiueEy1qX/exec";
 //         break;
 //       case "ebay-en":
-//         scriptUrl = "https://script.google.com/macros/s/AKfycbxfENaLTzO8F6Ceh5A_2BmfRpP3v5q4sfpNXEw7oZzVAMwZO5FAhmjKYvr6tYIKtWfP/exec";
+//         scriptUrl = "https://script.google.com/macros/s/AKfycbyP9JDUeFwK8AstDoAasbU5TQDYS2cieCgvi-jcqq8SX7tXZ6wY-uGge6z4TgNBCTG0/exec";
 //         break;
 //       case "ebay-fr":
-//         scriptUrl = "https://script.google.com/macros/s/AKfycbztzGZDycgRWOSpruN8Vtq3deUc7YqHrwMAr07hZW4Fd0fPV7wXJJza2-uvKL3QPv6f/exec";
+//         scriptUrl = "https://script.google.com/macros/s/AKfycbwgi3rObniTrFYMJstMVxI7GNaO8WBpP4k6kwIfcMwkzN7kJd48AR5agWfnsh7ySt_k/exec";
 //         break;
 //       case "ebay-it":
-//         scriptUrl = "https://script.google.com/macros/s/AKfycby6GtBmtdMeMmp8vjfCyWEkItA6kffDZeXnjrMq4NkQpBkwwzrEPGz-dTTtYI4n_FoY1A/exec";
+//         scriptUrl = "https://script.google.com/macros/s/AKfycbzEmYeElN5MeV_BBvtGPglbbOkN88-g1Q7NqX0AtRbJ7tybOT_vYIgkE0rDm8ZiZN-h0Q/exec";
 //         break;
 //       default:
 //         return res.status(400).json({ status: "error", message: "Nieznany typ celu (target)" });
@@ -223,16 +223,16 @@ app.post("/submit", async (req, res) => {
         scriptUrl = "https://script.google.com/macros/s/AKfycbwjUP2ECcn5Jjo5yjIwWUEvz0Ivj9alyy8QUr4RjDko1sRKIOroYS4WSxwP9Z7MOlIqyg/exec";
         break;
       case "ebay-de":
-        scriptUrl = "https://script.google.com/macros/s/AKfycbz5j-Z9732r3ZseaG8eN9MprsbE4E59f8tRIVnJzerlD2qkdiUCf1WAVjMBMy1gwONn/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbwqtPGlg_JS5aJMtCNU5GwTIfbJb1iGRpOKug9a_dornWF7UYq_p9PGbRFUiueEy1qX/exec";
         break;
       case "ebay-en":
-        scriptUrl = "https://script.google.com/macros/s/AKfycbxfENaLTzO8F6Ceh5A_2BmfRpP3v5q4sfpNXEw7oZzVAMwZO5FAhmjKYvr6tYIKtWfP/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbyP9JDUeFwK8AstDoAasbU5TQDYS2cieCgvi-jcqq8SX7tXZ6wY-uGge6z4TgNBCTG0/exec";
         break;
       case "ebay-fr":
-        scriptUrl = "https://script.google.com/macros/s/AKfycbztzGZDycgRWOSpruN8Vtq3deUc7YqHrwMAr07hZW4Fd0fPV7wXJJza2-uvKL3QPv6f/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbwgi3rObniTrFYMJstMVxI7GNaO8WBpP4k6kwIfcMwkzN7kJd48AR5agWfnsh7ySt_k/exec";
         break;
       case "ebay-it":
-        scriptUrl = "https://script.google.com/macros/s/AKfycby6GtBmtdMeMmp8vjfCyWEkItA6kffDZeXnjrMq4NkQpBkwwzrEPGz-dTTtYI4n_FoY1A/exec";
+        scriptUrl = "https://script.google.com/macros/s/AKfycbzEmYeElN5MeV_BBvtGPglbbOkN88-g1Q7NqX0AtRbJ7tybOT_vYIgkE0rDm8ZiZN-h0Q/exec";
         break;
       default:
         return res.status(400).json({ status: "error", message: "Nieznany typ celu (target)" });
