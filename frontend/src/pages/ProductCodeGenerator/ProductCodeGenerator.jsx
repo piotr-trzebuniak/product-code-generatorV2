@@ -26,6 +26,7 @@ import { generateEbayFrHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/
 import { generateEbayItHtml } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtml";
 import { generateEbayItHtmlCosmetics } from "../../utils/htmlTemplatesFunctions/ebay/IT/generateEbayItHtmlCosmetics";
 import { validateMandatoryFields } from "../../utils/validateMandatoryFields";
+import { generateShopify } from "../../utils/htmlTemplatesFunctions/shopify/generateShopify";
 // import { splitHtml } from "../../utils/splitHtml";
 
 const ProductCodeGenerator = () => {
@@ -441,6 +442,8 @@ const ProductCodeGenerator = () => {
       const newHtmlToEbayEn = generateEbayEnHtml(productData);
       const newHtmlToEbayFr = generateEbayFrHtml(productData);
       const newHtmlToEbayIt = generateEbayItHtml(productData);
+      const newHtmlToShopify = generateShopify(productData);
+      console.log(newHtmlToShopify)
 
       setHtmlToEbayDe(newHtmlToEbayDe);
       setHtmlToEbayEn(newHtmlToEbayEn);
