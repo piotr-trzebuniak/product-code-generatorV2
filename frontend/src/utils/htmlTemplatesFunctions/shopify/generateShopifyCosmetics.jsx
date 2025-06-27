@@ -1,3 +1,5 @@
+import { removeTrailingBracketAndDots } from "../ebay/EN/generateEbayEnHtmlCosmetics";
+
 export const generateIngredientsHTML = (ingredientsTable) => {
   let ingredientsHTML = "";
 
@@ -47,9 +49,9 @@ export const generateIngredientsHTML = (ingredientsTable) => {
 export const generateShopifyCosmetics = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
   return ` 
-     <p>${productData.shortDescription.en}</p>
-    ${productData.cosmeticsDescription1.en}
-    ${productData.cosmeticsDescription2.en}
+    ${removeTrailingBracketAndDots(productData.shortDescription.en)}
+    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.en)}
+    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.en)}
 
   ${
     productData.ingredientsTable[0].ingredient.pl !== ""
@@ -68,8 +70,8 @@ export const generateShopifyCosmetics = (productData) => {
   `
       : ""
   }
-    ${productData.cosmeticsDescription3.en}
-    ${productData.cosmeticsDescription4.en}
+    ${removeTrailingBracketAndDots(productData.cosmeticsDescription3.en)}
+    ${removeTrailingBracketAndDots(productData.cosmeticsDescription4.en)}
   
      `;
 };
