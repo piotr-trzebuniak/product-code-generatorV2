@@ -18,16 +18,22 @@ export const manualTranslationOverrides = {
     "to suplement diety w tabletkach": "is a dietary supplement in tablet form",
     "Wiek": "Age",
     "Potas": "Potassium",
-    "Sol": "Salt", // Added translation
-    "Witamin": "Vitamins", // Added translation
-    "Melatonina": "Melatonin", // Added translation
-    "Chrom": "Chromium", // Added translation
-    "Cholina": "Choline", // Added translation
-    "owoce leśne": "Forest fruits", // Added translation
-    "Astaksantyna": "Astaxanthin", // Added translation
-    "Cynk": "Zinc", // Added translation
-    "saszetek": "sachets", // Added translation
-    "Plastry transparentne": "Transparent patches", // Added translation
+    "Sol": "Salt",
+    "Witamin": "Vitamins",
+    "Melatonina": "Melatonin",
+    "Chrom": "Chromium",
+    "Cholina": "Choline",
+    "owoce leśne": "Forest fruits",
+    "Astaksantyna": "Astaxanthin",
+    "Cynk": "Zinc",
+    "saszetek": "sachets",
+    "Plastry transparentne": "Transparent patches",
+    "Inulina": "Inulin",
+    "Selen": "Selenium",
+    "Maslan sodu": "Sodium butyrate",
+    "Tiamina": "Thiamine",
+    "Cytrynian manganu": "Manganese citrate",
+    "Grzyby": "Mushrooms"
   },
   "de": {
     "kalorie": "Kalorien",
@@ -48,16 +54,22 @@ export const manualTranslationOverrides = {
     "to suplement diety w tabletkach": "ist ein Nahrungsergänzungsmittel in Tablettenform",
     "Wiek": "Alter",
     "Potas": "Kalium",
-    "Sol": "Salz", // Added translation
-    "Witamin": "Vitamine", // Added translation
-    "Melatonina": "Melatonin", // Added translation
-    "Chrom": "Chrom", // Added translation
-    "Cholina": "Cholin", // Added translation
-    "owoce leśne": "Waldfrüchte", // Added translation
-    "Astaksantyna": "Astaxanthin", // Added translation
-    "Cynk": "Zink", // Added translation
-    "saszetek": "Sachet", // Added translation
-    "Plastry transparentne": "Transparente Pflaster", // Added translation
+    "Sol": "Salz",
+    "Witamin": "Vitamine",
+    "Melatonina": "Melatonin",
+    "Chrom": "Chrom",
+    "Cholina": "Cholin",
+    "owoce leśne": "Waldfrüchte",
+    "Astaksantyna": "Astaxanthin",
+    "Cynk": "Zink",
+    "saszetek": "Sachet",
+    "Plastry transparentne": "Transparente Pflaster",
+    "Inulina": "Inulin",
+    "Selen": "Selen",
+    "Maslan sodu": "Natriumbutyrat",
+    "Tiamina": "Thiamin",
+    "Cytrynian manganu": "Mangancitrat",
+    "Grzyby": "Pilze"
   },
   "fr": {
     "kalorie": "Calories",
@@ -78,16 +90,22 @@ export const manualTranslationOverrides = {
     "to suplement diety w tabletkach": "est un complément alimentaire sous forme de comprimés",
     "Wiek": "Âge",
     "Potas": "Potassium",
-    "Sol": "Sel", // Added translation
-    "Witamin": "Vitamines", // Added translation
-    "Melatonina": "Mélatonine", // Added translation
-    "Chrom": "Chrome", // Added translation
-    "Cholina": "Choline", // Added translation
-    "owoce leśne": "Fruits des bois", // Added translation
-    "Astaksantyna": "Astaxanthine", // Added translation
-    "Cynk": "Zinc", // Added translation
-    "saszetek": "sachets", // Added translation
-    "Plastry transparentne": "Patchs transparents", // Added translation
+    "Sol": "Sel",
+    "Witamin": "Vitamines",
+    "Melatonina": "Mélatonine",
+    "Chrom": "Chrome",
+    "Cholina": "Choline",
+    "owoce leśne": "Fruits des bois",
+    "Astaksantyna": "Astaxanthine",
+    "Cynk": "Zinc",
+    "saszetek": "sachets",
+    "Plastry transparentne": "Patchs transparents",
+    "Inulina": "Inuline",
+    "Selen": "Sélénium",
+    "Maslan sodu": "Butyrate de sodium",
+    "Tiamina": "Thiamine",
+    "Cytrynian manganu": "Citrate de manganèse",
+    "Grzyby": "Champignons"
   },
   "it": {
     "kalorie": "Calorie",
@@ -108,15 +126,21 @@ export const manualTranslationOverrides = {
     "to suplement diety w tabletkach": "è un integratore alimentare in compresse",
     "Wiek": "Età",
     "Potas": "Potassio",
-    "Sol": "Sale", // Added translation
-    "Witamin": "Vitamine", // Added translation
-    "Melatonina": "Melatonina", // Added translation
-    "Chrom": "Cromo", // Added translation
-    "Cholina": "Colina", // Added translation
-    "owoce leśne": "Frutti di bosco", // Added translation
-    "Astaksantyna": "Astaxantina", // Added translation
-    "Cynk": "Zinco", // Added translation
-    "saszetek": "sacchetti", // Added translation
-    "Plastry transparentne": "Cerotti trasparenti", // Added translation
+    "Sol": "Sale",
+    "Witamin": "Vitamine",
+    "Melatonina": "Melatonina",
+    "Chrom": "Cromo",
+    "Cholina": "Colina",
+    "owoce leśne": "Frutti di bosco",
+    "Astaksantyna": "Astaxantina",
+    "Cynk": "Zinco",
+    "saszetek": "sacchetti",
+    "Plastry transparentne": "Cerotti trasparenti",
+    "Inulina": "Inulina",
+    "Selen": "Selenio",
+    "Maslan sodu": "Butirrato di sodio",
+    "Tiamina": "Tiamina",
+    "Cytrynian manganu": "Citrato di manganese",
+    "Grzyby": "Funghi"
   }
 };
