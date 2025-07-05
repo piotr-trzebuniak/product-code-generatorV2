@@ -1,12 +1,13 @@
-import { removeTrailingBracketAndDots } from "../ebay/EN/generateEbayEnHtmlCosmetics";
+import { removeTrailingBracketAndDots } from "../../ebay/EN/generateEbayEnHtmlCosmetics";
+
 
 export const generateIngredientsHTML = (ingredientsTable) => {
   let ingredientsHTML = "";
 
   ingredientsTable.forEach((ingredient) => {
     // główny składnik
-    const name = ingredient.ingredient?.en || "";
-    const value = ingredient.ingredientValue?.en || "";
+    const name = ingredient.ingredient?.ro || "";
+    const value = ingredient.ingredientValue?.ro || "";
     const rws = ingredient.rws === "<>" ? "*" : ingredient.rws || "";
 
     // sprawdź czy są dodatkowe linie
@@ -17,8 +18,8 @@ export const generateIngredientsHTML = (ingredientsTable) => {
 
       // dodaj dodatkowe linie
       ingredient.additionalLines.forEach((line, index) => {
-        const lineName = line.ingredient?.en || "";
-        const lineValue = line.ingredientValue?.en || "";
+        const lineName = line.ingredient?.ro || "";
+        const lineValue = line.ingredientValue?.ro || "";
 
         // dla pierwszej dodatkowej linii nie dodawaj <br> przed nazwą
         if (index === 0) {
@@ -51,32 +52,30 @@ export const generateIngredientsHTML = (ingredientsTable) => {
   return ingredientsHTML;
 };
 
-export const generateShopifyCosmetics = (productData) => {
+export const generateEmagRoCosmetics = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
-  return ` 
-    ${removeTrailingBracketAndDots(productData.shortDescription.en)}
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.en)}
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.en)}
-
-  ${
+  return `
+    ${removeTrailingBracketAndDots(productData.shortDescription.ro)}
+    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.ro)}
+    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.ro)}
+    ${
     productData.ingredientsTable[0].ingredient.pl !== ""
       ? `
 <table class="table">
    <tbody>
       <tr class="tablehead">
-         <td><strong>Supplemental Information</strong></td>
-         <td><strong>Amount Per Serving</strong></td>
-         <td><strong>% Daily Value</strong></td>
+         <td><strong>Informații suplimentare</strong></td>
+         <td><strong>Cantitate per porție</strong></td>
+         <td><strong>% Valoare zilnică</strong></td>
       </tr>
   ${ingredientsHTML}
    </tbody>
 </table>
-<p>* Daily Value not established.</p>
+<p>* Valoarea zilnică nu a fost stabilită.</p>
   `
       : ""
   }
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription3.en)}
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription4.en)}
-  
+  ${removeTrailingBracketAndDots(productData.cosmeticsDescription3.ro)}
+  ${removeTrailingBracketAndDots(productData.cosmeticsDescription4.ro)}
      `;
 };

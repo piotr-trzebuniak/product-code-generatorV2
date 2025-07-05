@@ -187,6 +187,7 @@ export const translateAllFields = async (
             de: initialState.product[field]?.de || "",
             fr: initialState.product[field]?.fr || "",
             it: initialState.product[field]?.it || "",
+            ro: initialState.product[field]?.ro || "", // DODANE: język rumuński
           };
         } else {
           // Sprawdź, czy pole może zawierać HTML
@@ -213,9 +214,13 @@ export const translateAllFields = async (
               toast.error(`Błąd tłumaczenia na włoski: ${error.message}`);
               throw error;
             }),
+            translateFunc(original, "ro").catch((error) => { // DODANE: język rumuński
+              toast.error(`Błąd tłumaczenia na rumuński: ${error.message}`);
+              throw error;
+            }),
           ]);
 
-          const [en, de, fr, it] = translations;
+          const [en, de, fr, it, ro] = translations; // DODANE: ro w destrukturyzacji
 
           translatedData[field] = {
             ...productData[field],
@@ -223,6 +228,7 @@ export const translateAllFields = async (
             de,
             fr,
             it,
+            ro, // DODANE: język rumuński
           };
         }
       }
@@ -254,6 +260,9 @@ export const translateAllFields = async (
               it: ingredient.ingredient.pl
                 ? await translateWithExceptions(ingredient.ingredient.pl, "it")
                 : "",
+              ro: ingredient.ingredient.pl // DODANE: język rumuński
+                ? await translateWithExceptions(ingredient.ingredient.pl, "ro")
+                : "",
             },
             ingredientValue: {
               ...ingredient.ingredientValue,
@@ -281,6 +290,12 @@ export const translateAllFields = async (
                     "it"
                   )
                 : "",
+              ro: ingredient.ingredientValue.pl // DODANE: język rumuński
+                ? await translateWithExceptions(
+                    ingredient.ingredientValue.pl,
+                    "ro"
+                  )
+                : "",
             },
             additionalLines: await Promise.all(
               (ingredient.additionalLines || []).map(async (line) => ({
@@ -298,6 +313,9 @@ export const translateAllFields = async (
                     : "",
                   it: line.ingredient.pl
                     ? await translateWithExceptions(line.ingredient.pl, "it")
+                    : "",
+                  ro: line.ingredient.pl // DODANE: język rumuński
+                    ? await translateWithExceptions(line.ingredient.pl, "ro")
                     : "",
                 },
                 ingredientValue: {
@@ -324,6 +342,12 @@ export const translateAllFields = async (
                     ? await translateWithExceptions(
                         line.ingredientValue.pl,
                         "it"
+                      )
+                    : "",
+                  ro: line.ingredientValue.pl // DODANE: język rumuński
+                    ? await translateWithExceptions(
+                        line.ingredientValue.pl,
+                        "ro"
                       )
                     : "",
                 },
@@ -370,6 +394,12 @@ export const translateAllFields = async (
             : sizeUnitPl
             ? await translateWithExceptions(sizeUnitPl, "it")
             : "",
+        ro: // DODANE: język rumuński
+          sizeUnitPl === initialSizeUnitPl
+            ? initialState.product.size.unit.ro || ""
+            : sizeUnitPl
+            ? await translateWithExceptions(sizeUnitPl, "ro")
+            : "",
       },
     };
 
@@ -404,6 +434,12 @@ export const translateAllFields = async (
             ? initialState.product.portion.unit.it || ""
             : portionUnitPl
             ? await translateWithExceptions(portionUnitPl, "it")
+            : "",
+        ro: // DODANE: język rumuński
+          portionUnitPl === initialPortionUnitPl
+            ? initialState.product.portion.unit.ro || ""
+            : portionUnitPl
+            ? await translateWithExceptions(portionUnitPl, "ro")
             : "",
       },
     };

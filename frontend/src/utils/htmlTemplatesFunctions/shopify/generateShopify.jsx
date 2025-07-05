@@ -20,7 +20,12 @@ export const generateIngredientsHTML = (ingredientsTable) => {
         const lineName = line.ingredient?.en || "";
         const lineValue = line.ingredientValue?.en || "";
 
-        combinedNames += lineName;
+        // dla pierwszej dodatkowej linii nie dodawaj <br> przed nazwą
+        if (index === 0) {
+          combinedNames += lineName;
+        } else {
+          combinedNames += `<br>${lineName}`;
+        }
         combinedValues += `<br>${lineValue}`;
       });
 
