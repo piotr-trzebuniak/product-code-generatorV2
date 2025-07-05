@@ -54,8 +54,7 @@ export const generateIngredientsHTML = (ingredientsTable) => {
 
 export const generateEmagRoCosmetics = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
-  return `
-    ${removeTrailingBracketAndDots(productData.shortDescription.ro)}
+  return `${removeTrailingBracketAndDots(productData.shortDescription.ro)}
     ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.ro)}
     ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.ro)}
     ${

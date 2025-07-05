@@ -54,8 +54,7 @@ export const generateIngredientsHTML = (ingredientsTable) => {
 
 export const generateEmagRo = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
-  return ` 
-${removeTrailingBracketAndDots(productData.shortDescription.ro)}
+  return `${removeTrailingBracketAndDots(productData.shortDescription.ro)}
 <h3>Informații suplimentare:</h3>
 <p>Dimensiunea pachetului: <strong>${productData.size.sizeAmount} ${
     productData.size.unit.ro
