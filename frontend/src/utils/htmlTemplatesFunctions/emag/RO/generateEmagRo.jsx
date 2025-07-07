@@ -74,7 +74,7 @@ export const generateEmagRo = (productData) => {
    </tbody>
 </table>
 <p>* Valoarea zilnică nu a fost stabilită.</p>
-<h3>OAlte ingrediente:</h3>
+<h3>Alte ingrediente:</h3>
 ${removeTrailingBracketAndDots(productData.ingredients.ro)}
 <h3>Utilizare recomandată:</h3>
 ${removeTrailingBracketAndDots(productData.howToUse.ro)}
