@@ -403,5 +403,81 @@ export const categories = [
     index: 81,
     value: 1603210,
     label: "Inna",
+  },
+  // Nowe kategorie - Zwierzęta i Dla Dzieci
+  {
+    index: 82,
+    value: 1728981,
+    label: "Zwierzęta / Dla psów / Ochrona przed pasożytami",
+  },
+  {
+    index: 83,
+    value: 1728983,
+    label: "Zwierzęta / Dla psów / Karmy dla psów",
+  },
+  {
+    index: 84,
+    value: 1728984,
+    label: "Zwierzęta / Dla psów / Smakołyki i przekąski",
+  },
+  {
+    index: 85,
+    value: 1728985,
+    label: "Zwierzęta / Dla psów / Sprzątanie po psach",
+  },
+  {
+    index: 86,
+    value: 1728986,
+    label: "Zwierzęta / Dla psów / Zdrowie i higiena / Witaminy i suplementy",
+  },
+  {
+    index: 87,
+    value: 1728987,
+    label: "Zwierzęta / Dla psów / Pielęgnacja ciała i sierści / Szampony i środki do mycia",
+  },
+  {
+    index: 88,
+    value: 1728988,
+    label: "Zwierzęta / Dla psów / Pielęgnacja ciała i sierści / Pozostałe",
+  },
+  {
+    index: 89,
+    value: 1728989,
+    label: "Zwierzęta / Dla kotów / Przekąski dla kotów",
+  },
+  {
+    index: 90,
+    value: 1728990,
+    label: "Zwierzęta / Dla kotów / Karmy dla kotów",
+  },
+  {
+    index: 91,
+    value: 1728991,
+    label: "Zwierzęta / Dla kotów / Pielęgnacja ciała i sierści",
+  },
+  {
+    index: 92,
+    value: 1728992,
+    label: "Zwierzęta / Dla kotów / Zdrowie i higiena",
+  },
+  {
+    index: 93,
+    value: 1728993,
+    label: "Dla Dzieci / Karmienie dziecka / Butelki dla dzieci i akcesoria / Butelki dla dzieci",
+  },
+  {
+    index: 94,
+    value: 1728994,
+    label: "Dla Dzieci / Pielęgnacja / Smoczki",
+  },
+  {
+    index: 95,
+    value: 1728997,
+    label: "Dla Dzieci / Pielęgnacja / Pielęgnacja skóry",
+  },
+  {
+    index: 96,
+    value: 1728999,
+    label: "Dla Dzieci / Pielęgnacja / Pielęgnacja włosów",
   }
 ];
