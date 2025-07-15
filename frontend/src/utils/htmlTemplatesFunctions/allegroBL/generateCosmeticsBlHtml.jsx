@@ -25,13 +25,9 @@ export const generateCosmeticsBlHtml = (productData) => {
       </section>
     </div>
   </section>
+
   <section class="section">
-    <div class="item item-6">
-      <section class="image-item">
-        <img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^2.jpg" />
-      </section>
-    </div>
-    <div class="item item-6">
+    <div class="item item-12">
       <section class="text-item">
         ${productData.cosmeticsDescription2.pl}
       </section>

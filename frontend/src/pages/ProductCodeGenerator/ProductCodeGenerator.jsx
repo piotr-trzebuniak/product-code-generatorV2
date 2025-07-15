@@ -439,6 +439,111 @@ const ProductCodeGenerator = () => {
       toast.error("Wystąpił błąd podczas wysyłania danych do arkuszy!");
     }
   };
+  const sendToGoogleSheetsOnlyEbay = async () => {
+    setIsSendingToSheets(true);
+    setIsDataSentToSheets(false);
+
+    // Użyj zmiennej środowiskowej lub defaultowego URL na podstawie środowiska
+    const API_URL =
+      import.meta.env.VITE_API_URL ||
+      (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : "https://product-code-generatorv2-4.onrender.com");
+
+    const payloads = [
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayDe,
+        ProductName: productData.productName.de,
+        Type: type,
+        LogoAndMenu: productData.ebayDE.logoAndMenu,
+        Gallery: productData.ebayDE.gallery,
+        ShortDescription: productData.ebayDE.shortDescription,
+        Bulletpoints: productData.ebayDE.bulletpoints,
+        Icons: productData.ebayDE.icons,
+        LongDescription: productData.ebayDE.longDescription,
+        Research: productData.ebayDE.research,
+        ProductSeries: productData.ebayDE.productSeries,
+        CategoryID: productData.categoryID,
+        target: "ebay-de",
+      },
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayEn,
+        ProductName: productData.productName.en,
+        Type: type,
+        LogoAndMenu: productData.ebayEN.logoAndMenu,
+        Gallery: productData.ebayEN.gallery,
+        ShortDescription: productData.ebayEN.shortDescription,
+        Bulletpoints: productData.ebayEN.bulletpoints,
+        Icons: productData.ebayEN.icons,
+        LongDescription: productData.ebayEN.longDescription,
+        Research: productData.ebayEN.research,
+        ProductSeries: productData.ebayEN.productSeries,
+        CategoryID: productData.categoryID,
+        target: "ebay-en",
+      },
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayFr,
+        ProductName: productData.productName.fr,
+        Type: type,
+        LogoAndMenu: productData.ebayFR.logoAndMenu,
+        Gallery: productData.ebayFR.gallery,
+        ShortDescription: productData.ebayFR.shortDescription,
+        Bulletpoints: productData.ebayFR.bulletpoints,
+        Icons: productData.ebayFR.icons,
+        LongDescription: productData.ebayFR.longDescription,
+        Research: productData.ebayFR.research,
+        ProductSeries: productData.ebayFR.productSeries,
+        CategoryID: productData.categoryID,
+        target: "ebay-fr",
+      },
+      {
+        Sku: productData.productSku,
+        Html: htmlToEbayIt,
+        ProductName: productData.productName.it,
+        Type: type,
+        LogoAndMenu: productData.ebayIT.logoAndMenu,
+        Gallery: productData.ebayIT.gallery,
+        ShortDescription: productData.ebayIT.shortDescription,
+        Bulletpoints: productData.ebayIT.bulletpoints,
+        Icons: productData.ebayIT.icons,
+        LongDescription: productData.ebayIT.longDescription,
+        Research: productData.ebayIT.research,
+        ProductSeries: productData.ebayIT.productSeries,
+        CategoryID: productData.categoryID,
+        target: "ebay-it",
+      },
+    ];
+
+    try {
+      for (const payload of payloads) {
+        toast.info(`Wysyłanie payloadu: ${payload.target}`);
+        console.log("Wysyłanie payloadu:", payload);
+
+        const response = await fetch(`${API_URL}/submit`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        const result = await response.json();
+        toast.success(`Wysłano do arkusza ${payload.target}:`, result);
+        console.log(`Wysłano do arkusza ${payload.target}:`, result);
+      }
+
+      setIsSendingToSheets(false);
+      setIsDataSentToSheets(true);
+      toast.success("Wszystkie dane zostały poprawnie wysłane do arkuszy!");
+    } catch (error) {
+      console.error("Błąd wysyłania do arkuszy:", error);
+      setIsSendingToSheets(false);
+      toast.error("Wystąpił błąd podczas wysyłania danych do arkuszy!");
+    }
+  };
 
   // SUPPLEMENTS GENERATOR FUNCTION
 
@@ -578,6 +683,7 @@ const ProductCodeGenerator = () => {
               generateCode={generateCode}
               generateCodeCosmetics={generateCodeCosmetics}
               sendToGoogleSheets={sendToGoogleSheets}
+              sendToGoogleSheetsOnlyEbay={sendToGoogleSheetsOnlyEbay}
               resetForm={resetForm}
               copyHtmlToShop={copyHtmlToShop}
               copyShortDescToShop={copyShortDescToShop}

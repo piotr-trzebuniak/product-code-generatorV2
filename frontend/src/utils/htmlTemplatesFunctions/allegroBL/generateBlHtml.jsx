@@ -23,47 +23,68 @@ export const generateIngredientsHTML = (ingredientsTable) => {
   return ingredientsHTML;
 };
 
-
-
-  
-
-  const generateSpecialFeaturesList = (specialFeatures) => {
-    const featureNames = {
-      gmoFree: "Bez GMO",
-      soyaFree: "Bez soi",
-      sugarFree: "Bez cukru",
-      glutenFree: "Bez glutenu",
-      lactoseFree: "Bez laktozy",
-      fillersFree: "Bez wypełniaczy",
-      crueltyFree: "Cruelty-Free",
-      hipoalergic: "Hipoalergiczny",
-      ketoFriendly: "Keto-friendly",
-      lowCarb: "Niska zawartość węglowodanów",
-      slowRelease: "Wolne uwalnianie",
-      fastRelease: "Szybkie uwalnianie",
-      filmCoatedTablet: "Tabletka powlekana",
-      wegan: "Wegański",
-      wegetarian: "Wegetariański",
-      zeroWaste: "Zero waste",
-    };
-  
-    const list = Object.keys(specialFeatures)
-      .filter((key) => specialFeatures[key]) // wybiera tylko włączone cechy
-      .map((key) => `<li>${featureNames[key]}</li>`)
-      .join(""); // skleja <li>...</li> w jeden ciąg
-  
-    return list ? `<h2>Cechy specjalne:</h2><ul>${list}</ul>` : "";
+const generateSpecialFeaturesList = (specialFeatures) => {
+  const featureNames = {
+    gmoFree: "Bez GMO",
+    soyaFree: "Bez soi",
+    sugarFree: "Bez cukru",
+    glutenFree: "Bez glutenu",
+    lactoseFree: "Bez laktozy",
+    fillersFree: "Bez wypełniaczy",
+    crueltyFree: "Cruelty-Free",
+    hipoalergic: "Hipoalergiczny",
+    ketoFriendly: "Keto-friendly",
+    lowCarb: "Niska zawartość węglowodanów",
+    slowRelease: "Wolne uwalnianie",
+    fastRelease: "Szybkie uwalnianie",
+    filmCoatedTablet: "Tabletka powlekana",
+    wegan: "Wegański",
+    wegetarian: "Wegetariański",
+    zeroWaste: "Zero waste",
   };
-  
-  export const generateBlHtml = (productData) => {
-    const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
-    const specialFeaturesHTML = generateSpecialFeaturesList(productData.specialFeatures);
-  
-    const descriptionHTML = productData.description.pl
-      ? `<section class="section"><div class="item item-12"><section class="text-item">${productData.description.pl}</section></div></section>`
-      : "";
-  
-    return `
+
+  const list = Object.keys(specialFeatures)
+    .filter((key) => specialFeatures[key]) // wybiera tylko włączone cechy
+    .map((key) => `<li>${featureNames[key]}</li>`)
+    .join(""); // skleja <li>...</li> w jeden ciąg
+
+  return list ? `<h2>Cechy specjalne:</h2><ul>${list}</ul>` : "";
+};
+
+function convertListToSection(html) {
+  const tempDiv = document.createElement("div");
+  tempDiv.innerHTML = html;
+
+  const listItems = tempDiv.querySelectorAll("li");
+
+  let resultHTML = `<section class="section">
+    <div class="item item-12">
+      <section class="text-item">
+        <h2>Rola w organizmie:</h2>`;
+
+  listItems.forEach((item) => {
+    resultHTML += `<p>✅ ${item.textContent}</p>`;
+  });
+
+  resultHTML += `</section>
+    </div>
+  </section>`;
+
+  return resultHTML;
+}
+
+
+export const generateBlHtml = (productData) => {
+  const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
+  const specialFeaturesHTML = generateSpecialFeaturesList(
+    productData.specialFeatures
+  );
+
+  const descriptionHTML = productData.description.pl
+    ? `<section class="section"><div class="item item-12"><section class="text-item">${productData.description.pl}</section></div></section>`
+    : "";
+
+  return `
   <section class="section">
     <div class="item item-12">
       <section class="text-item">
@@ -76,45 +97,55 @@ export const generateIngredientsHTML = (ingredientsTable) => {
   <section class="section">
     <div class="item item-6">
       <section class="image-item">
-        <img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^1.jpg" />
+        <img src="https://elektropak.pl/subiekt_kopia/foto/${
+          productData.productSku
+        }^1.jpg" />
       </section>
     </div>
     <div class="item item-6">
       <section class="text-item">
         <h2>Skład</h2>
-        <p>Wielkość opakowania:<strong> ${productData.size.sizeAmount} ${productData.size.unit.pl}</strong></p>
-        <p>Porcja jednorazowa: <strong>${productData.portion.portionAmount} ${productData.portion.unit.pl}</strong></p>
-        <p>Ilość porcji w opakowaniu: <strong>${productData.portionQuantity}</strong></p>
+        <p>Wielkość opakowania:<strong> ${productData.size.sizeAmount} ${
+    productData.size.unit.pl
+  }</strong></p>
+        <p>Porcja jednorazowa: <strong>${productData.portion.portionAmount} ${
+    productData.portion.unit.pl
+  }</strong></p>
+        <p>Ilość porcji w opakowaniu: <strong>${
+          productData.portionQuantity
+        }</strong></p>
         <h2>Sposób użycia:</h2>
         ${productData.howToUse.pl}
       </section>
     </div>
   </section>
+    ${
+      productData.bulletpoints.pl
+        ? `${convertListToSection(productData.bulletpoints.pl)}`
+        : ""
+    }
   
   <section class="section">
-    <div class="item item-6">
-      <section class="image-item">
-        <img src="https://elektropak.pl/subiekt_kopia/foto/${productData.productSku}^2.jpg" />
+    <div class="item item-12">
+      <section class="text-item">
+        <p><strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${
+    productData.portion.unit.pl
+  }&nbsp; &nbsp;RWS</strong></p>
+        <p><strong>_________________________________________________</strong></p>
+        <table>${ingredientsHTML}</table>
+        <p><strong>_________________________________________________</strong></p>
+        ${productData.tableEnd.pl}
       </section>
     </div>
-    <div class="item item-6">
+  </section>
+
+    <section class="section">
+    <div class="item item-12">
       <section class="text-item">
         <h2>Przeciwwskazania:</h2>
         ${productData.contraindications.pl}
         <h2>Przechowywanie:</h2>
         ${productData.storage.pl}
-      </section>
-    </div>
-  </section>
-  
-  <section class="section">
-    <div class="item item-12">
-      <section class="text-item">
-        <p><strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${productData.portion.unit.pl}&nbsp; &nbsp;RWS</strong></p>
-        <p><strong>_________________________________________________</strong></p>
-        <table>${ingredientsHTML}</table>
-        <p><strong>_________________________________________________</strong></p>
-        ${productData.tableEnd.pl}
       </section>
     </div>
   </section>
@@ -125,11 +156,6 @@ export const generateIngredientsHTML = (ingredientsTable) => {
     <div class="item item-12">
       <section class="text-item">
         ${specialFeaturesHTML}
-        ${
-          productData.bulletpoints.pl
-            ? `<h2>Dlaczego warto stosować?:</h2>${productData.bulletpoints.pl}`
-            : ""
-        }
         <h2>Składniki:</h2>
         ${productData.ingredients.pl}
         <h2>Informacja:</h2>
@@ -144,4 +170,4 @@ export const generateIngredientsHTML = (ingredientsTable) => {
       </section>
     </div>
   </section>`;
-  };
+};

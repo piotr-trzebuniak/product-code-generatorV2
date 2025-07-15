@@ -6,6 +6,7 @@ const GeneratorBtns = ({
   generateCode,
   generateCodeCosmetics,
   sendToGoogleSheets,
+  sendToGoogleSheetsOnlyEbay,
   resetForm,
   copyHtmlToShop,
   copyShortDescToShop,
@@ -208,18 +209,27 @@ const GeneratorBtns = ({
             </Button>
           </div>
         )} */}
-      {isCodeGenerated &&
-        !isSendingToSheets &&
-        !translateSkipped && (
-          <div className={style.generator__sheetBtns}>
-            <Button
-              onClick={sendToGoogleSheets}
-              className={style.generator__sheetBtn}
-            >
-              Dodaj kod do arkusza
-            </Button>
-          </div>
-        )}
+      {isCodeGenerated && !isSendingToSheets && !translateSkipped && (
+        <div className={style.generator__sheetBtns}>
+          <Button
+            onClick={sendToGoogleSheets}
+            className={style.generator__sheetBtn}
+          >
+            Dodaj kod do arkusza
+          </Button>
+        </div>
+      )}
+      {/* ONLY EBAY */}
+      {isCodeGenerated && !isSendingToSheets && !translateSkipped && (
+        <div className={style.generator__sheetBtns}>
+          <Button
+            onClick={sendToGoogleSheetsOnlyEbay}
+            className={style.generator__sheetBtn}
+          >
+            Dodaj TYLKO KOD EBAY do arkusza
+          </Button>
+        </div>
+      )}
 
       {/* Status wysyłania do arkusza */}
       {isSendingToSheets && (
