@@ -407,7 +407,7 @@ const ProductCodeGenerator = () => {
       {
         Sku: productData.productSku,
         Html: htmlToEmagRo,
-        ProductName: productData.productName.en,
+        ProductName: productData.productName.ro,
         target: "emag-ro",
       },
     ];

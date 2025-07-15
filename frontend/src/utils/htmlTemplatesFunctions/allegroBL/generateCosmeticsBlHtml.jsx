@@ -1,8 +1,8 @@
-import { ingredientTableHtmlToShop } from "../shopPL/generateShopHtml";
+import { generateIngredientsHTML } from "./generateBlHtml";
 
 // Funkcja generująca HTML dla Baselinkera
 export const generateCosmeticsBlHtml = (productData) => {
-    const ingredientsHTML = ingredientTableHtmlToShop(productData.ingredientsTable); // Przygotowanie HTML dla składników
+    const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
   
     const newHtmlToBl = `
   <section class="section">
@@ -35,12 +35,14 @@ export const generateCosmeticsBlHtml = (productData) => {
   </section>
   
   ${productData.ingredientsTable[0].ingredient.pl !== "" ? `
-  <section class="section">
+    <section class="section">
     <div class="item item-12">
       <section class="text-item">
-        <p><strong>Składniki ${productData.portion.portionAmount} ${productData.portion.unit.pl} RWS</strong></p>
+        <p><strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${
+    productData.portion.unit.pl
+  }&nbsp; &nbsp;RWS</strong></p>
         <p><strong>_________________________________________________</strong></p>
-        ${ingredientsHTML}
+        <table>${ingredientsHTML}</table>
         <p><strong>_________________________________________________</strong></p>
         ${productData.tableEnd.pl}
       </section>
