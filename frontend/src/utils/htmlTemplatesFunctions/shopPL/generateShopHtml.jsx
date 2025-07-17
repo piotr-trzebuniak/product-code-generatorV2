@@ -139,15 +139,6 @@ export const generateShopHtml = (productData) => {
           ${productData.storage.pl}
           <h3>Informacja:</h3>
           ${productData.additionalInformation.pl}
-          <!--
-          <h4>Producent:</h4>
-          ${productData.producer.shop}
-          ${
-            productData.responsibleEntity.shop
-              ? `<h4>Podmiot odpowiedzialny:</h4>${productData.responsibleEntity.shop}`
-              : ""
-          }
-          -->
         </div>
       </div>
     </div>
