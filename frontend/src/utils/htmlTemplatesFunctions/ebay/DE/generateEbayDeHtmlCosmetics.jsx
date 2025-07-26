@@ -81,39 +81,37 @@ function extractIngredientsAndRemove(htmlString) {
 
 export const generateRoleHtml = (htmlString) => {
   const ICON_URL = "https://elektropak.pl/ebay/role-icon.png";
-
+  
   // Zidentyfikuj nagłówek
   const headerMatch = htmlString.match(/<h3><strong>(.*?)<\/strong><\/h3>/);
   const headerText = headerMatch ? headerMatch[1] : "";
-
+  
   if (!headerMatch) {
     return htmlString;
   }
-
-  // Zidentyfikuj wszystkie elementy listy - użyj 's' flag dla obsługi wielu linii
-  const liElements = [
-    ...htmlString.matchAll(/<li><strong>(.*?)<\/strong>(.*?)<\/li>/gs),
-  ];
-
+  
+  // Poprawiony regex - elastyczny co do spacji wokół myślnika
+  const bulletpoints = [...htmlString.matchAll(/<li><strong>(.*?)<\/strong>\s*-\s*(.*?)<\/li>/g)].map(
+    (match) => ({
+      title: match[1].trim(),
+      description: match[2].trim()
+    })
+  );
+  
   // Generowanie HTML
-  const headerHtml = headerText
-    ? `<h3><strong>${headerText}</strong></h3>`
-    : "";
-
-  const listHtml = liElements
+  const headerHtml = headerText ? `<h3><strong>${headerText}</strong></h3>` : '';
+    
+  const listHtml = bulletpoints
     .map(
-      (match) => `
+      ({ title, description }) => `
         <div class="role">
           <img src="${ICON_URL}" alt="" />
-          <span><strong>${match[1].trim()}</strong>${match[2].trim()}</span>
+          <span><strong>${title}</strong> - ${description}</span>
         </div>`
     )
     .join("");
-
-  return `<div class="roles">
-                ${headerHtml}
-                ${listHtml}
-              </div>`;
+  
+  return headerHtml + listHtml;
 };
 
 export const generateFeatureHtml = (specialFeatures, featuresMapDE) => {

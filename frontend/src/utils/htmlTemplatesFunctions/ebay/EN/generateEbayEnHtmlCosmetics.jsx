@@ -102,26 +102,26 @@ function extractIngredientsAndRemove(htmlString) {
 
 export const generateRoleHtml = (htmlString) => {
   const ICON_URL = "https://elektropak.pl/ebay/role-icon.png";
-
+  
   // Zidentyfikuj nagłówek
   const headerMatch = htmlString.match(/<h3><strong>(.*?)<\/strong><\/h3>/);
   const headerText = headerMatch ? headerMatch[1] : "";
-
+  
   if (!headerMatch) {
     return htmlString;
   }
-
-  // Zidentyfikuj punkty na liście
-  const bulletpoints = [...htmlString.matchAll(/<li><strong>(.*?)<\/strong> - (.*?)<\/li>/g)].map(
+  
+  // Poprawiony regex - elastyczny co do spacji wokół myślnika
+  const bulletpoints = [...htmlString.matchAll(/<li><strong>(.*?)<\/strong>\s*-\s*(.*?)<\/li>/g)].map(
     (match) => ({
       title: match[1].trim(),
       description: match[2].trim()
     })
   );
-
+  
   // Generowanie HTML
   const headerHtml = headerText ? `<h3><strong>${headerText}</strong></h3>` : '';
-  
+    
   const listHtml = bulletpoints
     .map(
       ({ title, description }) => `
@@ -131,10 +131,9 @@ export const generateRoleHtml = (htmlString) => {
         </div>`
     )
     .join("");
-
+  
   return headerHtml + listHtml;
 };
-
 
 export const generateFeatureHtml = (specialFeatures, featuresMapEN) => {
   const ICON_BASE_URL = "https://elektropak.pl/ebay/icons/";
