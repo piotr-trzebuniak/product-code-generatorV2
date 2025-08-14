@@ -3,6 +3,37 @@ export const research = {
   Ashwagandha: {
     id: "ashwagandha",
     index: 1,
+    PL: {
+      studies: [
+        {
+          title:
+            "Ashwagandha dla zdrowia mózgu: dowody eksperymentalne na jej działania neuroregeneracyjne",
+          description:
+            "Rosnąca populacja oraz czynniki społeczne i środowiskowe wpływają na zdrowie psychiczne i fizyczne, powodując stres i zwiększając ryzyko zaburzeń neurologicznych. Ashwagandha, roślina wykorzystywana w Ajurwedzie, wykazuje działanie łagodzące stres, nadciśnienie i procesy starzenia, a badania coraz dokładniej wyjaśniają jej mechanizmy działania na zdrowie mózgu.",
+          link: "https://link.springer.com/chapter/10.1007/978-3-319-59192-6_14",
+        },
+        {
+          title:
+            "Ocena kliniczna wpływu farmakologicznego ekstraktu z korzenia ashwagandhy na sen u zdrowych ochotników i pacjentów z bezsennością: badanie podwójnie zaślepione, randomizowane, z grupami równoległymi i kontrolą placebo",
+          description:
+            "Badanie potwierdza, że ekstrakt z korzenia ashwagandhy poprawia jakość snu i wspomaga leczenie bezsenności, jednocześnie będąc dobrze tolerowanym niezależnie od wieku i stanu zdrowia uczestników.",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S0378874120331585?via%3Dihub",
+        },
+        {
+          title:
+            "Systematyczny przegląd klinicznego zastosowania Withania somnifera (Ashwagandha) w celu poprawy funkcji poznawczych",
+          description:
+            "Systematyczny przegląd wskazuje, że suplementacja ashwagandhą (Withania somnifera) może wspierać funkcje poznawcze, poprawiając wyniki w zadaniach poznawczych, funkcjach wykonawczych, uwadze i czasie reakcji.",
+          link: "https://onlinelibrary.wiley.com/doi/10.1002/ptr.6552",
+        },
+        {
+          title: "Czy Ashwagandha może wspierać układ hormonalny? – Przegląd",
+          description:
+            "Ashwagandha (Withania somnifera) wykazuje szerokie właściwości prozdrowotne, w tym wpływ na układ hormonalny – poprawia funkcjonowanie tarczycy, normalizuje aktywność nadnerczy i wspiera układ rozrodczy poprzez obniżenie poziomu kortyzolu oraz zwiększenie poziomu LH i FSH.",
+          link: "https://pubmed.ncbi.nlm.nih.gov/38003702/",
+        },
+      ],
+    },
     EN: {
       studies: [
         {
@@ -163,6 +194,31 @@ export const research = {
   Berberyna: {
     id: "berberyna",
     index: 2,
+    PL: {
+      studies: [
+        {
+          title:
+            "Skuteczność i bezpieczeństwo berberyny HIMABERB® w kontroli glikemii u pacjentów z prediabetes: randomizowane, podwójnie zaślepione, kontrolowane placebo badanie pilotażowe",
+          description:
+            "W grupie leczonej odnotowano klinicznie i statystycznie istotne obniżenia wszystkich markerów kontroli glikemii, takich jak FPG, FI, 2h-OGTT, HbA1c oraz HOMA-IR, w porównaniu do wartości początkowych oraz grupy kontrolnej. Terapia była dobrze tolerowana, bez poważnych działań niepożądanych ani toksycznego wpływu na nerki i wątrobę.",
+          link: "https://bmcendocrdisord.biomedcentral.com/articles/10.1186/s12902-023-01442-y",
+        },
+        {
+          title:
+            "Skuteczność kliniczna i bezpieczeństwo berberyny w leczeniu niealkoholowej stłuszczeniowej choroby wątroby: metaanaliza i przegląd systematyczny",
+          description:
+            "Metaanaliza 10 badań RCT z udziałem 811 pacjentów wykazała, że berberyna znacząco obniża poziomy ALT, AST, GGT, TG, TC, LDL-C, HOMA-IR i BMI, potwierdzając jej skuteczność w poprawie parametrów metabolicznych i wątrobowych.",
+          link: "https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-024-05011-2",
+        },
+        {
+          title:
+            "Wpływ wspomagającej terapii berberyną na ostry udar niedokrwienny: metaanaliza",
+          description:
+            "Metaanaliza 10 badań RCT z udziałem 811 pacjentów wykazała, że berberyna znacząco obniża poziomy ALT, AST, GGT, TG, TC, LDL-C, HOMA-IR i BMI, potwierdzając jej skuteczność w poprawie parametrów metabolicznych i wątrobowych.",
+          link: "https://read.qxmd.com/read/37421347/effects-of-adjuvant-berberine-therapy-on-acute-ischemic-stroke-a-meta-analysis",
+        },
+      ],
+    },
     EN: {
       studies: [
         {
@@ -317,6 +373,32 @@ export const research = {
         },
       ],
     },
+    PL: {
+  studies: [
+    {
+      title:
+        "Andrographis paniculata (Burm. f.) Wall. ex Nees: Zaktualizowany przegląd fitochemii, farmakologii przeciwdrobnoustrojowej oraz bezpieczeństwa i skuteczności klinicznej",
+      description:
+        "Andrographis paniculata oraz jej główny związek — andrographolid — wykazują skuteczność w leczeniu infekcji dróg oddechowych, takich jak przeziębienie i zapalenie zatok, dzięki działaniu przeciwdrobnoustrojowemu i regulującemu układ odpornościowy.",
+      link: "https://www.mdpi.com/2075-1729/11/4/348"
+    },
+    {
+      title:
+        "Skuteczność Andrographis paniculata w chorobach zakaźnych górnych dróg oddechowych i mechanizm działania",
+      description:
+        "Andrographis paniculata, szeroko stosowana w medycynie ajurwedyjskiej i tradycyjnej medycynie chińskiej (TCM), wykazuje skuteczność w zapobieganiu i leczeniu infekcji górnych dróg oddechowych, zakażeń układu moczowego oraz innych chorób zakaźnych, co czyni ją atrakcyjną alternatywą w obliczu rosnącej oporności na antybiotyki.",
+      link: "https://link.springer.com/chapter/10.1007/978-3-7091-0442-2_4"
+    },
+    {
+      title:
+        "Przegląd stanu zapalnego wątroby i przeciwzapalnego działania Andrographis paniculata w ochronie wątroby",
+      description:
+        "Andrographis paniculata, dzięki właściwościom hepatoprotekcyjnym — głównie zawartości andrographolidu — stanowi obiecującą roślinną alternatywę w kompleksowym leczeniu zapaleń wątroby.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5193"
+    }
+  ]
+},
+
     DE: {
       studies: [
         {
@@ -423,6 +505,31 @@ export const research = {
   Bacopa: {
     id: "bacopa",
     index: 4,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ Bacopa monnieri na funkcje poznawcze",
+      description:
+        "Metaanaliza wykazała, że suplementacja Bacopa monnieri może poprawiać funkcje poznawcze, szczególnie w zakresie szybkości uwagi i przetwarzania informacji.",
+      link: "https://examine.com/supplements/bacopa-monnieri/"
+    },
+    {
+      title:
+        "Analiza in silico i in vitro aglikonów bakozydu A i jego pochodnych jako związków odpowiedzialnych za działanie poznawcze Bacopa monnieri",
+      description:
+        "Badania in silico i in vitro wykazały, że ebelina laktonowa wykazuje najwyższe powinowactwo do receptorów M1 i 5-HT2A, związanych z poprawą pamięci i funkcji poznawczych, co sugeruje, że metabolity B. monnieri odgrywają kluczową rolę w jej działaniu farmakologicznym.",
+      link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0126565"
+    },
+    {
+      title:
+        "Właściwości farmakologiczne ekstraktu z Bacopa monnieri: aktualny stan wiedzy i manifestacje kliniczne",
+      description:
+        "Ekstrakt z Bacopa monnieri wykazuje obiecujący potencjał terapeutyczny w leczeniu zaburzeń neurologicznych i nowotworowych oraz poprawie funkcji poznawczych, co potwierdzają badania kliniczne analizujące jego mechanizmy działania i bezpieczeństwo stosowania.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36061899/"
+    }
+  ]
+},
+
     EN: {
       studies: [
         {
@@ -547,6 +654,32 @@ export const research = {
   Boswellia: {
     id: "boswellia",
     index: 5,
+    PL: {
+  studies: [
+    {
+      title:
+        "Skuteczność Boswellii i ekstraktu z Boswellii u pacjentów z chorobą zwyrodnieniową stawów: przegląd systematyczny i metaanaliza",
+      description:
+        "Boswellia i jej ekstrakt mogą skutecznie redukować ból stawów i sztywność oraz poprawiać ich funkcjonowanie, co potwierdzono w siedmiu badaniach z udziałem 545 pacjentów.",
+      link: "https://bmccomplementmedtherapies.biomedcentral.com/articles/10.1186/s12906-020-02985-6"
+    },
+    {
+      title:
+        "Skuteczność Boswellia serrata w leczeniu choroby zwyrodnieniowej stawów",
+      description:
+        "Metaanaliza wykazała, że ekstrakt z Boswellia serrata skutecznie redukuje ból i poprawia funkcjonowanie stawów u pacjentów z chorobą zwyrodnieniową. Najczęściej stosowane dawki mieściły się w zakresie od 100 mg do 250 mg dziennie (BioMed Central).",
+      link: "https://bmccomplementmedtherapies.biomedcentral.com/articles/10.1186/s12906-020-02985-6"
+    },
+    {
+      title:
+        "Boswellia serrata jako potencjalny środek przeciwzapalny: przegląd",
+      description:
+        "Żywica Boswellia serrata, wykorzystywana w medycynie tradycyjnej od wieków, zawiera aktywne związki, w tym kwas acetyl-11-keto-β-bosweliowy, który skutecznie hamuje enzymy prozapalne i wspomaga leczenie chorób zapalnych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22457547/"
+    }
+  ]
+},
+
     EN: {
       studies: [
         {
@@ -678,6 +811,32 @@ export const research = {
   "Tribulus Terrestris Buzdyganek": {
     id: "tribulus-terrestris",
     index: 6,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ Tribulus terrestris L. na biomarkery sportowe i zdrowotne u aktywnych fizycznie dorosłych mężczyzn: przegląd systematyczny",
+      description:
+        "Suplementacja Tribulus terrestris jest bezpieczna i może wspierać fizjologiczne biomarkery u osób aktywnych fizycznie.",
+      link: "https://www.mdpi.com/1660-4601/19/15/9533"
+    },
+    {
+      title:
+        "Właściwości proprokreacyjne i afrodyzyjne Tribulus terrestris L.: dowody z metaanaliz",
+      description:
+        "Metaanalizy wykazały, że Tribulus terrestris znacząco poprawia parametry nasienia u ludzi.",
+      link: "https://onlinelibrary.wiley.com/doi/10.1155/2023/7118431"
+    },
+    {
+      title:
+        "Korzystny wpływ naturalnych produktów na kobiece zaburzenia seksualne: przegląd systematyczny i metaanaliza",
+      description:
+        "Metaanaliza wykazała, że Tribulus terrestris znacząco poprawia ogólne funkcje seksualne u kobiet, w tym pożądanie, podniecenie i orgazm.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0944711321003032?via%3Dihub"
+    }
+  ]
+},
+
     EN: {
       studies: [
         {
@@ -807,6 +966,30 @@ export const research = {
   "Czerwona koniczyna": {
     id: "czerwona-koniczyna",
     index: 7,
+    PL: {
+  studies: [
+    {
+      title:
+        "Ocena klinicznego znaczenia ekstraktu z koniczyny czerwonej (Trifolium pratense L.) w łagodzeniu uderzeń gorąca i objawów menopauzy u kobiet w okresie okołomenopauzalnym i pomenopauzalnym: przegląd systematyczny i metaanaliza randomizowanych badań klinicznych",
+      description:
+        "Metaanaliza wykazała umiarkowane zmniejszenie częstotliwości występowania uderzeń gorąca dzięki izoflawonom z koniczyny czerwonej.",
+      link: "https://www.mdpi.com/2072-6643/13/4/1258"
+    },
+    {
+      title: "Koniczyna czerwona a zdrowie kości",
+      description:
+        "Koniczyna czerwona, dzięki zawartości fitoestrogenów, może wspierać zdrowie kości poprzez zwiększenie gęstości mineralnej kości i wspomaganie ich tworzenia, naśladując działanie estrogenu.",
+      link: "https://wearefeel.com/blogs/learn/what-is-red-clover-benefits-risks-how-to-use-nutritionist-reviewed-2023"
+    },
+    {
+      title:
+        "Właściwości farmakologiczne i terapeutyczne koniczyny czerwonej (Trifolium pratense L.): przegląd najnowszych odkryć",
+      description:
+        "Koniczyna czerwona wykazuje właściwości przeciwutleniające i przeciwnowotworowe, wspiera układ sercowo-naczyniowy oraz łagodzi objawy menopauzy. Jej ekstrakt może również wspomagać terapię nowotworową.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34392659/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -933,6 +1116,38 @@ export const research = {
   Czosnek: {
     id: "czosnek",
     index: 8,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ czosnku na parametry lipidowe: przegląd systematyczny i metaanaliza",
+      description:
+        "Metaanaliza wykazała, że czosnek istotnie obniża całkowity poziom cholesterolu (TC) średnio o 0,19 mmol/L w porównaniu z placebo.",
+      link: "https://www.cambridge.org/core/journals/nutrition-research-reviews/article/impact-of-garlic-on-lipid-parameters-a-systematic-review-and-metaanalysis/55EF1BC57199D56182B409857E599C3E"
+    },
+    {
+      title:
+        "Przegląd systematyczny i metaanaliza wpływu czosnku u pacjentów z niealkoholową stłuszczeniową chorobą wątroby (NAFLD)",
+      description:
+        "Metaanaliza wykazała, że suplementacja czosnkiem ma korzystny wpływ na stłuszczenie wątroby, poziom enzymów wątrobowych oraz profil metaboliczny u pacjentów z NAFLD.",
+      link: "https://link.springer.com/article/10.1007/s12664-022-01287-8"
+    },
+    {
+      title:
+        "Wpływ suplementacji czosnkiem na składniki zespołu metabolicznego: przegląd systematyczny, metaanaliza i metaregresja randomizowanych badań kontrolowanych",
+      description:
+        "Metaanaliza wykazała, że czosnek znacząco poprawia niektóre parametry zespołu metabolicznego, takie jak trójglicerydy (TG), cholesterol całkowity (TC), LDL, ciśnienie rozkurczowe, BMI oraz obwód talii.",
+      link: "https://bmccomplementmedtherapies.biomedcentral.com/articles/10.1186/s12906-023-04038-0"
+    },
+    {
+      title:
+        "Spożycie czosnku a ryzyko raka jelita grubego oraz zmiany w bakteryjnym DNA we krwi",
+      description:
+        "Badanie potwierdza ochronny wpływ czosnku na ryzyko rozwoju raka jelita grubego i sugeruje, że efekt ten może być związany z osiowym związkiem między dietą a mikrobiotą, wpływającym na translokację bakterii do krwiobiegu.",
+      link: "https://link.springer.com/article/10.1007/s00394-023-03110-2"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -1097,6 +1312,45 @@ export const research = {
   "Witamina D3": {
     id: "witamina-d3",
     index: 9,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji witaminą D3 na gęstość mineralną kości: przegląd systematyczny i metaanaliza",
+      description:
+        "Suplementacja witaminą D3 ma korzystny wpływ na gęstość mineralną kości w odcinku lędźwiowym kręgosłupa, szyjce kości udowej oraz całym biodrze.",
+      link: "https://academic.oup.com/nutritionreviews/article/81/5/511/6780156"
+    },
+    {
+      title:
+        "Witamina D a zdrowie człowieka: dowody z badań randomizacji Mendla",
+      description:
+        "Badania z wykorzystaniem randomizacji Mendla potwierdziły przyczynową rolę witaminy D w zmniejszaniu ryzyka stwardnienia rozsianego oraz wskazały na jej potencjalne korzyści i zagrożenia w kontekście innych schorzeń, co może pomóc w ustalaniu priorytetów jej stosowania.",
+      link: "https://link.springer.com/article/10.1007/s10654-023-01075-4"
+    },
+    {
+      title:
+        "Codzienne doustne dawkowanie witaminy D3 w dawkach od 5000 do 50 000 IU u pacjentów hospitalizowanych długoterminowo: wnioski z siedmioletniego doświadczenia",
+      description:
+        "Długotrwała suplementacja witaminą D3 w dawkach od 5000 do 50 000 IU dziennie jest bezpieczna, poprawia poziom 25-hydroksywitaminy D3 we krwi i może przynosić korzyści kliniczne, np. w łuszczycy, bez wywoływania hiperkalcemii ani innych działań niepożądanych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30611908/"
+    },
+    {
+      title:
+        "Witamina D3 hamuje szlak homeostazy cholesterolu w liniach komórkowych glejaka pochodzących od pacjentów",
+      description:
+        "Witamina D3, bardziej niż kalcytriol, hamuje wzrost komórek glejaka wielopostaciowego poprzez zakłócanie homeostazy cholesterolu, niezależnie od obecności receptora witaminy D (VDR).",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37489660/"
+    },
+    {
+      title:
+        "Rola witaminy D3 w nieswoistych chorobach zapalnych jelit",
+      description:
+        "Witamina D3 odgrywa kluczową rolę w regulacji układu odpornościowego i może wspierać leczenie chorób autoimmunologicznych, takich jak nieswoiste zapalenia jelit.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25166432/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -1296,6 +1550,38 @@ export const research = {
   Magnez: {
     id: "magnez",
     index: 10,
+    PL: {
+  studies: [
+    {
+      title:
+        "Korzyści z suplementacji magnezem w depresji u dorosłych z zaburzeniami depresyjnymi: przegląd systematyczny i metaanaliza randomizowanych badań klinicznych",
+      description:
+        "Przegląd sugeruje, że suplementacja magnezem może mieć korzystny wpływ na objawy depresji.",
+      link: "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1333261/full"
+    },
+    {
+      title:
+        "Wpływ suplementacji magnezem na poprawę hiperglikemii, hipercholesterolemii i nadciśnienia u osób z cukrzycą typu 2: zbiorcza analiza 24 randomizowanych badań kontrolowanych",
+      description:
+        "Wyniki dostarczają klinicznie istotnych informacji na temat pomocniczej roli magnezu w terapii hiperglikemii, hipercholesterolemii i nadciśnienia w cukrzycy typu 2.",
+      link: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2022.1020327/full"
+    },
+    {
+      title:
+        "Wpływ suplementacji magnezem na subiektywny lęk",
+      description:
+        "Magnez może łagodzić objawy łagodnego lęku oraz lęku związanego z zespołem napięcia przedmiesiączkowego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27869100/"
+    },
+    {
+      title:
+        "Magnez w praktyce ginekologicznej: przegląd literatury",
+      description:
+        "Suplementacja magnezem jest skuteczna w łagodzeniu bolesnych miesiączek, zespołu napięcia przedmiesiączkowego, migren menstruacyjnych oraz objawów menopauzy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28392498/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -1458,6 +1744,45 @@ export const research = {
   Cynk: {
     id: "cynk",
     index: 11,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji cynkiem na biomarkery glikemiczne: przegląd interwencyjnych metaanaliz",
+      description:
+        "Suplementacja cynkiem istotnie obniżyła poziomy FBS, HOMA-IR, insuliny oraz HbA1c. Wyniki te sugerują, że cynk może być skuteczną terapią wspomagającą poprawę biomarkerów cukrzycy typu 2.",
+      link: "https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-024-01366-0"
+    },
+    {
+      title:
+        "Czy cynk jest istotnym pierwiastkiem śladowym w chorobach kości i powikłaniach? Metaanaliza i przegląd systematyczny w kontekście poziomu w surowicy, spożycia i suplementacji",
+      description:
+        "Cynk odgrywa kluczową rolę w zdrowiu kości, a jego suplementacja może poprawiać gęstość mineralną kości i wskaźniki przebudowy kostnej, co wskazuje na jego potencjał w zapobieganiu osteoporozie.",
+      link: "https://link.springer.com/article/10.1007/s12011-020-02193-w"
+    },
+    {
+      title:
+        "Cynk: spożycie z diety i wpływ suplementacji na funkcje odpornościowe u osób starszych",
+      description:
+        "Osoby starsze często mają niedobory cynku w diecie, co osłabia ich odporność. Suplementacja cynkiem, zwłaszcza przy uwzględnieniu polimorfizmu IL-6, może wspierać zdrowe starzenie się i poprawiać odpowiedź immunologiczną.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22222917/"
+    },
+    {
+      title:
+        "Cynk: niezbędny mikroelement",
+      description:
+        "Cynk to kluczowy mikroelement wspierający metabolizm, odporność i zdrowie oczu. Jest skuteczny w leczeniu choroby Wilsona i zapobieganiu niektórym infekcjom.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/20141096/"
+    },
+    {
+      title:
+        "Niedobór cynku i suplementacja cynkiem w chorobach alergicznych",
+      description:
+        "Niedobór cynku może przyczyniać się do rozwoju chorób alergicznych, a suplementacja cynkiem wykazuje pozytywny wpływ na modulację układu odpornościowego i łagodzenie objawów alergii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39062576/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -1653,6 +1978,45 @@ export const research = {
   "Witamina C": {
     id: "witamina-c",
     index: 12,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ witaminy C na choroby układu oddechowego, alergiczne i immunologiczne: przegląd eksperymentalny i kliniczny",
+      description:
+        "Witamina C, dzięki swoim właściwościom przeciwutleniającym, immunomodulującym i przeciwzapalnym, może wspierać profilaktykę i leczenie chorób układu oddechowego, takich jak astma, POChP, infekcje płuc i rak płuc.",
+      link: "https://link.springer.com/article/10.1007/s10787-023-01169-1"
+    },
+    {
+      title:
+        "Suplementacja witaminą C w leczeniu chorób autoimmunologicznych i onkohematologicznych: od profilaktyki do terapii wspomagającej",
+      description:
+        "Witamina C, dzięki działaniu przeciwzapalnemu, immunoregulacyjnemu i antyoksydacyjnemu, wykazuje potencjał w leczeniu chorób autoimmunologicznych i nowotworów, wspierając standardowe terapie oraz modulując odpowiedź immunologiczną i stres oksydacyjny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39000393/"
+    },
+    {
+      title:
+        "Rola witaminy C w zaburzeniach związanych ze stresem",
+      description:
+        "Witamina C, posiadająca właściwości przeciwdepresyjne i przeciwlękowe poprzez modulację układów neuroprzekaźników, może stanowić obiecujące wsparcie w leczeniu zaburzeń nastroju i lękowych, szczególnie w przypadkach opornych na standardowe terapie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32745879/"
+    },
+    {
+      title:
+        "Witamina C w diecie a zdrowie człowieka",
+      description:
+        "Witamina C odgrywa kluczową rolę w profilaktyce zdrowotnej, a jej niedobory wiążą się z negatywnymi skutkami zdrowotnymi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29477224/"
+    },
+    {
+      title:
+        "Witamina C: przegląd jej roli w leczeniu zespołu metabolicznego",
+      description:
+        "Witamina C, dzięki właściwościom antyoksydacyjnym i przeciwzapalnym, może wspierać leczenie zespołu metabolicznego (MetS), a jej odpowiednia suplementacja lub spożycie są istotne dla poprawy stanu zdrowia pacjentów z MetS.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32669965/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -1843,6 +2207,25 @@ export const research = {
   Kolagen: {
     id: "kolagen",
     index: 13,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ doustnej suplementacji kolagenu na starzenie się skóry: przegląd systematyczny i metaanaliza",
+      description: "Metaanaliza 26 randomizowanych badań z udziałem 1 721 pacjentów wykazała, że suplementacja kolagenem pochodzącym z różnych źródeł poprawia nawilżenie i elastyczność skóry, co oceniano za pomocą nieinwazyjnych narzędzi, takich jak korneometr i kutometr.",
+      link: "https://www.mdpi.com/2072-6643/15/9/2080"
+    },
+    {
+      title: "Wpływ suplementacji peptydami kolagenowymi na markery układu sercowo-naczyniowego: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych placebo",
+      description: "Suplementacja peptydami kolagenowymi (CPS) zmniejsza masę tłuszczową, poziom LDL i ciśnienie skurczowe, jednocześnie zwiększając beztłuszczową masę ciała.",
+      link: "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/effects-of-collagen-peptide-supplementation-on-cardiovascular-markers-a-systematic-review-and-metaanalysis-of-randomised-placebocontrolled-trials/D1BD51038B71D9A9BCA7880B1F6649F0"
+    },
+    {
+      title: "Kolagen w gojeniu ran",
+      description: "Kolagen odgrywa kluczową rolę w procesie gojenia ran, a jego zaburzenia mogą prowadzić do ran przewlekłych, dlatego stosuje się go w terapiach wspomagających gojenie.",
+      link: "https://www.semanticscholar.org/paper/Collagen-in-Wound-Healing-Mathew-Steiner-Roy/f94be94733038c5e77de6c488ee667a03b190b32"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -1969,6 +2352,30 @@ export const research = {
   "Witamina B": {
     id: "witamina-b",
     index: 14,
+    PL: {
+  studies: [
+    {
+      title: "Ocena funkcjonalna działania przeciwzmęczeniowego i poprawy wydolności fizycznej po suplementacji kompleksem witamin B u zdrowych osób – randomizowane, podwójnie zaślepione badanie",
+      description: "28-dniowa suplementacja witaminami z grupy B (Ex PLUS ®) znacząco poprawiła wytrzymałość fizyczną i zmniejszyła zmęczenie u osób nieuprawiających sportu, nie powodując skutków ubocznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37786445/"
+    },
+    {
+      title: "Suplementacja witamin z grupy B, poziom homocysteiny a ryzyko chorób naczyniowo-mózgowych: metaanaliza",
+      description: "Suplementacja witaminami z grupy B w celu obniżenia poziomu homocysteiny znacząco zmniejszyła ryzyko udaru mózgu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24049135/"
+    },
+    {
+      title: "Witaminy z grupy B, zespół policystycznych jajników i płodność",
+      description: "Suplementacja kwasem foliowym i witaminą B12 może wspierać płodność kobiet, zwłaszcza z PCOS, poprawiając wyniki zdrowotne w zakresie rozrodu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36165609/"
+    },
+    {
+      title: "Skuteczność suplementacji witaminami z grupy B w łagodnych zaburzeniach poznawczych i chorobie Alzheimera: przegląd systematyczny i metaanaliza",
+      description: "Suplementacja witaminami z grupy B wykazuje umiarkowane korzyści dla pamięci u osób z łagodnymi zaburzeniami poznawczymi (MCI).",
+      link: "https://www.eurekaselect.com/article/62628"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -2129,6 +2536,35 @@ export const research = {
   "Omega-3": {
     id: "omega-3",
     index: 15,
+    PL: {
+  studies: [
+    {
+      title: "Metaanaliza wykazała, że kwasy tłuszczowe omega-3 poprawiają wyniki zdrowotne układu sercowo-naczyniowego",
+      description: "Metaanaliza 38 badań wykazała, że kwasy tłuszczowe omega-3 poprawiają stan zdrowia układu sercowo-naczyniowego.",
+      link: "https://www.sciencedaily.com/releases/2021/07/210708083854.htm"
+    },
+    {
+      title: "Kwasy tłuszczowe omega-3 EPA i DHA: korzyści zdrowotne w ciągu całego życia",
+      description: "Kwasy tłuszczowe omega-3 EPA i DHA odgrywają kluczową rolę w zdrowiu układu sercowo-naczyniowego, rozwoju płodu i funkcjonowaniu poznawczym, a ich suplementacja może łagodzić stany zapalne, zmniejszać ryzyko chorób przewlekłych i wspierać zdrowie w chorobach takich jak Alzheimer czy alergie.",
+      link: "https://www.sciencedirect.com/science/article/pii/S2161831322009620?via%3Dihub"
+    },
+    {
+      title: "Wykazano, że kwasy tłuszczowe omega-3 zapobiegają lub spowalniają postęp choroby zwyrodnieniowej stawów",
+      description: "Kwasy tłuszczowe omega-3 zawarte w oleju rybnym mogą znacząco i istotnie łagodzić objawy choroby zwyrodnieniowej stawów.",
+      link: "https://www.sciencedaily.com/releases/2011/10/111017111600.htm"
+    },
+    {
+      title: "Zdrowe tłuszcze omega-3 mogą spowalniać śmiertelne zwłóknienie płuc",
+      description: "Wyższy poziom omega-3, zdrowych tłuszczów występujących w rybach i orzechach, wiązał się z lepszą funkcją płuc i dłuższym przeżyciem bez przeszczepu.",
+      link: "https://www.sciencedaily.com/releases/2024/01/240102142021.htm"
+    },
+    {
+      title: "Badanie łączy omega-3 z poprawą struktury mózgu i funkcji poznawczych w średnim wieku",
+      description: "Nowe badania sugerują, że spożywanie kwasów tłuszczowych omega-3, występujących m.in. w rybach zimnowodnych, może wspierać zdrowie mózgu i poprawiać funkcje poznawcze również w średnim wieku.",
+      link: "https://www.sciencedaily.com/releases/2022/10/221005162432.htm"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -2329,6 +2765,30 @@ export const research = {
   Melatonina: {
     id: "melatonina",
     index: 16,
+    PL: {
+  studies: [
+    {
+      title: "Suplementacja melatoniną poprawia aktywność chorób reumatycznych: przegląd systematyczny",
+      description: "Przegląd ten wskazuje, że melatonina jest skuteczna w niektórych chorobach reumatycznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37202076/"
+    },
+    {
+      title: "Terapia melatoniną w chorobach nerek",
+      description: "Podawanie melatoniny wykazuje działanie nefroprotekcyjne i hamuje postęp powikłań związanych z niewydolnością nerek.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36980179/"
+    },
+    {
+      title: "Egzogenna melatonina w leczeniu bólu: przegląd systematyczny i metaanaliza",
+      description: "Zbiorcza analiza wykazała, że melatonina może znacząco zmniejszać natężenie każdego rodzaju bólu.",
+      link: "https://www.oncotarget.com/article/21504/text/"
+    },
+    {
+      title: "Wpływ codziennego podawania melatoniny przed snem na poziom insuliny na czczo, glukozę i wrażliwość na insulinę u zdrowych osób dorosłych i pacjentów z chorobami metabolicznymi: przegląd systematyczny i metaanaliza",
+      description: "Długoterminowe leczenie melatoniną nieznacznie obniżało poziom insuliny na czczo i miało tendencję do zmniejszania insulinooporności.",
+      link: "https://onlinelibrary.wiley.com/doi/10.1111/cen.14576"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -2488,6 +2948,30 @@ export const research = {
   Selen: {
     id: "selen",
     index: 17,
+    PL: {
+  studies: [
+    {
+      title: "Suplementacja mikroelementu selenu w chorobach metabolicznych: jego rola jako przeciwutleniacz",
+      description: "Selen, jako kluczowy przeciwutleniacz, odgrywa istotną rolę w leczeniu przewlekłych zaburzeń metabolicznych, takich jak cukrzyca, miażdżyca i fenyloketonuria, a jego suplementacja w odpowiednich dawkach może wspierać prawidłowe funkcje metaboliczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29441149/"
+    },
+    {
+      title: "Selen a zdrowie człowieka",
+      description: "Selen jest kluczowy dla zdrowia, jednak jego suplementacja przynosi korzyści tylko w przypadku niedoboru.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22381456/"
+    },
+    {
+      title: "Wpływ suplementacji selenem na chorobę wieńcową: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description: "Suplementacja selenem obniżała poziom CRP w surowicy i zwiększała poziom GSH-PX, co sugeruje pozytywny wpływ na redukcję stresu oksydacyjnego i stanu zapalnego w chorobie wieńcowej.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0946672X17300263?via%3Dihub"
+    },
+    {
+      title: "Suplementacja selenem a zdrowie prostaty w kohorcie z Nowej Zelandii",
+      description: "Analiza ta pokazuje wpływ czynników stylu życia na korzystne działanie suplementacji selenu na zdrowie prostaty.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31861307/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -2649,6 +3133,25 @@ export const research = {
   "Koenzym Q10": {
     id: "koenzym-q10",
     index: 18,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ suplementacji koenzymem Q10 na profil lipidowy u pacjentów z chorobami metabolicznymi: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description: "Metaanaliza wykazała istotne obniżenie poziomu trójglicerydów w surowicy (SMD -0,28; 95% CI, -0,56, -0,005). Suplementacja koenzymem Q10 zmniejszała także całkowity cholesterol.",
+      link: "https://www.eurekaselect.com/article/89567"
+    },
+    {
+      title: "Wpływ suplementacji koenzymem Q10 na objawy kliniczne migreny: przegląd systematyczny i metaanaliza dawek randomizowanych badań kontrolowanych",
+      description: "Łączne analizy dostępnych randomizowanych badań klinicznych sugerują, że suplementacja koenzymem Q10 może zmniejszać częstotliwość napadów migreny w miesiącu.",
+      link: "https://www.tandfonline.com/doi/full/10.1080/1028415X.2019.1572940"
+    },
+    {
+      title: "Wpływ koenzymu Q10 na funkcję śródbłonka naczyniowego u ludzi: metaanaliza randomizowanych badań kontrolowanych",
+      description: "Suplementacja koenzymem Q10 wiąże się ze znaczną poprawą funkcji śródbłonka.",
+      link: "https://www.atherosclerosis-journal.com/article/S0021-9150(11)01017-3/abstract"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -2780,6 +3283,26 @@ export const research = {
   Chrom: {
     id: "chrom",
     index: 19,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ suplementacji chromem na ciśnienie krwi: przegląd systematyczny i metaanaliza dawek randomizowanych badań kontrolowanych",
+      description: "Obecna metaanaliza wykazała, że suplementacja chromem znacząco obniża ciśnienie skurczowe (SBP) i rozkurczowe (DBP).",
+      link: "https://link.springer.com/article/10.1007/s40292-021-00456-8"
+    },
+    {
+      title: "Wpływ suplementacji chromem na kontrolę glikemii u pacjentów z cukrzycą typu 2: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description: "Wyniki obecnej metaanalizy mogą potwierdzać skuteczność suplementacji chromem w poprawie kontroli glikemii u pacjentów z cukrzycą typu 2.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S1043661820314067?via%3Dihub"
+    },
+    {
+      title: "Wpływ suplementacji chromem na profil lipidowy u ludzi: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description: "Metaanaliza wykazała istotny związek między suplementacją chromem a obniżeniem poziomu cholesterolu całkowitego (TC).",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S1043661820316169?via%3Dihub"
+    }
+  ]
+},
+
     EN: {
       studies: [
         {
@@ -2909,6 +3432,26 @@ export const research = {
   Jod: {
     id: "jod",
     index: 20,
+    PL: {
+  studies: [
+    {
+      title: "Terapia chorób endokrynnych: wpływ suplementacji jodu w łagodnym i umiarkowanym niedoborze jodu – przegląd systematyczny i metaanaliza",
+      description: "Suplementacja jodu poprawia niektóre wskaźniki czynności tarczycy u matek i może korzystnie wpływać na funkcje poznawcze dzieci w wieku szkolnym, nawet w rejonach z marginalnym niedoborem jodu.",
+      link: "https://academic.oup.com/ejendo/article-abstract/170/1/R1/6661587?redirectedFrom=fulltext"
+    },
+    {
+      title: "Jod cząsteczkowy ma działanie pozatarczycowe jako przeciwutleniacz, czynnik różnicujący i immunomodulator",
+      description: "Suplementacja jodu (I₂) wspiera odpowiedź immunologiczną przeciwnowotworową poprzez zwiększenie aktywacji szlaków Th1 i Th17, cytotoksyczności komórek NK i CD8+ oraz uwalniania cytokin IL2 i IFN-γ, co może wzmacniać efekty chemioterapii.",
+      link: "https://www.mdpi.com/1422-0067/22/3/1228"
+    },
+    {
+      title: "Jod, metabolizm jodu i zaburzenia wynikające z niedoboru jodu – ponowna dyskusja",
+      description: "Najnowsze odkrycia w fizjologii i naukach molekularnych znacząco poszerzyły naszą wiedzę na temat metabolizmu jodu i zaburzeń wynikających z jego niedoboru, podkreślając kluczowe znaczenie tego mikroelementu na wszystkich etapach życia, zwłaszcza w okresie płodowym i wczesnodziecięcym.",
+      link: "https://journals.lww.com/indjem/fulltext/2010/14010/iodine,_iodine_metabolism_and_iodine_deficiency.4.aspx"
+    }
+  ]
+},
+
     EN: {
       studies: [
         {
@@ -3039,6 +3582,25 @@ export const research = {
   Żelazo: {
     id: "zelazo",
     index: 21,
+    PL: {
+  studies: [
+    {
+      title: "Suplementacja żelaza w leczeniu anemii u pacjentów z przewlekłą chorobą nerek",
+      description: "Niedobór żelaza u pacjentów z przewlekłą chorobą nerek (PChN) jest powszechny, a terapia dożylna żelazem, zwłaszcza u pacjentów dializowanych, jest skuteczna.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/20956992/"
+    },
+    {
+      title: "Wyniki zdrowotne matek i noworodków związane z suplementacją żelaza lub stanem zaopatrzenia w żelazo: podsumowanie metaanaliz",
+      description: "Suplementy wieloskładnikowe i żelazo zmniejszają ryzyko niskiej masy urodzeniowej oraz anemii z niedoboru żelaza.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29207894/"
+    },
+    {
+      title: "Porównanie skuteczności dożylnej i doustnej suplementacji żelaza w leczeniu niedoboru żelaza u pacjentów z niewydolnością serca: metaanaliza sieciowa randomizowanych badań kontrolowanych",
+      description: "Podawanie dożylnego żelaza pacjentom z niewydolnością serca i niedoborem żelaza (ID) poprawia ich wydolność wysiłkową i jakość życia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35810949/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -3170,6 +3732,25 @@ export const research = {
   "Witamina A": {
     id: "witamina-a",
     index: 22,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ suplementacji witaminy A na gospodarkę żelaza u ludzi: przegląd systematyczny i metaanaliza",
+      description: "Suplementacja witaminą A skutecznie zmniejsza ryzyko anemii oraz poprawia poziom hemoglobiny i ferrytyny, szczególnie u osób z niskim poziomem retinolu w surowicy.",
+      link: "https://www.tandfonline.com/doi/full/10.1080/10408398.2018.1427552"
+    },
+    {
+      title: "Witamina A i regulacja rezerw tłuszczowych",
+      description: "Witamina A, zwłaszcza w postaci kwasu retinowego, reguluje metabolizm tłuszczu poprzez wpływ na termogenezę, różnicowanie adipocytów i odkładanie tłuszczu, przy czym niski poziom witaminy A sprzyja gromadzeniu tłuszczu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/12943220/"
+    },
+    {
+      title: "Witamina A i karotenoidy jako przeciwutleniacze w kontekście fizjologicznym",
+      description: "Witamina A i karotenoidy wykazują potencjalne funkcje antyoksydacyjne, a karotenoidy mogą zmniejszać ryzyko chorób przewlekłych niezależnie od przekształcania ich w witaminę A.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/8164068/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -3296,10 +3877,34 @@ export const research = {
   "Rhodiola rosea Różeniec górski": {
     id: "rhodiola-rosea",
     index: 23,
+    PL: {
+  studies: [
+    {
+      title: "Rhodiola rosea: wszechstronny adaptogen",
+      description: "Rhodiola rosea, ceniona za swoje właściwości adaptogenne, poprawia funkcjonowanie układu nerwowego, sercowo-naczyniowego i odpornościowego, redukuje stres i zmęczenie, posiada właściwości przeciwutleniające i przeciwnowotworowe, co czyni ją popularnym składnikiem suplementów i nutraceutyków.",
+      link: "https://ift.onlinelibrary.wiley.com/doi/10.1111/j.1541-4337.2005.tb00073.x"
+    },
+    {
+      title: "Rhodiola rosea L.: zioło o właściwościach anty-stresowych, przeciwstarzeniowych i stymulujących odporność w chemoprewencji raka",
+      description: "Ekstrakty z Rhodiola rosea oraz salidrozyd wykazują potencjał w chemoprewencji nowotworów, zwłaszcza raka pęcherza moczowego, dzięki swoim właściwościom wspierającym funkcje fizjologiczne i przeciwnowotworowe.",
+      link: "https://link.springer.com/article/10.1007/s40495-017-0106-1"
+    },
+    {
+      title: "Badanie wpływu adaptogennego ekstraktu z Rhodiola Rosea na neuroplastyczność u ludzi",
+      description: "Pojedyncza dawka ekstraktu z Rhodiola rosea moduluje plastyczność korową u ludzi, co może tłumaczyć jej działanie adaptogenne i przeciwdepresyjne.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229918307465?via%3Dihub"
+    },
+    {
+      title: "Rhodiola rosea: kandydat do terapii chorób sercowo-naczyniowych",
+      description: "Rhodiola rosea wykazuje potencjał terapeutyczny w leczeniu chorób sercowo-naczyniowych dzięki działaniu przeciwmiażdżycowemu, przeciwzakrzepowemu, obniżającemu poziom lipidów we krwi oraz przeciwarytmicznemu, co czyni ją obiecującym środkiem wspierającym zdrowie serca i naczyń.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35265260/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
-          title: "Rhodiola rosea: A Versatile Adaptogen\r",
+          title: "Rhodiola rosea: A Versatile Adaptogen",
           description:
             "Prized for its adaptogenic properties, rhodiola rosea improves nervous, cardiovascular and immune system functions, reduces stress and fatigue, has antioxidant and anti-cancer properties, making it a popular ingredient in supplements and nutraceuticals.",
           link: "https://ift.onlinelibrary.wiley.com/doi/10.1111/j.1541-4337.2005.tb00073.x",
@@ -3453,6 +4058,25 @@ export const research = {
   "Cytrynian magnezu": {
     id: "cytrynian_magnezu",
     index: 24,
+    PL: {
+  studies: [
+    {
+      title: "Profil wchłaniania różnych związków magnezu zależny od dawki",
+      description: "Magnez jest niezbędnym pierwiastkiem dla organizmu, a badania wykazują, że organiczne związki magnezu, takie jak cytrynian i acetylotaurynian, różnią się biodostępnością i skutecznością podnoszenia poziomu magnezu w tkankach, zwłaszcza w mózgu i mięśniach.",
+      link: "https://link.springer.com/article/10.1007/s12011-019-01663-0"
+    },
+    {
+      title: "Wpływ cytrynianu magnezu i tlenku magnezu na krystalizację soli wapnia w moczu: zmiany wywołane interakcją magnezu z pokarmem",
+      description: "Cytrynian magnezu i tlenek magnezu są bardziej skuteczne w zmniejszaniu nasycenia szczawianem wapnia w moczu oraz zwiększaniu poziomu magnezu i cytrynianu w moczu, gdy podawane są wraz z posiłkami, co może wspierać leczenie nawracających kamieni nerkowych złożonych ze szczawianu wapnia.",
+      link: "https://www.auajournals.org/doi/10.1016/S0022-5347%2817%2939924-X"
+    },
+    {
+      title: "Suplementacja magnezu poprawia poziom magnezu i zmniejsza stres zapalny u dorosłych powyżej 51 roku życia z problemami ze snem",
+      description: "Niskie poziomy magnezu wiążą się z przewlekłym stresem zapalnym i mogą wpływać na jakość snu, a suplementacja magnezem łagodzi stan zapalny u osób z niedoborem magnezu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/21199787/"
+    }
+  ]
+},
     EN: {
       studies: [
         {
@@ -3582,6 +4206,26 @@ export const research = {
   Potas: {
     id: "potas",
     index: 25,
+    PL: {
+  studies: [
+    {
+      title: "Potas i zdrowie",
+      description: "Potas, którego głównym źródłem są owoce i warzywa, odgrywa kluczową rolę w regulacji ciśnienia krwi, zdrowiu kości oraz funkcjonowaniu nerek, a zwiększenie jego spożycia w stosunku do sodu może przynieść istotne korzyści zdrowotne.",
+      link: "https://www.sciencedirect.com/science/article/pii/S2161831322011279?via%3Dihub#cesec170"
+    },
+    {
+      title: "Spożycie potasu a ciśnienie krwi: metaanaliza zależności dawka-odpowiedź randomizowanych badań kontrolowanych",
+      description: "Nasze wyniki wskazują, że odpowiednie spożycie potasu jest pożądane w celu osiągnięcia niższych wartości ciśnienia krwi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32500831/"
+    },
+    {
+      title: "Perspektywy kliniczne dotyczące zasadności suplementacji potasu",
+      description: "Hipokaliemia, czyli obniżony poziom potasu w surowicy poniżej 3,6 mmol/l, może prowadzić do poważnych konsekwencji zdrowotnych, w tym arytmii i paraliżu, dlatego właściwa diagnoza, monitorowanie oraz długoterminowa suplementacja potasu są kluczowe, zwłaszcza u pacjentów z czynnikami ryzyka takimi jak nadciśnienie czy cukrzyca.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25960118/"
+    }
+  ]
+},
+
     EN: {
       studies: [
         {
@@ -3705,6 +4349,31 @@ export const research = {
   Kurkuma: {
     id: "kurkuma",
     index: 26,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ kurkuminy / suplementacji kurkuminą na otyłość i wskaźniki adipokin u dorosłych: systematyczny przegląd badań klinicznych z randomizacją z analizą dawki i odpowiedzi",
+      description:
+        "Suplementacja kurkuminą znacząco poprawia antropometryczne wskaźniki otyłości, a także poziomy leptyny i adiponektyny.",
+      link: "https://onlinelibrary.wiley.com/doi/10.1002/ptr.7800",
+    },
+    {
+      title:
+        "Wpływ kurkuminy / kurkumy na modulację ciśnienia krwi: systematyczny przegląd i metaanaliza",
+      description:
+        "Metaanaliza sugeruje, że spożywanie kurkuminy / kurkumy może poprawiać skurczowe ciśnienie krwi (SBP) przy długotrwałym stosowaniu.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S1043661819301252?via%3Dihub",
+    },
+    {
+      title:
+        "Kurkumina – aktywny składnik kurkumy: jej wpływ na zdrowie i sposoby poprawy biodostępności",
+      description:
+        "Kurkumina, główny składnik kurkumy, wykazuje szerokie właściwości biologiczne i terapeutyczne, takie jak działanie przeciwzapalne, przeciwnowotworowe i antyoksydacyjne, z potencjałem leczenia szerokiej gamy chorób, jednocześnie będąc bezpieczną w stosowaniu i możliwą do zaawansowanego enkapsulowania w celu poprawy biodostępności.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34143894/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -3864,6 +4533,37 @@ export const research = {
         },
       ],
     },
+    PL: {
+  studies: [
+    {
+      title:
+        "Regulacyjna rola witaminy E w układzie odpornościowym i procesach zapalnych",
+      description:
+        "Witamina E, szczególnie α-tokoferol, poprawia funkcjonowanie układu odpornościowego i zmniejsza ryzyko infekcji, zwłaszcza u osób starszych, poprzez modulację funkcji limfocytów T oraz mediatorów stanu zapalnego.",
+      link: "https://iubmb.onlinelibrary.wiley.com/doi/10.1002/iub.1976",
+    },
+    {
+      title: "Rola witaminy E w odporności",
+      description:
+        "Witamina E wzmacnia odpowiedź immunologiczną i chroni przed chorobami zakaźnymi poprzez mechanizmy takie jak hamowanie COX-2, wspieranie aktywacji limfocytów T oraz modulację równowagi Th1/Th2.",
+      link: "https://www.mdpi.com/2072-6643/10/11/1614",
+    },
+    {
+      title:
+        "Wpływ suplementacji witaminą E na kontrolę glikemii: metaanaliza randomizowanych badań klinicznych",
+      description:
+        "Suplementacja witaminą E może poprawiać kontrolę poziomu glukozy we krwi u osób z cukrzycą typu 2 o niskim wyjściowym poziomie witaminy E.",
+      link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095008",
+    },
+    {
+      title: "Witamina E: regulacyjna rola w układzie sercowo-naczyniowym",
+      description:
+        "Witamina E, dzięki właściwościom przeciwzapalnym oraz regulacji homeostazy lipidowej, odgrywa istotną rolę w zapobieganiu chorobom sercowo-naczyniowym, a nowe badania nad jej metabolitami dostarczają obiecujących kierunków dla przyszłych badań klinicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30779288/",
+    },
+  ],
+},
+
     DE: {
       studies: [
         {
@@ -3989,6 +4689,45 @@ export const research = {
   "N-acetylocysteina (NAC)": {
     id: "n-acetylocysteina-nac",
     index: 28,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ N-acetylocysteiny na przewlekłe zapalenie oskrzeli lub zaostrzenia POChP: metaanaliza",
+      description:
+        "Metaanaliza wykazała, że N-acetylocysteina (NAC) skutecznie zmniejsza ryzyko zaostrzeń przewlekłego zapalenia oskrzeli i POChP, przy czym większą skuteczność obserwuje się przy dawkach ≥1200 mg dziennie u pacjentów z obturacją dróg oddechowych oraz przy dawkach 600 mg dziennie u pacjentów bez obturacji, z dobrą tolerancją niezależnie od dawki.",
+      link: "https://err.ersjournals.com/content/24/137/451",
+    },
+    {
+      title:
+        "Zapobieganie nefropatii pokontrastowej za pomocą N-acetylocysteiny u pacjentów z przewlekłą chorobą nerek: metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Metaanaliza wykazała, że N-acetylocysteina (NAC) jest skuteczna w zmniejszaniu ryzyka nefropatii pokontrastowej (RCN) u pacjentów z przewlekłą chorobą nerek (PChN).",
+      link: "https://www.ajkd.org/article/S0272-6386(03)01212-5/abstract",
+    },
+    {
+      title:
+        "Wpływ N-acetylocysteiny na poziom biomarkerów stanu zapalnego w surowicy u dorosłych: wyniki systematycznego przeglądu i metaanalizy randomizowanych badań klinicznych",
+      description:
+        "Doustna suplementacja NAC obniżała poziomy CRP i IL-6 w surowicy.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S1043466620302556?via%3Dihub",
+    },
+    {
+      title:
+        "N-acetylocysteina w objawach depresyjnych i funkcjonowaniu: systematyczny przegląd i metaanaliza",
+      description:
+        "Podawanie N-acetylocysteiny łagodzi objawy depresji, poprawia funkcjonowanie i jest dobrze tolerowane.",
+      link: "https://www.psychiatrist.com/jcp/n-acetylcysteine-depressive-symptoms-functionality/",
+    },
+    {
+      title:
+        "Wpływ N-acetylocysteiny na owulację i profil hormonów płciowych u kobiet z zespołem policystycznych jajników: systematyczny przegląd i metaanaliza",
+      description:
+        "Metaanaliza wykazała, że suplementacja N-acetylocysteiną (NAC) u pacjentek z PCOS znacząco obniża całkowity testosteron (TT) i podnosi poziom hormonu folikulotropowego (FSH), co sugeruje jej potencjalną skuteczność w poprawie funkcjonowania układu rozrodczego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36597797/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -4188,6 +4927,32 @@ export const research = {
   "Ostropest Plamisty": {
     id: "ostropest-plamisty",
     index: 29,
+    PL: {
+  studies: [
+    {
+      title:
+        "Skuteczność i bezpieczeństwo profilaktycznego stosowania ostropestu plamistego w zapobieganiu uszkodzeniom wątroby wywołanym lekami przeciwgruźliczymi: protokół systematycznego przeglądu i metaanalizy",
+      description:
+        "Badanie przedstawia wiarygodne dowody naukowe potwierdzające skuteczność klinicznego zastosowania ostropestu plamistego w profilaktycznym leczeniu uszkodzeń wątroby spowodowanych lekami przeciwgruźliczymi.",
+      link: "https://journals.lww.com/md-journal/fulltext/2020/12240/efficacy_and_safety_of_milk_thistle_preventive.30.aspx",
+    },
+    {
+      title:
+        "Ostropest plamisty (Silybum marianum) jako antidotum lub środek ochronny przed toksynami naturalnymi i chemicznymi: przegląd",
+      description:
+        "Przegląd wskazuje, że główne działanie ochronne ostropestu plamistego i jego składników wynika z właściwości zmiatania wolnych rodników, działania antyoksydacyjnego, chelatującego, przeciwapoptotycznego oraz regulacji reakcji zapalnych.",
+      link: "https://www.tandfonline.com/doi/abs/10.1080/01480545.2018.1485687",
+    },
+    {
+      title:
+        "Ostropest plamisty (Silybum marianum) i jego główny składnik sylimaryna jako potencjalna roślina lecznicza w zespole metabolicznym: przegląd",
+      description:
+        "Ostropest plamisty i jego główny składnik, sylimaryna, wykazują potencjał w leczeniu zespołu metabolicznego dzięki właściwościom antyoksydacyjnym, przeciwnadciśnieniowym, przeciwcukrzycowym, obniżającym poziom lipidów i hepatoprotekcyjnym, co czyni je obiecującym naturalnym rozwiązaniem w walce z tym globalnym problemem zdrowotnym.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.6153",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -4317,6 +5082,35 @@ export const research = {
   "Kwas Alfa- Liponowy": {
     id: "kwas-alfa--liponowy",
     index: 30,
+    PL: {
+  studies: [
+    {
+      title: "Kwas liponowy",
+      description:
+        "Kwas alfa-liponowy działa jako silny przeciwutleniacz, który może neutralizować wolne rodniki zarówno w środowisku wodnym, jak i tłuszczowym, co pomaga zmniejszyć stres oksydacyjny w całym organizmie i chroni komórki przed uszkodzeniem.",
+      link: "https://lpi.oregonstate.edu/mic/dietary-factors/lipoic-acid",
+    },
+    {
+      title: "Kwas alfa-liponowy: korzyści, zastosowanie, dawkowanie i skutki uboczne",
+      description:
+        "Kwas alfa-liponowy ma silne właściwości antyoksydacyjne, które zmniejszają stan zapalny tkanek i niszczą wolne rodniki w organizmie, zapobiegając uszkodzeniom komórek.",
+      link: "https://evidencelive.org/alpha-lipoic-acid-benefits/",
+    },
+    {
+      title: "Zastosowanie kwasu α-liponowego w celach terapeutycznych",
+      description:
+        "Kwas α-liponowy (ALA), naturalny związek o silnych właściwościach antyoksydacyjnych, mimo niskiej biodostępności i krótkiego okresu półtrwania, wykazuje obiecujący potencjał terapeutyczny w leczeniu neuropatii cukrzycowej, otyłości, chorób układu nerwowego oraz zaburzeń ciążowych dzięki nowym formułom.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31405030/",
+    },
+    {
+      title:
+        "Kwas alfa-liponowy: potencjalny środek farmakologiczny w leczeniu zespołu suchego oka i retinopatii u pacjentów z cukrzycą",
+      description:
+        "Kwas alfa-liponowy (ALA), jako silny przeciwutleniacz i kofaktor enzymów mitochondrialnych, wykazuje obiecujący potencjał terapeutyczny w leczeniu powikłań okulistycznych u pacjentów z cukrzycą, szczególnie w przypadku zespołu suchego oka i retinopatii cukrzycowej, choć wymaga to dalszych badań klinicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32621549/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -4475,6 +5269,38 @@ export const research = {
   "Cood Liver Oil (tran)": {
     id: "tran",
     index: 31,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji olejem z wątroby dorsza w diecie na fizjologię leukocytów; możliwy mediator przeciwmiażdżycowego działania oleju rybiego",
+      description:
+        "Suplementacja olejem z wątroby dorsza (CLO) zmniejsza aktywność zapalną monocytów i leukocytów wielojądrzastych, ograniczając produkcję toksycznych metabolitów tlenu, co może przyczyniać się do ochrony przed uszkodzeniami śródbłonka i ryzykiem chorób tętnic.",
+      link: "https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0038-1643154",
+    },
+    {
+      title:
+        "Wpływ suplementacji diety olejem rybim na potencjał zapalny leukocytów wielojądrzastych",
+      description:
+        "Suplementacja olejem z wątroby dorsza znacząco zmniejsza potencjał zapalny leukocytów wielojądrzastych (PMNL), obniżając chemiluminescencję i produkcję ponadtlenków oraz zmieniając profil kwasów tłuszczowych na przeciwzapalny.",
+      link: "https://link.springer.com/article/10.1007/BF00915822",
+    },
+    {
+      title:
+        "Związek między stosowaniem oleju z wątroby dorsza a objawami depresji: badanie Hordaland Health Study",
+      description:
+        "Regularne stosowanie oleju z wątroby dorsza zmniejsza objawy depresji w populacji ogólnej.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0165032706004861?via%3Dihub",
+    },
+    {
+      title:
+        "Stosowanie oleju z wątroby dorsza w pierwszym roku życia wiąże się z niższym ryzykiem cukrzycy typu 1 o początku w dzieciństwie: duże badanie kliniczno-kontrolne w populacji",
+      description:
+        "Spożywanie oleju rybnego w pierwszym roku życia wiąże się z niższym ryzykiem wystąpienia cukrzycy typu 1 u dzieci.",
+      link: "https://www.sciencedirect.com/science/article/pii/S0002916522034499?via%3Dihub",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -4639,6 +5465,31 @@ export const research = {
   Cordyceps: {
     id: "cordyceps",
     index: 32,
+    PL: {
+  studies: [
+    {
+      title:
+        "Kordyceps jako potencjalny środek terapeutyczny w miażdżycy",
+      description:
+        "Dzięki właściwościom przeciwzapalnym, antyoksydacyjnym, obniżającym poziom cholesterolu oraz modulującym funkcjonowanie komórek śródbłonka, kordyceps wykazuje obiecujący potencjał jako środek terapeutyczny w leczeniu miażdżycy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38494355/",
+    },
+    {
+      title:
+        "Związki bioaktywne z kordycepsu i ich potencjał terapeutyczny",
+      description:
+        "Kordyceps, bogaty w bioaktywne metabolity, takie jak kordycepina, wykazuje różnorodne właściwości farmakologiczne, w tym działanie przeciwzapalne, przeciwnowotworowe, antyoksydacyjne i immunomodulujące, co czyni go obiecującym źródłem terapeutycznym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37518188/",
+    },
+    {
+      title:
+        "Rodzaj Cordyceps: kompleksowy przegląd tradycyjnych zastosowań, fitochemii i farmakologii",
+      description:
+        "Bogate w związki bioaktywne, takie jak nukleozydy, cyklodepsipeptydy i polisacharydy, gatunki z rodzaju Cordyceps wykazują szeroki zakres właściwości leczniczych, w tym działania immunomodulujące, przeciwzapalne i przeciwnowotworowe, co czyni je cennym źródłem w odkrywaniu nowych leków.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29775778/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -4767,6 +5618,29 @@ export const research = {
   Glukozamina: {
     id: "glukozamina",
     index: 33,
+    PL: {
+  studies: [
+    {
+      title: "Glukozamina",
+      description:
+        "Badania kliniczne wykazały poprawę objawów choroby zwyrodnieniowej stawów związaną ze stosowaniem glukozaminy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/9606479/",
+    },
+    {
+      title:
+        "Kompleksowy przegląd doustnego stosowania glukozaminy i jej wpływu na metabolizm glukozy u osób zdrowych i chorych na cukrzycę",
+      description:
+        "Dostępne dowody sugerują, że glukozamina przyjmowana w typowych dawkach doustnych nie wpływa negatywnie na poziom glukozy we krwi, metabolizm glukozy ani wrażliwość na insulinę u osób zdrowych, chorych na cukrzycę typu 2 lub z upośledzoną tolerancją glukozy.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/dmrr.1150",
+    },
+    {
+      title: "Wpływ suplementacji glukozaminą na zdrowie jelit",
+      description:
+        "Trzytygodniowa suplementacja glukozaminą niewyizolowaną z owoców morza u zdrowych osób poprawiła funkcjonowanie układu pokarmowego, m.in. zmniejszyła wzdęcia, a także obniżyła różnorodność mikrobioty jelitowej i wydalanie aminokwasów rozgałęzionych, nie wpływając na poziom krótkołańcuchowych kwasów tłuszczowych.",
+      link: "https://www.mdpi.com/2072-6643/13/7/2180",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -4889,6 +5763,30 @@ export const research = {
   Tauryna: {
     id: "tauryna",
     index: 34,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ doustnej tauryny na spoczynkowe ciśnienie krwi u ludzi",
+      description:
+        "Tauryna może obniżać ciśnienie krwi, redukując zarówno ciśnienie skurczowe, jak i rozkurczowe.",
+      link: "https://link.springer.com/article/10.1007/s11906-018-0881-z",
+    },
+    {
+      title:
+        "Wpływ tauryny na wydolność wysiłkową w sportach wytrzymałościowych u ludzi",
+      description:
+        "Tauryna poprawia wydolność wytrzymałościową u ludzi niezależnie od dawki i czasu trwania suplementacji.",
+      link: "https://link.springer.com/article/10.1007/s40279-018-0896-2",
+    },
+    {
+      title:
+        "Wpływ suplementacji tauryną na kontrolę glikemii i profil lipidowy",
+      description:
+        "Tauryna może poprawiać kontrolę glikemii i profil lipidowy u pacjentów z cukrzycą typu 2 poprzez obniżenie poziomu cholesterolu całkowitego i frakcji LDL.",
+      link: "https://link.springer.com/article/10.1007/s00726-020-02859-8",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -5017,6 +5915,38 @@ export const research = {
   Spirulina: {
     id: "spirulina",
     index: 35,
+    PL: {
+  studies: [
+    {
+      title:
+        "Systematyczny przegląd i metaanaliza wpływu suplementacji spiruliną na stężenie lipidów w osoczu",
+      description:
+        "Metaanaliza wykazała, że suplementacja spiruliną znacząco obniża poziom cholesterolu całkowitego, LDL-C i trójglicerydów oraz podnosi poziom HDL-C, a efekty te są związane z czasem trwania suplementacji, lecz nie zależą od dawki.",
+      link: "https://www.clinicalnutritionjournal.com/article/S0261-5614(15)00240-X/abstract",
+    },
+    {
+      title:
+        "Określenie wpływu suplementacji spiruliną na poziom lipidów i glukozy we krwi, masę ciała i ciśnienie krwi",
+      description:
+        "Nasze wyniki dostarczają istotnych dowodów, że suplementacja spiruliną korzystnie wpływa na wybrane biomarkery sercowo-naczyniowe i metaboliczne u ludzi, w tym na poziom lipidów, glukozy oraz ciśnienie rozkurczowe (DBP).",
+      link: "https://www.dovepress.com/quantifying-the-effects-of-spirulina-supplementation-on-plasma-lipid-a-peer-reviewed-fulltext-article-DMSO",
+    },
+    {
+      title:
+        "Wpływ suplementacji spiruliną na otyłość: systematyczny przegląd i metaanaliza randomizowanych badań klinicznych",
+      description:
+        "Suplementacja spiruliną znacząco zmniejsza masę ciała, szczególnie u osób otyłych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229919311367?via%3Dihub",
+    },
+    {
+      title:
+        "Przegląd prozdrowotnych właściwości spiruliny ze szczególnym uwzględnieniem wydolności i regeneracji sportowców",
+      description:
+        "Bogata w białko, witaminy, minerały i przeciwutleniacze spirulina wykazuje właściwości przeciwzapalne, antyoksydacyjne i wspierające regenerację mięśni, poprawiając wydolność tlenową i status antyoksydacyjny u sportowców, zwłaszcza niewytrenowanych i średnio wytrenowanych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37143238/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -5181,6 +6111,30 @@ export const research = {
   Astaksantyna: {
     id: "astaksantyna",
     index: 36,
+    PL: {
+  studies: [
+    {
+      title:
+        "Astaksantyna w zdrowiu, regeneracji i chorobach skóry: kompleksowy przegląd",
+      description:
+        "Astaksantyna, naturalny karotenoid pozyskiwany głównie z mikroalg Haematococcus pluvialis, wykazuje działanie fotoprotekcyjne, przeciwutleniające i przeciwzapalne, co czyni ją obiecującym składnikiem nutraceutycznym wspierającym zdrowie i homeostazę skóry.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29690549/",
+    },
+    {
+      title: "Wpływ astaksantyny na reologię krwi u ludzi",
+      description:
+        "Dziesięciodniowa suplementacja astaksantyną w dawce 6 mg/dzień znacząco poprawiła reologię krwi poprzez skrócenie czasu przepływu krwi w grupie badanej w porównaniu z grupą placebo, bez wystąpienia skutków ubocznych.",
+      link: "https://www.jstage.jst.go.jp/article/jcbn/43/2/43_2008048/_article/-char/ja/",
+    },
+    {
+      title:
+        "Astaksantyna redukuje stres oksydacyjny i stany zapalne oraz wspiera odpowiedź immunologiczną u ludzi",
+      description:
+        "Astaksantyna w diecie obniża poziom markerów uszkodzenia DNA i białek ostrej fazy oraz wzmacnia odpowiedź immunologiczną u młodych, zdrowych kobiet.",
+      link: "https://link.springer.com/article/10.1186/1743-7075-7-18",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -5306,6 +6260,45 @@ export const research = {
   "L-arginina": {
     id: "l-arginina",
     index: 37,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji L-argininą na wskaźniki antropometryczne i skład ciała u osób z nadwagą lub otyłością: systematyczny przegląd i metaanaliza",
+      description:
+        "Suplementacja L-argininą wykazuje pozytywny wpływ na poprawę wskaźników antropometrycznych u osób z nadwagą i otyłością.",
+      link: "https://www.sciencedirect.com/science/article/pii/S1756464620302462?via%3Dihub",
+    },
+    {
+      title:
+        "Wpływ suplementacji L-argininą na profil lipidowy: systematyczny przegląd i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Metaanaliza wykazała, że suplementacja L-argininą znacząco obniża poziom trójglicerydów we krwi, jednak brak wystarczających dowodów na jej wpływ na inne parametry profilu lipidowego.",
+      link: "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/effect-of-larginine-supplementation-on-lipid-profile-a-systematic-review-and-metaanalysis-of-randomised-controlled-trials/F9FE43B86AD15C869CA4364F45978CC2",
+    },
+    {
+      title:
+        "Wpływ doustnej suplementacji L-argininą na ciśnienie krwi: metaanaliza randomizowanych, podwójnie ślepych badań kontrolowanych placebo",
+      description:
+        "Metaanaliza dostarcza dalszych dowodów, że doustna suplementacja L-argininą znacząco obniża zarówno ciśnienie skurczowe, jak i rozkurczowe.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0002870311006971?via%3Dihub",
+    },
+    {
+      title:
+        "Rola L-argininy w syntezie tlenku azotu i zdrowiu człowieka",
+      description:
+        "L-arginina wspiera przepływ krwi, metabolizm, odporność, płodność i gojenie ran, a także łagodzi objawy zespołu metabolicznego i różnych schorzeń, czyniąc ją kluczowym składnikiem diety.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34251644/",
+    },
+    {
+      title:
+        "Doustna suplementacja L-argininą w leczeniu złamań: systematyczny przegląd badań przedklinicznych",
+      description:
+        "Dostępne badania przedkliniczne sugerują, że doustna suplementacja L-argininą może być nową, potencjalną terapią wspomagającą gojenie złamań.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36791716/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -5505,6 +6498,38 @@ export const research = {
   "Kozieradka (fenugreek)": {
     id: "fenugreek",
     index: 38,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji kozieradką na poziom lipidów we krwi i masę ciała: systematyczny przegląd i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Suplementacja kozieradką poprawia parametry lipidowe u dorosłych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0378874119330855?via%3Dihub",
+    },
+    {
+      title:
+        "Wpływ spożycia kozieradki pospolitej (Trigonella foenum-graecum L.) na glikemię: metaanaliza badań klinicznych",
+      description:
+        "Wyniki badań klinicznych potwierdzają korzystny wpływ nasion kozieradki na kontrolę glikemii u osób z cukrzycą.",
+      link: "https://nutritionj.biomedcentral.com/articles/10.1186/1475-2891-13-7",
+    },
+    {
+      title:
+        "Skuteczność nowego ekstraktu z nasion kozieradki w łagodzeniu objawów naczynioruchowych i depresji u kobiet w okresie okołomenopauzalnym: randomizowane, podwójnie ślepe badanie kontrolowane placebo",
+      description:
+        "Standaryzowany ekstrakt z kozieradki znacząco redukuje objawy okołomenopauzalne, poprawiając równowagę hormonalną i samopoczucie kobiet, bez skutków ubocznych.",
+      link: "https://onlinelibrary.wiley.com/doi/10.1111/jfbc.13507",
+    },
+    {
+      title: "Rola kozieradki w leczeniu cukrzycy typu 2",
+      description:
+        "Kozieradka i jej składniki wykazują potencjał w zapobieganiu i leczeniu cukrzycy typu 2.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39000103/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -5667,6 +6692,31 @@ export const research = {
   "L-Tryptofan": {
     id: "l-tryptofan",
     index: 40,
+    PL: {
+  studies: [
+    {
+      title:
+        "Systematyczny przegląd wpływu suplementacji L-tryptofanem na nastrój i funkcjonowanie emocjonalne",
+      description:
+        "L-tryptofan może skutecznie zmniejszać lęk i poprawiać nastrój u zdrowych osób.",
+      link: "https://www.tandfonline.com/doi/full/10.1080/19390211.2020.1746725",
+    },
+    {
+      title:
+        "Wpływ suplementacji tryptofanem na jakość snu: systematyczny przegląd, metaanaliza i metaregresja",
+      description:
+        "Suplementacja tryptofanem, szczególnie w dawkach ≥1 g, może wspomagać poprawę jakości snu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33942088/",
+    },
+    {
+      title:
+        "Metabolity tryptofanu modulują nieswoiste zapalenie jelit i raka jelita grubego poprzez wpływ na układ odpornościowy",
+      description:
+        "Metabolity tryptofanu odgrywają kluczową rolę w patofizjologii NZJ i raka jelita grubego, oferując potencjalne cele terapeutyczne, takie jak metabolity indolowe, inhibitory IDO1 i KMO oraz modulacja receptorów serotoninowych w łagodzeniu stanu zapalnego i hamowaniu nowotworzenia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34289794/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -5796,6 +6846,28 @@ export const research = {
   "L - Lizyna": {
     id: "l---lizyna",
     index: 42,
+    PL: {
+  studies: [
+    {
+      title: "L-lizyna: źródła i korzyści zdrowotne",
+      description:
+        "L-lizyna wzmacnia zarówno odporność komórkową, jak i humoralną, pomagając organizmowi w obronie przed infekcjami. Jej stosowanie wiąże się z produkcją przeciwciał przeciwglukagonowych, które wzmacniają odpowiedź immunologiczną.",
+      link: "https://www.icliniq.com/articles/diet-and-nutrition/l-lysine",
+    },
+    {
+      title: "Korzyści z L-lizyny: od redukcji lęku po rozwój mięśni",
+      description:
+        "L-lizyna jest kluczowa w procesie tworzenia kolagenu, który ma znaczenie dla utrzymania zdrowej skóry, kości i tkanek. Pomaga w budowie włókien i fibryli kolagenowych, przyczyniając się do elastyczności skóry i wytrzymałości kości.",
+      link: "https://thenutritioninsider.com/fitness-weight-loss/l-lysine-benefits/",
+    },
+    {
+      title: "L-lizyna w diecie a metabolizm wapnia u ludzi",
+      description:
+        "Badania wykazały, że L-lizyna może poprawiać wchłanianie i wykorzystanie wapnia w organizmie, co sugeruje jej potencjalne zastosowanie w profilaktyce i leczeniu osteoporozy.",
+      link: "https://europepmc.org/article/med/1486246",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -5913,6 +6985,29 @@ export const research = {
   Oregano: {
     id: "oregano",
     index: 44,
+    PL: {
+  studies: [
+    {
+      title:
+        "Olejek eteryczny z oregano: aktywność biologiczna wykraczająca poza właściwości przeciwdrobnoustrojowe",
+      description:
+        "Olejek eteryczny z oregano wykazuje potencjał terapeutyczny w leczeniu i profilaktyce chorób, takich jak cukrzyca i nowotwory.",
+      link: "https://www.mdpi.com/1420-3049/22/6/989",
+    },
+    {
+      title: "Oregano – przegląd literatury na temat korzyści zdrowotnych",
+      description:
+        "Od wieków cenione za właściwości lecznicze, oregano wykazuje potencjał przeciwdrobnoustrojowy i antyoksydacyjny, a także korzystny wpływ na układ sercowo-naczyniowy i nerwowy.",
+      link: "https://journals.lww.com/nutritiontodayonline/abstract/2010/05000/oregano__overview_of_the_literature_on_health.9.aspx",
+    },
+    {
+      title: "Przeciwutleniające i przeciwzapalne działanie ekstraktu z oregano",
+      description:
+        "Ekstrakt z oregano ma właściwości antyoksydacyjne i przeciwzapalne, które mogą zapobiegać chorobom, takim jak zapalenie żołądka wywołane stresem czy nadwrażliwość kontaktowa.",
+      link: "https://www.jstage.jst.go.jp/article/jhs/52/2/52_2_169/_article/-char/ja/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -6039,6 +7134,31 @@ export const research = {
   "L-Glutamina": {
     id: "l-glutamina",
     index: 45,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji glutaminą na markery stanu zapalnego u pacjentów w stanie krytycznym otrzymujących żywienie enteralne lub pozajelitowe",
+      description:
+        "Badanie wykazało, że suplementacja glutaminą może znacząco wpływać na poziom CRP w stanach ostrych.",
+      link: "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2217",
+    },
+    {
+      title:
+        "Glutamina: metabolizm i funkcje odpornościowe, suplementacja oraz zastosowanie kliniczne",
+      description:
+        "Glutamina, kluczowy aminokwas dla funkcji odpornościowych i metabolicznych, odgrywa istotną rolę w sytuacjach katabolicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30360490/",
+    },
+    {
+      title:
+        "Suplementacja L-glutaminą wzmacnia odporność błon śluzowych i poprawia status hormonalny u sportowców sportów walki",
+      description:
+        "Trzytygodniowa suplementacja L-glutaminą poprawiła odporność, status hormonalny, nastrój oraz zmniejszyła ryzyko infekcji u sportowców, wspierając ich regenerację i wyniki sportowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38193521/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -6168,6 +7288,36 @@ export const research = {
   Imbir: {
     id: "imbir",
     index: 46,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ imbiru (Zingiber officinale) na markery zapalne: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Nasza metaanaliza wykazała, że suplementacja imbirem znacząco obniża poziomy krążącego CRP, hs-CRP oraz TNF-α.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S1043466620302404?via%3Dihub",
+    },
+    {
+      title:
+        "Czy suplementacja imbirem obniża ciśnienie krwi? Przegląd systematyczny i metaanaliza badań klinicznych",
+      description:
+        "Metaanaliza wykazała, że suplementacja imbirem może znacząco obniżać skurczowe i rozkurczowe ciśnienie krwi, szczególnie u osób poniżej 50. roku życia, przy dawkach ≥ 3 g/d i czasie interwencji do 8 tygodni.",
+      link: "https://onlinelibrary.wiley.com/doi/10.1002/ptr.6362",
+    },
+    {
+      title: "Wpływ imbiru na choroby zapalne",
+      description:
+        "Imbir, dzięki swoim związkom bioaktywnym, wykazuje silne właściwości przeciwzapalne i przeciwutleniające, które mogą wspierać leczenie chorób zapalnych, takich jak zapalenie stawów, toczeń i łuszczyca, a także łagodzić skutki uboczne chemioterapii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36364048/",
+    },
+    {
+      title: "Imbir a testosteron",
+      description:
+        "Imbir wykazuje potencjał do zwiększania produkcji testosteronu u mężczyzn, szczególnie w warunkach stresu oksydacyjnego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30360442/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -6322,6 +7472,63 @@ export const research = {
   "L-Karnozyna": {
     id: "l-karnozyna",
     index: 47,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji karnozyną na profil lipidowy, glukozę na czczo, HbA1C i insulinooporność: przegląd systematyczny i metaanaliza długoterminowych randomizowanych badań kontrolowanych",
+      description: "Suplementacja karnozyną obniża poziom HbA1C.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229919311902?via%3Dihub",
+    },
+    {
+      title: "Fizjologia i patofizjologia karnozyny",
+      description:
+        "Karnozyna, dipeptyd obecny w mięśniach i innych tkankach, wykazuje właściwości buforujące, przeciwutleniające oraz ochronne przed stresem oksydacyjnym i glikacją, co czyni ją obiecującą w leczeniu wielu chorób.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24137022/",
+    },
+    {
+      title:
+        "Karnozyna – mała, ale potężna – perspektywy zastosowania jako składnika funkcjonalnego w formulacjach żywności funkcjonalnej",
+      description:
+        "Karnozyna, naturalny dipeptyd obecny w mięśniach, mózgu i przewodzie pokarmowym, wykazuje właściwości przeciwutleniające, przeciwdziała glikacji, wspiera funkcjonowanie mięśni i metabolizm, a jej suplementacja ma potencjał zarówno u sportowców, jak i w leczeniu chorób takich jak cukrzyca czy choroby układu krążenia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34203479/",
+    },
+    {
+      title:
+        "Fizjologiczne i terapeutyczne efekty karnozyny w kontekście ryzyka i chorób kardiometabolicznych",
+      description:
+        "Znana ze swoich właściwości przeciwzapalnych, przeciwutleniających i przeciwdziałających glikacji, karnozyna wykazuje obiecujący potencjał terapeutyczny w zapobieganiu i leczeniu otyłości, cukrzycy typu 2, chorób układu krążenia oraz schorzeń neurologicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26984320/",
+    },
+    {
+      title:
+        "Karnozyna – mała, ale potężna – perspektywy zastosowania jako składnika funkcjonalnego w formulacjach żywności funkcjonalnej",
+      description:
+        "Karnozyna, endogenny związek o właściwościach przeciwutleniających, wykazuje potencjał terapeutyczny w chorobach układu krążenia poprzez modulowanie funkcji śródbłonka i naczyń krwionośnych, co sugeruje korzyści z jej suplementacji, szczególnie w formie żywności funkcjonalnej.",
+      link: "https://www.mdpi.com/2076-3921/10/7/1037",
+    },
+    {
+      title: "Karnozyna w zdrowiu i chorobie",
+      description:
+        "Karnozyna, związek występujący głównie w mięśniach szkieletowych, wykazuje nie tylko właściwości ergogeniczne, ale także szeroki potencjał terapeutyczny w różnych tkankach organizmu, co sugeruje jej możliwe zastosowanie w leczeniu wielu chorób.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29502490/",
+    },
+    {
+      title:
+        "Fizjologiczne i terapeutyczne efekty karnozyny w kontekście ryzyka i chorób kardiometabolicznych",
+      description:
+        "Karnozyna, dipeptyd o właściwościach przeciwzapalnych, przeciwutleniających i przeciwdziałających glikacji, wykazuje obiecujący potencjał w zapobieganiu i leczeniu otyłości, cukrzycy typu 2 oraz chorób układu krążenia.",
+      link: "https://link.springer.com/article/10.1007/s00726-016-2208-1",
+    },
+    {
+      title: "Karnozyna a kości (przegląd)",
+      description:
+        "Badania wykazały, że karnozyna i jej związki mają korzystny wpływ w profilaktyce i leczeniu niektórych chorób kości.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36416346/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -6606,6 +7813,29 @@ export const research = {
   Luteina: {
     id: "luteina",
     index: 48,
+    PL: {
+  studies: [
+    {
+      title:
+        "Znaczenie odżywcze i kliniczne luteiny w zdrowiu człowieka",
+      description:
+        "Luteina, choć w sposób niejednoznaczny powiązana z redukcją ryzyka chorób przewlekłych, wykazuje potencjalne korzyści dla funkcji wzrokowych i zdrowia plamki żółtej, co czyni ją obiecującym biomarkerem ekspozycji i interwencji dietetycznych w medycynie opartej na dowodach.",
+      link: "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/nutritional-and-clinical-relevance-of-lutein-in-human-health/27F42056D523DC78A8EE6135D500B338",
+    },
+    {
+      title: "Luteina jako składnik produktów żywnościowych dla niemowląt",
+      description:
+        "Luteina, występująca w owocach i warzywach, jest kluczowym składnikiem odżywczym wspierającym rozwój widzenia i funkcji poznawczych u dzieci, a jej włączenie do diety od wczesnych lat może zapewnić długoterminową ochronę przed stresem oksydacyjnym, szczególnie w tkankach nerwowych wrażliwych na utlenianie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30795822/",
+    },
+    {
+      title: "Nauka o luteinie",
+      description:
+        "Działając jako filtr światła niebieskiego i przeciwutleniacz, luteina poprawia zdrowie oczu, pomaga chronić przed AMD, zaćmą i uszkodzeniami skóry spowodowanymi promieniowaniem UV, a także może zmniejszać ryzyko chorób sercowo-naczyniowych, co potwierdza jej status bezpiecznego składnika (GRAS) do stosowania w suplementach i żywności funkcjonalnej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/15068825/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -6727,6 +7957,37 @@ export const research = {
   "Soplówka jeżowata": {
     id: "soplówka-jeżowata",
     index: 49,
+    PL: {
+  studies: [
+    {
+      title:
+        "Badanie korzyści poznawczych i innych unikalnych właściwości zdrowotnych soplówki jeżowatej: przegląd systematyczny",
+      description:
+        "Soplówka jeżowata (Hericium erinaceus) staje się obiecującym naturalnym suplementem o wyjątkowym potencjale poprawy funkcji poznawczych, łagodzenia stanów zapalnych i wzmacniania obrony antyoksydacyjnej.",
+      link: "https://naturalmedfacts.com/articles/exploring-the-cognitive-and-other-unique-health-benefits-of-lions-mane-mushroom-a-systematic-review/",
+    },
+    {
+      title:
+        "Nowo odkryte związki w soplówce jeżowatej wspierają wzrost nerwów i poprawiają pamięć",
+      description:
+        "Badanie wykazało, że aktywne związki soplówki jeżowatej, w tym nowo odkryte NDPIH i hericenon A, wspierają produkcję neurotrofin, wzmacniają połączenia neuronowe oraz mogą poprawiać pamięć i funkcje poznawcze.",
+      link: "https://www.shroomer.com/lions-mane-new-compound/",
+    },
+    {
+      title: "Korzyści zdrowotne soplówki jeżowatej",
+      description:
+        "Badania na ludziach wykazały, że podawanie soplówki osobom starszym z zaburzeniami poznawczymi pomagało utrzymać odpowiedni poziom BDNF, spowalniało degradację struktury mózgu (utratę istoty białej), poprawiało organizację neuronów i wspierało funkcje poznawcze.",
+      link: "https://www.qualialife.com/lions-mane-benefits",
+    },
+    {
+      title:
+        "Soplówka jeżowata na mgłę mózgową: odkrywanie mocy grzybów we wspieraniu funkcji poznawczych",
+      description:
+        "Stres oksydacyjny jest kolejnym czynnikiem przyczyniającym się do spadku funkcji poznawczych i pojawiania się mgły mózgowej. Soplówka jeżowata posiada silne właściwości antyoksydacyjne, które mogą chronić mózg przed uszkodzeniami oksydacyjnymi.",
+      link: "https://drmushme.co.uk/lions-mane-journal/lions-mane-brain-fog/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -6886,6 +8147,16 @@ export const research = {
   Elektrolity: {
     id: "elektrolity",
     index: 51,
+    PL: {
+  studies: [
+    {
+      title: "Równowaga wodno-elektrolitowa",
+      description:
+        "Utrzymanie równowagi elektrolitowej i objętości płynów jest kluczowe dla prawidłowego funkcjonowania organizmu, a diagnoza zaburzeń, takich jak hiponatremia czy hiperkaliemia, opiera się na precyzyjnych laboratoryjnych pomiarach elektrolitów.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/B9780128154991000375?via%3Dihub",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -6940,6 +8211,43 @@ export const research = {
   "Witamina K": {
     id: "witamina_k",
     index: 52,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ witaminy K na tkankę tłuszczową i masę ciała: wyniki 3-letniego badania interwencyjnego z witaminą K2",
+      description:
+        "Wysokie spożycie witaminy K2 może sprzyjać redukcji masy ciała i tłuszczu trzewnego, szczególnie u osób z istotnym wzrostem poziomu karboksylowanej OC (cOC).",
+      link: "https://www.nature.com/articles/ejcn2017146",
+    },
+    {
+      title: "Przeciwzapalne działanie witaminy K na zdrowie kobiet",
+      description:
+        "Witamina K pełni wielofunkcyjną rolę w regulacji procesów fizjologicznych i patologicznych w organizmie, a jej zwiększone spożycie wiąże się z korzyściami dla układu sercowo-naczyniowego, nerwowego, odpornościowego i rozrodczego, podczas gdy jej niedobór zwiększa ryzyko chorób przewlekłych, takich jak cukrzyca typu 2, osteoporoza i choroby zapalne.",
+      link: "https://journals.eco-vector.com/jowd/article/view/13001",
+    },
+    {
+      title:
+        "Ocena stanu witaminy K i uzasadnienie suplementacji witaminy K u pacjentów dializowanych",
+      description:
+        "Witamina K odgrywa kluczową rolę w krzepnięciu krwi, tworzeniu kości i zapobieganiu zwapnieniom naczyń, a jej niedobór jest powszechny u pacjentów poddawanych dializie.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0899900701007092?via%3Dihub",
+    },
+    {
+      title:
+        "Wpływ witaminy K na osteoporozę u kobiet po menopauzie",
+      description:
+        "Wykazano, że witamina K odgrywa kluczową rolę w hamowaniu złamań osteoporotycznych u kobiet po menopauzie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33982655/",
+    },
+    {
+      title: "Witamina K a żywienie człowieka",
+      description:
+        "Witamina K jest niezbędna do aktywacji czynników krzepnięcia, a jej niedobór prowadzi do powstawania nieaktywnych czynników i ryzyka krwotoków, przy czym głównym źródłem w diecie są zielone warzywa liściaste.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/1573141/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -7133,6 +8441,44 @@ export const research = {
   Wapń: {
     id: "wapń",
     index: 53,
+    PL: {
+  studies: [
+    {
+      title:
+        "Stosowanie wapnia lub wapnia w połączeniu z witaminą D w celu zapobiegania złamaniom i utracie masy kostnej u osób w wieku 50 lat i starszych: metaanaliza",
+      description:
+        "Suplementacja wapniem i witaminą D w minimalnych dawkach 1200 mg wapnia i 800 IU witaminy D jest zalecana osobom po 50. roku życia w celu skutecznego zapobiegania osteoporozie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/17720017/",
+    },
+    {
+      title:
+        "Łączne działanie witaminy K i wapnia na gęstość mineralną kości u ludzi: metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Połączenie witaminy K i wapnia korzystnie wpływa na gęstość mineralną kości odcinka lędźwiowego kręgosłupa oraz obniża poziom UcOC.",
+      link: "https://josr-online.biomedcentral.com/articles/10.1186/s13018-021-02728-4",
+    },
+    {
+      title:
+        "Wpływ żywności wzbogaconej wapniem na wyniki zdrowotne: przegląd systematyczny i metaanaliza",
+      description:
+        "Wzbogacanie żywności wapniem daje obiecujące rezultaty w zwiększaniu spożycia wapnia i może zapobiegać karłowatości oraz chorobom kości.",
+      link: "https://www.mdpi.com/2072-6643/13/2/316",
+    },
+    {
+      title:
+        "Dobre, złe i brzydkie strony suplementacji wapniem: przegląd wpływu spożycia wapnia na zdrowie człowieka",
+      description:
+        "Korzystna rola wapnia jest widoczna u osób w każdym wieku – nie tylko u kobiet po menopauzie i osób starszych, ale także u dzieci i młodzieży. U dzieci i młodzieży odpowiednia podaż wapnia jest istotna dla budowania mocnych kości. U dorosłych natomiast zapobiega lub opóźnia rozwój osteoporozy.",
+      link: "https://www.tandfonline.com/doi/full/10.2147/CIA.S157523#d1e675",
+    },
+    {
+      title: "Badania nad wapniem w suplementach diety u ludzi",
+      description:
+        "Badania wskazują, że suplementacja wapniem i witaminą D może mieć działanie chemoprewencyjne wobec raka jelita grubego, zmniejszając ryzyko poprzez obniżenie poziomu kwasów tłuszczowych i żółciowych w jelitach oraz poprawę markerów proliferacji i różnicowania komórek.",
+      link: "https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-6632.1999.tb08730.x",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -7329,6 +8675,31 @@ export const research = {
   Maca: {
     id: "maca",
     index: 54,
+    PL: {
+  studies: [
+    {
+      title:
+        "Maca (L. meyenii) we wspomaganiu funkcji seksualnych: przegląd systematyczny",
+      description:
+        "Badania sugerują, że maca może mieć pozytywny wpływ na dysfunkcje seksualne i popęd seksualny w określonych grupach, takich jak kobiety w okresie menopauzy oraz mężczyźni z zaburzeniami erekcji.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/20691074/",
+    },
+    {
+      title:
+        "Akceptowalność, bezpieczeństwo i skuteczność doustnego podawania ekstraktów z czarnej lub czerwonej macy (Lepidium meyenii) u dorosłych: randomizowane, podwójnie zaślepione badanie kontrolowane placebo",
+      description:
+        "Badanie wykazało, że spożywanie przez 12 tygodni ekstraktu z czerwonej i czarnej macy w formie suszonej rozpyłowo poprawiło nastrój, zwiększyło energię i ogólny stan zdrowia oraz obniżyło wynik CMS.",
+      link: "https://www.mdpi.com/1424-8247/9/3/49?ref=healthdecider",
+    },
+    {
+      title:
+        "Skład chemiczny i wpływ zdrowotny macy (Lepidium meyenii)",
+      description:
+        "Skrobiowe korzenie macy stanowią jadalną część rośliny, tradycyjnie stosowaną ze względu na jej potencjalne właściwości zwiększające płodność oraz inne działanie lecznicze i odżywcze. Metabolity wtórne zawarte w ekstraktach z macy są istotnymi bioaktywnymi składnikami.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0308814619303942#preview-section-snippets",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -7458,6 +8829,37 @@ export const research = {
   "Palma Sabałowa": {
     id: "palma-sabałowa",
     index: 55,
+    PL: {
+  studies: [
+    {
+      title: "Palma sabałowa w zaburzeniach prostaty",
+      description:
+        "Palma sabałowa jest skutecznym leczeniem objawów łagodnego przerostu prostaty (BPH). Wydaje się być tak samo skuteczna jak finasteryd, lepiej tolerowana, tańsza i mniej prawdopodobne jest, że obniża poziom PSA.",
+      link: "https://www.aafp.org/pubs/afp/issues/2003/0315/p1281.html",
+    },
+    {
+      title:
+        "Farmakologiczne działanie ekstraktu z palmy sabałowej na dolne drogi moczowe",
+      description:
+        "Ekstrakt z palmy sabałowej (SPE) działa poprzez wiele mechanizmów farmakologicznych, w tym nowo odkryte oddziaływanie z receptorami muskarynowymi i waniloidowymi, co czyni go skutecznym i bezpiecznym leczeniem objawów dolnych dróg moczowych oraz przerostu prostaty.",
+      link: "https://www.nature.com/articles/aps20091#Sec14",
+    },
+    {
+      title:
+        "Saw Palmetto w leczeniu mężczyzn z objawami dolnych dróg moczowych",
+      description:
+        "Dane wskazują, że palma sabałowa może mieć istotny wpływ na szybkość przepływu moczu i wyniki leczenia objawów w porównaniu do placebo u mężczyzn z objawami dolnych dróg moczowych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0022534705676318",
+    },
+    {
+      title:
+        "Naturalny suplement na włosy: przyjaciel czy wróg? Palma sabałowa – przegląd systematyczny w łysieniu",
+      description:
+        "Badania sugerują, że suplementy zawierające ekstrakt z palmy sabałowej mogą być skuteczne i bezpieczne w leczeniu różnych typów łysienia.",
+      link: "https://karger.com/sad/article/6/6/329/295228/Natural-Hair-Supplement-Friend-or-Foe-Saw-Palmetto",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -7617,6 +9019,35 @@ export const research = {
   "Glicynian magnezu": {
     id: "glicynian-magnezu",
     index: 56,
+    PL: {
+  studies: [
+    {
+      title:
+        "Odkrywanie spokoju i witalności: Twój przewodnik po korzyściach magnezu glicynianu",
+      description:
+        "Magnez glicynian ma korzystny wpływ na sen, sprzyjając relaksacji i uspokojeniu układu nerwowego.",
+      link: "https://prlabs.com/blog/unlocking-calm-and-vitality-your-guide-to-magnesium-glycinate-benefits.html",
+    },
+    {
+      title: "Magnez glicynian: co musisz wiedzieć teraz?",
+      description:
+        "Skurcze i spazmy mięśniowe mogą być bolesne i uciążliwe, często spowodowane nadmierną aktywnością mięśni lub zaburzeniami elektrolitowymi. Magnez glicynian wykazał obiecujące działanie w łagodzeniu tych problemów mięśniowych.",
+      link: "https://biolyceum.com/magnesium-glycinate-supplements/",
+    },
+    {
+      title: "Magnez/magnez glicynian/werapamil",
+      description:
+        "Opis przypadku 64-letniej kobiety wykazał skuteczność leczenia poza wskazaniami za pomocą magnezu i magnezu glicynianu w łagodzeniu bólu głowy związanego z odwracalnym zespołem skurczowym.",
+      link: "https://www.semanticscholar.org/paper/Magnesium-magnesium-glycinate-verapamil/53fd5ccbfe3f98fff32c1cd4a09b9a3c78a93278",
+    },
+    {
+      title: "Magnez cytrynian vs magnez glicynian",
+      description:
+        "Niektóre badania sugerują związek między poziomem magnezu a lękiem oraz że zdolność magnezu glicynianu do podnoszenia poziomu magnezu w organizmie może mieć działanie przeciwlękowe.",
+      link: "https://blog.purehealthresearch.com/magnesium-citrate-vs-glycinate/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -7813,6 +9244,31 @@ export const research = {
   Shilajit: {
     id: "shilajit",
     index: 57,
+    PL: {
+  studies: [
+    {
+      title:
+        "Kliniczna ocena oczyszczonego Shilajitu na poziom testosteronu u zdrowych ochotników",
+      description:
+        "Oczyszczony Shilajit znacząco zwiększa poziomy całkowitego i wolnego testosteronu oraz DHEAS u zdrowych mężczyzn w wieku 45-55 lat, przy jednoczesnym utrzymaniu stabilnych poziomów hormonów gonadotropowych, co wykazano w 90-dniowym badaniu klinicznym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26395129/",
+    },
+    {
+      title:
+        "Wpływ 8-tygodniowej suplementacji Shilajitem na stężenie Pro-c1α1, biomarkera syntezy kolagenu typu 1: randomizowane badanie kontrolowane",
+      description:
+        "Ośmiotygodniowa suplementacja Shilajitem w dawkach 500 i 1000 mg dziennie znacząco zwiększa poziomy biomarkera syntezy kolagenu typu 1 (pro-c1α1) w surowicy u mężczyzn, w przeciwieństwie do grupy placebo.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36546868/",
+    },
+    {
+      title:
+        "Shilajit (mumio): aktualny stan badań biochemicznych, terapeutycznych i klinicznych",
+      description:
+        "Naukowo potwierdzone badania oraz starożytne teksty sugerują wieloaspektowe korzyści Shilajitu. Wykazuje on właściwości anty-stresowe, poprawiające pamięć i energię, antyoksydacyjne, przeciwzapalne, przeciwcukrzycowe, spermatogenne, neuroprotekcyjne, przeciwwrzodowe oraz wspomagające gojenie ran.",
+      link: "https://www.ingentaconnect.com/content/ben/cnf/2019/00000015/00000002/art00003",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -7942,6 +9398,30 @@ export const research = {
   Bor: {
     id: "bor",
     index: 58,
+    PL: {
+  studies: [
+    {
+      title:
+        "Związki zawierające bor w profilaktyce, diagnostyce i leczeniu zaburzeń metabolicznych u ludzi",
+      description:
+        "Związki zawierające bor (BCCs) wykazują korzystny wpływ na metabolizm kości, mięśni, węglowodanów i lipidów, co wskazuje na ich potencjał terapeutyczny w leczeniu zaburzeń metabolicznych, takich jak cukrzyca.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35771339/",
+    },
+    {
+      title: "Aktualizacja wiedzy o wpływie boru na zdrowie człowieka",
+      description:
+        "Bor w ilościach odżywczych wykazuje korzystne działanie zdrowotne, mogąc zmniejszać ryzyko wystąpienia zapalenia stawów, osteoporozy, złamań kości, nowotworów oraz dysfunkcji ośrodkowego układu nerwowego, co sugeruje potrzebę uwzględnienia go w zaleceniach dietetycznych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0946672X1400128X",
+    },
+    {
+      title:
+        "Biochemiczne i fizjologiczne skutki niedoboru boru u ludzi",
+      description:
+        "Badania nad skutkami niedoboru boru u ludzi wykazały, że pierwiastek ten jest istotny dla metabolizmu wapnia, magnezu oraz hormonów płciowych, a jego suplementacja pozytywnie wpływa na markery stresu oksydacyjnego i metabolizm minerałów.",
+      link: "https://ehp.niehs.nih.gov/doi/abs/10.1289/ehp.94102s759",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8067,6 +9547,31 @@ export const research = {
   "Wąkrotka azjatycka Gotu Kola": {
     id: "wąkrotka-azjatycka",
     index: 59,
+    PL: {
+  studies: [
+    {
+      title:
+        "Czy suplementacja Gotu Kola poprawia funkcje poznawcze, stan zapalny i stres oksydacyjny bardziej niż sam trening wieloskładnikowy? - randomizowane badanie kontrolowane",
+      description:
+        "Badanie wykazało, że trening wieloskładnikowy poprawia funkcje poznawcze, zmniejsza stan zapalny i stres oksydacyjny u osób starszych z łagodnym zaburzeniem poznawczym (MCI), a suplementacja Gotu Kola dodatkowo wspiera efekty ćwiczeń poprzez obniżenie poziomu TNF-α.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36420467/",
+    },
+    {
+      title:
+        "Rozdział czwarty - Gotu Kola (Centella asiatica): właściwości odżywcze i prawdopodobne korzyści zdrowotne",
+      description:
+        "Według wielu badań, C. asiatica wykazuje bardzo wartościowe związki odżywcze, gdy jest spożywana w diecie. Różne badania z ostatnich lat wykazały różnorodne funkcjonalne właściwości C.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S104345261500056X",
+    },
+    {
+      title:
+        "Aktywność biologiczna i mechanizm działania oleju Gotu Kola w gojeniu ran skórnych",
+      description:
+        "Olej Gotu Kola wspomaga gojenie ran przez stymulację tworzenia naczyń włosowatych w miejscu rany.",
+      link: "https://www.ajol.info/index.php/tjpr/article/view/270231",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8196,6 +9701,44 @@ export const research = {
   Resweratrol: {
     id: "resweratrol",
     index: 60,
+    PL: {
+  studies: [
+    {
+      title: "Resweratrol i jego wpływ na układ naczyniowy",
+      description:
+        "Resweratrol wykazuje działanie antyoksydacyjne, przeciwzapalne i ochronne na układ naczyniowy, obniżając ciśnienie krwi oraz poziom glukozy we krwi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30934670/",
+    },
+    {
+      title:
+        "Wpływ i mechanizmy działania resweratrolu w starzeniu się i chorobach związanych z wiekiem",
+      description:
+        "Resweratrol wykazuje właściwości przeciwstarzeniowe i może być skuteczny w zapobieganiu oraz leczeniu chorób związanych z wiekiem poprzez różne mechanizmy biologiczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34336123/",
+    },
+    {
+      title:
+        "Skuteczność resweratrolu u kobiet z zespołem policystycznych jajników: przegląd systematyczny i metaanaliza randomizowanych badań klinicznych",
+      description:
+        "Resweratrol skutecznie obniża poziom testosteronu i innych hormonów u kobiet z zespołem policystycznych jajników (PCOS), co czyni go cennym elementem terapii tej choroby.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37333786/",
+    },
+    {
+      title:
+        "Wpływ resweratrolu w leczeniu zespołu metabolicznego",
+      description:
+        "Przegląd podsumowuje rosnące dowody na to, że resweratrol jest pomocny w leczeniu zespołu metabolicznego i zaburzeń z nim związanych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30695995/",
+    },
+    {
+      title:
+        "Resweratrol jako wielofunkcyjny miejscowy środek hipopigmentacyjny",
+      description:
+        "Resweratrol wykazuje potencjał jako środek rozjaśniający skórę (hipopigmentacyjny) poprzez hamowanie produkcji melaniny, ochronę oraz regulację funkcji komórek skóry, stanowiąc możliwą alternatywę dla hydrochinonu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30813264/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8390,6 +9933,36 @@ export const research = {
   Miedź: {
     id: "miedź",
     index: 61,
+    PL: {
+  studies: [
+    {
+      title: "Niedokrwistość z niedoboru miedzi: artykuł przeglądowy",
+      description:
+        "Miedź jest kluczowym mikroelementem niezbędnym do prawidłowego funkcjonowania organizmu, a jej niedobór może prowadzić do poważnych zaburzeń hematologicznych i neurologicznych, przy czym tylko te pierwsze są w pełni odwracalne dzięki suplementacji.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29959467/",
+    },
+    {
+      title:
+        "Suplementacja miedzi poprawia funkcjonowanie w codziennych czynnościach u dorosłych z niedoborem miedzi",
+      description:
+        "Wczesne rozpoczęcie i kontynuacja suplementacji miedzi przez co najmniej 12 miesięcy może poprawić wykonywanie codziennych czynności u pacjentów z niedoborem miedzi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/21321490/",
+    },
+    {
+      title:
+        "Wpływ suplementacji miedzi na wskaźniki miedzi oraz poziom cholesterolu w surowicy u dorosłych mężczyzn",
+      description:
+        "Badania nad suplementacją miedzi (2-3 mg dziennie) wykazały pewien wpływ na metabolizm cholesterolu oraz parametry krwi.",
+      link: "https://link.springer.com/article/10.1007/BF02990339",
+    },
+    {
+      title: "Miedź jako niezbędny składnik odżywczy",
+      description:
+        "Miedź odgrywa kluczową rolę w funkcjonowaniu wielu enzymów i procesów biologicznych, a jej niedobór (zarówno wrodzony, jak i nabyty) może prowadzić do poważnych zaburzeń zdrowotnych, zwłaszcza u niemowląt i dzieci.",
+      link: "https://www.sciencedirect.com/science/article/pii/S0002916523193026",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8544,6 +10117,31 @@ export const research = {
   Chlorella: {
     id: "chlorella",
     index: 62,
+    PL: {
+  studies: [
+    {
+      title:
+        "Potencjał Chlorelli jako suplementu diety wspierającego zdrowie człowieka",
+      description:
+        "Chlorella, bogata w składniki odżywcze takie jak witaminy D i B12, kwas foliowy oraz żelazo, wykazuje korzystne efekty dla zdrowia układu sercowo-naczyniowego, w tym obniżenie poziomu cholesterolu i ciśnienia krwi, dzięki synergii swoich składników odżywczych i przeciwutleniających.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32825362/",
+    },
+    {
+      title:
+        "Wpływ suplementacji Chlorella vulgaris na profil lipidowy u dorosłych: przegląd systematyczny i metaanaliza zależności dawka-odpowiedź w randomizowanych badaniach kontrolowanych",
+      description:
+        "Stwierdzono, że suplementacja Chlorella vulgaris korzystnie wpływa na poziom cholesterolu całkowitego (TC) i LDL-C.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35331862/",
+    },
+    {
+      title:
+        "Suplementacja diety Chlorella vulgaris skutecznie zwiększyła jelitową zdolność antyoksydacyjną i stan odpornościowy u Micropterus salmoides",
+      description:
+        "Suplementacja Chlorella vulgaris poprawiła odporność jelit, zwiększyła zdolność antyoksydacyjną oraz poziom albumin i białka w surowicy, przy optymalnych dawkach suplementacji 58,25-77,7 g/kg.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37627560/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8673,6 +10271,31 @@ export const research = {
   "Cat's Claw Koci Pazur": {
     id: "cat's-claw",
     index: 63,
+    PL: {
+  studies: [
+    {
+      title:
+        "Charakterystyka proantocyjanidyn i bioaktywność ekstraktów z różnych części Uncaria tomentosa L. (koci pazur)",
+      description:
+        "Badania wykazały, że ekstrakty z liści i kory Uncaria tomentosa zawierają związki bogate w proantocyjanidyny o właściwościach antyoksydacyjnych, przeciwnowotworowych i przeciwbakteryjnych, potwierdzając ich potencjał jako składników funkcjonalnych.",
+      link: "https://www.mdpi.com/2076-3921/6/1/12",
+    },
+    {
+      title:
+        "Koci pazur hamuje produkcję TNFα i usuwa wolne rodniki: rola w cytoprotekcji",
+      description:
+        "Koci pazur wykazuje obiecujące właściwości przeciwzapalne poprzez hamowanie NF-κB i TNFα, co sugeruje jego potencjał jako tańszej alternatywy dla obecnych terapii chorób zapalnych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0891584900003270",
+    },
+    {
+      title:
+        "Składniki odżywcze kociego pazura w leczeniu medycznym",
+      description:
+        "Koci pazur wykazał działanie ochronne przeciwko stresowi oksydacyjnemu i stanom zapalnym, w tym przed szkodliwym wpływem wysokich dawek NLPZ na błonę śluzową żołądka.",
+      link: "https://www.semanticscholar.org/paper/Cat%E2%80%99s-Claw-Nutrients-for-Medical-Treatments-Ullah/0179069078a7a9b6e998802ce62fef86aae17db2",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8797,6 +10420,31 @@ export const research = {
   "L- Tyrozyna": {
     id: "l--tyrozyna",
     index: 64,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji tyrozyną na populacje kliniczne i zdrowe poddane stresowi lub wymaganiom poznawczym – przegląd",
+      description:
+        "Suplementacja tyrozyną skutecznie wspiera funkcje poznawcze w krótkotrwałych sytuacjach stresowych lub wymagających poznawczo, gdy dopamina i noradrenalina są tymczasowo wyczerpane.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26424423/",
+    },
+    {
+      title:
+        "Doustna suplementacja L-tyrozyną poprawia utrzymanie temperatury centralnej u osób starszych",
+      description:
+        "Wyniki wskazują, że suplementacja L-tyrozyną poprawia utrzymanie poziomu temperatury ciała (Tc) w odpowiedzi na nagłe wychłodzenie u osób starszych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31609301/",
+    },
+    {
+      title:
+        "Wpływ tyrozyny na funkcje poznawcze i ciśnienie krwi w warunkach stresowych",
+      description:
+        "Badanie wykazało, że tyrozyna poprawia funkcje poznawcze pod wpływem stresu i obniża ciśnienie rozkurczowe krwi wkrótce po podaniu, nie wpływając przy tym na nastrój ani inne parametry życiowe.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/0361923094902003",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -8926,6 +10574,29 @@ export const research = {
   Krzem: {
     id: "krzem",
     index: 66,
+    PL: {
+  studies: [
+    {
+      title:
+        "Zastosowanie krzemu w pielęgnacji skóry i włosów: przegląd dostępnych form chemicznych i skuteczności",
+      description:
+        "Krzem odgrywa kluczową rolę w poprawie elastyczności skóry, redukcji wypadania włosów oraz zwiększeniu ich blasku, a spośród różnych form suplementów krzemu, kwas ortokrzemowy (OSA) charakteryzuje się najwyższą biodostępnością.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27438201/",
+    },
+    {
+      title: "Krzem: korzyści zdrowotne półmetalu",
+      description:
+        "Krzem, występujący w różnych formach, w tym biodostępnym kwasie ortokrzemowym, wykazuje potencjalne korzyści zdrowotne dla struktury włosów, skóry, paznokci, mineralizacji kości oraz zdrowia układu odpornościowego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24470100/",
+    },
+    {
+      title: "Krzem a zdrowie kości",
+      description:
+        "Krzem, powszechny pierwiastek śladowy w organizmie człowieka, może odgrywać ważną rolę w zdrowiu kości i tkanki łącznej.",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2658806/#S27",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9045,6 +10716,30 @@ export const research = {
   "Mniszek Lekarski": {
     id: "mniszek-lekarski",
     index: 67,
+    PL: {
+  studies: [
+    {
+      title:
+        "Potencjał mniszka lekarskiego w walce z chorobami przewodu pokarmowego: przegląd",
+      description:
+        "Mniszek lekarski wykazuje potencjał terapeutyczny w łagodzeniu zaburzeń przewodu pokarmowego dzięki swoim właściwościom przeciwzapalnym, antyoksydacyjnym i przeciwnowotworowym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35405251/",
+    },
+    {
+      title:
+        "Nowe perspektywy dotyczące wpływu mniszka, jego produktów spożywczych i innych preparatów na układ sercowo-naczyniowy i jego choroby",
+      description:
+        "Mniszek lekarski, bogaty w związki fenolowe i inne metabolity wtórne, wykazuje obiecujący potencjał w zapobieganiu i wspieraniu leczenia chorób układu sercowo-naczyniowego jako naturalna alternatywa dla standardowych terapii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35405963/",
+    },
+    {
+      title: "Różnorodne aktywności biologiczne mniszka lekarskiego",
+      description:
+        "Pojawiają się dowody sugerujące, że mniszek i jego składniki wykazują działanie antyoksydacyjne i przeciwzapalne, co prowadzi do różnych efektów biologicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22946853/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9169,6 +10864,30 @@ export const research = {
   "L- Karnityna": {
     id: "l--karnityna",
     index: 68,
+    PL: {
+  studies: [
+    {
+      title: "L-karnityna – funkcje metaboliczne i znaczenie w życiu człowieka",
+      description:
+        "L-karnityna wykazuje potencjalne korzyści terapeutyczne w niektórych schorzeniach medycznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/21561431/",
+    },
+    {
+      title:
+        "L-karnityna wspomaga regenerację wątroby po hepatektomii poprzez poprawę metabolizmu lipidów",
+      description:
+        "L-karnityna może wspomagać regenerację komórek wątroby poprzez poprawę metabolizmu lipidów oraz redukcję zapalenia aseptycznego spowodowanego nadmiernym gromadzeniem się lipidów.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37474946/",
+    },
+    {
+      title:
+        "Suplementacja L-karnityną jako potencjalna terapia antyoksydacyjna w dziedzicznych zaburzeniach neurometabolicznych",
+      description:
+        "Oprócz kluczowej roli w metabolizmie lipidów, L-karnityna działa jako silny antyoksydant i może być szczególnie przydatna w leczeniu dziedzicznych chorób neurometabolicznych przez redukcję uszkodzeń oksydacyjnych tkanek.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24148561/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9297,6 +11016,30 @@ export const research = {
   "L-Teanina": {
     id: "l-teanina",
     index: 69,
+    PL: {
+  studies: [
+    {
+      title: "L-teanina a odporność: przegląd",
+      description:
+        "Badania kliniczne i epidemiologiczne wykazały, że L-teanina redukuje immunosupresję wywołaną intensywnym wysiłkiem fizycznym oraz zapobiega przeziębieniom i grypie poprzez poprawę odporności.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37175254/",
+    },
+    {
+      title:
+        "Wpływ podawania L-teaniny na objawy związane ze stresem oraz funkcje poznawcze u zdrowych dorosłych: randomizowane badanie kontrolowane",
+      description:
+        "Czterotygodniowe badanie kliniczne wykazało, że suplementacja L-teaniną w dawce 200 mg dziennie skutecznie redukuje objawy związane ze stresem, poprawia jakość snu oraz funkcje poznawcze u zdrowych dorosłych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31623400/",
+    },
+    {
+      title:
+        "Stosowanie suplementów diety opartych na L-teaninie i witaminie B6 u dzieci z zespołem Tourette'a i zaburzeniami lękowymi: badanie pilotażowe",
+      description:
+        "Suplementacja L-teaniną i witaminą B6 może wspomagać leczenie tików związanych z objawami lękowymi. Różnice między grupami w ocenie nasilenia przez klinicystów były istotne statystycznie jedynie w przypadku tików.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35215501/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9421,6 +11164,35 @@ export const research = {
   "Cytrynian Potasu": {
     id: "cytrynian-potasu",
     index: 72,
+    PL: {
+  studies: [
+    {
+      title: "Jakie są korzyści ze stosowania cytrynianu potasu?",
+      description:
+        "Potas odgrywa ważną rolę w kontroli ciśnienia krwi, według Amerykańskiego Towarzystwa Kardiologicznego.",
+      link: "https://www.livestrong.com/article/242302-what-are-the-benefits-of-potassium-citrate/",
+    },
+    {
+      title: "Co to jest cytrynian potasu i jakie ma potencjalne korzyści zdrowotne?",
+      description: "Pomaga poprawić zdrowie układu sercowo-naczyniowego.",
+      link: "https://superiorlabs.com/blogs/news/what-is-potassium-citrate-and-its-potential-health-benefits",
+    },
+    {
+      title: "Ważne korzyści zdrowotne potasu",
+      description:
+        "Wyższe spożycie potasu może potencjalnie zmniejszyć ryzyko tworzenia się kamieni nerkowych.",
+      link: "https://www.nutritionadvance.com/potassium-health-benefits/",
+    },
+    {
+      title:
+        "Suplementacja cytrynianem potasu skutkuje trwałą poprawą bilansu wapnia u starszych mężczyzn i kobiet",
+      description:
+        "Sześciomiesięczne badanie kliniczne wykazało, że suplementacja cytrynianem potasu skutecznie neutralizuje kwasowość diety zachodniej, poprawiając bilans wapnia i wskaźniki metabolizmu kości, co sugeruje potencjalne korzyści dla zdrowia kości.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22991267/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -9571,6 +11343,29 @@ export const research = {
   "Taurynian magnezu": {
     id: "taurynian-magnezu",
     index: 73,
+    PL: {
+  studies: [
+    {
+      title: "Magnez taurynian i cukrzyca – ważne powiązanie",
+      description:
+        "Magnez taurynian odgrywa ważną rolę w zapobieganiu cukrzycy oraz ochronie przed powikłaniami naczyniowymi.",
+      link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-taurate-diabetes-a-vital-link-how-does-magnesium-taurate-prevent-diabetes-magnesium-taurate-vascular-protection-sources-of-magnesium-taurate-for-pre-diabetics-how-much-magnesium-does-pre-diabetics-need-conclusion",
+    },
+    {
+      title: "Unikalne korzyści magnezu taurynianu",
+      description:
+        "Udowodniono, że magnez taurynian zapobiega migrenom lub znacząco redukuje ból migrenowy.",
+      link: "https://corpina.com/magnesium-taurate-benefits/",
+    },
+    {
+      title:
+        "Magnez taurynian w zapobieganiu i leczeniu rzucawki i stanu przedrzucawkowego",
+      description:
+        "Magnez taurynian może być skuteczniejszą alternatywą dla siarczanu magnezu w leczeniu i zapobieganiu rzucawce, a także może chronić płód przed skutkami niedotlenienia okołoporodowego.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0306987796900651",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9690,6 +11485,34 @@ export const research = {
   "Cascara sagrada": {
     id: "cascara-sagrada",
     index: 75,
+    PL: {
+  studies: [
+    {
+      title: "Czym jest Cascara Sagrada?",
+      description:
+        "Cascara sagrada jest powszechnie znana ze swoich właściwości przeczyszczających. Stymuluje perystaltykę (mięśniowe skurcze jelit), co pomaga przesuwać stolec przez jelita, czyniąc ją skuteczną w leczeniu zaparć​.",
+      link: "https://www.verywellhealth.com/cascara-sagrada-89046",
+    },
+    {
+      title: "Cascara Sagrada: korzyści, jak stosować i niezbędne środki ostrożności",
+      description:
+        "Poprzez wspieranie regularnych wypróżnień, cascara sagrada pomaga utrzymać zdrowy pasaż jelitowy, co może poprawić ogólne zdrowie układu trawiennego i zapobiegać schorzeniom takim jak hemoroidy​.",
+      link: "https://en.saudelab.com/cascara-sagrada/",
+    },
+    {
+      title: "Cascara Sagrada – główne korzyści, skutki uboczne, dawkowanie, zastosowanie",
+      description:
+        "Cascara sagrada została zauważona ze względu na swoje potencjalne właściwości przeciwzapalne, które mogą przynieść korzyści osobom cierpiącym na schorzenia związane z przewlekłym stanem zapalnym.",
+      link: "https://www.ancientherbswisdom.com/cascara-sagrada/",
+    },
+    {
+      title: "Niesamowite korzyści Cascara Sagrada – szybki przewodnik",
+      description:
+        "Istnieją pewne dowody sugerujące, że cascara sagrada może mieć pozytywny wpływ na ośrodkowy układ nerwowy, potencjalnie poprawiając samopoczucie emocjonalne i redukując lęk​.",
+      link: "https://healthyfocus.org/benefits-of-cascara-sagrada/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9841,6 +11664,29 @@ export const research = {
   "Miłorząb japoński": {
     id: "miłorząb-japoński",
     index: 76,
+    PL: {
+  studies: [
+    {
+      title: "Wpływ miłorzębu japońskiego (ginkgo biloba) na zespół metaboliczny: przegląd",
+      description:
+        "Miłorząb japoński, zawierający laktony terpenowe i glikozydy flawonowe, wykazuje potencjał w leczeniu zespołu metabolicznego dzięki swoim właściwościom przeciwcukrzycowym, przeciwnadciśnieniowym i przeciwlipemicznym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32097990/",
+    },
+    {
+      title:
+        "Ekstrakt z miłorzębu japońskiego w ochronie naczyń: mechanizmy molekularne i zastosowania kliniczne",
+      description:
+        "GBE, obiecujący środek terapeutyczny w chorobach sercowo-naczyniowych i niedokrwiennych, działa ochronnie na naczynia poprzez kompleksowe mechanizmy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28707602/",
+    },
+    {
+      title: "Miłorząb japoński (Ginkgo biloba)",
+      description:
+        "Miłorząb japoński, dzięki swoim unikalnym składnikom bioaktywnym (głównie ginkgolidy i flawonoidy), jest powszechnie stosowanym suplementem diety i lekiem, szczególnie w zaburzeniach układu nerwowego.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/B9780128124918000357",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -9964,6 +11810,28 @@ export const research = {
   Chaga: {
     id: "chaga",
     index: 77,
+    PL: {
+  studies: [
+    {
+      title: "Korzyści dla mózgu wynikające ze spożywania grzybów Chaga, o których nie wiedziałeś",
+      description:
+        "Grzyby Chaga są bogate w polisacharydy i beta-glukany, które wzmacniają układ odpornościowy, zwiększając zdolność organizmu do zwalczania infekcji i chorób.",
+      link: "https://avodahwellness.com/blogs/news/brain-benefits-of-taking-chaga-mushrooms-you-didnt-know-about",
+    },
+    {
+      title: "Niezwykłe korzyści zdrowotne grzyba Chaga, które Cię zaskoczą",
+      description:
+        "Wykazano, że Chaga ma działanie przeciwwirusowe, zwłaszcza przeciwko wirusom takim jak wirus zapalenia wątroby typu C i HIV. Właściwości te sugerują potencjalne zastosowanie Chagi w opracowywaniu nowych leków przeciwwirusowych.",
+      link: "https://grocycle.com/chaga-mushroom-health-benefits/",
+    },
+    {
+      title: "Triterpenoidy grzyba Chaga jako dodatki do małoinwazyjnych terapii przeciwnowotworowych: przegląd",
+      description:
+        "Triterpenoidy zawarte w grzybie Chaga (Inonotus obliquus) wykazują znaczącą aktywność przeciwnowotworową porównywalną z lekami konwencjonalnymi, szczególnie w lipofilnych frakcjach, co sugeruje ich potencjalne zastosowanie jako suplementu w terapii przeciwnowotworowej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38046279/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10092,6 +11960,34 @@ export const research = {
   Reishi: {
     id: "reishi",
     index: 78,
+    PL: {
+  studies: [
+    {
+      title: "Udowodnione korzyści grzybów Reishi",
+      description:
+        "Grzyby Reishi zawierają beta-glukany, które są silnymi wzmacniaczami układu odpornościowego. Pomagają zwiększyć odporność organizmu na infekcje i mogą zmniejszać ryzyko chorób poprzez ogólne wzmocnienie odporności.",
+      link: "https://www.organicfacts.net/health-benefits/other/reishi-mushrooms.html",
+    },
+    {
+      title: "Grzyb Reishi: zwalczaj choroby, wzmacniaj odporność i wspieraj detoksykację wątroby",
+      description:
+        "Grzyby Reishi mają działanie hepatoprotekcyjne, co oznacza, że chronią wątrobę przed uszkodzeniami. Wspomagają jej detoksykację, regenerację komórek wątrobowych oraz zmniejszają gromadzenie się toksyn, poprawiając ogólną funkcję wątroby.",
+      link: "https://draxe.com/nutrition/reishi-mushroom/",
+    },
+    {
+      title: "Korzyści zdrowotne grzybów Reishi",
+      description:
+        "Grzyby Reishi wykazują silne właściwości przeciwzapalne, które mogą pomóc w leczeniu takich schorzeń jak artretyzm, dna moczanowa czy inne choroby zapalne. Redukując stan zapalny, łagodzą także objawy takie jak ból i obrzęk.",
+      link: "https://www.rejuvii.com/post/2018/04/29/13-health-benefits-of-reishi-mushrooms",
+    },
+    {
+      title: "Niesamowite korzyści zdrowotne grzybów Reishi",
+      description:
+        "Grzyby Reishi mają właściwości adaptogenne, które pomagają organizmowi skuteczniej radzić sobie ze stresem. Badania wykazały, że mogą redukować lęk, poprawiać nastrój i łagodzić objawy depresji, przyczyniając się do lepszego zdrowia psychicznego.",
+      link: "https://www.mindbodygreen.com/articles/reishi-mushrooms-6-awesome-health-benefits",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10242,6 +12138,28 @@ export const research = {
   "Dong Quai": {
     id: "dong-quai",
     index: 79,
+    PL: {
+  studies: [
+    {
+      title: "Dong Quai: chińskie zioło na menopauzę, depresję i inne dolegliwości",
+      description:
+        "Dong Quai jest znane z potencjału łagodzenia objawów menopauzy, takich jak uderzenia gorąca, nocne poty oraz wahania nastroju. Może pomagać w regulacji poziomu hormonów i stanowić naturalną alternatywę dla terapii hormonalnej.",
+      link: "https://draxe.com/nutrition/dong-quai/",
+    },
+    {
+      title: "Niesamowite korzyści zdrowotne korzenia Dong Quai",
+      description:
+        "Dong Quai może wspierać zwiększenie gęstości kości i zapobiegać osteoporozie, szczególnie u kobiet po menopauzie, które są bardziej narażone na ryzyko z powodu spadku poziomu estrogenu.",
+      link: "https://solsticemed.com/blogs/blog/10-amazing-benefits-of-dong-quai-root",
+    },
+    {
+      title: "Udowodnione korzyści Dong Quai",
+      description:
+        "To zioło jest korzystne dla poprawy krążenia krwi, co może pomóc w leczeniu różnych schorzeń, takich jak anemia, oraz poprawić ogólne zdrowie układu sercowo-naczyniowego przez zmniejszenie ryzyka chorób serca.",
+      link: "https://healthyfocus.org/benefits-of-dong-quai/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10363,6 +12281,31 @@ export const research = {
   "L-Cytrulina": {
     id: "l-cytrulina",
     index: 80,
+    PL: {
+  studies: [
+    {
+      title:
+        "Suplementacja L-cytruliną: wpływ na zdrowie kardiometaboliczne",
+      description:
+        "Suplementacja L-cytruliną zwiększa poziom tlenku azotu (NO), obniża ciśnienie krwi oraz wspiera zdrowie układu sercowo-naczyniowego i mięśni, oferując potencjalne korzyści terapeutyczne w chorobach kardiometabolicznych i związanych z wiekiem.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30029482/",
+    },
+    {
+      title:
+        "Suplementacja L-cytruliną i ćwiczenia w leczeniu sarkopenii",
+      description:
+        "Suplementacja L-cytruliną może poprawiać prędkość chodu u starszych, aktywnych fizycznie osób.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34579009/",
+    },
+    {
+      title:
+        "Wpływ suplementacji cytruliną na wydolność wysiłkową u ludzi: przegląd aktualnej literatury",
+      description:
+        "Suplementacja L-cytruliną i jabłczanem cytruliny może poprawiać wydolność wysiłkową i regenerację poprzez zwiększenie biodostępności L-argininy i produkcji tlenku azotu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31977835/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10492,6 +12435,28 @@ export const research = {
   Shatavari: {
     id: "shatavari",
     index: 81,
+    PL: {
+  studies: [
+    {
+      title: "Shatavari: korzyści, zastosowania i skutki uboczne",
+      description:
+        "Shatavari może pomóc złagodzić objawy menopauzy, takie jak uderzenia gorąca, nocne poty i wahania nastroju, dzięki zawartości fitoestrogenów naśladujących estrogen. Może to pomóc w utrzymaniu równowagi hormonalnej podczas menopauzy.",
+      link: "https://erbology.co/shatavari-benefits-uses-and-side-effects/",
+    },
+    {
+      title: "Shatavari: cudowne zioło ajurwedy, które warto znać",
+      description:
+        "Shatavari jako adaptogen wspiera organizm w radzeniu sobie ze stresem poprzez regulację poziomu kortyzolu, co sprzyja poprawie nastroju, energii oraz ogólnej odporności.",
+      link: "https://draxe.com/nutrition/shatavari/",
+    },
+    {
+      title: "Korzyści ze stosowania Shatavari: dawkowanie, bezpieczeństwo i więcej",
+      description:
+        "Shatavari poprawia trawienie i łagodzi objawy zaburzeń przewodu pokarmowego, takich jak wrzody i biegunka. Chroni błonę śluzową żołądka i jelit, wspierając zdrowie układu pokarmowego.",
+      link: "https://botanicalinstitute.org/shatavari/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10608,6 +12573,28 @@ export const research = {
   Shiitake: {
     id: "shiitake",
     index: 83,
+    PL: {
+  studies: [
+    {
+      title: "Codzienne spożywanie grzybów Lentinula edodes (Shiitake) poprawia odporność człowieka: randomizowana interwencja dietetyczna u zdrowych młodych dorosłych",
+      description:
+        "Regularne spożywanie L. edodes poprawia odporność poprzez zwiększenie proliferacji komórek i produkcji sIgA oraz zmniejszenie stanów zapalnych w organizmie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25866155/",
+    },
+    {
+      title: "Dlaczego grzyby shiitake są korzystne?",
+      description:
+        "Związki występujące w grzybach shiitake, takie jak eritadynina, sterole i beta-glukany, pomagają obniżyć poziom cholesterolu poprzez hamowanie jego absorpcji i produkcji w wątrobie.",
+      link: "https://int.bodyandmindbotanicals.com/blogs/health-centre/why-are-shiitake-mushrooms-beneficial",
+    },
+    {
+      title: "Grzyby Shiitake: korzyści, dawkowanie, skutki uboczne, interakcje leków i inne ważne informacje",
+      description:
+        "Grzyby shiitake mogą pomagać w utrzymaniu funkcji poznawczych, szczególnie u osób starszych, poprzez zmniejszanie stanów zapalnych i wspieranie obrony antyoksydacyjnej.",
+      link: "https://nootropicsplanet.com/shiitake-mushroom/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10732,6 +12719,34 @@ export const research = {
   "L-Prolina": {
     id: "l-prolina",
     index: 84,
+    PL: {
+  studies: [
+    {
+      title: "Korzyści z L-Proliny",
+      description:
+        "L-Prolina jest kluczowym składnikiem w syntezie kolagenu, który jest niezbędny do utrzymania siły i struktury tkanek łącznych, takich jak skóra, ścięgna, więzadła i kości. Zwiększona produkcja kolagenu może poprawić elastyczność skóry, gojenie ran oraz wspierać zdrowie stawów i kości.",
+      link: "https://community.bulksupplements.com/l-proline/",
+    },
+    {
+      title: "Prolina: kluczowy aminokwas dla zdrowia człowieka",
+      description:
+        "Najnowsze badania sugerują, że prolina może również działać jako antyoksydant, chroniąc komórki przed uszkodzeniami wywołanymi przez wolne rodniki. Właściwość ta jest szczególnie korzystna w kontekście stresu i urazów, gdzie wzmożona produkcja wolnych rodników może prowadzić do dalszych uszkodzeń komórek.",
+      link: "https://www.mycompletehealthnd.com/articles/proline-a-crucial-amino-acid-for-human-health",
+    },
+    {
+      title: "Korzystne efekty suplementacji L-Proliną na jakość nasienia u ludzi",
+      description:
+        "L-Prolina w stężeniu 2 mmol/L skutecznie poprawia ruchliwość, żywotność, morfologię oraz integralność DNA plemników, wspierając jakość nasienia poprzez modulację statusu oksydacyjnego podczas 24-godzinnej inkubacji.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35716071/",
+    },
+    {
+      title: "Prolina przywraca funkcje mitochondriów i odwraca oznaki starzenia się komórek",
+      description:
+        "Prolina wspomaga odmładzanie starzejących się komórek poprzez poprawę funkcji mitochondriów przez indukcję mitofagii, co łagodzi oznaki starzenia takie jak uszkodzenia DNA, stan zapalny oraz zaburzenia metabolizmu komórkowego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38354087/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -10887,6 +12902,29 @@ export const research = {
   EAA: {
     id: "eaa",
     index: 85,
+    PL: {
+  studies: [
+    {
+      title: "Kompletny przewodnik po aminokwasach egzogennych (EAA)",
+      description:
+        "Aminokwasy egzogenne poprawiają wytrzymałość i zmniejszają zmęczenie podczas długotrwałych treningów, pomagając sportowcom utrzymać wyższy poziom wydajności. Suplementacja może opóźnić wystąpienie zmęczenia, co jest szczególnie korzystne dla sportów wytrzymałościowych.",
+      link: "https://www.everybodynutrition.com/essential-amino-acids-eaa-complete-guide/",
+    },
+    {
+      title: "Suplementacja EAA zwiększająca spożycie azotu poprawia funkcję mięśni u osób starszych leżących w łóżku",
+      description:
+        "Zwiększenie spożycia białka ponad zalecane dzienne spożycie (RDA) może zachować funkcję mięśni u osób starszych podczas wymuszonej nieaktywności. Suplementacja EAA jest potencjalnie skuteczną metodą zwiększenia spożycia białka bez wpływu na uczucie sytości.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/19419806/",
+    },
+    {
+      title:
+        "Synteza białek mięśniowych i obrót białek w organizmie po spożyciu aminokwasów egzogennych, białka całkowitego i posiłków mieszanych z uwzględnieniem deficytu energetycznego",
+      description:
+        "Suplementacja wolnymi aminokwasami egzogennymi (EAA) może optymalizować syntezę białek mięśniowych (MPS) podczas deficytu energetycznego ze względu na ich efektywne wykorzystanie przez organizm.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32824200/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11012,6 +13050,29 @@ export const research = {
   BCAA: {
     id: "bcaa",
     index: 86,
+    PL: {
+  studies: [
+    {
+      title: "Korzyści z BCAA (aminokwasów rozgałęzionych) i potencjalne skutki uboczne",
+      description:
+        "Suplementacja BCAA, w połączeniu z treningiem oporowym i odpowiednią dietą, wspomaga hipertrofię mięśni poprzez stymulację syntezy białek mięśniowych.",
+      link: "https://barbend.com/bcaa-benefits/",
+    },
+    {
+      title: "Czym są BCAA w żywności i proszku białkowym?",
+      description:
+        "Suplementacja BCAA może pomóc zmniejszyć opóźnioną bolesność mięśniową (DOMS), która zwykle pojawia się po intensywnym wysiłku. Pomaga to w szybszej regeneracji, zmniejsza ból mięśni i umożliwia lepszą wydajność podczas kolejnych treningów.",
+      link: "https://www.verywellhealth.com/what-is-bcaa-8417302",
+    },
+    {
+      title:
+        "Ćwiczenia sprzyjają katabolizmowi BCAA: wpływ suplementacji BCAA na mięśnie szkieletowe podczas ćwiczeń",
+      description:
+        "BCAA to aminokwasy niezbędne, które są utleniane w mięśniach szkieletowych, a ich katabolizm wzrasta podczas ćwiczeń. Suplementacja BCAA przed i po treningu wspiera regenerację mięśni, zmniejsza uszkodzenia i promuje syntezę białek mięśniowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/15173434/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11137,6 +13198,28 @@ export const research = {
   Maitake: {
     id: "maitake",
     index: 87,
+    PL: {
+  studies: [
+    {
+      title: "Ekstrakt z grzyba Maitake w zespołach mielodysplastycznych (MDS): badanie fazy II",
+      description:
+        "Maitake był dobrze tolerowany. Zwiększona funkcja neutrofili i monocytów in vitro po leczeniu wskazuje na korzystny potencjał immunomodulujący Maitake w MDS.",
+      link: "https://link.springer.com/article/10.1007/s00262-014-1628-6",
+    },
+    {
+      title: "Bioaktywne składniki i wartości lecznicze Grifola frondosa (Maitake)",
+      description:
+        "G. frondosa, ceniony jadalny i leczniczy grzyb, wykazuje liczne właściwości prozdrowotne i bioaktywności, w tym działanie przeciwnowotworowe, immunomodulujące i przeciwcukrzycowe, co czyni go obiecującym składnikiem nutraceutycznym.",
+      link: "https://www.mdpi.com/2304-8158/10/1/95",
+    },
+    {
+      title: "Wzmacniające układ odpornościowy efekty ekstraktów Maitake (Grifola frondosa) i Shiitake (Lentinula edodes)",
+      description:
+        "Krótkotrwałe doustne stosowanie naturalnych immunomodulujących glukanów z grzybów, w tym Maitake, silnie stymulowało zarówno komórkową, jak i humoralną gałąź odpowiedzi immunologicznej. Aktywność ta była znacząco wyższa niż AHCC.",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4202470/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11266,6 +13349,28 @@ export const research = {
   Wiesiołek: {
     id: "wiesiołek",
     index: 90,
+    PL: {
+  studies: [
+    {
+      title: "Olej z wiesiołka – korzyści i ryzyko",
+      description:
+        "Olej z wiesiołka jest powszechnie stosowany w łagodzeniu objawów zespołu napięcia przedmiesiączkowego (PMS), takich jak ból piersi, wahania nastroju i wzdęcia.",
+      link: "https://www.verywellhealth.com/the-benefits-of-evening-primrose-oil-89561",
+    },
+    {
+      title: "Korzyści z oleju z wiesiołka",
+      description:
+        "Olej z wiesiołka jest korzystny w leczeniu chorób skóry, takich jak egzema, trądzik i atopowe zapalenie skóry.",
+      link: "https://alohaorganic.myshopify.com/blogs/think/5-benefits-of-evening-primrose-oil",
+    },
+    {
+      title: "Zastosowania i korzyści oleju z wiesiołka + skutki uboczne",
+      description:
+        "Olej z wiesiołka może pomóc obniżyć poziom cholesterolu i poprawić krążenie krwi, co może zmniejszyć ryzyko chorób sercowo-naczyniowych.",
+      link: "https://supplements.selfdecode.com/blog/6-evening-primrose-oil-uses-benefits-side-effects-dosage/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11381,6 +13486,31 @@ export const research = {
   "Żeń-szeń koreański": {
     id: "żeń-szeń-koreański",
     index: 10000,
+    PL: {
+  studies: [
+    {
+      title:
+        "Skuteczność żeń-szenia (Panax) u osób z stanem przedcukrzycowym i cukrzycą typu 2: przegląd systematyczny i metaanaliza",
+      description:
+        "Suplementacja żeń-szeniem może poprawić biomarkery kardiometaboliczne u osób z stanem przedcukrzycowym i cukrzycą typu 2, w tym obniżenie poziomu glukozy na czczo (FPG), cholesterolu całkowitego (TC) oraz insulinooporności (HOMA-IR), z efektami zależnymi od dawki i czasu stosowania.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35745129/",
+    },
+    {
+      title:
+        "Suplementacja Panax ginseng zwiększa rekrutację mięśni, zmniejsza odczucie wysiłku i przyspiesza regenerację siły mięśni po ćwiczeniach ekscentrycznych u sportowców",
+      description:
+        "Suplementacja żeń-szeniem Panax zwiększa stymulację mięśni, redukuje odczucie zmęczenia podczas ćwiczeń ekscentrycznych oraz przyspiesza regenerację siły mięśni u wytrenowanych sportowców.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32379240/",
+    },
+    {
+      title:
+        "Skuteczność suplementacji Panax ginseng na profil lipidowy krwi. Metaanaliza i przegląd systematyczny randomizowanych badań klinicznych",
+      description:
+        "Ekstrakt z żeń-szenia może powodować poprawę profilu lipidowego krwi, głównie poprzez obniżenie poziomu cholesterolu całkowitego i LDL.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31315027/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11511,6 +13641,31 @@ export const research = {
   "Czarci Pazur": {
     id: "czarci-pazur",
     index: 1212121,
+    PL: {
+  studies: [
+    {
+      title:
+        "Walka z infekcją i bólem: Czarci pazur (Harpagophytum procumbens) jako bogate źródło aktywności przeciwzapalnej: 2011–2022",
+      description:
+        "Harpagophytum procumbens (czarci pazur) to tradycyjna roślina lecznicza zawierająca związki bioaktywne, w szczególności harpagozyd i harpagid, wykazujące znaczący potencjał jako środki przeciwzapalne i przeciwbólowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35684573/",
+    },
+    {
+      title:
+        "Czarci pazur w hamowaniu apetytu – potencjał modulacji receptora greliny ekstraktu z korzenia Harpagophytum procumbens",
+      description:
+        "Ekstrakt z korzenia Harpagophytum procumbens (czarci pazur) wykazuje potencjał jako naturalny środek przeciw otyłości dzięki działaniu anoreksygennemu oraz zdolności częściowej aktywacji receptora greliny, co czyni go obiecującym składnikiem żywności funkcjonalnej wspierającej kontrolę masy ciała.",
+      link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0103118",
+    },
+    {
+      title:
+        "Czarci pazur – przegląd etnobotaniki, fitochemii i aktywności biologicznej Harpagophytum procumbens",
+      description:
+        "Harpagophytum procumbens, ceniony za właściwości przeciwzapalne, przeciwbólowe i antyoksydacyjne, jest szeroko stosowany w leczeniu różnych schorzeń.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0378874112005387",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11639,7 +13794,7 @@ export const research = {
   },
   "Siarka Organiczna": {
     id: "siarka-organiczna",
-    index: 24345234234,
+    index: 92,
     DE: {
       studies: [
         {
@@ -11790,10 +13945,64 @@ export const research = {
         },
       ],
     },
+    PL: {
+  studies: [
+    {
+      title: "Związki siarki stosowane w medycynie",
+      description:
+        "Organiczne związki siarki, występujące w lekach we wszystkich stanach utlenienia, odgrywają kluczową rolę w medycynie, stanowiąc podstawę wielu skutecznych terapii, a ich potencjał terapeutyczny wciąż czeka na dalsze wykorzystanie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/3078285/",
+    },
+    {
+      title: "Odżywianie i siarka",
+      description:
+        "Siarka, kluczowy minerał dla biochemicznych funkcji organizmu, odgrywa ważną rolę w metabolizmie, obronie przed szkodliwymi substancjami oraz w strukturze komórek, a choć jej niedobory są rzadkie, mogą wystąpić u osób na dietach restrykcyjnych, co może wymagać suplementacji.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34112351/",
+    },
+    {
+      title: "Siarka w żywieniu człowieka i zastosowaniach medycznych",
+      description:
+        "Siarka, obecna w związkach takich jak aminokwasy siarkowe, MSM i glukozamina, odgrywa kluczową rolę w odżywianiu i terapii, wykazując potencjalne korzyści w leczeniu schorzeń takich jak zapalenie stawów, depresja, fibromialgia czy cukrzyca, co uzasadnia potrzebę dalszych badań klinicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/11896744/",
+    },
+  ],
+},
   },
   Graviola: {
     id: "graviola",
     index: 93,
+    PL: {
+  studies: [
+    {
+      title:
+        "Właściwości przeciwnowotworowe gravioli (Annona muricata): kompleksowy przegląd mechanizmów działania",
+      description:
+        "Graviola (Annona muricata) to roślina o szerokich właściwościach terapeutycznych, w tym przeciwnowotworowych, przeciwzapalnych i przeciwutleniających, dzięki bioaktywnym składnikom, takim jak acetogeniny i flawonoidy, co czyni ją obiecującym źródłem naturalnych terapii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30151067/",
+    },
+    {
+      title:
+        "Ocena aktywności liści Annona muricata (gravioli) przeciwko doświadczalnej rzęsistkowicy: badania in vitro i in vivo",
+      description:
+        "Badanie wykazało, że ekstrakt z liści gravioli ma potencjalną skuteczność przeciwko Trichinella spiralis, szczególnie w połączeniu z albendazolem, zmniejszając liczbę pasożytów i poprawiając zmiany histopatologiczne, co sugeruje jego możliwe zastosowanie jako wsparcie w terapii włośnicy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34515021/",
+    },
+    {
+      title:
+        "Nowe acetogeniny annonaceae z owocu gravioli (Annona muricata) o silnej aktywności antyproliferacyjnej",
+      description:
+        "Z owocu gravioli (Annona muricata) wyizolowano pięć bioaktywnych acetogenin annonaceae, które wykazały silne działanie antyproliferacyjne wobec ludzkich komórek raka prostaty PC-3, co czyni je obiecującymi związkami w terapii przeciwnowotworowej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31798193/",
+    },
+    {
+      title:
+        "Potencjał przeciwutleniający gravioli i jej możliwe zastosowania medyczne",
+      description:
+        "Graviola (Annona muricata L.) to roślina tropikalna o licznych etnomedycznych zastosowaniach i bogatym składzie bioaktywnym, obejmującym acetogeniny i związki fenolowe, wykazująca potencjał przeciwutleniający.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36678273/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -11958,6 +14167,38 @@ export const research = {
   "Gymnema Sylvestre": {
     id: "gymnema-sylvestre",
     index: 94,
+    PL: {
+  studies: [
+    {
+      title:
+        "Systematyczny przegląd badań nad Gymnema sylvestre w leczeniu otyłości i cukrzycy",
+      description:
+        "Gymnema sylvestre, dzięki zawartości kwasu gymnemowego i innych bioaktywnych składników, wykazuje właściwości przeciw otyłości i przeciwcukrzycowe, regulując metabolizm węglowodanów i lipidów, co czyni ją obiecującą rośliną w leczeniu otyłości i cukrzycy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24166097/",
+    },
+    {
+      title:
+        "Wpływ suplementacji Gymnema sylvestre na kontrolę glikemii u pacjentów z cukrzycą typu 2: systematyczny przegląd i metaanaliza",
+      description:
+        "Metaanaliza wykazała, że suplementacja Gymnema sylvestre skutecznie poprawia kontrolę glikemii i obniża poziom lipidów u pacjentów z cukrzycą typu 2, co sugeruje jej potencjał jako terapii wspomagającej w leczeniu choroby i jej powikłań.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34467577/",
+    },
+    {
+      title:
+        "Wpływ suplementacji Gymnema sylvestre na profil lipidowy, kontrolę glikemii, ciśnienie krwi i wskaźniki antropometryczne u dorosłych: systematyczny przegląd i metaanaliza",
+      description:
+        "Badanie sugeruje, że suplementacja Gymnema sylvestre może poprawiać czynniki ryzyka sercowo-naczyniowego, takie jak poziom lipidów, glukozy we krwi oraz ciśnienie rozkurczowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36580574/",
+    },
+    {
+      title:
+        "Spożycie Gymnema sylvestre zmniejsza ochotę na słodkie produkty o wysokiej zawartości cukru",
+      description:
+        "Badanie wykazało, że spożywanie pastylek zawierających gymnemę znacząco zmniejsza chęć i przyjemność z jedzenia słodyczy, prowadząc do ograniczenia ich spożycia, zwłaszcza u osób o większym apetycie na słodkie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32290122/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -12122,27 +14363,144 @@ export const research = {
   Molibden: {
     id: "molibden",
     index: 95,
-    EN: {
-      studies: [
-        {
-          title:
-            "Oral zero-valent molybdenum nanodroplets for inflammatory bowel disease therapy",
-          description:
-            "Oral zero-valent molybdenum nanodrops (ZVMN) show potential as an innovative treatment for inflammatory bowel disease (IBD) by effectively removing reactive oxygen species (ROS), reducing inflammation and protecting intestinal tissues.",
-          link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
-        },
-        {
-          title: "Molybdenum nanodrops for the treatment of acute lung injury",
-          description:
-            "Molybdenum nanorods (MNDs) show potential as an innovative therapy for ARDS, effectively reducing oxidative stress, inflammatory responses and lung damage by inhibiting the NLRP3 pyroptotic pathway, while maintaining a high safety profile.",
-          link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
-        },
-      ],
-    },
+ EN: {
+    studies: [
+      {
+        title:
+          "Oral zero-valent molybdenum nanodroplets for inflammatory bowel disease therapy",
+        description:
+          "Oral zero-valent molybdenum nanodrops (ZVMN) show potential as an innovative treatment for inflammatory bowel disease (IBD) by effectively removing reactive oxygen species (ROS), reducing inflammation and protecting intestinal tissues.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
+      },
+      {
+        title: "Molybdenum nanodrops for the treatment of acute lung injury",
+        description:
+          "Molybdenum nanorods (MNDs) show potential as an innovative therapy for ARDS, effectively reducing oxidative stress, inflammatory responses and lung damage by inhibiting the NLRP3 pyroptotic pathway, while maintaining a high safety profile.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
+      },
+    ],
+  },
+  PL: {
+    studies: [
+      {
+        title:
+          "Doustne nanokropelki molibdenu zerowartościowego w terapii nieswoistych zapaleń jelit",
+        description:
+          "Doustne nanokropelki molibdenu zerowartościowego (ZVMN) wykazują potencjał jako innowacyjne leczenie nieswoistych zapaleń jelit (IBD), skutecznie usuwając reaktywne formy tlenu (ROS), zmniejszając stan zapalny i chroniąc tkanki jelitowe.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
+      },
+      {
+        title: "Nanokropelki molibdenu w leczeniu ostrego uszkodzenia płuc",
+        description:
+          "Nanopręty molibdenowe (MND) wykazują potencjał jako innowacyjna terapia zespołu ostrej niewydolności oddechowej (ARDS), skutecznie zmniejszając stres oksydacyjny, reakcje zapalne i uszkodzenia płuc poprzez hamowanie szlaku piroptozy NLRP3, przy jednoczesnym zachowaniu wysokiego profilu bezpieczeństwa.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
+      },
+    ],
+  },
+  DE: {
+    studies: [
+      {
+        title:
+          "Orale nullwertige Molybdän-Nanotröpfchen zur Therapie entzündlicher Darmerkrankungen",
+        description:
+          "Orale nullwertige Molybdän-Nanotröpfchen (ZVMN) zeigen Potenzial als innovative Behandlung entzündlicher Darmerkrankungen (IBD), indem sie reaktive Sauerstoffspezies (ROS) wirksam entfernen, Entzündungen reduzieren und das Darmgewebe schützen.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
+      },
+      {
+        title: "Molybdän-Nanotröpfchen zur Behandlung akuter Lungenschädigung",
+        description:
+          "Molybdän-Nanorods (MNDs) zeigen Potenzial als innovative Therapie für ARDS, indem sie oxidativen Stress, Entzündungsreaktionen und Lungenschäden wirksam reduzieren, den NLRP3-Pyroptoseweg hemmen und gleichzeitig ein hohes Sicherheitsprofil beibehalten.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
+      },
+    ],
+  },
+  FR: {
+    studies: [
+      {
+        title:
+          "Nanogouttelettes de molybdène à valence zéro par voie orale pour le traitement des maladies inflammatoires de l’intestin",
+        description:
+          "Les nanogouttelettes de molybdène à valence zéro (ZVMN) par voie orale montrent un potentiel en tant que traitement innovant des maladies inflammatoires de l’intestin (MII), en éliminant efficacement les espèces réactives de l’oxygène (ROS), en réduisant l’inflammation et en protégeant les tissus intestinaux.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
+      },
+      {
+        title: "Nanogouttelettes de molybdène pour le traitement des lésions pulmonaires aiguës",
+        description:
+          "Les nanorods de molybdène (MND) montrent un potentiel en tant que thérapie innovante pour le SDRA, réduisant efficacement le stress oxydatif, les réponses inflammatoires et les lésions pulmonaires en inhibant la voie pyroptotique NLRP3, tout en maintenant un profil de sécurité élevé.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
+      },
+    ],
+  },
+  IT: {
+    studies: [
+      {
+        title:
+          "Nanogocce orali di molibdeno a valenza zero per la terapia delle malattie infiammatorie intestinali",
+        description:
+          "Le nanogocce orali di molibdeno a valenza zero (ZVMN) mostrano potenziale come trattamento innovativo per le malattie infiammatorie intestinali (IBD), rimuovendo efficacemente le specie reattive dell’ossigeno (ROS), riducendo l’infiammazione e proteggendo i tessuti intestinali.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
+      },
+      {
+        title: "Nanogocce di molibdeno per il trattamento delle lesioni polmonari acute",
+        description:
+          "I nanorods di molibdeno (MND) mostrano potenziale come terapia innovativa per la sindrome da distress respiratorio acuto (ARDS), riducendo efficacemente lo stress ossidativo, le risposte infiammatorie e i danni polmonari inibendo la via piroptotica NLRP3, mantenendo al contempo un elevato profilo di sicurezza.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
+      },
+    ],
+  },
+  ES: {
+    studies: [
+      {
+        title:
+          "Nanogotas orales de molibdeno de valencia cero para el tratamiento de la enfermedad inflamatoria intestinal",
+        description:
+          "Las nanogotas orales de molibdeno de valencia cero (ZVMN) muestran potencial como tratamiento innovador para la enfermedad inflamatoria intestinal (EII), eliminando eficazmente las especies reactivas de oxígeno (ROS), reduciendo la inflamación y protegiendo los tejidos intestinales.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/36112678/",
+      },
+      {
+        title: "Nanogotas de molibdeno para el tratamiento de la lesión pulmonar aguda",
+        description:
+          "Las nanovarillas de molibdeno (MND) muestran potencial como terapia innovadora para el síndrome de dificultad respiratoria aguda (SDRA), reduciendo eficazmente el estrés oxidativo, las respuestas inflamatorias y el daño pulmonar al inhibir la vía piroptótica NLRP3, manteniendo al mismo tiempo un alto perfil de seguridad.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/38084420/",
+      },
+    ],
+  },
   },
   "Pycnogenol®": {
     id: "pycnogenol®",
     index: 96,
+    PL: {
+  studies: [
+    {
+      title:
+        "Ekstrakt z kory francuskiej sosny nadmorskiej Pycnogenol® w randomizowanych, podwójnie zaślepionych, kontrolowanych placebo badaniach klinicznych z udziałem ludzi",
+      description:
+        "Ekstrakt z kory sosny nadmorskiej Pycnogenol® wykazuje wszechstronne korzyści zdrowotne, wspierając układ sercowo-naczyniowy, zdrowie stawów, skóry, oczu oraz funkcje poznawcze dzięki działaniu przeciwutleniającemu, przeciwzapalnemu oraz poprawiającemu funkcję śródbłonka, co potwierdzono w licznych badaniach klinicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38757130/",
+    },
+    {
+      title:
+        "Wpływ suplementacji Pycnogenolem na ciśnienie krwi: przegląd systematyczny i metaanaliza",
+      description:
+        "Ta metaanaliza dostarcza dowodów, że Pycnogenol korzystnie wpływa na ciśnienie krwi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30087862/",
+    },
+    {
+      title:
+        "Suplementacja Pycnogenolem® łagodzi objawy choroby Parkinsona i łagodnych zaburzeń poznawczych",
+      description:
+        "Podsumowując, zgodnie z wynikami pilotażowego badania rejestrowego, suplementacja Pycnogenolem® pomaga pacjentom z umiarkowaną, dobrze kontrolowaną chorobą Parkinsona – przy stabilnym leczeniu – złagodzić większość objawów oraz aspektów życia związanych z zaburzeniami poznawczymi towarzyszącymi tej chorobie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36153882/",
+    },
+    {
+      title:
+        "Przegląd farmakokinetyki ekstraktu z kory francuskiej sosny nadmorskiej (Pycnogenol®) u ludzi",
+      description:
+        "Ekstrakt z kory sosny nadmorskiej Pycnogenol® charakteryzuje się wysoką biodostępnością i efektywną dystrybucją składników aktywnych, takich jak procyjanidyny i ich metabolity, w różnych tkankach, co potwierdza jego wszechstronne efekty zdrowotne obserwowane w badaniach klinicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38757126/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -12307,6 +14665,38 @@ export const research = {
   Inozytol: {
     id: "inozytol",
     index: 97,
+    PL: {
+  studies: [
+    {
+      title:
+        "Inozytol jest skutecznym i bezpiecznym leczeniem zespołu policystycznych jajników: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Inozytol jest skutecznym i bezpiecznym leczeniem PCOS.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36703143/",
+    },
+    {
+      title:
+        "Rola inozytoli i fosforanów inozytolu w metabolizmie energetycznym",
+      description:
+        "Inozytole, szczególnie mio-inozytol i IP6, wykazują potencjał w poprawie metabolizmu energetycznego, redukcji insulinooporności i zwiększaniu wrażliwości na insulinę.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33139672/",
+    },
+    {
+      title:
+        "Leczenie inozytolem w psychiatrii",
+      description:
+        "Inozytol, kluczowy pośrednik w cyklu fosfatydyloinozytolu, wykazuje potencjał terapeutyczny w leczeniu depresji i zaburzeń panicznych, z dowodami na jego skuteczność jako alternatywy lub wsparcia dla tradycyjnych terapii farmakologicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/7675981/",
+    },
+    {
+      title:
+        "Zastosowanie heksafosforanu inozytolu i inozytolu w stomatologii: przegląd",
+      description:
+        "IP6, naturalnie występujący związek o właściwościach przeciwzapalnych, wykazuje obiecujący potencjał w stomatologii, wspierając leczenie zapalnych chorób przyzębia oraz znajdując zastosowanie w endodoncji, implantologii, periodontologii i stomatologii dziecięcej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37371493/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -12462,6 +14852,29 @@ export const research = {
   Inozyna: {
     id: "inozyna",
     index: 98,
+    PL: {
+  studies: [
+    {
+      title: "Inozyna w biologii i chorobach",
+      description:
+        "Inozyna, kluczowy nukleozyd w biosyntezie puryn i modyfikacji RNA, odgrywa ważną rolę w translacji genów, stabilności RNA oraz sygnalizacji komórkowej, co czyni ją istotnym elementem dla zdrowia człowieka.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33921764/",
+    },
+    {
+      title: "Inozyna, mikrobiota jelitowa i immunometabolizm nowotworów",
+      description:
+        "Inozyna, jako kluczowy metabolit puryn, wspomaga odporność przeciwnowotworową poprzez modulację metabolizmu i funkcji limfocytów T oraz zwiększa skuteczność immunoterapii nowotworów, szczególnie w mikrośrodowisku guza, co czyni ją obiecującym kandydatem w leczeniu raka.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36416582/",
+    },
+    {
+      title: "Inozyna: naturalny środek kardiotoniczny",
+      description:
+        "Inozyna, naturalny nukleozyd, wykazuje silne działanie wieńcowo-rozszerzające oraz wybiórcze działanie inotropowe na mięsień sercowy, poprawiając funkcję hemodynamiczną bez wpływu na rytm serca i bez wywoływania arytmii, co czyni ją potencjalnym środkiem wspomagającym kardioprotekcję i transplantologię.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/6368998/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -12579,6 +14992,38 @@ export const research = {
   "Lecytyna Sojowa": {
     id: "lecytyna-sojowa",
     index: 99,
+    PL: {
+  studies: [
+    {
+      title:
+        "Pozytywny wpływ fosfatydyloseryny i kwasu fosfatydowego pochodzących z lecytyny sojowej na pamięć, funkcje poznawcze, codzienne funkcjonowanie i nastrój u starszych pacjentów z chorobą Alzheimera i demencją",
+      description:
+        "PS (fosfatydyloseryna) w połączeniu z PA (fosfatydyloetanoloaminą) wspiera pamięć, nastrój i funkcje poznawcze u osób starszych, a krótkoterminowa suplementacja wykazała efekt stabilizujący funkcjonowanie pacjentów z chorobą Alzheimera, co sugeruje potencjał do długotrwałego stosowania.",
+      link: "https://link.springer.com/article/10.1007/s12325-014-0165-1",
+    },
+    {
+      title: "Lecytyna sojowa: żywność, zastosowania przemysłowe i inne aplikacje",
+      description:
+        "Lecytyna, ceniona za swoje wszechstronne właściwości jako emulgator i składnik nutraceutyczny, zyskała znaczenie w przemyśle spożywczym i pozaspożywczym, a rosnące zapotrzebowanie na lecytynę wolną od GMO zwiększyło jej wykorzystanie z alternatywnych źródeł, takich jak rzepak i słonecznik.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/B9781630670443500054",
+    },
+    {
+      title:
+        "Systemy dostarczania leków oparte na liposomach z lecytyny sojowej: modyfikacja powierzchni i aktualne zastosowania",
+      description:
+        "Liposomy z lecytyny sojowej, dzięki swoim unikalnym właściwościom biofizycznym i zdolności do efektywnego transportu leków, są wykorzystywane w leczeniu nowotworów, terapii neurologicznej i szczepionkach, a modyfikacja ich powierzchni umożliwia lepsze celowanie, skuteczniejsze wchłanianie przez komórki oraz zwiększenie efektywności terapii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31547569/",
+    },
+    {
+      title:
+        "Lecytyna jako środek terapeutyczny w leczeniu wrzodziejącego zapalenia jelita grubego",
+      description:
+        "Lecytyna (fosfatydylocholina) jest kluczowym składnikiem hydrofobowej bariery śluzu jelitowego, a jej niedobór w przebiegu wrzodziejącego zapalenia jelita grubego (WZJG) może prowadzić do stanu zapalnego. Badania kliniczne potwierdzają skuteczność terapii lecytyną o opóźnionym uwalnianiu w łagodzeniu objawów WZJG.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24246994/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -12741,6 +15186,34 @@ export const research = {
   "L-Glutathione": {
     id: "l-glutathione",
     index: 100,
+    PL: {
+  studies: [
+    {
+      title: "Glutation – przeciwutleniacz",
+      description:
+        "Zredukowany glutation (GSH) jest kluczowym przeciwutleniaczem i kofaktorem enzymów, który chroni komórki przed stresem oksydacyjnym, reguluje sygnalizację redoks i uczestniczy w detoksykacji, fałdowaniu białek oraz procesach komórkowych, takich jak cykl komórkowy, apoptoza i ferroptoza.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36707132/",
+    },
+    {
+      title: "Suplementacja glutationem poprawia funkcję makrofagów w zakażeniu HIV",
+      description:
+        "Badanie wykazało, że suplementacja N-acetylocysteiną lub liposomalnym glutationem (lGSH) pomaga przywrócić poziom glutationu w komórkach układu odpornościowego u osób z HIV. Dzięki temu organizm lepiej radzi sobie z infekcjami, takimi jak gruźlica, co może wspierać obecne terapie HIV poprzez wzmacnianie naturalnej odporności i redukcję szkodliwego działania wolnych rodników.",
+      link: "https://www.liebertpub.com/doi/abs/10.1089/jir.2012.0103",
+    },
+    {
+      title: "Badania kliniczne suplementacji glutationem w zaburzeniach ze spektrum autyzmu",
+      description:
+        "Wyniki sugerują, że doustna i przezskórna suplementacja glutationem może mieć pewien korzystny wpływ na poprawę niektórych metabolitów szlaku transsulfuracji.",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3628138/",
+    },
+    {
+      title: "Glutation i jego działanie przeciwstarzeniowe oraz przeciwmelanogenne",
+      description:
+        "Wykazano, że doustny glutation w dawce 250 mg/d, zarówno w formie zredukowanej, jak i utlenionej, skutecznie wpływa na właściwości skóry.",
+      link: "https://www.tandfonline.com/doi/full/10.2147/CCID.S128339",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -12897,6 +15370,31 @@ export const research = {
   "D-mannoza": {
     id: "d-mannoza",
     index: 101,
+    PL: {
+  studies: [
+    {
+      title:
+        "Rola D-mannozy w zapobieganiu nawracającym zakażeniom dróg moczowych: dowody z systematycznego przeglądu literatury",
+      description:
+        "D-mannoza, neutralny monosacharyd, skutecznie zmniejsza częstość nawrotów zakażeń dróg moczowych (ZUM), wydłuża czas między kolejnymi infekcjami oraz poprawia jakość życia pacjentów, oferując obiecującą alternatywę lub uzupełnienie terapii tych zakażeń.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32972899/",
+    },
+    {
+      title:
+        "D-mannoza łagodzi zwyrodnienie krążków międzykręgowych poprzez metabolizm glutaminy",
+      description:
+        "Badanie wykazało, że mannoza ma działanie antykataboliczne na zwyrodnienie krążków międzykręgowych (IVDD) poprzez oś TXNIP-glutamina, co czyni ją obiecującą, nieinwazyjną opcją terapeutyczną w leczeniu IVDD.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38711073/",
+    },
+    {
+      title:
+        "D-mannoza spowalnia postęp choroby zwyrodnieniowej stawów poprzez hamowanie ferroptozy chondrocytów w sposób zależny od HIF-2α",
+      description:
+        "D-mannoza spowalnia postęp choroby zwyrodnieniowej stawów poprzez hamowanie wrażliwości chondrocytów na ferroptozę, co wskazuje, że D-mannoza może być potencjalną strategią terapeutyczną w chorobach związanych z ferroptozą.",
+      link: "https://onlinelibrary.wiley.com/doi/full/10.1111/cpr.13134",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13026,6 +15524,30 @@ export const research = {
   Ryboza: {
     id: "ryboza",
     index: 102,
+    PL: {
+  studies: [
+    {
+      title: "Zaburzenia metabolizmu D-rybozy a cukrzyca",
+      description:
+        "D-ryboza, kluczowy składnik biomolekuł, wspomaga produkcję ATP i syntezę nukleotydów, wykazując działanie terapeutyczne w poprawie funkcji serca i redukcji zmęczenia po wysiłku, jednak badania sugerują jej potencjalny związek z zaburzeniami metabolicznymi, w tym cukrzycą typu 2, oraz możliwe oddziaływanie na apoptozę w niektórych liniach komórkowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38281218/",
+    },
+    {
+      title:
+        "D-ryboza jako suplement wspierający metabolizm energetyczny serca",
+      description:
+        "D-ryboza, naturalnie występujący cukier, jest badana jako suplement wspomagający metabolizm serca, szczególnie w chorobach sercowych, poprzez poprawę resyntezy ATP i zwiększenie tolerancji na niedokrwienie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/11150394/",
+    },
+    {
+      title:
+        "Wpływ suplementacji rybozą na resyntezę adenozynotrójfosforanu po intensywnym treningu interwałowym u ludzi",
+      description:
+        "Suplementacja D-rybozą (Rib) po treningu przyczyniła się do szybszego powrotu poziomu ATP mięśni do wartości sprzed wysiłku w porównaniu z grupą kontrolną (Pla).",
+      link: "https://journals.physiology.org/doi/full/10.1152/ajpregu.00286.2003?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13150,6 +15672,28 @@ export const research = {
   Gaba: {
     id: "gaba",
     index: 103,
+    PL: {
+  studies: [
+    {
+      title: "GABA i glutaminian w ludzkim mózgu",
+      description:
+        "Metabolizm glutaminianu i GABA oraz ich interakcje, w tym wpływ metabolitów takich jak homokarnosyna i pirolidon, są kluczowe dla regulacji pobudliwości korowej i mogą odgrywać rolę w kontroli aktywności neuronalnej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/12467378/",
+    },
+    {
+      title: "Wpływ suplementacji GABA na ciśnienie krwi i bezpieczeństwo u dorosłych z łagodnym nadciśnieniem",
+      description:
+        "Suplementacja 80 mg γ-aminomasłowego kwasu (GABA) dziennie przez osiem tygodni znacząco obniżyła ciśnienie krwi u dorosłych z łagodnym nadciśnieniem, bez wystąpienia działań niepożądanych.",
+      link: "https://tohoku.elsevierpure.com/en/publications/effects-of-gaba-supplementation-on-blood-pressure-and-safety-in-a",
+    },
+    {
+      title: "Suplementacja GABA a odpowiedź wydzielania hormonu wzrostu",
+      description:
+        "γ-aminomasłowy kwas (GABA) wpływa na wydzielanie hormonu wzrostu (GH) poprzez działanie zarówno w podwzgórzu, jak i przysadce mózgowej, a jego suplementacja może mieć potencjalne korzyści ergogeniczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/23075553/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13270,6 +15814,31 @@ export const research = {
   "Maślan sodu": {
     id: "maślan-sodu",
     index: 104,
+    PL: {
+  studies: [
+    {
+      title:
+        "Zmiany mikrobioty wywołane mikroenkapsulowanym octanem sodu u pacjentów z nieswoistymi zapaleniami jelit",
+      description:
+        "Suplementacja octanem sodu zwiększa wzrost bakterii zdolnych do produkcji krótkołańcuchowych kwasów tłuszczowych (SCFA) o potencjalnym działaniu przeciwzapalnym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32476236/",
+    },
+    {
+      title:
+        "Wpływ doustnej suplementacji octanem sodu na potencjał zapalny krążących obwodowych komórek jednojądrzastych u zdrowych i otyłych mężczyzn",
+      description:
+        "Suplementacja octanem sodu przez 4 tygodnie u mężczyzn z zespołem metabolicznym wykazała umiarkowane efekty na reakcje cytokinowe oraz znacząco zmniejszyła wytrenowaną odporność, co może pomóc w redukcji ogólnego stanu zapalnego u pacjentów otyłych.",
+      link: "https://www.nature.com/articles/s41598-018-37246-7",
+    },
+    {
+      title:
+        "Skuteczność terapii uzupełniającej octanem sodu w leczeniu czerwonki: randomizowane, podwójnie zaślepione, placebo-kontrolowane badanie kliniczne",
+      description:
+        "Suplementacja octanem podczas leczenia czerwonki pomogła szybko zmniejszyć stan zapalny oraz zwiększyła produkcję LL-37 w nabłonku odbytnicy.",
+      link: "https://link.springer.com/article/10.1186/1471-2334-12-111",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13399,6 +15968,31 @@ export const research = {
   Laktoferyna: {
     id: "laktoferyna",
     index: 105,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji laktoferyną na stan zapalny, funkcje układu odpornościowego oraz zapobieganie infekcjom dróg oddechowych u ludzi: przegląd systematyczny i metaanaliza",
+      description:
+        "Przegląd dowodów sugeruje, że suplementacja laktoferyną może redukować stan zapalny, poprawiać funkcje układu odpornościowego oraz zmniejszać częstość występowania infekcji dróg oddechowych.",
+      link: "https://www.sciencedirect.com/science/article/pii/S2161831323000418#cesec140",
+    },
+    {
+      title:
+        "Suplementacja laktoferyną bydlęcą wspiera odporność i status antyoksydacyjny u zdrowych mężczyzn",
+      description:
+        "Wykazano, że suplementy laktoferyny bydlęcej mają zdolność wspierania układu odpornościowego oraz wpływania na aktywność komórek odpornościowych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0271531708001255",
+    },
+    {
+      title:
+        "Wpływ suplementacji enteralnej laktoferyny na funkcje odpornościowe u osób starszych: randomizowane, podwójnie zaślepione, placebo-kontrolowane badanie",
+      description:
+        "Suplementacja enteralną laktoferyną przez 3 miesiące wykazała istotny wpływ na funkcje odpornościowe u osób starszych, poprawiając aktywność komórek odpornościowych, w tym limfocytów, neutrofili i komórek NK.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0958694615000424",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13528,6 +16122,42 @@ export const research = {
   "Ekstrakt z pestek winogron": {
     id: "ekstrakt-z-pestek-winogron",
     index: 106,
+    PL: {
+  studies: [
+    {
+      title: "Ekstrakt z pestek winogron: potencjalne korzyści zdrowotne",
+      description:
+        "Ekstrakt z pestek winogron, bogaty w proantocyjanidyny, wykazuje udokumentowane właściwości zdrowotne, takie jak działanie przeciwzapalne, ochrona układu sercowo-naczyniowego, pomoc w leczeniu nadciśnienia, cukrzycy, nowotworów i wrzodów, co czyni go potencjalnym składnikiem suplementów i leków.",
+      link: "https://link.springer.com/article/10.1007/s13197-019-04113-w",
+    },
+    {
+      title:
+        "Przeciwnowotworowy i chemoprewencyjny potencjał ekstraktu z pestek winogron i innych produktów na bazie winogron",
+      description:
+        "Ekstrakt z pestek winogron oraz produkty na bazie winogron wykazują potencjał chemoprewencyjny przeciwko nowotworom, co czyni je cennym składnikiem diety zapobiegającej rozwojowi raka.",
+      link: "https://www.sciencedirect.com/science/article/pii/S0022316622069097",
+    },
+    {
+      title: "Działanie przeciwwrzodowe ekstraktu z pestek winogron i proantocyjanidyn",
+      description:
+        "Ekstrakty z pestek winogron oraz oligomery proantocyjanidyn wykazują silne działanie ochronne przeciwko uszkodzeniom błony śluzowej żołądka, hamując powstawanie wrzodów przez neutralizację wolnych rodników i wiązanie białek na powierzchni żołądka.",
+      link: "https://pubs.acs.org/doi/abs/10.1021/jf9709156",
+    },
+    {
+      title: "Ekstrakt z pestek winogron w walce z wirusami jelitowymi u ludzi",
+      description:
+        "Ekstrakt z pestek winogron (GSE) wykazał obiecujące działanie przeciwwirusowe, skutecznie zmniejszając zakaźność różnych wirusów jelitowych oraz wirusa zapalenia wątroby typu A, co sugeruje jego potencjał jako naturalnej alternatywy poprawiającej bezpieczeństwo żywności.",
+      link: "https://journals.asm.org/doi/full/10.1128/aem.00193-11",
+    },
+    {
+      title:
+        "Wpływ ekstraktu z pestek winogron na ciśnienie krwi u osób z zespołem metabolicznym",
+      description:
+        "Ekstrakt z pestek winogron (GSE) obniżał ciśnienie krwi u osób z zespołem metabolicznym.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0026049509002455",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13721,6 +16351,35 @@ export const research = {
   "Kwas hialuronowy": {
     id: "kwas-hialuronowy",
     index: 107,
+    PL: {
+  studies: [
+    {
+      title: "Suplementacja kwasem hialuronowym",
+      description:
+        "Nowe wytyczne leczenia choroby zwyrodnieniowej stawów podkreślają skuteczność inhibitorów cyklooksygenazy-2 oraz dostarczania kwasu hialuronowego, które redukują ból, poprawiają funkcję stawów i mogą modyfikować ich strukturę w przypadku choroby zwyrodnieniowej stawów.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/11123099/",
+    },
+    {
+      title: "Kwas hialuronowy a gojenie ran",
+      description:
+        "Ekstrakty z kwasu hialuronowego są bezpiecznymi i skutecznymi produktami stosowanymi w naprawie skóry.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25877441/",
+    },
+    {
+      title: "Kwas hialuronowy w dermatologii",
+      description:
+        "Kwas hialuronowy (HA) jest kluczowym składnikiem skóry, wspierającym gojenie ran i naprawę tkanek poprzez utrzymanie wilgotności oraz stymulację migracji komórek i czynników wzrostu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29282181/",
+    },
+    {
+      title:
+        "Kwas hialuronowy. Przegląd farmakologii i zastosowania jako pomoc chirurgiczna w okulistyce oraz jego potencjału terapeutycznego w chorobach stawów i gojeniu ran",
+      description:
+        "Kwas hialuronowy, stosowany głównie w chirurgii okulistycznej, wykazuje również obiecujące wyniki w leczeniu choroby zwyrodnieniowej stawów i innych schorzeń zapalnych stawów, oferując długotrwałe efekty i bardzo dobrą tolerancję.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/7514978/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -13870,6 +16529,30 @@ export const research = {
   Fosfatydylseryna: {
     id: "fosfatydylseryna",
     index: 108,
+    PL: {
+  studies: [
+    {
+      title: "Fosfatydyloseryna a ludzki mózg",
+      description:
+        "Fosfatydyloseryna (PS) skutecznie wspiera funkcje poznawcze i motoryczne, poprawiając pamięć, uwagę, uczenie się, rozwiązywanie problemów oraz refleks, a także odwracając biochemiczne i strukturalne zmiany związane ze starzeniem się mózgu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25933483/",
+    },
+    {
+      title: "Fosfatydyloseryna: biomarker celujący w komórki nowotworowe",
+      description:
+        "Fosfatydyloseryna (PS) na powierzchni komórek nowotworowych jest obiecującym biomarkerem do wykrywania raka oraz celem terapii skierowanych przeciwko komórkom nowotworowym, umożliwiając precyzyjne leczenie bez uszkadzania zdrowych komórek.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28870843/",
+    },
+    {
+      title:
+        "Fosfatydyloseryna: kompleksowy przegląd syntezy, metabolizmu i żywienia",
+      description:
+        "Fosfatydyloseryna (PtdS) odgrywa kluczową rolę w funkcjonowaniu mózgu, przekazywaniu sygnałów komórkowych, eliminacji komórek apoptotycznych oraz krzepnięciu krwi, a jej suplementacja może wspierać funkcje pamięci i zdrowie mózgu, szczególnie u dzieci, seniorów i sportowców.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39097133/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -13992,6 +16675,32 @@ export const research = {
   Pokrzywa: {
     id: "pokrzywa",
     index: 109,
+    PL: {
+  studies: [
+    {
+      title:
+        "Znaczenie odżywcze i farmakologiczne pokrzywy zwyczajnej (Urtica dioica L.): przegląd",
+      description:
+        "Pokrzywa zwyczajna (Urtica dioica L.) to roślina wielofunkcyjna o właściwościach odżywczych i leczniczych, wykazująca działanie przeciwzapalne, przeciwutleniające i przeciwbólowe oraz wspierająca zdrowie układu sercowo-naczyniowego i moczowego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35800714/",
+    },
+    {
+      title:
+        "Działania przeciwutleniające, przeciwbakteryjne, przeciwwrzodowe i przeciwbólowe pokrzywy (Urtica dioica L.)",
+      description:
+        "Wodne ekstrakty pokrzywy (Urtica dioica L.) wykazują silne właściwości przeciwutleniające, przeciwbakteryjne, przeciwwrzodowe i przeciwbólowe, skutecznie redukując peroksydację, wolne rodniki oraz działając na mikroorganizmy i wrzody.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0378874103003490",
+    },
+    {
+      title:
+        "Wodne ekstrakty liści pokrzywy (Urtica dioica) zawierają antagonisty receptorów purynergicznych P2 - wpływ na płodność u mężczyzn",
+      description:
+        "Ekstrakt z liści pokrzywy może pomóc w redukcji napięcia mięśni gładkich w prostacie, co może mieć korzystny wpływ na zdrowie układu moczowo-płciowego. Badania sugerują również wpływ na zmniejszenie płodności u mężczyzn, co wskazuje na potencjalne zastosowanie w antykoncepcji męskiej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35900970/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -14121,6 +16830,35 @@ export const research = {
   Likopen: {
     id: "likopen",
     index: 111,
+    PL: {
+  studies: [
+    {
+      title: "Likopen a zdrowie człowieka",
+      description:
+        "Likopen, naturalny karotenoid występujący głównie w pomidorach, choć nie jest składnikiem odżywczym niezbędnym, wykazuje różnorodne właściwości prozdrowotne związane z ochroną przeciwutleniającą i regulacją procesów komórkowych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0023643820303121",
+    },
+    {
+      title: "Likopen a choroby sercowo-naczyniowe",
+      description:
+        "Likopen jest silnym przeciwutleniaczem, który może zapobiegać nowotworom i chorobom serca poprzez różne mechanizmy, w tym hamowanie syntezy cholesterolu.",
+      link: "https://www.sciencedirect.com/science/article/pii/S0002916523072209",
+    },
+    {
+      title: "Potencjalne działanie hamujące likopenu na raka prostaty",
+      description:
+        "Likopen wykazuje obiecujące właściwości w profilaktyce i leczeniu raka prostaty poprzez hamowanie wzrostu komórek nowotworowych, indukcję apoptozy oraz modulację szlaków sygnałowych, co w połączeniu z jego naturalnym pochodzeniem i bezpieczeństwem czyni go cennym składnikiem diety w kontekście tego powszechnego nowotworu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32768949/",
+    },
+    {
+      title:
+        "Skuteczność ekstraktu z pomidora na dysmutazę ponadtlenkową (SOD) i nasilenie choroby u pacjentów z melasmą",
+      description:
+        "Suplementacja ekstraktem z pomidora jako terapia wspomagająca może zwiększać poziom SOD w surowicy oraz łagodzić nasilenie melasmy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35707866/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -14273,6 +17011,34 @@ export const research = {
   Niacyna: {
     id: "niacyna",
     index: 112,
+    PL: {
+  studies: [
+    {
+      title: "Obiecująca rola niacyny w neurologii",
+      description:
+        "Niacyna (witamina B3), tradycyjnie stosowana w leczeniu pelagry i dyslipidemii, wykazała obiecującą aktywność terapeutyczną w zaburzeniach neurologicznych poprzez wpływ na metabolizm NAD+ i aktywację receptora Hcar2, co może być korzystne w leczeniu chorób takich jak stwardnienie rozsiane, choroba Alzheimera i Parkinsona.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37084148/",
+    },
+    {
+      title: "Niacyna a cholesterol: rola w chorobach sercowo-naczyniowych (przegląd)",
+      description:
+        "Niacyna wpływa na metabolizm lipidów poprzez hamowanie lipolizy w tkance tłuszczowej i działanie na mikrosomy wątroby, co prowadzi do redukcji trójglicerydów oraz lipoprotein VLDL/LDL.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S095528630200284X",
+    },
+    {
+      title: "Niacyna: formy chemiczne, biodostępność i efekty zdrowotne",
+      description:
+        "Niacyna w różnych formach farmaceutycznych (wolny kwas nikotynowy, o przedłużonym uwalnianiu, inozytol heksanikotynian i nikotynamid) jest skutecznym środkiem w leczeniu zaburzeń lipidowych, wpływając nie tylko na obniżenie LDL-C, ale także innych parametrów ryzyka sercowo-naczyniowego, takich jak niski poziom HDL-C, wysoki poziom lipoproteiny a i hipertrójglicerydemia.",
+      link: "https://academic.oup.com/nutritionreviews/article-abstract/70/6/357/1847777",
+    },
+    {
+      title: "Korzyści niacyny w miażdżycy",
+      description:
+        "Niacyna jest skutecznym środkiem terapeutycznym w leczeniu zaburzeń lipidowych, działającym poprzez unikalne mechanizmy w porównaniu do innych leków, a jej nowsze formy o przedłużonym uwalnianiu, w tym w połączeniu z lowastatyną, wykazały dobrą skuteczność i tolerancję, także u pacjentów z cukrzycą typu 2.",
+      link: "https://link.springer.com/article/10.1007/s11883-001-0014-y",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -14426,6 +17192,34 @@ export const research = {
   "Żeń-szeń": {
     id: "żeń-szeń",
     index: 113,
+    PL: {
+  studies: [
+    {
+      title: "Przegląd badań nad działaniem przeciwcukrzycowym żeń-szenia",
+      description:
+        "Żeń-szeń i jego ginsenozydy wykazały pozytywne efekty u pacjentów z cukrzycą typu 2, regulując wydzielanie insuliny, wychwyt glukozy, stres oksydacyjny oraz stan zapalny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31835292/",
+    },
+    {
+      title: "Żeń-szeń jako lek na zmęczenie: przegląd systematyczny",
+      description:
+        "Żeń-szeń jest obiecującym leczeniem zmęczenia. Zarówno żeń-szeń amerykański, jak i azjatycki mogą być skuteczne u osób z przewlekłymi chorobami.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29624410/",
+    },
+    {
+      title: "Żeń-szeń w dermatologii: przegląd",
+      description:
+        "Żeń-szeń, szczególnie Panax ginseng, wykazuje szerokie właściwości prozdrowotne i terapeutyczne, wspierając leczenie schorzeń dermatologicznych, takich jak fotostarzenie, rany, rak skóry, zapalenie skóry, łysienie i nadwrażliwość na zimno, dzięki zawartości ginsenozydów.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27774902/",
+    },
+    {
+      title: "Farmakologiczna skuteczność żeń-szenia w leczeniu infekcji dróg oddechowych",
+      description:
+        "Żeń-szeń wykazuje obiecujące działanie immunomodulujące, przeciwwirusowe i przeciwbakteryjne, redukując nawracające infekcje dróg oddechowych, co potwierdzają badania kliniczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34279434/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -14579,6 +17373,32 @@ export const research = {
   "Żeń-szeń syberyjski": {
     id: "żeń-szeń-syberyjski",
     index: 114,
+    PL: {
+  studies: [
+    {
+      title:
+        "Składniki i działanie farmakologiczne Eucommia oraz żeń-szenia syberyjskiego",
+      description:
+        "Kora i liście Eucommia ulmoides oraz żeń-szenia syberyjskiego wykazują szerokie właściwości farmakologiczne, takie jak działanie przeciwstresowe, przeciwnadciśnieniowe, przeciwutleniające oraz wzmacniające odporność, głównie dzięki zawartości lignanów i glikozydów irydoidowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/11749801/",
+    },
+    {
+      title:
+        "Wpływ żeń-szenia syberyjskiego (Eleutherococcus senticosus) na naczynia krwionośne: rozkurcz zależny od śródbłonka, pośredniczony przez NO i EDHF, zależny od wielkości naczynia",
+      description:
+        "Ekstrakt z korzenia żeń-szenia syberyjskiego (SG) wykazuje działanie wazodylatacyjne zależne od śródbłonka oraz pośredniczone przez tlenek azotu (NO) i czynnik hiperpolaryzujący (EDHF), przy czym efekty różnią się w zależności od wielkości naczyń.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/15095033/",
+    },
+    {
+      title:
+        "Przeciwobrzękowe działanie żeń-szenia syberyjskiego u ludzi i jego molekularny mechanizm funkcji naczyń limfatycznych in vitro",
+      description:
+        "Żeń-szeń syberyjski wykazuje silne działanie przeciwobrzękowe, wspierając funkcję układu limfatycznego poprzez aktywację receptora Tie2, stabilizację komórek śródbłonka limfatycznego oraz poprawę migracji i bariery śródbłonkowej, co potwierdzają badania kliniczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27333960/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -14708,6 +17528,36 @@ export const research = {
   Kreatyna: {
     id: "kreatyna",
     index: 115,
+    PL: {
+  studies: [
+    {
+      title: "Suplementacja kreatyną a zdrowie mózgu",
+      description:
+        "Suplementacja kreatyną wykazała korzyści nie tylko dla mięśni, ale również obiecujący potencjał w poprawie funkcji poznawczych i zdrowia mózgu, zwłaszcza w stanach niedoboru kreatyny lub zaburzeń neurologicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33578876/",
+    },
+    {
+      title:
+        "Suplementacja kreatyną w zdrowiu kobiet: perspektywa na całe życie",
+      description:
+        "Kobiety mają znacznie niższe naturalne zasoby kreatyny niż mężczyźni, a jej suplementacja może być szczególnie korzystna w różnych fazach życia kobiety, pozytywnie wpływając na siłę, masę mięśniową, funkcje poznawcze i nastrój.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33800439/",
+    },
+    {
+      title:
+        "Wpływ suplementacji kreatyną na pamięć u zdrowych osób: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Suplementacja kreatyną poprawiła wydajność pamięci u zdrowych osób, zwłaszcza u starszych dorosłych (w wieku 66-76 lat).",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35984306/",
+    },
+    {
+      title: "Kreatyna w zdrowiu i chorobie",
+      description:
+        "Oprócz znanych efektów na wydolność fizyczną, kreatyna wykazała znaczące korzyści zdrowotne i terapeutyczne przez całe życie, szczególnie w stanach stresu metabolicznego i niedotlenienia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/33572884/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -14862,6 +17712,43 @@ export const research = {
   "Beta-Alanina": {
     id: "beta-alanina",
     index: 118,
+    PL: {
+  studies: [
+    {
+      title:
+        "Rola suplementacji beta-alaniną w zawartości karnozyny mięśniowej i wydolności podczas wysiłku",
+      description:
+        "Suplementacja beta-alaniną zwiększa zawartość karnozyny w mięśniach, co poprawia wydolność podczas intensywnego wysiłku, opóźnia zmęczenie i może poprawić wytrzymałość.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/20479615/",
+    },
+    {
+      title:
+        "Wpływ beta-alaniny na karnozynę mięśniową i wydolność: przegląd literatury",
+      description:
+        "Suplementacja β-alaniną może przynosić korzyści podczas ćwiczeń o wysokiej intensywności, zwłaszcza sprintów i treningu oporowego, z potencjałem synergicznym w połączeniu z innymi suplementami, co otwiera możliwości dalszych badań i poprawy wyników sportowych.",
+      link: "https://www.mdpi.com/2072-6643/2/1/75",
+    },
+    {
+      title: "Suplementacja β-alaniną",
+      description:
+        "β-Alanina zyskuje popularność wśród sportowców siłowych dzięki zdolności do zwiększania zdolności buforowej mięśni i łagodzenia zmęczenia oraz swojej skuteczności.",
+      link: "https://journals.lww.com/acsm-csmr/fulltext/2012/07000/__alanine_supplementation.10.aspx",
+    },
+    {
+      title: "β-Alanina a odpowiedź hormonalna na wysiłek",
+      description:
+        "Czterotygodniowa suplementacja β-alaniną (4,8 g dziennie) poprawia wytrzymałość mięśni podczas treningu oporowego u doświadczonych sportowców.",
+      link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2008-1038678",
+    },
+    {
+      title:
+        "Wpływ suplementacji beta-alaniną na zmęczenie nerwowo-mięśniowe u osób starszych (55-92 lata): randomizowane badanie podwójnie ślepe",
+      description:
+        "Sugerujemy, że suplementacja beta-alaniną, poprzez poprawę kontroli pH wewnątrzkomórkowego, zwiększa wytrzymałość mięśni u osób starszych.",
+      link: "https://link.springer.com/article/10.1186/1550-2783-5-21",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -15024,6 +17911,31 @@ export const research = {
   Żurawina: {
     id: "żurawina",
     index: 123,
+    PL: {
+  studies: [
+    {
+      title:
+        "Spożycie żurawiny jako terapia wspomagająca infekcje dróg moczowych u podatnych grup: przegląd systematyczny i metaanaliza z analizą sekwencyjną badań",
+      description:
+        "Metaanaliza 23 badań obejmujących 3979 uczestników wykazała, że suplementacja żurawiną znacząco zmniejsza ryzyko infekcji dróg moczowych u podatnych grup, zwłaszcza u kobiet z nawracającymi zakażeniami dróg moczowych, dzieci oraz pacjentów z cewnikami stałymi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34473789/",
+    },
+    {
+      title:
+        "Żurawina: skład chemiczny, aktywność antyoksydacyjna i wpływ na zdrowie człowieka: przegląd",
+      description:
+        "Żurawina jest owocem bogatym w bioaktywne związki i polifenole wykazujące właściwości antyoksydacyjne oraz liczne korzyści zdrowotne, w tym pozytywny wpływ na układ moczowy, sercowo-naczyniowy i metaboliczny, a także potencjał w zapobieganiu nowotworom i innym schorzeniom.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35268605/",
+    },
+    {
+      title:
+        "Składniki żurawiny w leczeniu chorób zakaźnych",
+      description:
+        "Badania in vitro i in vivo potwierdzają, że żurawina i jej składniki mają korzyści zdrowotne poprzez hamowanie patogenów w drogach moczowych, jamie ustnej i żołądku oraz wykazują działanie przeciwwirusowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22088310/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -15152,6 +18064,31 @@ export const research = {
   Amla: {
     id: "amla",
     index: 125,
+    PL: {
+  studies: [
+    {
+      title:
+        "Terapia amlą jako potencjalny modulator czynników ryzyka choroby Alzheimera i zmian fizjologicznych",
+      description:
+        "Ekstrakty z owoców amli mogą pomóc opóźnić wystąpienie choroby Alzheimera poprzez wpływ na czynniki ryzyka, takie jak stres oksydacyjny, stan zapalny, dyslipidemia i hiperglikemia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32083581/",
+    },
+    {
+      title:
+        "Analiza metaboliczna i aktywność antyoksydacyjna ekstraktu amli (Emblica officinalis) w zapobieganiu uszkodzeniom czerwonych krwinek i zmianom białek osocza wywołanym stresem oksydacyjnym: badanie in vitro",
+      description:
+        "Ekstrakt amli (Emblica officinalis) wykazuje silne właściwości antyoksydacyjne, chroniąc czerwone krwinki i białka osocza przed uszkodzeniami oksydacyjnymi przez redukcję stresu oksydacyjnego, poprawę integralności błon komórkowych oraz zwiększenie poziomu glutationu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29064307/",
+    },
+    {
+      title:
+        "Gałąź Phyllanthus emblica L. (amla): bezpieczny i skuteczny składnik przeciwstarzeniowy skóry",
+      description:
+        "Wyniki badania wskazują, że gałąź amli jest bogatym źródłem związków bioaktywnych i może być potencjalnym składnikiem produktów przeciwstarzeniowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34522633/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -15281,6 +18218,31 @@ export const research = {
   "Rhaponticum carthamoides": {
     id: "rhaponticum-carthamoides",
     index: 126,
+    PL: {
+  studies: [
+    {
+      title:
+        "Chemia i farmakologia Rhaponticum carthamoides: przegląd",
+      description:
+        "Rhaponticum carthamoides, znany jako korzeń szafranu, wykazuje szerokie spektrum właściwości farmakologicznych, w tym antyoksydacyjne, immunomodulujące, przeciwnowotworowe i adaptogenne, co czyni go obiecującym środkiem terapeutycznym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/19457517/",
+    },
+    {
+      title:
+        "Przeciwwydzielnicza aktywność Rhaponticum carthamoides i jego metabolitów wtórnych",
+      description:
+        "Korzeń Rhaponticum carthamoides oraz jego składniki, takie jak 20-hydroksyekdyzon i turkesteron, pomagają zmniejszyć gromadzenie tłuszczu i wspierają proces spalania tłuszczu w organizmie, co może wspomagać zdrowy metabolizm lipidów.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37447387/",
+    },
+    {
+      title:
+        "Rhaponticum carthamoides poprawia metabolizm energetyczny i stres oksydacyjny przez szlak SIRT6/Nrf2, co łagodzi uszkodzenia mięśnia sercowego",
+      description:
+        "Wyniki sugerują, że Rhaponticum reguluje metabolizm energetyczny i stres oksydacyjny poprzez szlak sygnałowy SIRT6/Nrf2, odgrywając w ten sposób ochronną rolę w uszkodzeniach mięśnia sercowego.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0944711322002756",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -15410,6 +18372,31 @@ export const research = {
   "Błonnik płesznika babki ": {
     id: "błonnik-babki-płesznik",
     index: 131,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ błonnika z łupin babki płesznik i zmian stylu życia na insulinooporność w organizmie człowieka",
+      description:
+        "Badanie wykazało, że regularne spożywanie błonnika z łupin babki płesznik, w połączeniu ze zmianami stylu życia, znacząco poprawia wrażliwość na insulinę oraz obniża poziom glukozy na czczo u osób z insulinoopornością.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35769394/",
+    },
+    {
+      title:
+        "Korzyści z babki płesznik w profilaktyce i leczeniu chorób kardiometabolicznych",
+      description:
+        "Spożycie błonnika pokarmowego, zwłaszcza z łupin babki płesznik, może poprawiać czynniki ryzyka chorób kardiometabolicznych (CMD), a liczne badania wskazują na jego potencjał terapeutyczny w leczeniu hiperlipidemii, cukrzycy, nadciśnienia, otyłości i innych powikłań CMD.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35781477/",
+    },
+    {
+      title: "Babka płesznik jako środek terapeutyczny i nośnik leków",
+      description:
+        "Błonnik pokarmowy z babki płesznik ma udowodnione pozytywne działanie na zdrowie, wspierając leczenie i profilaktykę wielu chorób, w tym zaparć, cukrzycy, chorób jelit oraz hiperlipidemii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/17329047/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -15538,6 +18525,23 @@ export const research = {
   Spermidyna: {
     id: "spermidyna",
     index: 132,
+    PL: {
+  studies: [
+    {
+      title: "Spermidyna: nowy induktor autofagii i eliksir długowieczności",
+      description:
+        "Spermidyna, poliamina zaangażowana w wiele procesów biologicznych, wydłuża życie organizmów modelowych poprzez indukcję autofagii, co sugeruje jej potencjał jako uniwersalnego środka przeciwstarzeniowego.",
+      link: "https://www.tandfonline.com/doi/abs/10.4161/auto.6.1.10600",
+    },
+    {
+      title:
+        "Kardioprotekcja i wydłużenie życia dzięki naturalnej poliaminie spermidynie",
+      description:
+        "Suplementacja spermidyną wykazuje efekty kardioprotekcyjne, poprawiając funkcję serca, obniżając ciśnienie krwi oraz ryzyko chorób sercowo-naczyniowych poprzez zwiększenie autofagii i ochronę kardiomiocytów.",
+      link: "https://www.nature.com/articles/nm.4222",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -15631,6 +18635,30 @@ export const research = {
   Cytykolina: {
     id: "cytykolina",
     index: 133,
+    PL: {
+  studies: [
+    {
+      title:
+        "Citicolina: przegląd farmakologiczny i kliniczny, aktualizacja 2006.",
+      description:
+        "Citicolina jest bezpiecznym i dobrze tolerowanym związkiem, który wspomaga regenerację funkcji mózgu poprzez poprawę metabolizmu neuronalnego, stymulację neuroplastyczności, działanie neuroprotekcyjne oraz poprawę funkcji poznawczych, co czyni ją skuteczną w leczeniu uszkodzeń mózgu, chorób naczyniowych, schorzeń neurodegeneracyjnych i zaburzeń poznawczych.",
+      link: "https://europepmc.org/article/med/17171187",
+    },
+    {
+      title: "Citicolina: mechanizmy neuroprotekcyjne w niedokrwieniu mózgu",
+      description:
+        "Citicolina wspomaga regenerację mózgu po urazach i w stanach patologicznych poprzez stymulację syntezy fosfolipidów błon komórkowych, ochronę mitochondriów, redukcję peroksydacji lipidów oraz wspieranie neurotransmisji.",
+      link: "https://onlinelibrary.wiley.com/doi/full/10.1046/j.0022-3042.2001.00697.x",
+    },
+    {
+      title: "Citicolina poprawia pamięć u osób starszych.",
+      description:
+        "Citicolina w dawkach 300-1000 mg/dobę poprawia pamięć u osób starszych bez demencji, szczególnie w zadaniach wymagających przypominania sobie, co może być związane z jej efektami neurotropowymi i wazoregulacyjnymi.",
+      link: "https://europepmc.org/article/med/9203170",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -15758,6 +18786,34 @@ export const research = {
   "Ekstrakt z zielonej herbaty": {
     id: "ekstrakt-z-zielonej-herbaty",
     index: 134,
+    PL: {
+  studies: [
+    {
+      title: "Zielona herbata a skóra",
+      description:
+        "Wyniki kilku badań eksperymentalnych sugerują, że zielona herbata posiada właściwości przeciwzapalne i przeciwnowotworowe, które mogą być wykorzystane w leczeniu różnych chorób skóry.",
+      link: "https://jamanetwork.com/journals/jamadermatology/article-abstract/190508",
+    },
+    {
+      title: "Zielona herbata a skóra",
+      description:
+        "Ekstrakty roślinne bogate w flawonoidy, takie jak katechiny z zielonej herbaty, wykazują właściwości antyoksydacyjne, przeciwstarzeniowe i gojące, co czyni je skutecznymi w gojeniu ran, ochronie skóry oraz chemoprewencji.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0190962205002525",
+    },
+    {
+      title: "Zielona herbata a metabolizm kości",
+      description:
+        "Zielona herbata i jej bioaktywne składniki mogą wspierać zdrowie kości, zmniejszając ryzyko osteoporozy i złamań u osób starszych poprzez poprawę gęstości mineralnej kości i stymulację aktywności osteoblastów, jednocześnie hamując aktywność osteoklastów.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0271531709001110",
+    },
+    {
+      title: "Korzyści zdrowotne zielonej herbaty – przegląd",
+      description:
+        "Zielona herbata, bogata w katechiny i minerały, ma liczne korzyści zdrowotne, w tym zmniejszenie ryzyka chorób sercowo-naczyniowych, nowotworów, poprawę zdrowia jamy ustnej oraz działanie przeciw nadciśnieniu, otyłości, bakteriom i wirusom.",
+      link: "https://www.tandfonline.com/doi/abs/10.1080/07315724.2006.10719518",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -15902,6 +18958,28 @@ export const research = {
   "Kwas pantotenowy": {
     id: "kwas-pantotenowy",
     index: 135,
+    PL: {
+  studies: [
+    {
+      title: "Kwas pantotenowy w zdrowiu i chorobie1",
+      description:
+        "Kwas pantotenowy jest niezbędną witaminą, która odgrywa kluczową rolę w biosyntezie koenzymu A, niezbędnego do wielu reakcji enzymatycznych w organizmach ssaków, w tym metabolizmu kwasów tłuszczowych, węglowodanów, aminokwasów oraz syntezy kwasów tłuszczowych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0083672908606846",
+    },
+    {
+      title: "Kwas pantotenowy",
+      description:
+        "Kwas pantotenowy (witamina B5) jest rozpuszczalną w wodzie witaminą z grupy B, niezbędną do syntezy koenzymu A i białka przenoszącego acyl, odgrywa kluczową rolę w metabolizmie kwasów tłuszczowych i jest stosowany w produktach farmaceutycznych do obniżania poziomu cholesterolu oraz leczenia stłuszczenia wątroby.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/9783527681754.ch4",
+    },
+    {
+      title: "Miejscowe stosowanie deksapanthenolu w chorobach skóry",
+      description:
+        "Kwas pantotenowy i jego alkoholowy analog, deksapanthenol, wspomagają gojenie ran, poprawiają nawilżenie skóry, wykazują działanie przeciwzapalne oraz stymulują regenerację tkanek, a ich miejscowe stosowanie jest dobrze tolerowane.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/12113650/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -16017,6 +19095,28 @@ export const research = {
   "L-Cysteina": {
     id: "l-cysteina",
     index: 136,
+    PL: {
+  studies: [
+    {
+      title: "Metabolizm L-cysteiny i jego znaczenie dla żywienia",
+      description:
+        "L-cysteina, aminokwas półniezbędny, odgrywa kluczową rolę w syntezie białek, produkcji GSH, siarkowodoru i tauryny, a jej metabolizm ma potencjał terapeutyczny i żywieniowy, szczególnie w kontekście zdrowia i leczenia chorób.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25929483/",
+    },
+    {
+      title: "Wpływ stosowania L-cysteiny (L-Cys) na zdrowie człowieka",
+      description:
+        "L-cysteina i NAC zyskały popularność w przemyśle spożywczym, farmaceutycznym i kosmetycznym, wykazując potencjał terapeutyczny w leczeniu marskości wątroby, nowotworów oraz jako środek mukolityczny.",
+      link: "https://www.mdpi.com/1420-3049/23/3/575",
+    },
+    {
+      title: "L-cysteina",
+      description:
+        "L-cysteina wspiera układ odpornościowy i chroni organizm przed stresem oksydacyjnym dzięki roli w syntezie glutationu, silnego przeciwutleniacza neutralizującego toksyny i rodniki.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/B9780128124918000072",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -16138,6 +19238,32 @@ export const research = {
   Synefryna: {
     id: "synefryna",
     index: 138,
+    PL: {
+  studies: [
+    {
+      title:
+        "Synefryna: od śladowych stężeń do masowego spożycia w celu utraty wagi",
+      description:
+        "Synefryna, popularny składnik suplementów wspomagających odchudzanie, działa termogenicznie poprzez stymulację receptorów adrenergicznych, jednak jej stosowanie wiąże się z ryzykiem poważnych skutków ubocznych, w tym problemów sercowo-naczyniowych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0278691510006654",
+    },
+    {
+      title:
+        "Wpływ p-synefryny podczas wysiłku: krótki przegląd narracji",
+      description:
+        "p-Synefryna zwiększa utlenianie tłuszczów i zmniejsza wykorzystanie węglowodanów podczas ćwiczeń o niskiej do umiarkowanej intensywności, co może sprzyjać redukcji tkanki tłuszczowej.",
+      link: "https://www.mdpi.com/2072-6643/13/1/233",
+    },
+    {
+      title:
+        "Przeciwniedociśnieniowy efekt p-synefryny: analiza widmowa, właściwości molekularne i badanie dokowania molekularnego",
+      description:
+        "Badanie wykazało, że p-synefryna, dzięki swojej strukturze krystalicznej, właściwościom optycznym oraz wysokiemu powinowactwu wiązania, ma potencjał jako skuteczny lek przeciwnadciśnieniowy.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0022286022018841",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -16267,6 +19393,37 @@ export const research = {
   Błonnik: {
     id: "błonnik",
     index: 139,
+    PL: {
+  studies: [
+    {
+      title:
+        "Błonnik pokarmowy łagodzi zaburzenia związane z otyłością: mechanizmy działania",
+      description:
+        "Błonnik pokarmowy zapobiega i leczy zaburzenia związane z otyłością. Mechanizmy tej ochrony obejmują zmniejszone wchłanianie makroskładników oraz zwiększone uczucie sytości.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32925180/",
+    },
+    {
+      title: "Wpływ błonnika pokarmowego na zdrowie",
+      description:
+        "Błonnik pokarmowy, obecny w pełnych ziarnach, owocach i warzywach, ma korzystny wpływ na zdrowie człowieka, wspierając funkcjonowanie jelit, metabolizm oraz chroniąc przed chorobami przewodu pokarmowego, otyłością, cukrzycą i chorobami sercowo-naczyniowymi.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24876314/",
+    },
+    {
+      title:
+        "Błonnik pokarmowy jako nośnik przeciwutleniaczy w diecie: ważna funkcja fizjologiczna",
+      description:
+        "Błonnik pokarmowy i przeciwutleniacze, zwłaszcza polifenole, mogą działać synergistycznie, przechodząc razem przez jelito cienkie, a ich połączenie w jelicie grubym pod wpływem mikrobioty bakteryjnej produkuje korzystne metabolity oraz środowisko antyoksydacyjne.",
+      link: "https://pubs.acs.org/doi/abs/10.1021/jf1036596",
+    },
+    {
+      title:
+        "Właściwości fizykochemiczne błonnika pokarmowego i dysbioza bakteryjna jelit determinują metabolizm błonnika w jelitach",
+      description:
+        "Dieta bogata w błonnik wpływa na zdrowie jelit, a właściwości fizykochemiczne błonnika oraz dysbioza bakteryjna w jelitach mają istotny wpływ na jego fermentację i produkcję metabolitów, w tym krótkołańcuchowych kwasów tłuszczowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39125327/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -16426,6 +19583,24 @@ export const research = {
   "SAMe S-Adenozylo L-Metionina": {
     id: "same-s-adenozylo-l-metionina",
     index: 140,
+    PL: {
+  studies: [
+    {
+      title:
+        "S-adenozyl-l-metionina (SAMe) jako antydepresant: metaanaliza badań klinicznych",
+      description:
+        "S-adenozylometionina (SAMe) jest naturalnym związkiem o skuteczności w leczeniu depresji porównywalnej do trójpierścieniowych leków przeciwdepresyjnych, przewyższając placebo i wykazując minimalne skutki uboczne.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0404.1994.tb05403.x",
+    },
+    {
+      title:
+        "S-adenozyl-l-metionina: jej rola w leczeniu chorób wątroby",
+      description:
+        "S-adenozylometionina (SAMe) odgrywa kluczową rolę w wątrobie, przeciwdziałając stresowi oksydacyjnemu i toksyczności wolnych rodników, zwłaszcza tych wywołanych alkoholem, a jej niedobór w chorobach wątroby można kompensować poprzez suplementację, co przynosi korzyści w leczeniu uszkodzeń wątroby.",
+      link: "https://www.sciencedirect.com/science/article/pii/S0002916523060410",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -16520,6 +19695,30 @@ export const research = {
   Polikozanol: {
     id: "polikozanol",
     index: 141,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji polikozanolu na poziom glukozy we krwi: systematyczny przegląd i metaanaliza zależności dawka-odpowiedź w randomizowanych badaniach kontrolowanych",
+      description:
+        "Metaanaliza 25 badań obejmujących 2 680 uczestników wykazała, że suplementacja polikozanolu może skutecznie obniżać poziom glukozy we krwi, szczególnie w krótszych okresach leczenia (poniżej 24 tygodni), u osób poniżej 50 roku życia oraz przy dawce 10 mg na dobę.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38768866/",
+    },
+    {
+      title: "Polikozanol: nowe leczenie chorób sercowo-naczyniowych?",
+      description:
+        "Polikozanol, naturalny związek pozyskiwany z trzciny cukrowej, wykazał istotne korzyści w obniżaniu cholesterolu i innych czynników ryzyka chorób sercowo-naczyniowych, działając równie skutecznie jak konwencjonalne leki, ale z mniejszą ilością skutków ubocznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/12126462/",
+    },
+    {
+      title:
+        "Wielofunkcyjne działanie polikozanolu u starszych pacjentów z dyslipidemią",
+      description:
+        "Polikozanol reguluje poziom lipidów we krwi oraz poprawia funkcję komórek śródbłonka, a także może opóźniać progresję miażdżycy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32703038/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -16648,6 +19847,29 @@ export const research = {
   Bromelaina: {
     id: "bromelaina",
     index: 143,
+    PL: {
+  studies: [
+    {
+      title: "Korzyści zdrowotne bromelainy",
+      description:
+        "Bromelaina, główny enzym proteolityczny z ananasa, wykazuje szerokie zastosowanie medyczne dzięki swoim właściwościom przeciwzapalnym, przeciwzakrzepowym i kardioprotekcyjnym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34959865/",
+    },
+    {
+      title: "Bromelaina: biochemia, farmakologia i zastosowanie medyczne",
+      description:
+        "Bromelaina, surowy ekstrakt z ananasa zawierający różne proteinazy, wykazuje szerokie spektrum aktywności terapeutycznej, w tym działanie przeciwzapalne, przeciwzakrzepowe i immunomodulujące, a jej skuteczność potwierdzono w badaniach laboratoryjnych i klinicznych, szczególnie w terapii przeciwnowotworowej i gojeniu ran.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/11577981/",
+    },
+    {
+      title: "Bromelaina",
+      description:
+        "Bromelaina wykazuje obiecujący potencjał w chirurgii plastycznej dzięki swoim właściwościom przeciwzapalnym, przeciwbólowym i wspomagającym gojenie.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/17102739/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -16763,6 +19985,29 @@ export const research = {
   Glicyna: {
     id: "glicyna",
     index: 144,
+    PL: {
+  studies: [
+    {
+      title:
+        "Metabolizm glicyny w mięśniach szkieletowych: implikacje dla homeostazy metabolicznej",
+      description:
+        "Najnowsze badania pokazują, że suplementacja glicyną jest skuteczna w ochronie mięśni w różnych modelach kacheksji, w tym kacheksji nowotworowej, sepsie oraz przy ograniczonym spożyciu kalorii.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28375879/",
+    },
+    {
+      title: "Przegląd: Glicyna",
+      description:
+        "Pomimo prostej struktury chemicznej i klasyfikacji jako aminokwas nieistotny, glicyna pełni wiele kluczowych funkcji w organizmie – od strukturalnych w białkach po sygnalizacyjne, ochronne i metaboliczne.",
+      link: "https://aspenjournals.onlinelibrary.wiley.com/doi/abs/10.1177/0148607198022006393",
+    },
+    {
+      title: "Glicyna: nowy przeciwzapalny immunonutrient",
+      description:
+        "Glicyna wykazuje działanie immunosupresyjne poprzez aktywację kanałów chlorkowych w komórkach układu odpornościowego, podobnie jak w rdzeniu kręgowym, co może znaleźć zastosowanie w leczeniu wielu chorób zapalnych.",
+      link: "https://link.springer.com/article/10.1007/s000180050030",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -16882,6 +20127,30 @@ export const research = {
   Sulforafan: {
     id: "sulforafan",
     index: 146,
+    PL: {
+  studies: [
+    {
+      title:
+        "Izotiocyjanian z brokułów, sulforafan i jego właściwości",
+      description:
+        "Sulforafan, związek występujący głównie w brokułach i innych warzywach krzyżowych, powstający z glukorafaninu dzięki enzymowi mirozynazie, wykazuje szerokie spektrum korzyści zdrowotnych, w tym działanie przeciwnowotworowe, kardioprotekcyjne oraz potencjalne zastosowanie w leczeniu autyzmu i osteoporozy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30372361/",
+    },
+    {
+      title:
+        "Ochronne działanie sulforafanu przeciw stresowi oksydacyjnemu: najnowsze osiągnięcia",
+      description:
+        "Sulforafan, naturalny izotiocyjanian pochodzący z warzyw krzyżowych, działa jako pośredni antyoksydant poprzez aktywację szlaku Nrf2, indukując enzymy ochronne i wykazując właściwości przeciwnowotworowe oraz cytoprotekcyjne w różnych modelach eksperymentalnych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0940299310001831",
+    },
+    {
+      title: "Sulforafan jako obiecująca molekuła w walce z rakiem",
+      description:
+        "Wykazuje skuteczną aktywność przeciwnowotworową poprzez modulację wielu celów molekularnych, co czyni go obiecującym i bezpiecznym środkiem w profilaktyce i leczeniu raka.",
+      link: "https://link.springer.com/chapter/10.1007/978-3-642-38007-5_12",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -17007,6 +20276,31 @@ export const research = {
   Brokuły: {
     id: "brokuły",
     index: 147,
+    PL: {
+  studies: [
+    {
+      title:
+        "Charakterystyka chemiczna i biologiczna nutraceutycznych związków brokułów",
+      description:
+        "Brokuły, jako bogate źródło glukozynolanów, flawonoidów, witamin i minerałów, oferują szerokie spektrum właściwości prozdrowotnych, w tym działanie przeciwnowotworowe, co czyni je wartościowym „produktem funkcjonalnym”, którego skuteczność zależy od właściwej obróbki i przygotowania.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/16713696/",
+    },
+    {
+      title:
+        "Potencjalna skuteczność kiełków brokułów jako unikalnego suplementu w leczeniu cukrzycy typu 2 i jej powikłań",
+      description:
+        "Kiełki brokułów, bogate w sulforafan i inne związki bioaktywne, są skutecznym suplementem w leczeniu cukrzycy typu 2 dzięki swoim właściwościom antyoksydacyjnym, przeciwzapalnym i regulującym metabolizm, które pomagają kontrolować poziom glukozy we krwi i zapobiegać powikłaniom cukrzycowym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/23631497/",
+    },
+    {
+      title:
+        "Interakcja substancji bioaktywnych z brokułów/kwiatów brokułów z mikrobiotą jelitową w redukcji stanów zapalnych w chorobach zapalnych jelit",
+      description:
+        "Choroby zapalne jelit (IBD) to złożone schorzenia o wieloczynnikowej etiologii, w których leczeniu dieta, szczególnie sulforafan z warzyw krzyżowych, wpływający na stan zapalny i mikrobiom jelitowy, może odgrywać ważną rolę.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36442719/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -17136,6 +20430,30 @@ export const research = {
   Granat: {
     id: "granat",
     index: 150,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ soku z granatu na ciśnienie krwi: systematyczny przegląd i metaanaliza",
+      description:
+        "Metaanaliza badań klinicznych wykazała, że sok z granatu obniża ciśnienie krwi w sposób zależny od dawki (optymalnie ≤300 ml dziennie) oraz czasu spożycia (najlepsze efekty w okresie ≤2 miesięcy).",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37461211/",
+    },
+    {
+      title: "Ochronne działanie granatu w dysfunkcji śródbłonka",
+      description:
+        "Przegląd wskazuje, że bioaktywne składniki granatu mają korzystny wpływ na układ sercowo-naczyniowy dzięki działaniu antyoksydacyjnemu i przeciwzapalnemu, co może być istotne w leczeniu chorób sercowo-naczyniowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32250215/",
+    },
+    {
+      title:
+        "Granat jako źródło składników bioaktywnych: przegląd ich cech, właściwości i zastosowań",
+      description:
+        "Granat, dzięki zawartości związków bioaktywnych (zwłaszcza punikalaginy), wykazuje silne działanie przeciwbakteryjne i antyoksydacyjne, co czyni go obiecującym składnikiem żywności funkcjonalnej oraz potencjalnym wsparciem terapii antybiotykowej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32314615/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -17264,6 +20582,31 @@ export const research = {
   Kolendra: {
     id: "kolendra",
     index: 158,
+    PL: {
+  studies: [
+    {
+      title:
+        "Kolendra (Coriandrum sativum L.) i jej bioaktywne składniki",
+      description:
+        "Kolendra (Coriandrum sativum L.) to powszechnie stosowana roślina lecznicza zawierająca wiele związków bioaktywnych wykazujących różnorodne aktywności biologiczne, w tym działanie przeciwbakteryjne, antyoksydacyjne, hipoglikemiczne i przeciwzapalne, a także posiada potencjał w przyszłym rozwoju leków.",
+      link: "https://sciencedirect.com/science/article/abs/pii/S0367326X15000660",
+    },
+    {
+      title: "Coriandrum sativum i jego zastosowanie w zaburzeniach psychicznych",
+      description:
+        "Coriandrum sativum, bogata w terpeny i flawonoidy, wykazuje potencjał terapeutyczny w leczeniu zaburzeń ośrodkowego układu nerwowego, w tym lęku, depresji, epilepsji oraz problemów ze snem, poprzez interakcje z kluczowymi receptorami. Zastosowanie w fitoterapii wymaga dalszych badań, w tym dokowania molekularnego i wykorzystania nanocząstek.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0367326X15000660",
+    },
+    {
+      title:
+        "Coriandrum sativum L.: przegląd etnofarmakologii, fitochemii i korzyści dla układu sercowo-naczyniowego",
+      description:
+        "Coriandrum sativum (C. sativum) to roślina o licznych właściwościach zdrowotnych, w tym przeciwnadciśnieniowych, przeciwmiażdżycowych, hipolipemicznych i kardioprotekcyjnych, co czyni ją potencjalnym produktem funkcjonalnym wspierającym zdrowie układu sercowo-naczyniowego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35011441/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -17390,6 +20733,38 @@ export const research = {
   "Kolcorośl Sarsaparyla": {
     id: "kolcorośl-sarsaparyla",
     index: 160,
+    PL: {
+  studies: [
+    {
+      title:
+        "Bioaktywne i terapeutyczne właściwości korzenia Hemidesmus indicus R. Br. (indyjska sarsaparilla)",
+      description:
+        "Korzeń Hemidesmus indicus, znany jako indyjska sarsaparilla, wykazuje szerokie spektrum właściwości leczniczych, w tym przeciwzapalne, antyoksydacyjne, przeciwbakteryjne oraz modulujące układ odpornościowy, wspierając leczenie chorób skóry, reumatyzmu, infekcji oraz ochronę wątroby, serca, nerek i układu nerwowego.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.4788",
+    },
+    {
+      title:
+        "Przeciwnowotworowe działanie ekstraktów z północnoamerykańskiej rośliny leczniczej dzikiej sarsaparilli",
+      description:
+        "Ekstrakty z dzikiej sarsaparilli (Aralia nudicaulis), zwłaszcza RH z kłącza i FH z owoców, wykazują silne działanie przeciwnowotworowe wobec różnych linii komórek nowotworowych przy minimalnej toksyczności dla zdrowych komórek, co czyni je obiecującymi kandydatami na selektywne leki przeciwnowotworowe.",
+      link: "https://ar.iiarjournals.org/content/26/3A/2157.short",
+    },
+    {
+      title:
+        "Indyjska sarsaparilla, Hemidesmus indicus (L.) R. Br. ex Schult: badania nad kulturami tkankowymi",
+      description:
+        "Hemidesmus indicus, znany jako indyjska sarsaparilla, wykazuje szerokie zastosowania terapeutyczne i przemysłowe, a dzięki mikrorozmnażaniu i kulturze in vitro możliwe jest efektywne namnażanie oraz produkcja cennych metabolitów wtórnych przy jednoczesnej ochronie zasobów naturalnych rośliny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32535696/",
+    },
+    {
+      title:
+        "Bioaktywne i terapeutyczne właściwości korzenia Hemidesmus indicus R. Br. (indyjska sarsaparilla)",
+      description:
+        "Korzeń Hemidesmus indicus, znany jako indyjska sarsaparilla, wykazuje szerokie właściwości lecznicze, w tym antyoksydacyjne, przeciwzapalne i przeciwbakteryjne, co czyni go cenionym składnikiem w leczeniu wielu chorób oraz badaniach fitofarmaceutycznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22887725/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -17554,6 +20929,38 @@ export const research = {
   "Ekstrakt z aronii czarnej Aronia": {
     id: "ekstrakt-z-aronii-czarnej",
     index: 163,
+    PL: {
+  studies: [
+    {
+      title:
+        "Aronia czarna (A. melanocarpa (Michx.) Elliott) – naturalny produkt na zaburzenia metaboliczne?",
+      description:
+        "Dzięki bogactwu polifenoli oraz właściwościom antyoksydacyjnym i przeciwzapalnym, owoce aronii mogą wspierać leczenie i zapobieganie zaburzeniom metabolicznym, takim jak dyslipidemia, nadciśnienie i zaburzenia metabolizmu węglowodanów, choć nie wpływają na pomiary antropometryczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35807867/",
+    },
+    {
+      title:
+        "Potencjalne korzyści owoców aronii czarnej (Aronia melanocarpa) i jej składników w poprawie zdrowia człowieka",
+      description:
+        "Owoce aronii, bogate w związki fenolowe takie jak antocyjany, kwercetyna i kwas chlorogenowy, wykazują szerokie działanie prozdrowotne, w tym antyoksydacyjne, przeciwzapalne, przeciwnowotworowe oraz ochronne dla serca, wątroby i układu nerwowego, z potencjałem do rozwoju jako środki terapeutyczne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36431924/",
+    },
+    {
+      title:
+        "Dieta bogata w antocyjany w walce z otyłością i stanami zapalnymi",
+      description:
+        "Antocyjany obecne w produktach takich jak aronia, jagody czy czarna porzeczka wykazują potencjał w regulacji stanów zapalnych i zaburzeń metabolicznych związanych z otyłością, oferując bezpieczną, dietetyczną strategię przeciwdziałania przewlekłym chorobom związanym z otyłością.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28974032/",
+    },
+    {
+      title:
+        "Codzienna suplementacja czarnej aronii (Aronia melanocarpa) obniża ciśnienie krwi i cholesterol: metaanaliza kontrolowanych badań klinicznych",
+      description:
+        "Codzienna suplementacja ekstraktami z aronii przez 6-8 tygodni znacząco obniża ciśnienie skurczowe krwi, kluczowy czynnik ryzyka chorób sercowo-naczyniowych, a także całkowity poziom cholesterolu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32794414/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -17718,6 +21125,30 @@ export const research = {
   "Ekstrakt z korzenia lukrecji Lukrecja": {
     id: "ekstrakt-z-korzenia-lukrecji",
     index: 164,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ lukrecji na hormony płciowe i układ rozrodczy",
+      description:
+        "Spożywanie lukrecji może wpływać na układ rozrodczy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35872407/",
+    },
+    {
+      title: "Lukrecja a rak",
+      description:
+        "Bogata w glicyryzynę, polifenole i polisacharydy, korzeń lukrecji wykazuje szerokie właściwości farmaceutyczne, takie jak działanie przeciwzapalne, przeciwwirusowe, przeciwnowotworowe oraz ochronne przed uszkodzeniami DNA, co czyni ją obiecującym środkiem w profilaktyce i terapii chorób.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/11588889/",
+    },
+    {
+      title: "Historia wpływu lukrecji na układ hormonalny",
+      description:
+        "Lukrecja, znana od tysiącleci jako roślina lecznicza, wykazuje właściwości endokrynne, takie jak modulacja działania kortyzolu, obniżenie poziomu testosteronu, aktywność estrogenna oraz wpływ na redukcję tłuszczu, chociaż jej nadużywanie może prowadzić do pseudonadczynności aldosteronu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/12373628/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -17838,6 +21269,31 @@ export const research = {
   "Cierpka wiśnia (owoc)": {
     id: "cierpka-wiśnia-owoc",
     index: 165,
+    PL: {
+  studies: [
+    {
+      title:
+        "Sok z wiśni kwaśnych u sportowców: przegląd literatury i komentarz",
+      description:
+        "Sok z wiśni kwaśnych (TC), bogaty w polifenole o właściwościach przeciwzapalnych i antyoksydacyjnych, wspomaga regenerację po intensywnym wysiłku poprzez redukcję stanu zapalnego i stresu oksydacyjnego, co jest szczególnie korzystne dla sportowców w fazie regeneracji po zawodach lub intensywnym treningu.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28696985/",
+    },
+    {
+      title:
+        "Badanie pilotażowe soku z wiśni kwaśnych w leczeniu bezsenności oraz badanie mechanizmów działania",
+      description:
+        "Sok z wiśni kwaśnych wydłużał czas i efektywność snu. Procyjanidyna B-2 z soku wiśni hamowała IDO, zwiększała dostępność tryptofanu, redukowała stan zapalny i może być częściowo odpowiedzialna za poprawę bezsenności.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28901958/",
+    },
+    {
+      title:
+        "Wpływ spożycia soku z wiśni kwaśnych na czynniki ryzyka sercowo-metabolicznego: systematyczny przegląd i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Podsumowując, metaanaliza wykazała, że sok z wiśni kwaśnych miał głównie korzystny wpływ na poziom glukozy na czczo (FBG).",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36038032/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -17967,6 +21423,31 @@ export const research = {
   Rozmaryn: {
     id: "rozmaryn",
     index: 167,
+    PL: {
+  studies: [
+    {
+      title:
+        "Rozmaryn (Rosmarinus officinalis L., syn. Salvia rosmarinus Spenn.) i jego zastosowanie miejscowe: przegląd",
+      description:
+        "Rozmaryn (Rosmarinus officinalis) wykazuje silne właściwości antyoksydacyjne i przeciwzapalne, co czyni go skutecznym w miejscowym leczeniu chorób zapalnych, gojeniu ran, ochronie przed uszkodzeniami UV oraz w formułach kosmetycznych przeciwstarzeniowych i antycellulitowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32455585/",
+    },
+    {
+      title:
+        "Terapeutyczne działanie rozmarynu (Rosmarinus officinalis L.) i jego aktywnych składników na zaburzenia układu nerwowego",
+      description:
+        "Rozmaryn (Rosmarinus officinalis L.) wykazuje silne działanie przeciwzapalne, przeciwbólowe, neuroprotekcyjne oraz poprawiające pamięć, co czyni go obiecującym środkiem terapeutycznym w leczeniu zaburzeń układu nerwowego takich jak depresja, lęk, choroba Alzheimera oraz ból neuropatyczny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32963731/",
+    },
+    {
+      title:
+        "Właściwości antyoksydacyjne i przeciwbakteryjne rozmarynu (Rosmarinus officinalis, L.): przegląd",
+      description:
+        "Naturalne ekstrakty z rozmarynu, bogate w związki fenolowe, wykazują silne właściwości antyoksydacyjne i przeciwbakteryjne, co czyni je obiecującymi naturalnymi konserwantami żywności, choć ich zastosowanie musi być dostosowane ze względu na zapach, kolor i smak.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30181448/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18096,6 +21577,29 @@ export const research = {
   Awokado: {
     id: "awokado",
     index: 168,
+    PL: {
+  studies: [
+    {
+      title:
+        "Nasiona awokado (Persea americana) jako źródło bioaktywnych fitochemikaliów",
+      description:
+        "Nasiona awokado, choć dotychczas niedoceniane, wykazują potencjalne korzyści zdrowotne, takie jak poprawa hipercholesterolemii, leczenie nadciśnienia, stanów zapalnych i cukrzycy, dzięki zawartości związków fenolowych oraz posiadają właściwości przeciwbakteryjne, grzybobójcze i owadobójcze, otwierając nowe kierunki badań.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/23448442/",
+    },
+    {
+      title: "Skład i potencjalne efekty zdrowotne awokado Hass",
+      description:
+        "Bogate w składniki odżywcze takie jak błonnik, jednonienasycone kwasy tłuszczowe, witaminy i fitosterole, awokado Hass wspiera zdrowie układu sercowo-naczyniowego, kontrolę masy ciała oraz zdrowe starzenie się, jednocześnie poprawiając wchłanianie witamin i fitochemikaliów z innych pokarmów.",
+      link: "https://www.tandfonline.com/doi/full/10.1080/10408398.2011.556759",
+    },
+    {
+      title: "Produkty uboczne awokado: właściwości odżywcze i funkcjonalne",
+      description:
+        "Zawartość minerałów w awokado obejmuje obfite ilości potasu, fosforu, magnezu, wapnia i sodu, a także innych minerałów, w tym żelaza i cynku. Kolejną istotną korzyścią awokado jest obecność witamin takich jak β-karoten, witamina E, retinol, kwas askorbinowy, tiamina, ryboflawina, niacyna, pirydoksyna i kwas foliowy, które mają ogromne znaczenie dla ogólnego zdrowia i samopoczucia.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S092422441730643X",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18222,6 +21726,29 @@ export const research = {
   Soja: {
     id: "soja",
     index: 169,
+    PL: {
+  studies: [
+    {
+      title: "Skład soi i produktów sojowych",
+      description:
+        "Soja, składająca się z łupiny, liścieni i zarodka, jest bogata w nienasycone kwasy tłuszczowe (oleinowy, linolowy, linolenowy) oraz minerały, co czyni ją cennym źródłem lipidów i składników odżywczych.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/B9780935315639500061",
+    },
+    {
+      title: "Soja – obiecujące źródło zdrowia",
+      description:
+        "Jako bogate źródło białka, błonnika i izoflawonów, soja wykazuje działanie wspierające zdrowie układu sercowo-naczyniowego, obniżające poziom cholesterolu i zapobiegające chorobom przewlekłym, co czyni ją atrakcyjną alternatywą dla produktów zwierzęcych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/18604315/",
+    },
+    {
+      title:
+        "Suplementy z mąki sojowej obniżają poziom testosteronu we krwi i poprawiają markery stresu oksydacyjnego u mężczyzn",
+      description:
+        "Wykazaliśmy, że suplementy sojowe obniżają poziom testosteronu w surowicy oraz poprawiają markery stresu oksydacyjnego.",
+      link: "https://nature.com/articles/1601495",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18341,6 +21868,24 @@ export const research = {
   "Coriolus versicolor": {
     id: "coriolus-versicolor",
     index: 4343213213,
+    PL: {
+  studies: [
+    {
+      title:
+        "Właściwości immunomodulujące Coriolus versicolor: rola polisacharydopetydów",
+      description:
+        "Badania naukowe tradycyjnych terapii ujawniły silne właściwości bioaktywne, takie jak immunomodulujące działanie polisacharydopetydów (PSP) z grzyba Coriolus versicolor, które wspierają odporność przeciwnowotworową i są szeroko stosowane jako uzupełniające leki przeciwnowotworowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28932226/",
+    },
+    {
+      title:
+        "Polisacharydy związane z białkiem z Coriolus versicolor łagodzą syntezę prozapalnych cytokin indukowaną przez LPS i stymulują proliferację PBMC",
+      description:
+        "Polisacharydy związane z białkiem (PBP) z Coriolus versicolor wykazują właściwości immunomodulujące, zwiększając proliferację komórek i wydzielanie prozapalnych cytokin w komórkach PBMC stymulowanych LPS, co sugeruje ich potencjał do wspierania odporności u pacjentów onkologicznych z niedoborem odporności.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27594322/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18363,6 +21908,34 @@ export const research = {
   Szafran: {
     id: "szafran",
     index: 172,
+    PL: {
+  studies: [
+    {
+      title: "Działanie biologiczne szafranu.",
+      description:
+        "Ekstrakt ze szafranu wykazuje właściwości przeciwnowotworowe i cytotoksyczne, a jego mechanizm działania i skład chemiczny są badane pod kątem potencjału terapeutycznego.",
+      link: "https://europepmc.org/article/med/8347278",
+    },
+    {
+      title: "Tradycyjne i nowoczesne zastosowania szafranu (Crocus sativus)",
+      description:
+        "Szafran ceniony za swoje właściwości lecznicze, kosmetyczne i kulinarne, odgrywa ważną rolę w rolnictwie ekologicznym oraz przemyśle farmaceutycznym.",
+      link: "https://www.mdpi.com/2079-9284/6/4/63",
+    },
+    {
+      title: "Szafran",
+      description:
+        "Szafran, najcenniejsza przyprawa na świecie pozyskiwana z suszonych znamion krokusa Crocus sativus L., odgrywa ważną rolę w kulinariach, przemyśle tekstylnym, medycynie i innych dziedzinach.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/B9780857090393500268",
+    },
+    {
+      title: "Wpływ szafranu na układ sercowo-naczyniowy: przegląd oparty na dowodach",
+      description:
+        "Szafran, dzięki właściwościom antyoksydacyjnym, przeciwzapalnym i obniżającym poziom cholesterolu, może wspierać zdrowie układu sercowo-naczyniowego i być wartościowym suplementem wspomagającym medycynę tradycyjną.",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3466873/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18514,6 +22087,30 @@ export const research = {
   Propolis: {
     id: "propolis",
     index: 173,
+    PL: {
+  studies: [
+    {
+      title: "Przeciwnowotworowe działanie propolisu",
+      description:
+        "Propolis i jego aktywne związki, takie jak CAPE i chryzyna, wykazują działanie przeciwnowotworowe poprzez indukcję apoptozy i hamowanie proliferacji komórek nowotworowych, co czyni je obiecującymi środkami chemioterapeutycznymi i chemioprewencyjnymi.",
+      link: "https://journals.viamedica.pl/folia_histochemica_cytobiologica/article/view/18693",
+    },
+    {
+      title:
+        "Przegląd właściwości biologicznych i toksyczności propolisu pszczelego",
+      description:
+        "Propolis, używany przez pszczoły do budowy uli, wykazuje właściwości antybakteryjne, przeciwgrzybicze i przeciwwirusowe.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0278691597001452",
+    },
+    {
+      title:
+        "Miód, propolis i mleczko pszczele: kompleksowy przegląd ich działań biologicznych i korzyści zdrowotnych",
+      description:
+        "Miód, propolis i mleczko pszczele wykazują szeroki potencjał biologiczny, wspierając zdrowie dzięki właściwościom przeciwdrobnoustrojowym, gojeniu ran oraz korzystnemu wpływowi na zdrowie rozrodcze i neurodegeneracyjne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28814983/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18638,6 +22235,31 @@ export const research = {
   "Ruscus aculeatus": {
     id: "ruscus-aculeatus",
     index: 171,
+    PL: {
+  studies: [
+    {
+      title:
+        "Połączenie ekstraktu z Ruscus aculeatus, metylchalconu hesperydyny i kwasu askorbinowego: kompleksowy przegląd ich działania farmakologicznego i klinicznego oraz patofizjologii przewlekłych chorób żylnych",
+      description:
+        "Ekstrakt z Ruscus aculeatus w połączeniu z metylchalconem hesperydyny i kwasem askorbinowym jest skuteczny i bezpieczny w leczeniu chorób żylnych, poprawia mikrokrążenie i funkcję limfatyczną oraz łagodzi objawy nadciśnienia żylnego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+    },
+    {
+      title:
+        "Rodzaj Ruscus: bogate źródło bioaktywnych saponin steroidowych",
+      description:
+        "Ruscus aculeatus, znany jako iglicznik i ceniony za zawartość ruskogeniny i neoruskogeniny, jest stosowany ze względu na właściwości flebotropowe i wazokonstrykcyjne w leczeniu przewlekłej niewydolności żylnej, żylaków, hemoroidów oraz hipotensji ortostatycznej.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+    },
+    {
+      title:
+        "Opracowanie preparatu roślinnego opartego na połączeniu ekstraktów z Ruscus aculeatus L. i Vitis vinifera L., magnololu oraz diosmetyny do leczenia przewlekłych chorób żylnych poprzez działanie przeciwzapalne i modulację AP-1",
+      description:
+        "Preparat roślinny DMRV-2, oparty na ekstraktach z korzenia Ruscus aculeatus, nasion Vitis vinifera, diosmetyny i magnololu, wykazał silne działanie przeciwzapalne w przewlekłych chorobach żylnych poprzez redukcję wydzielania cytokin zapalnych oraz hamowanie aktywacji czynników AP-1 i NF-kB w komórkach śródbłonka.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+    },
+  ],
+},
     DE: {
       studies: [
         {
@@ -18742,6 +22364,31 @@ export const research = {
   Fisetyna: {
     id: "fisetyna",
     index: 184,
+    PL: {
+  studies: [
+    {
+      title:
+        "Fisetyna jako senoterapeutyk przedłużający zdrowie i długość życia",
+      description:
+        "Fisetyna, jako najsilniejszy senolityk spośród testowanych flawonoidów, redukuje markery starzenia w różnych tkankach, przywraca homeostazę, zmniejsza patologie związane z wiekiem oraz wydłuża długość życia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30279143/",
+    },
+    {
+      title:
+        "Fisetyna i kwercetyna: obiecujące flawonoidy o potencjale chemoprewencyjnym",
+      description:
+        "Fisetyna i kwercetyna, dwa flawonole o silnym potencjale farmakologicznym, wykazały działanie terapeutyczne przeciwko nowotworom, stresowi oksydacyjnemu i zaburzeniom zapalnym, modulując kluczowe szlaki sygnałowe nowotworów i wspierając rozwój skutecznych strategii leczenia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31064104/",
+    },
+    {
+      title:
+        "Podwójne celowanie na mTOR/IL-17A i autofagię przez fisetynę łagodzi stan zapalny skóry podobny do łuszczycy",
+      description:
+        "Fisetyna, flawonoid obecny w owocach, warzywach i orzechach, wykazuje silne właściwości przeciwzapalne, antyoksydacyjne, przeciwnowotworowe, neuroprotekcyjne i kardioprotekcyjne, co czyni ją obiecującym środkiem do zapobiegania i leczenia chorób związanych z przewlekłym stanem zapalnym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36741386/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -18871,6 +22518,31 @@ export const research = {
   "Rybozyd nikotynamidu": {
     id: "rybozyd-nikotynamidu",
     index: 185,
+    PL: {
+  studies: [
+    {
+      title:
+        "Co naprawdę wiadomo o efektach suplementacji rybozydu nikotynamidu u ludzi",
+      description:
+        "Rybozyd nikotynamidu, prekursor NAD+, może odgrywać rolę w redukcji stanów zapalnych oraz wspomagać leczenie niektórych poważnych chorób.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37478182/",
+    },
+    {
+      title:
+        "Rybozyd nikotynamidu – aktualny stan badań i zastosowania terapeutyczne",
+      description:
+        "Rybozyd nikotynamidu (NR), który podnosi poziom NAD+, wykazuje obiecujący potencjał terapeutyczny w leczeniu chorób układu sercowo-naczyniowego, neurodegeneracyjnych, metabolicznych oraz infekcyjnych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32486488/",
+    },
+    {
+      title:
+        "Suplementacja rybozydem nikotynamidu zwiększa metabolom NAD+ w starszym mięśniu szkieletowym oraz wywołuje sygnatury transkryptomiczne i przeciwzapalne",
+      description:
+        "Suplementacja rybozydem nikotynamidu (NR) u starszych mężczyzn zwiększa poziom NAD+ w mięśniach szkieletowych i wykazuje działanie przeciwzapalne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31412242/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19000,6 +22672,31 @@ export const research = {
   "Cynara scolymus": {
     id: "cynara-scolymus",
     index: 196,
+    PL: {
+  studies: [
+    {
+      title:
+        "Funkcjonalny i terapeutyczny potencjał karczocha zwyczajnego (Cynara scolymus) w korzyściach zdrowotnych",
+      description:
+        "Karczoch zwyczajny (Cynara cardunculus var. scolymus), bogaty w polifenole, wykazuje silne właściwości przeciwutleniające, przeciwzapalne i ochronne dla wątroby, co czyni go obiecującym suplementem w profilaktyce i leczeniu chorób przewlekłych, takich jak schorzenia sercowo-naczyniowe, metaboliczne oraz neurodegeneracyjne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38542782/",
+    },
+    {
+      title:
+        "Wodny ekstrakt z karczocha (Cynara scolymus L.) łagodzi oporność na insulinę wywołaną palmitynianem w hepatocytach HepG2 poprzez aktywację szlaku sygnałowego IRS1/PI3K/AKT/FoxO1 i GSK-3β",
+      description:
+        "Badanie wskazuje, że wodny ekstrakt z karczocha (AWE) może wspierać prawidłowy metabolizm glukozy poprzez regulację kluczowych procesów w komórkach wątroby oraz redukcję stresu komórkowego związanego z insulinoopornością.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38102588/",
+    },
+    {
+      title:
+        "Przegląd wszechstronności części karczocha zwyczajnego (Cynara scolymus L.), jego produktów ubocznych i suplementów diety",
+      description:
+        "Karczoch zwyczajny (Cynara scolymus) jest rośliną jadalną o znaczących właściwościach prozdrowotnych, w tym przeciwutleniających, przeciwnowotworowych i hepatoprotekcyjnych, dzięki wysokiej zawartości związków fenolowych oraz błonnika pokarmowego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38474726/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19129,6 +22826,31 @@ export const research = {
   "Dziurawiec Ziele dziurawca": {
     id: "dziurawiec",
     index: 189,
+    PL: {
+  studies: [
+    {
+      title:
+        "Dziurawiec zwyczajny (Hypericum perforatum) a depresja – co dzieje się z układem neuroprzekaźników?",
+      description:
+        "Dziurawiec zwyczajny wykazuje potencjał terapeutyczny w leczeniu depresji i innych zaburzeń psychicznych poprzez modulację neuroprzekaźników, szczególnie glutaminianu i acetylocholiny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35294606/",
+    },
+    {
+      title:
+        "Miejscowe zastosowanie dziurawca zwyczajnego (Hypericum perforatum)",
+      description:
+        "Dziurawiec zwyczajny wykazuje potencjał w dermatologii dzięki właściwościom przeciwzapalnym, przeciwbakteryjnym i regeneracyjnym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24214835/",
+    },
+    {
+      title:
+        "Dziurawiec zwyczajny w leczeniu zaburzeń psychicznych",
+      description:
+        "Dziurawiec zwyczajny wykazuje potencjał w leczeniu różnych zaburzeń psychicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/23538077/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19252,6 +22974,17 @@ export const research = {
   "Ogórek Morski": {
     id: "ogórek-morski",
     index: 205,
+    PL: {
+  studies: [
+    {
+      title:
+        "Doustna suplementacja ogórka morskiego i jego hydrolizatu łagodzi fotostarzenie wywołane promieniowaniem UVA u bezwłosych myszy",
+      description:
+        "Spożywanie ogórków morskich (SC) i ich hydrolizatów (SCH) wykazało działanie przeciwstarzeniowe poprzez wpływ na filagrynę i szlak NF-κB, co czyni je obiecującymi składnikami nutricosmetyków.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34516661/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19311,6 +23044,24 @@ export const research = {
   "Ketony malinowe": {
     id: "ketony-malinowe",
     index: 206,
+    PL: {
+  studies: [
+    {
+      title:
+        "Potencjalne działania metaboliczne ketonu malinowego",
+      description:
+        "Keton malinowy (RK) wykazuje potencjalne korzyści w zapobieganiu i leczeniu chorób metabolicznych, takich jak otyłość, cukrzyca typu 2, uszkodzenia serca i wątroby, dzięki mechanizmom przeciwutleniającym, przeciwzapalnym oraz regulującym metabolizm.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34913499/",
+    },
+    {
+      title:
+        "Badania farmakologiczne związku fenolowego: keton malinowy – aktualizacja 2020",
+      description:
+        "Keton malinowy (RK) to związek o potencjalnych właściwościach terapeutycznych, wykazujący działanie ochronne na wątrobę, serce i żołądek.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34209554/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19401,6 +23152,31 @@ export const research = {
   Triphala: {
     id: "triphala",
     index: 177,
+    PL: {
+  studies: [
+    {
+      title:
+        "Farmakologiczne i terapeutyczne właściwości Triphali – przegląd literatury",
+      description:
+        "Triphala to ajurwedyjska mieszanka składająca się z trzech owoców (Terminalia chebula, Phyllanthus emblica i Terminalia belerica), która dzięki bogatej zawartości przeciwutleniaczy, witamin i innych bioaktywnych związków wykazuje szerokie spektrum właściwości terapeutycznych, w tym przeciwzapalnych, przeciwbakteryjnych i adaptogennych, co czyni ją jednym z najcenniejszych preparatów ziołowych na świecie.",
+      link: "https://www.phytojournal.com/archives?year=2016&vol=5&issue=3&part=A&ArticleId=852",
+    },
+    {
+      title:
+        "Właściwości przeciwutleniające ajurwedyjskiej formuły Triphala i jej składników",
+      description:
+        "Badania laboratoryjne wykazały silne właściwości przeciwutleniające alkoholowych ekstraktów Triphali oraz jej składników, co potwierdzono w różnych testach biochemicznych, w tym w zdolności neutralizowania wolnych rodników oraz ochrony przed peroksydacją lipidów i hemolizą czerwonych krwinek.",
+      link: "https://www.tandfonline.com/doi/abs/10.1080/09251619708951274",
+    },
+    {
+      title:
+        "Wpływ Triphali na profil lipidowy i glukozowy oraz parametry antropometryczne: przegląd systematyczny",
+      description:
+        "Wyniki dwunastu badań klinicznych obejmujących 749 pacjentów wykazały, że Triphala skutecznie obniża poziom cholesterolu, pomaga w redukcji masy ciała oraz obniża poziom glukozy we krwi u diabetyków, nie powodując poważnych skutków ubocznych.",
+      link: "https://journals.sagepub.com/doi/full/10.1177/2515690X211011038",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19530,6 +23306,24 @@ export const research = {
   "Olej z pestek dyni": {
     id: "olej-z-pestek-dyni",
     index: 207,
+    PL: {
+  studies: [
+    {
+      title:
+        "Potencjał oleju z pestek dyni jako żywności funkcjonalnej – kompleksowy przegląd składu chemicznego, korzyści zdrowotnych i bezpieczeństwa",
+      description:
+        "Bogaty w fitochemikalia, takie jak polifenole, fitoestrogeny i kwasy tłuszczowe, olej z pestek dyni wykazuje potencjał jako żywność funkcjonalna dzięki właściwościom przeciwutleniającym i przeciwbakteryjnym oraz korzystnemu wpływowi na zdrowie układu sercowo-naczyniowego i równowagę hormonalną, szczególnie u kobiet w okresie menopauzy.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35904246/",
+    },
+    {
+      title:
+        "Olej z pestek dyni: kompleksowy przegląd metod ekstrakcji, składników odżywczych i korzyści zdrowotnych",
+      description:
+        "Olej z pestek dyni (PSO), bogaty w nienasycone kwasy tłuszczowe, tokoferole i fitosterole, wykazuje potencjał prozdrowotny dzięki właściwościom przeciwzapalnym, przeciwutleniającym i ochronnym w chorobach układu krążenia, a nowoczesne technologie ekstrakcji umożliwiają bardziej wydajny i bezpieczny proces pozyskiwania.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37650308/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19552,6 +23346,31 @@ export const research = {
   Cynamon: {
     id: "cynamon",
     index: 208,
+    PL: {
+  studies: [
+    {
+      title:
+        "Cynamon a zdrowie",
+      description:
+        "Cynamon wykazuje potencjalne działanie przeciwzapalne, przeciwbakteryjne, przeciwutleniające oraz obniżające poziom glukozy we krwi, szczególnie jako wsparcie w leczeniu cukrzycy typu 2.",
+      link: "https://www.tandfonline.com/doi/abs/10.1080/10408390902773052",
+    },
+    {
+      title:
+        "Cynamon: wszechstronna roślina lecznicza",
+      description:
+        "Bogaty w olejki eteryczne i związki bioaktywne cynamon wykazuje szerokie spektrum właściwości farmakologicznych, takich jak działanie przeciwutleniające, przeciwzapalne, przeciwbakteryjne oraz korzystny wpływ w zaburzeniach neurologicznych, w tym chorobie Parkinsona i Alzheimera.",
+      link: "https://onlinelibrary.wiley.com/doi/full/10.1155/2014/642942",
+    },
+    {
+      title:
+        "Cynamon a choroby przewlekłe",
+      description:
+        "Bogaty w związki bioaktywne, takie jak cynamaldehyd i polifenole, cynamon wykazuje właściwości przeciwutleniające, przeciwzapalne, przeciwcukrzycowe i przeciwbakteryjne, z obiecującym potencjałem w leczeniu chorób neurodegeneracyjnych, cukrzycy, zapalenia stawów i miażdżycy.",
+      link: "https://link.springer.com/chapter/10.1007/978-3-319-41342-6_1",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19644,6 +23463,31 @@ export const research = {
   Kwercetyna: {
     id: "kwercetyna",
     index: 41,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ suplementacji kwercetyną na profil lipidowy, ciśnienie krwi i poziom glukozy w osoczu: przegląd systematyczny i metaanaliza",
+      description:
+        "Regularne spożywanie kwercetyny prowadzi do istotnego obniżenia ciśnienia krwi oraz poprawy poziomu cholesterolu HDL i triglicerydów po co najmniej ośmiu tygodniach stosowania.",
+      link: "https://academic.oup.com/nutritionreviews/article/78/8/615/5697189",
+    },
+    {
+      title:
+        "Wpływ suplementacji kwercetyną na profil lipidowy i markery zapalne u pacjentów z zespołem metabolicznym i chorobami pokrewnymi: przegląd systematyczny i metaanaliza randomizowanych kontrolowanych badań klinicznych",
+      description:
+        "Metaanaliza wykazała, że suplementacja kwercetyną u pacjentów z zespołem metabolicznym i chorobami pokrewnymi obniżała całkowity cholesterol, LDL oraz CRP, ale nie miała wpływu na poziom triglicerydów, HDL, IL-6 i TNF-α.",
+      link: "https://www.tandfonline.com/doi/full/10.1080/10408398.2019.1604491",
+    },
+    {
+      title:
+        "Wpływ suplementacji kwercetyną na wyniki kardiometaboliczne: ogólny przegląd metaanaliz randomizowanych badań kontrolowanych",
+      description:
+        "Suplementacja kwercetyną powoduje obniżenie skurczowego ciśnienia krwi (SBP) oraz poziomu insuliny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37654199/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -19773,6 +23617,39 @@ export const research = {
   Probiotyki: {
     id: "probiotyki",
     index: 50,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ probiotyków na depresję: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Metaanaliza wykazała, że probiotyki mogą znacząco zmniejszać ryzyko depresji.",
+      link: "https://www.mdpi.com/2072-6643/8/8/483",
+    },
+    {
+      title:
+        "Wpływ probiotyków na otłuszczenie ciała i markery ryzyka sercowo-naczyniowego u osób z nadwagą i otyłością: przegląd systematyczny i metaanaliza randomizowanych badań kontrolowanych",
+      description:
+        "Metaanaliza sugeruje, że spożywanie probiotyków może być pomocne w poprawie masy ciała, zmniejszeniu otyłości oraz poprawie niektórych markerów ryzyka chorób sercowo-naczyniowych u osób z nadwagą i otyłością.",
+      link: "https://www.clinicalnutritionjournal.com/article/S0261-5614(21)00319-8/abstract",
+    },
+    {
+      title:
+        "Probiotyki w leczeniu biegunki infekcyjnej",
+      description:
+        "Probiotyki wydają się być użytecznym uzupełnieniem terapii nawadniającej w leczeniu ostrej biegunki infekcyjnej u dorosłych i dzieci.",
+      link: "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003048.pub2/full",
+    },
+    {
+      title:
+        "Wpływ suplementacji probiotykami na zdrowie metaboliczne u kobiet w ciąży: metaanaliza oparta na dowodach",
+      description:
+        "Suplementacja probiotykami u kobiet z cukrzycą ciążową (GDM) wykazała korzystny wpływ na kontrolę glikemii, zmniejszając poziom insuliny na czczo oraz wskaźnik HOMA-IR.",
+      link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0197771",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -19932,6 +23809,18 @@ export const research = {
   Kudzu: {
     id: "kudzu",
     index: 70,
+    PL: {
+  studies: [
+    {
+      title:
+        "Korzeń kudzu: tradycyjne zastosowania i potencjalne korzyści lecznicze w cukrzycy i chorobach sercowo-naczyniowych",
+      description:
+        "Dowody przedstawione w tym przeglądzie pokazują, że korzeń kudzu ma duży potencjał, aby zostać włączonym do konwencjonalnej praktyki medycznej w leczeniu i zarządzaniu zespołem metabolicznym, chorobami sercowo-naczyniowymi, cukrzycą oraz jej powikłaniami.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0378874111000729#preview-section-snippets",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -19991,6 +23880,25 @@ export const research = {
   "Jabłczan magnezu": {
     id: "jablczan-magnezu",
     index: 74,
+    PL: {
+  studies: [
+    {
+      title:
+        "Jabłczan magnezu na zmęczenie",
+      description:
+        "Magnez, poprzez udział w produkcji energii komórkowej, może zwiększać witalność organizmu oraz wydolność fizyczną.",
+      link: "https://wellbeingnutrition.com/blogs/essentials/magnesium-malate-for-fatigue-what-causes-fatigue-or-energy-dips-how-does-magnesium-prevent-fatigue-magnesium-for-energy-other-tips-to-prevent-fatigue-conclusion",
+    },
+    {
+      title:
+        "Czym jest jabłczan magnezu? Korzyści, zastosowania, dawkowanie i więcej",
+      description:
+        "Wspiera funkcjonowanie mięśni i układu nerwowego.",
+      link: "https://draxe.com/nutrition/magnesium-malate/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -20073,6 +23981,16 @@ export const research = {
   "Dziki pochrzyn": {
     id: "dziki-pochrzyn",
     index: 82,
+    PL: {
+  studies: [
+    {
+      title: "Potencjalne korzyści zdrowotne pochrzynu skrzydlatego (Dioscorea alata)",
+      description:
+        "Badanie różnych odmian pochrzynu skrzydlatego (Dioscorea alata) wykazało ich wysoką wartość odżywczą, szczególnie pod względem zawartości błonnika i minerałów, co sugeruje ich potencjalne zastosowanie jako żywności funkcjonalnej, zwłaszcza dla diabetyków oraz osób z chorobami przewlekłymi.",
+      link: "https://pubs.rsc.org/en/content/articlelanding/2013/fo/c3fo60064e/unauth",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20131,6 +24049,24 @@ export const research = {
   "Tarczyca bajkalska": {
     id: "tarczyca-bajkalska",
     index: 88,
+    PL: {
+  studies: [
+    {
+      title:
+        "Tarczyca bajkalska: korzyści, dawkowanie, skutki uboczne, interakcje z lekami i inne ważne informacje",
+      description:
+        "Tarczyca bajkalska zawiera flawonoidy, takie jak bajkalina i bajkaleina, które wykazują silne działanie przeciwzapalne. Związki te hamują szlaki sygnałowe, takie jak NF-kB i MAPK, zmniejszając stan zapalny oraz produkcję cytokin prozapalnych, co jest korzystne w leczeniu chorób takich jak zapalenie stawów i inne schorzenia zapalne.",
+      link: "https://nootropicsplanet.com/baikal-skullcap/",
+    },
+    {
+      title:
+        "Obiecująca rola hydroksyflawonów – bajkaleiny z korzenia tarczycy bajkalskiej w profilaktyce i leczeniu chorób u ludzi",
+      description:
+        "Bajkaleina, silny przeciwutleniacz o właściwościach przeciwzapalnych i przeciwnowotworowych, wykazuje potencjał terapeutyczny w leczeniu chorób metabolicznych, sercowo-naczyniowych, neurologicznych oraz zakaźnych.",
+      link: "https://www.mdpi.com/1422-0067/24/5/4732",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20225,6 +24161,21 @@ export const research = {
   Drożdże: {
     id: "drozdze",
     index: 89,
+    PL: {
+  studies: [
+    {
+      title: "Korzyści zdrowotne drożdży nieaktywnych",
+      description:
+        "Zawartość błonnika w drożdżach nieaktywnych wspiera zdrowie jelit, ułatwiając trawienie i zapobiegając zaparciom.",
+      link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+    },
+    {
+      title: "Korzyści z drożdży nieaktywnych i jak je stosować",
+      description: "Bogate w witaminy z grupy B:",
+      link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20304,6 +24255,16 @@ export const research = {
   Mangan: {
     id: "mangan",
     index: 91,
+    PL: {
+  studies: [
+    {
+      title: "Mangan: jego rola w zdrowiu i chorobach",
+      description:
+        "Mangan jest niezbędnym pierwiastkiem śladowym, który odgrywa kluczową rolę w metabolizmie, syntezie neuroprzekaźników oraz ochronie przed stresem oksydacyjnym.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30855111/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20358,6 +24319,39 @@ export const research = {
   "MSM (metylosulfonylometan)": {
     id: "msm",
     index: 92,
+    PL: {
+  studies: [
+    {
+      title:
+        "Metylosulfonylometan: zastosowania i bezpieczeństwo nowego suplementu diety",
+      description:
+        "Metylosulfonylometan (MSM) to dobrze tolerowany suplement diety o właściwościach przeciwzapalnych, który wspiera zdrowie stawów i zmniejsza stres oksydacyjny.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/28300758/",
+    },
+    {
+      title:
+        "Metylosulfonylometan poprawia jakość życia kolan u osób z łagodnym bólem kolan: randomizowane, podwójnie ślepe, kontrolowane placebo badanie",
+      description:
+        "Badanie wykazało, że suplementacja MSM znacząco poprawia stan zdrowia kolan oraz ogólną kondycję organizmu u osób z łagodnym bólem kolan, potwierdzając jego skuteczność jako środka wspierającego zdrowie stawów.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37447322/",
+    },
+    {
+      title:
+        "Piękno od wewnątrz: doustne spożycie suplementu zawierającego siarkę, metylosulfonylometanu, poprawia oznaki starzenia się skóry",
+      description:
+        "Badanie potwierdziło, że suplementacja MSM w dawkach 1–3 g dziennie skutecznie redukuje oznaki starzenia, takie jak zmarszczki, poprawiając jędrność, elastyczność i nawilżenie skóry.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32083522/",
+    },
+    {
+      title:
+        "Wpływ codziennego spożycia metylosulfonylometanu (MSM) na poziom cholesterolu lipoprotein o dużej gęstości u zdrowych osób z nadwagą i otyłością: randomizowane kontrolowane badanie",
+      description:
+        "Badanie wykazało, że suplementacja MSM w dawce 3 g dziennie przez 16 tygodni poprawia profil kardiometaboliczny, w tym poziom cholesterolu HDL, u osób z nadwagą lub otyłością, sugerując potencjalne korzyści w zapobieganiu chorobom związanym z otyłością.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/34684621/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -20522,6 +24516,22 @@ export const research = {
   Drożdze: {
     id: "drozdze",
     index: 89,
+    PL: {
+  studies: [
+    {
+      title: "Korzyści zdrowotne drożdży nieaktywnych",
+      description:
+        "Zawartość błonnika w drożdżach nieaktywnych wspiera zdrowie jelit, wspomagając trawienie i zapobiegając zaparciom.",
+      link: "https://www.health.com/food/nutritional-yeast-health-benefits",
+    },
+    {
+      title: "Korzyści z drożdży nieaktywnych i sposoby ich wykorzystania",
+      description: "Bogate w witaminy z grupy B:",
+      link: "https://www.realsimple.com/health/nutrition-diet/nutritional-yeast-benefits",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -20601,6 +24611,25 @@ export const research = {
   "Pau d’Arco": {
     id: "pau-d-arco",
     index: 116,
+    PL: {
+  studies: [
+    {
+      title:
+        "Bezpieczeństwo i tolerancja Pau d'Arco (Tabebuia avellanedae) w leczeniu pierwotnych bolesnych miesiączek: badanie jednoarmowe, otwarte u dorosłych w wieku 18-45 lat",
+      description:
+        "Tabebuia avellanedae w dawce 1050 mg/dzień przez osiem tygodni u zdrowych kobiet z pierwotnymi bolesnymi miesiączkami okazała się bezpieczna, dobrze tolerowana i skuteczna w redukcji intensywności bólu, co uzasadnia dalsze badania.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36960315/",
+    },
+    {
+      title:
+        "Tabebuia impetiginosa: kompleksowy przegląd tradycyjnych zastosowań, fitochemii i właściwości immunofarmakologicznych",
+      description:
+        "Tabebuia impetiginosa, tradycyjnie stosowana w leczeniu gorączki, malarii i chorób skóry, wykazała działanie przeciwzapalne, przeciwaalergiczne i przeciwnowotworowe, co uzasadnia dalsze badania nad jej potencjałem farmakologicznym i bezpieczeństwem.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32962180/",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -20695,6 +24724,23 @@ export const research = {
   "Echinacea (Jeżówka purpurowa)": {
     id: "echinacea",
     index: 117,
+    PL: {
+  studies: [
+    {
+      title: "Echinacea purpurea a odporność błon śluzowych",
+      description:
+        "Echinacea purpurea może zmniejszać immunosupresję błon śluzowych podczas intensywnego wysiłku oraz skracać czas trwania infekcji górnych dróg oddechowych, co wykazano mniejszym spadkiem poziomu immunoglobuliny A w ślinie (s-IgA) u osób przyjmujących ten suplement.",
+      link: "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-2007-964895",
+    },
+    {
+      title: "Badanie podwójnie ślepe, kontrolowane placebo z użyciem Echinaceae pallidae radix w infekcjach górnych dróg oddechowych",
+      description:
+        "Randomizowane, podwójnie ślepe badanie kontrolowane wykazało, że Echinacea pallidae radix znacząco skracała czas trwania choroby i łagodziła objawy grypopodobne górnych dróg oddechowych w porównaniu z placebo.",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0965229997800891",
+    },
+  ],
+},
+
     EN: {
       studies: [
         {
@@ -20784,6 +24830,17 @@ export const research = {
   "L-metionina": {
     id: "l-metionina",
     index: 119,
+    PL: {
+  studies: [
+    {
+      title:
+        "L-metionina jako suplement wspierający układ odpornościowy: ocena kliniczna",
+      description:
+        "Badanie potwierdziło wspierającą rolę L-metioniny u pacjentów z upośledzoną odpornością lub niedoborami odporności.",
+      link: "https://link.springer.com/article/10.1007/s00726-006-0390-2",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20843,6 +24900,17 @@ export const research = {
   Kofeina: {
     id: "kofeina",
     index: 121,
+    PL: {
+  studies: [
+    {
+      title:
+        "Wpływ kofeiny na metabolizm ogólnoustrojowy, szlaki oksydacyjno-zapalne i wydolność wysiłkową",
+      description:
+        "Kofeina, powszechny alkaloid, wykazuje wielokierunkowe działanie na organizm człowieka — od efektów pobudzających, poprzez właściwości przeciwutleniające i przeciwzapalne, po wpływ na wydolność fizyczną, oddziałując zarówno na układ nerwowy, jak i tkanki obwodowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/32589582/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20902,6 +24970,17 @@ export const research = {
   "Węgiel aktywny": {
     id: "wegiel-aktywny",
     index: 128,
+    PL: {
+  studies: [
+    {
+      title:
+        "Ochronny wpływ węgla aktywowanego na postęp przewlekłej choroby nerek: randomizowane badanie kliniczne.",
+      description:
+        "Suplementacja węglem aktywowanym przez osiem tygodni u pacjentów w schyłkowym stadium przewlekłej choroby nerek poddawanych hemodializie znacząco obniżyła poziom mocznika i fosforu we krwi, wspomagając kontrolę toksyn mocznicowych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38107705/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -20961,6 +25040,17 @@ export const research = {
   "Kora wierzby białej": {
     id: "kora-wierzby-bialej",
     index: 156,
+    PL: {
+  studies: [
+    {
+      title:
+        "Skuteczność i bezpieczeństwo ekstraktów z kory wierzby białej (Salix alba).",
+      description:
+        "Ekstrakt z kory wierzby, znany ze swojego działania przeciwzapalnego, przeciwgorączkowego i przeciwbólowego, wykazuje potencjał w leczeniu przewlekłego bólu, choroby zwyrodnieniowej stawów oraz we wspieraniu wydolności sportowej.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ptr.5377",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -21031,6 +25121,17 @@ export const research = {
         },
       ],
     },
+    PL: {
+  studies: [
+    {
+      title:
+        "Sodium ascorbate (SA) i kwas l-askorbinowy (AA) jako modyfikatory skóry dotkniętej oparzeniem – analiza porównawcza.",
+      description:
+        "Badanie wykazało, że przeciwutleniacze SA i AA wspomagają regenerację tkanek po oparzeniach, pomagając odbudować uszkodzone białka i poprawiając strukturę skóry, co może przyspieszyć proces gojenia ran.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/30352326/",
+    },
+  ],
+},
     DE: {
       studies: [
         {
@@ -21079,6 +25180,24 @@ export const research = {
   "Biała Piwonia": {
     id: "biala-piwonia",
     index: 174,
+    PL: {
+  studies: [
+    {
+      title:
+        "Polifenole białej piwonii (fermentowanej Camellia sinensis) pomagają zapobiegać uszkodzeniom wątroby wywołanym alkoholem poprzez działanie przeciwutleniające.",
+      description:
+        "Polifenole białej piwonii (WPP) wykazują silne właściwości przeciwutleniające i przeciwzapalne, skutecznie chroniąc wątrobę przed uszkodzeniami spowodowanymi alkoholem, co czyni je obiecującym naturalnym środkiem hepatoprotekcyjnym porównywalnym z sylimaryną.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/31683564/",
+    },
+    {
+      title:
+        "Wpływ i przewaga stosowania całkowitych glikozydów białej piwonii w połączeniu z metotreksatem i sulfasalazyną w leczeniu zesztywniającego zapalenia stawów kręgosłupa.",
+      description:
+        "Połączenie glikozydów piwonii, metotreksatu i sulfasalazyny wykazało zwiększoną skuteczność oraz poprawę bezpieczeństwa w leczeniu zesztywniającego zapalenia stawów kręgosłupa.",
+      link: "https://pesquisa.bvsalud.org/portal/resource/pt/wpr-409217",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -21173,6 +25292,31 @@ export const research = {
   "Butcher's broom": {
     id: "butcher-s-broom",
     index: 176,
+    PL: {
+  studies: [
+    {
+      title:
+        "Połączenie ekstraktu z Ruscus aculeatus, metylochalkonu hesperydyny i kwasu askorbinowego: kompleksowy przegląd ich efektów farmakologicznych i klinicznych oraz patofizjologii przewlekłej choroby żylnej.",
+      description:
+        "Ekstrakt z Ruscus aculeatus w połączeniu z metylochalkonem hesperydyny i kwasem askorbinowym jest skuteczny i bezpieczny w leczeniu chorób żylnych, poprawiając mikrokrążenie, funkcję limfatyczną oraz łagodząc objawy nadciśnienia żylnego.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26928296/",
+    },
+    {
+      title:
+        "Rodzaj Ruscus: bogate źródło bioaktywnych saponin steroidowych.",
+      description:
+        "Ruscus aculeatus, znany jako myszopłoch kolczasty i ceniony za zawartość ruskogeniny i neoruskogeniny, jest stosowany w leczeniu przewlekłej niewydolności żylnej, żylaków, hemoroidów oraz niedociśnienia ortostatycznego ze względu na swoje właściwości fleboterapeutyczne i obkurczające naczynia krwionośne.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/27825178/",
+    },
+    {
+      title:
+        "Opracowanie preparatu ziołowego składającego się z połączenia ekstraktów z Ruscus aculeatus L. i Vitis vinifera L., magnololu i diosmetyny w leczeniu przewlekłej choroby żylnej poprzez działanie przeciwzapalne i modulację AP-1.",
+      description:
+        "Preparat ziołowy DMRV-2, oparty na ekstraktach z korzenia Ruscus aculeatus, nasion Vitis vinifera, diosmetyny i magnololu, wykazał silne działanie przeciwzapalne w przewlekłej chorobie żylnej poprzez zmniejszenie wydzielania cytokin zapalnych oraz hamowanie aktywacji czynników AP-1 i NF-kB w komórkach śródbłonka.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36903912/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -21301,6 +25445,17 @@ export const research = {
   "Hydrastis canadensis": {
     id: "hydrastis-canadensis",
     index: 195,
+    PL: {
+  studies: [
+    {
+      title:
+        "Analiza in silico wpływu Hydrastis canadensis na kontrolowanie raka piersi.",
+      description:
+        "Hydrastis canadensis, w analizie in silico, wykazała potencjał w kontrolowaniu raka piersi niezależnego od hormonów, skutecznie celując w określone białka o stabilnych interakcjach oraz obiecujących właściwościach farmakokinetycznych i farmakodynamicznych.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/37629702/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -21360,6 +25515,17 @@ export const research = {
   "Garcinia cambogia": {
     id: "garcinia-cambogia",
     index: 197,
+    PL: {
+  studies: [
+    {
+      title:
+        "Kompleksowy przegląd naukowy dotyczący Garcinia cambogia.",
+      description:
+        "Garcinia cambogia to owoc tradycyjnie stosowany jako przyprawa, którego główny składnik aktywny (kwas hydroksycytrynowy) wykazuje działanie wspomagające odchudzanie poprzez hamowanie lipogenezy i zwiększanie uczucia sytości, a także właściwości przeciwzapalne i przeciwcukrzycowe.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25732350/",
+    },
+  ],
+},
     EN: {
       studies: [
         {
@@ -21415,6 +25581,17 @@ export const research = {
   "Mącznica lekarska": {
     id: "m-cznica-lekarska",
     index: 198,
+    PL: {
+  studies: [
+    {
+      title:
+        "Medicaid w leczeniu ostrego, niepowikłanego zapalenia pęcherza moczowego (BRUMI): protokół wieloośrodkowego, randomizowanego, podwójnie zaślepionego badania klinicznego.",
+      description:
+        "To randomizowane badanie kliniczne porównuje skuteczność fosfomycyny z ekstraktem z liści mącznicy lekarskiej (Uvae ursi folium) w leczeniu objawów ostrego zapalenia pęcherza moczowego u kobiet przed menopauzą, przy czym głównym punktem końcowym jest ocena poprawy objawów po 7 dniach leczenia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/35750460/",
+    },
+  ],
+},
     EN: {
       studies: [
         {

@@ -567,7 +567,7 @@ const ProductCodeGenerator = () => {
       const newHtmlToEbayFr = generateEbayFrHtml(productData);
       const newHtmlToEbayIt = generateEbayItHtml(productData);
       const newHtmlToShopify = generateShopify(productData);
-      const newHtmlToEmagRo = generateEmagRo(productData);
+      // const newHtmlToEmagRo = generateEmagRo(productData);
 
       console.log(newHtmlToShopify);
 
@@ -576,7 +576,7 @@ const ProductCodeGenerator = () => {
       setHtmlToEbayFr(newHtmlToEbayFr);
       setHtmlToEbayIt(newHtmlToEbayIt);
       setHtmlToShopify(newHtmlToShopify);
-      setHtmlToEmagRo(newHtmlToEmagRo);
+      // setHtmlToEmagRo(newHtmlToEmagRo);
 
       const splitDE = await callSplitHtmlFromBackend(newHtmlToEbayDe);
       if (splitDE) dispatch(updateProduct({ ebayDE: splitDE }));
@@ -622,7 +622,7 @@ const ProductCodeGenerator = () => {
       const newHtmlToEbayFr = generateEbayFrHtmlCosmetics(productData);
       const newHtmlToEbayIt = generateEbayItHtmlCosmetics(productData);
       const newHtmlToShopify = generateShopifyCosmetics(productData);
-      const newHtmlToEmagRo = generateEmagRoCosmetics(productData);
+      // const newHtmlToEmagRo = generateEmagRoCosmetics(productData);
 
 
       setHtmlToEbayDe(newHtmlToEbayDe);
@@ -630,7 +630,7 @@ const ProductCodeGenerator = () => {
       setHtmlToEbayFr(newHtmlToEbayFr);
       setHtmlToEbayIt(newHtmlToEbayIt);
       setHtmlToShopify(newHtmlToShopify);
-      setHtmlToEmagRo(newHtmlToEmagRo);
+      // setHtmlToEmagRo(newHtmlToEmagRo);
 
       const splitDE = await callSplitHtmlFromBackend(newHtmlToEbayDe);
       if (splitDE) dispatch(updateProduct({ ebayDE: splitDE }));

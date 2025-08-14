@@ -45,10 +45,10 @@ const generateSpecialFeaturesList = (specialFeatures) => {
 
   const list = Object.keys(specialFeatures)
     .filter((key) => specialFeatures[key]) // wybiera tylko włączone cechy
-    .map((key) => `<li>${featureNames[key]}</li>`)
+    .map((key) => `<p>⭐ ${featureNames[key]}</p>`)
     .join(""); // skleja <li>...</li> w jeden ciąg
 
-  return list ? `<h2>Cechy specjalne:</h2><ul>${list}</ul>` : "";
+  return list ? `<h2>Cechy specjalne:</h2>${list}` : "";
 };
 
 function convertListToSection(html) {
@@ -57,25 +57,52 @@ function convertListToSection(html) {
 
   const listItems = tempDiv.querySelectorAll("li");
 
-  let resultHTML = `<section class="section">
-    <div class="item item-12">
-      <section class="text-item">
+  let resultHTML = `
         <h2>Rola w organizmie:</h2>`;
 
   listItems.forEach((item) => {
     resultHTML += `<p>✅ ${item.textContent}</p>`;
   });
-
-  resultHTML += `</section>
-    </div>
-  </section>`;
-
+  
   return resultHTML;
 }
 
+function generateStudiesHTML_PL(data) {
+  // Walidacja danych
+  if (!data || !data.PL || !Array.isArray(data.PL.studies)) {
+    console.log("Brak danych do wyświetlenia badań (PL.studies).");
+    return "";
+  }
+
+  const studies = data.PL.studies;
+
+  const html = `
+  <section class="section">
+  <div class="item item-12">
+  <section class="text-item">
+<h2>Badania kliniczne dot. działania substancji:</h2>
+${studies
+  .map(
+    (study, index) => `
+<p><b>${index + 1}. ${study.title}</b></p>
+<p><b>➡️</b> ${study.description}</p>
+<p><b>Link:</b> <a href="${study.link}" target="_blank" rel="noopener">${
+      study.link
+    }</a></p>
+`
+  )
+  .join("")}
+  </section>
+  </div>
+  </section>
+`.trim();
+
+  return html;
+}
 
 export const generateBlHtml = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
+  const researchHTML = generateStudiesHTML_PL(productData.research);
   const specialFeaturesHTML = generateSpecialFeaturesList(
     productData.specialFeatures
   );
@@ -119,11 +146,27 @@ export const generateBlHtml = (productData) => {
       </section>
     </div>
   </section>
-    ${
+    <section class="section">
+    <div class="item item-6">
+      <section class="image-item">
+        <img src="https://elektropak.pl/subiekt_kopia/foto/${
+          productData.productSku
+        }^2.jpg" />
+      </section>
+    </div>
+    <div class="item item-6">
+      <section class="text-item">
+      ${
       productData.bulletpoints.pl
         ? `${convertListToSection(productData.bulletpoints.pl)}`
         : ""
-    }
+      }
+      </section>
+    </div>
+  </section>
+
+
+        ${researchHTML ? `${researchHTML}` : ""}
   
   <section class="section">
     <div class="item item-12">
