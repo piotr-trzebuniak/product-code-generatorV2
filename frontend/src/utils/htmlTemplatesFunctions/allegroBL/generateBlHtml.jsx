@@ -23,7 +23,7 @@ export const generateIngredientsHTML = (ingredientsTable) => {
   return ingredientsHTML;
 };
 
-const generateSpecialFeaturesList = (specialFeatures) => {
+export const generateSpecialFeaturesList = (specialFeatures) => {
   const featureNames = {
     gmoFree: "Bez GMO",
     soyaFree: "Bez soi",

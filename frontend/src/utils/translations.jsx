@@ -462,6 +462,7 @@ export const translateAllFields = async (
 
 export const translateText = async (text, targetLang) => {
   try {
+    // const API_URL = 'http://localhost:3000';
     const API_URL = import.meta.env.VITE_API_URL ||
       (window.location.hostname === 'localhost'
         ? 'http://localhost:3000'
