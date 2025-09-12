@@ -1,26 +1,30 @@
 import { removeTrailingBracketAndDots } from "../ebay/EN/generateEbayEnHtmlCosmetics";
+import { cleanHtmlString } from "./generateShopifyCosmetics";
 
 export const generateIngredientsHTML = (ingredientsTable) => {
   let ingredientsHTML = "";
 
+  const cleanValue = (val) => {
+    if (!val) return "";
+    // usuń " of" tylko jeśli występuje na końcu wartości
+    return val.replace(/\s*of\s*$/i, "").trim();
+  };
+
   ingredientsTable.forEach((ingredient) => {
     // główny składnik
     const name = ingredient.ingredient?.en || "";
-    const value = ingredient.ingredientValue?.en || "";
+    const value = cleanValue(ingredient.ingredientValue?.en || "");
     const rws = ingredient.rws === "<>" ? "*" : ingredient.rws || "";
 
-    // sprawdź czy są dodatkowe linie
     if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
       // składnik z dodatkowymi liniami
       let combinedNames = `<strong>${name} <br></strong>`;
       let combinedValues = `${value}`;
 
-      // dodaj dodatkowe linie
       ingredient.additionalLines.forEach((line, index) => {
         const lineName = line.ingredient?.en || "";
-        const lineValue = line.ingredientValue?.en || "";
+        const lineValue = cleanValue(line.ingredientValue?.en || "");
 
-        // dla pierwszej dodatkowej linii nie dodawaj <br> przed nazwą
         if (index === 0) {
           combinedNames += lineName;
         } else {
@@ -38,7 +42,7 @@ export const generateIngredientsHTML = (ingredientsTable) => {
          <td>${rws}</td>
       </tr>`;
     } else {
-      // pojedynczy składnik bez dodatkowych linii
+      // pojedynczy składnik
       ingredientsHTML += `
       <tr>
          <td><strong>${name}</strong></td>
@@ -51,10 +55,11 @@ export const generateIngredientsHTML = (ingredientsTable) => {
   return ingredientsHTML;
 };
 
+
 export const generateShopify = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
   return ` 
-${removeTrailingBracketAndDots(productData.shortDescription.en)}
+${cleanHtmlString(productData.shortDescription.en)}
 <h3>Supplements Facts:</h3>
 <p>Package Size: <strong>${productData.size.sizeAmount} ${
     productData.size.unit.en

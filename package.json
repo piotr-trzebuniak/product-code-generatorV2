@@ -22,6 +22,7 @@
     "gopd": "^1.2.0",
     "node-fetch": "^3.3.2",
     "nodemon": "^3.1.7",
+    "puppeteer": "^24.18.0",
     "qs": "^6.11.2",
     "react-toastify": "^10.0.6"
   },

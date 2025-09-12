@@ -1,5 +1,39 @@
 import { removeTrailingBracketAndDots } from "../ebay/EN/generateEbayEnHtmlCosmetics";
 
+export function cleanHtmlString(htmlString) {
+  if (typeof htmlString !== 'string') return htmlString;
+  let result = htmlString;
+
+  // A) Połącz sąsiadujące akapity
+  result = result.replace(/<\/p>\s*<p>/gi, ' ');
+  result = result.replace(/\s{2,}/g, ' ');
+  result = result.replace(/\s+<\/p>/gi, '</p>');
+
+  // B) Usuń końcowe puste akapity/br
+  result = result.replace(/(<p><br\s*\/?><\/p>\s*)+$/i, '');
+  result = result.replace(/(<br\s*\/?>\s*)+<\/p>\s*$/i, '</p>');
+
+  // C) Napraw podwójny ">" na końcu
+  if (result.endsWith('>>')) {
+    result = result.slice(0, -1);
+  }
+
+  // D) Usuń nadmiarowe kropki na końcu
+  result = result.replace(/([>])\.+$/, '$1');
+  result = result.replace(/\.+$/, '');
+
+  // E) Usuń spacje przed interpunkcją i </strong>
+  result = result.replace(/\s+,/g, ',');    // " ," -> ","
+  result = result.replace(/\s+\./g, '.');   // " ." -> "."
+  result = result.replace(/\s+<\/strong>/gi, '</strong>'); // usuń spacje przed </strong>
+
+  // F) Końcowa normalizacja spacji
+  result = result.replace(/\s{2,}/g, ' ');
+
+  return result;
+}
+
+
 export const generateIngredientsHTML = (ingredientsTable) => {
   let ingredientsHTML = "";
 
@@ -54,10 +88,9 @@ export const generateIngredientsHTML = (ingredientsTable) => {
 export const generateShopifyCosmetics = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
   return ` 
-    ${removeTrailingBracketAndDots(productData.shortDescription.en)}
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription1.en)}
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription2.en)}
-
+    ${cleanHtmlString(productData.shortDescription.en)}
+    ${cleanHtmlString(productData.cosmeticsDescription1.en)}
+    ${cleanHtmlString(productData.cosmeticsDescription2.en)}
   ${
     productData.ingredientsTable[0].ingredient.pl !== ""
       ? `
