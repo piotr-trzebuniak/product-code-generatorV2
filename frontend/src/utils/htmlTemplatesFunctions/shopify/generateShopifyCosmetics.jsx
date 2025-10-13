@@ -3,35 +3,48 @@ import { removeTrailingBracketAndDots } from "../ebay/EN/generateEbayEnHtmlCosme
 export function cleanHtmlString(htmlString) {
   if (typeof htmlString !== 'string') return htmlString;
   let result = htmlString;
-
+  
   // A) Połącz sąsiadujące akapity
   result = result.replace(/<\/p>\s*<p>/gi, ' ');
   result = result.replace(/\s{2,}/g, ' ');
   result = result.replace(/\s+<\/p>/gi, '</p>');
-
+  
   // B) Usuń końcowe puste akapity/br
   result = result.replace(/(<p><br\s*\/?><\/p>\s*)+$/i, '');
   result = result.replace(/(<br\s*\/?>\s*)+<\/p>\s*$/i, '</p>');
-
+  
   // C) Napraw podwójny ">" na końcu
   if (result.endsWith('>>')) {
     result = result.slice(0, -1);
   }
-
+  
   // D) Usuń nadmiarowe kropki na końcu
   result = result.replace(/([>])\.+$/, '$1');
   result = result.replace(/\.+$/, '');
-
+  
   // E) Usuń spacje przed interpunkcją i </strong>
-  result = result.replace(/\s+,/g, ',');    // " ," -> ","
-  result = result.replace(/\s+\./g, '.');   // " ." -> "."
-  result = result.replace(/\s+<\/strong>/gi, '</strong>'); // usuń spacje przed </strong>
-
+  result = result.replace(/\s+,/g, ',');
+  result = result.replace(/\s+\./g, '.');
+  result = result.replace(/\s+<\/strong>/gi, '</strong>');
+  
   // F) Końcowa normalizacja spacji
   result = result.replace(/\s{2,}/g, ' ');
-
+  
+  // G) Usuń znaczniki <strong> i <b> z nagłówków <h3>
+  result = result.replace(/<h3[^>]*>(.*?)<\/h3>/gi, (match, content) => {
+    // Usuń wszystkie tagi <strong> i <b> z zawartości nagłówka
+    const cleanContent = content
+      .replace(/<\/?strong[^>]*>/gi, '')
+      .replace(/<\/?b[^>]*>/gi, '');
+    return `<h3>${cleanContent}</h3>`;
+  });
+  
+  // H) Dodanie spacji po pogrubionych słowach, jeśli jej brakuje
+  result = result.replace(/(<strong>.*?<\/strong>)(?=\S)/gi, '$1 ');
+  
   return result;
 }
+
 
 
 export const generateIngredientsHTML = (ingredientsTable) => {
@@ -108,8 +121,8 @@ export const generateShopifyCosmetics = (productData) => {
   `
       : ""
   }
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription3.en)}
-    ${removeTrailingBracketAndDots(productData.cosmeticsDescription4.en)}
+    ${cleanHtmlString(productData.cosmeticsDescription3.en)}
+    ${cleanHtmlString(productData.cosmeticsDescription4.en)}
   
      `;
 };

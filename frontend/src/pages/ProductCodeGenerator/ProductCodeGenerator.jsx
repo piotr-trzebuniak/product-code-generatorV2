@@ -30,6 +30,7 @@ import { generateShopify } from "../../utils/htmlTemplatesFunctions/shopify/gene
 import { generateShopifyCosmetics } from "../../utils/htmlTemplatesFunctions/shopify/generateShopifyCosmetics";
 import { generateEmagRo } from "../../utils/htmlTemplatesFunctions/emag/RO/generateEmagRo";
 import { generateEmagRoCosmetics } from "../../utils/htmlTemplatesFunctions/emag/RO/generateEmagRoCosmetics";
+import ProductUpdateSection from "../../compoments/ProductUpdateSection/ProductUpdateSection";
 // import { splitHtml } from "../../utils/splitHtml";
 
 const ProductCodeGenerator = () => {
@@ -131,6 +132,7 @@ const ProductCodeGenerator = () => {
 
   const skipTranslation = () => {
     toast.info("Tłumaczenie zostało pominięte");
+    console.log(productData)
     setTranslateSkipped(true);
     setTranslationError(null);
   };
@@ -667,6 +669,7 @@ const ProductCodeGenerator = () => {
       <div className={style.generator__content}>
         {type === "supplements" && (
           <div>
+            {/* <ProductUpdateSection /> */}
             <SupplementsForm resetKey={resetKey} />
           </div>
         )}
