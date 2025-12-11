@@ -43,6 +43,7 @@ const ProductCodeGenerator = () => {
   const [htmlToShopify, setHtmlToShopify] = useState("");
   const [htmlToEmagRo, setHtmlToEmagRo] = useState("");
   const [type, setType] = useState("");
+  const [type2, setType2] = useState("add");
   const [key, setKey] = useState(0);
   const [description, setDescription] = useState("");
   const [resetKey, setResetKey] = useState(false);
@@ -55,6 +56,12 @@ const ProductCodeGenerator = () => {
   const [isSendingToSheets, setIsSendingToSheets] = useState(false);
   const [isDataSentToSheets, setIsDataSentToSheets] = useState(false);
   const [translationError, setTranslationError] = useState(null);
+
+  function replaceStrongWithB(htmlString) {
+  return htmlString
+    .replace(/<strong>/g, "<b>")
+    .replace(/<\/strong>/g, "</b>");
+}
 
   const [areMandatoryFieldsFilled, setAreMandatoryFieldsFilled] =
     useState(false);
@@ -132,7 +139,7 @@ const ProductCodeGenerator = () => {
 
   const skipTranslation = () => {
     toast.info("Tłumaczenie zostało pominięte");
-    console.log(productData)
+    console.log(productData);
     setTranslateSkipped(true);
     setTranslationError(null);
   };
@@ -558,7 +565,7 @@ const ProductCodeGenerator = () => {
     }
 
     const newHtmlToShop = generateShopHtml(productData);
-    const newHtmlToBl = generateBlHtml(productData);
+    const newHtmlToBl = replaceStrongWithB(generateBlHtml(productData));
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
     setHtmlToBl(replaceH3WithH2(newHtmlToBl));
@@ -626,7 +633,6 @@ const ProductCodeGenerator = () => {
       const newHtmlToShopify = generateShopifyCosmetics(productData);
       const newHtmlToEmagRo = generateEmagRoCosmetics(productData);
 
-
       setHtmlToEbayDe(newHtmlToEbayDe);
       setHtmlToEbayEn(newHtmlToEbayEn);
       setHtmlToEbayFr(newHtmlToEbayFr);
@@ -665,11 +671,38 @@ const ProductCodeGenerator = () => {
           </Button>
           <Button onClick={() => setType("cosmetics")}>Kosmetyki/inne</Button>
         </div>
+        {/* <div className={style["generator__header-btns2"]}>
+          <Button onClick={() => setType2("add")}>
+            Dodawanie nowego produktu
+          </Button>
+          <Button onClick={() => setType2("update")}>
+            Aktualizacja istniejącego produktu
+          </Button>
+        </div> */}
       </header>
       <div className={style.generator__content}>
+        {/* {type === "supplements" && (
+          <>
+            {type2 === "update" && <ProductUpdateSection />}
+            <div>
+              <SupplementsForm resetKey={resetKey} />
+            </div>
+          </>
+        )}
+
+        {type === "cosmetics" && (
+          <div className={style.generator__cosmetics}>
+            <>
+              <div>
+                <SupplementsForm resetKey={resetKey} />
+              </div>
+              <CosmeticsForm resetKey={resetKey} />
+            </>
+          </div>
+        )} */}
+
         {type === "supplements" && (
           <div>
-            {/* <ProductUpdateSection /> */}
             <SupplementsForm resetKey={resetKey} />
           </div>
         )}
@@ -679,6 +712,7 @@ const ProductCodeGenerator = () => {
             <CosmeticsForm resetKey={resetKey} />
           </div>
         )}
+
         {(type === "cosmetics" || type === "supplements") && (
           <>
             <GeneratorBtns

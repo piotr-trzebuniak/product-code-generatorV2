@@ -3,7 +3,7 @@ export const generateIngredientsHTML = (ingredientsTable) => {
 
   ingredientsTable.forEach((ingredient) => {
     // główny składnik
-    const name = `<strong>${ingredient.ingredient?.pl || ""}</strong>`;
+    const name = `<b>${ingredient.ingredient?.pl || ""}</b>`;
     const value = ingredient.ingredientValue?.pl || "";
     const rws = ingredient.rws || "";
 
@@ -100,6 +100,9 @@ ${studies
   return html;
 }
 
+
+
+
 export const generateBlHtml = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
   const researchHTML = generateStudiesHTML_PL(productData.research);
@@ -132,15 +135,15 @@ export const generateBlHtml = (productData) => {
     <div class="item item-6">
       <section class="text-item">
         <h2>Skład</h2>
-        <p>Wielkość opakowania:<strong> ${productData.size.sizeAmount} ${
+        <p>Wielkość opakowania:<b> ${productData.size.sizeAmount} ${
     productData.size.unit.pl
-  }</strong></p>
-        <p>Porcja jednorazowa: <strong>${productData.portion.portionAmount} ${
+  }</b></p>
+        <p>Porcja jednorazowa: <b>${productData.portion.portionAmount} ${
     productData.portion.unit.pl
-  }</strong></p>
-        <p>Ilość porcji w opakowaniu: <strong>${
+  }</b></p>
+        <p>Ilość porcji w opakowaniu: <b>${
           productData.portionQuantity
-        }</strong></p>
+        }</b></p>
         <h2>Sposób użycia:</h2>
         ${productData.howToUse.pl}
       </section>
@@ -171,12 +174,12 @@ export const generateBlHtml = (productData) => {
   <section class="section">
     <div class="item item-12">
       <section class="text-item">
-        <p><strong>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${
+        <p><b>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${
     productData.portion.unit.pl
-  }&nbsp; &nbsp;RWS</strong></p>
-        <p><strong>_________________________________________________</strong></p>
+  }&nbsp; &nbsp;RWS</b></p>
+        <p><b>_________________________________________________</b></p>
         <table>${ingredientsHTML}</table>
-        <p><strong>_________________________________________________</strong></p>
+        <p><b>_________________________________________________</b></p>
         ${productData.tableEnd.pl}
       </section>
     </div>
