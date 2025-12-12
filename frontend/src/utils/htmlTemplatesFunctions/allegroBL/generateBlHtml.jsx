@@ -1,21 +1,38 @@
+const minifyHtml = (html) =>
+  (html ?? "")
+    .replace(/[\n\r\t]+/g, "") // usuń nowe linie i taby
+    .replace(/>\s+</g, "><") // usuń spacje między tagami
+    .trim();
+
 export const generateIngredientsHTML = (ingredientsTable) => {
   let ingredientsHTML = "";
 
+  const normalize = (v) => (v ?? "").toString().trim();
+  const removeReactFragments = (s) =>
+    /^(?:<>|<\/>|<>\s*<\/>)$/.test(s) ? "" : s;
+
   ingredientsTable.forEach((ingredient) => {
-    // główny składnik
-    const name = `<b>${ingredient.ingredient?.pl || ""}</b>`;
-    const value = ingredient.ingredientValue?.pl || "";
-    const rws = ingredient.rws || "";
+    const nameText = normalize(ingredient.ingredient?.pl);
+    const value = removeReactFragments(
+      normalize(ingredient.ingredientValue?.pl)
+    );
+    const rws = removeReactFragments(normalize(ingredient.rws));
 
-    ingredientsHTML += `<p>${name}&nbsp;&nbsp;${value}&nbsp;&nbsp;${rws}</p>`;
+    const name = nameText ? `<b>${nameText}</b>` : "";
 
-    // dodatkowe linie
-    if (ingredient.additionalLines && ingredient.additionalLines.length > 0) {
+    const parts = [name, value, rws].filter(Boolean);
+    ingredientsHTML += `<p>${parts.join(" ")}</p>`;
+
+    if (ingredient.additionalLines?.length) {
       ingredient.additionalLines.forEach((line) => {
-        const lineName = line.ingredient?.pl || "";
-        const lineValue = line.ingredientValue?.pl || "";
-        const lineRws = line.rws || "";
-        ingredientsHTML += `<p>${lineName}&nbsp;&nbsp;${lineValue}&nbsp;&nbsp;${lineRws}</p>`;
+        const lineName = removeReactFragments(normalize(line.ingredient?.pl));
+        const lineValue = removeReactFragments(
+          normalize(line.ingredientValue?.pl)
+        );
+        const lineRws = removeReactFragments(normalize(line.rws));
+
+        const lineParts = [lineName, lineValue, lineRws].filter(Boolean);
+        ingredientsHTML += `<p>${lineParts.join(" ")}</p>`;
       });
     }
   });
@@ -63,7 +80,7 @@ function convertListToSection(html) {
   listItems.forEach((item) => {
     resultHTML += `<p>✅ ${item.textContent}</p>`;
   });
-  
+
   return resultHTML;
 }
 
@@ -100,9 +117,6 @@ ${studies
   return html;
 }
 
-
-
-
 export const generateBlHtml = (productData) => {
   const ingredientsHTML = generateIngredientsHTML(productData.ingredientsTable);
   const researchHTML = generateStudiesHTML_PL(productData.research);
@@ -114,7 +128,7 @@ export const generateBlHtml = (productData) => {
     ? `<section class="section"><div class="item item-12"><section class="text-item">${productData.description.pl}</section></div></section>`
     : "";
 
-  return `
+  const finalHtml =  `
   <section class="section">
     <div class="item item-12">
       <section class="text-item">
@@ -141,9 +155,7 @@ export const generateBlHtml = (productData) => {
         <p>Porcja jednorazowa: <b>${productData.portion.portionAmount} ${
     productData.portion.unit.pl
   }</b></p>
-        <p>Ilość porcji w opakowaniu: <b>${
-          productData.portionQuantity
-        }</b></p>
+        <p>Ilość porcji w opakowaniu: <b>${productData.portionQuantity}</b></p>
         <h2>Sposób użycia:</h2>
         ${productData.howToUse.pl}
       </section>
@@ -160,9 +172,9 @@ export const generateBlHtml = (productData) => {
     <div class="item item-6">
       <section class="text-item">
       ${
-      productData.bulletpoints.pl
-        ? `${convertListToSection(productData.bulletpoints.pl)}`
-        : ""
+        productData.bulletpoints.pl
+          ? `${convertListToSection(productData.bulletpoints.pl)}`
+          : ""
       }
       </section>
     </div>
@@ -174,11 +186,11 @@ export const generateBlHtml = (productData) => {
   <section class="section">
     <div class="item item-12">
       <section class="text-item">
-        <p><b>Składniki&nbsp; &nbsp;${productData.portion.portionAmount} ${
+        <p><b>Składniki ${productData.portion.portionAmount} ${
     productData.portion.unit.pl
-  }&nbsp; &nbsp;RWS</b></p>
+  } RWS</b></p>
         <p><b>_________________________________________________</b></p>
-        <table>${ingredientsHTML}</table>
+        ${ingredientsHTML}
         <p><b>_________________________________________________</b></p>
         ${productData.tableEnd.pl}
       </section>
@@ -216,4 +228,6 @@ export const generateBlHtml = (productData) => {
       </section>
     </div>
   </section>`;
+
+  return minifyHtml(finalHtml)
 };
