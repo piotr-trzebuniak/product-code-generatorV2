@@ -1,4 +1,4 @@
-const minifyHtml = (html) =>
+export const minifyHtml = (html) =>
   (html ?? "")
     .replace(/[\n\r\t]+/g, "") // usuń nowe linie i taby
     .replace(/>\s+</g, "><") // usuń spacje między tagami

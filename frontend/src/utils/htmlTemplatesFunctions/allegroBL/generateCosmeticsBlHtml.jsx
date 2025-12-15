@@ -1,4 +1,4 @@
-import { generateIngredientsHTML, generateSpecialFeaturesList } from "./generateBlHtml";
+import { generateIngredientsHTML, generateSpecialFeaturesList, minifyHtml } from "./generateBlHtml";
 
 // Funkcja generująca HTML dla Baselinkera
 export const generateCosmeticsBlHtml = (productData) => {
@@ -33,11 +33,11 @@ export const generateCosmeticsBlHtml = (productData) => {
   return output.trim();
 }
 
-function replaceStrongWithB(htmlString) {
-  return htmlString
-    .replace(/<strong>/g, "<b>")
-    .replace(/<\/strong>/g, "</b>");
-}
+// function replaceStrongWithB(htmlString) {
+//   return htmlString
+//     .replace(/<strong>/g, "<b>")
+//     .replace(/<\/strong>/g, "</b>");
+// }
 
 
 const transformedListHTML = transformListHTML(productData.cosmeticsDescription3.pl)
@@ -51,7 +51,7 @@ const transformedListHTML = transformListHTML(productData.cosmeticsDescription3.
     <div class="item item-12">
       <section class="text-item">
         <h1>${productData.productName.pl}</h1>
-        ${replaceStrongWithB(productData.shortDescription.pl)}
+        ${productData.shortDescription.pl}
       </section>
     </div>
   </section>
@@ -63,7 +63,7 @@ const transformedListHTML = transformListHTML(productData.cosmeticsDescription3.
     </div>
     <div class="item item-6">
       <section class="text-item">
-        ${replaceStrongWithB(productData.cosmeticsDescription1.pl)}
+        ${productData.cosmeticsDescription1.pl}
       </section>
     </div>
   </section>
@@ -76,7 +76,7 @@ const transformedListHTML = transformListHTML(productData.cosmeticsDescription3.
     </div>
     <div class="item item-6">
       <section class="text-item">
-        ${replaceStrongWithB(productData.cosmeticsDescription2.pl)}
+        ${productData.cosmeticsDescription2.pl}
       </section>
     </div>
   </section>
@@ -103,11 +103,11 @@ const transformedListHTML = transformListHTML(productData.cosmeticsDescription3.
         
         ${transformedListHTML}
         ${specialFeaturesHTML}
-        ${replaceStrongWithB(productData.cosmeticsDescription4.pl)}
+        ${productData.cosmeticsDescription4.pl}
       </section>
     </div>
   </section>`;
   
-    return newHtmlToBl;
+    return minifyHtml(newHtmlToBl);
   };
   

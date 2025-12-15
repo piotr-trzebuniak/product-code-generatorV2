@@ -620,7 +620,7 @@ const ProductCodeGenerator = () => {
     }
 
     const newHtmlToShop = generateCosmeticsShopHtml(productData);
-    const newHtmlToBl = generateCosmeticsBlHtml(productData);
+    const newHtmlToBl = replaceStrongWithB(generateCosmeticsBlHtml(productData));
 
     setHtmlToShop(replaceH2WithH3(newHtmlToShop));
     setHtmlToBl(replaceH3WithH2(newHtmlToBl));
